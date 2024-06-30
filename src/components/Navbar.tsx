@@ -35,23 +35,18 @@ export default function Navbar() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="bg-[#f0efea] z-20">
+    <header className="bg-transparent z-20">
       <div className="mx-auto flex h-20 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-        <Link className="block text-teal-600" href="/">
-          <span className="sr-only">Home</span>
-          <Image
-            alt="logo"
-            src="/kite.png"
-            width={42}
-            height={42}
-          />
+
+        <Link className="block leander text-xl" href="/">
+          anthropology ceramics
         </Link>
 
         <div className="flex flex-1 items-center justify-end">
           <nav
             ref={menuRef}
             aria-label="Global"
-            className={`absolute bg-white top-20 left-0 right-0 z-20 p-5 border-b-4 ${isMobileMenuOpen ? "border-pink-500" : "border-transparent"} md:static md:bg-transparent md:p-0 md:block md:border-0 ${isMobileMenuOpen ? "block" : "hidden"}`}
+            className={`absolute bg-white top-0 left-0 right-0 z-20 p-5 border-b-4 ${isMobileMenuOpen ? "border-pink-500" : "border-transparent"} md:static md:bg-transparent md:p-0 md:block md:border-0 ${isMobileMenuOpen ? "block" : "hidden"}`}
           >
             <ul className="flex flex-col md:flex-row md:items-center gap-6 text-lg">
               <li>
