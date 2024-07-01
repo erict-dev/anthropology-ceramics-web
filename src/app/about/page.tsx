@@ -16,7 +16,7 @@ export default function About() {
           </div>
 
           <div className="lg:py-24">
-            <h2 className="text-3xl font-bold sm:text-4xl">about us</h2>
+            <h2 className="leander text-2xl font-bold sm:text-5xl">about</h2>
 
             <p className="mt-4 text-gray-700">{"Anthropology Ceramics is a family-run ceramics studio founded by Christina and Eric. Together, they are dedicated to creating a space that celebrates the timeless art of pottery and the joy of creative expression."}
             </p>
@@ -28,7 +28,7 @@ export default function About() {
 
           </div>
         </div>
-        <h4 className="text-3xl font-bold sm:text-4xl mt-8">our studio space</h4>
+        <h4 className="leander text-2xl font-bold sm:text-5xl mt-8">our studio</h4>
         <p className="mt-4 mb-4 text-gray-700">
           {"At Anthropology Ceramics, we believe that art is a universal language that transcends borders and connects us all. Our studio is a sanctuary for artists of all levels, from curious beginners to seasoned professionals, offering a space where imagination and craftsmanship flourish. Join us in exploring the rich traditions and techniques of pottery from around the world. Whether you’re participating in one of our immersive workshops, attending a community event, or simply visiting to appreciate the beauty of handcrafted ceramics, you’ll find a welcoming environment that inspires and nurtures your artistic journey. Experience the joy of creating with your hands, the thrill of mastering new skills, and the satisfaction of producing something truly unique. At Anthropology Ceramics, we are more than just a studio—we are a community united by a shared passion for art and culture. Come, create, and connect with us."}
         </p>

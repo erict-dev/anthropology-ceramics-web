@@ -48,15 +48,18 @@ export default function Navbar() {
             aria-label="Global"
             className={`absolute bg-white top-0 left-0 right-0 z-20 p-5 border-b-4 ${isMobileMenuOpen ? "border-pink-500" : "border-transparent"} md:static md:bg-transparent md:p-0 md:block md:border-0 ${isMobileMenuOpen ? "block" : "hidden"}`}
           >
-            <ul className="flex flex-col md:flex-row md:items-center gap-6 text-lg">
+            <ul className="leander flex flex-col md:flex-row md:items-center gap-6 text-xl">
               <li>
-                <Link className="text-gray-500 transition hover:text-gray-500/75" href="/about" onClick={closeMobileMenu}>about us</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75" href="/about" onClick={closeMobileMenu}>about</Link>
               </li>
               <li>
-                <Link className="text-gray-500 transition hover:text-gray-500/75" href="/classes" onClick={closeMobileMenu}>classes</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75" href="/gallery" onClick={closeMobileMenu}>gallery</Link>
               </li>
               <li>
-                <Link className="text-gray-500 transition hover:text-gray-500/75" href="/shop" onClick={closeMobileMenu}>shop</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75" href="/classes" onClick={closeMobileMenu}>classes</Link>
+              </li>
+              <li>
+                <Link className="text-gray-700 transition hover:text-gray-500/75" href="/shop" onClick={closeMobileMenu}>shop</Link>
               </li>
             </ul>
           </nav>
