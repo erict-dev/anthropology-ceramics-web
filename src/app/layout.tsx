@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from '@/components/Navbar';
+import Script from 'next/script'
 import Link from 'next/link';
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -21,6 +22,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        {/** Cloudflare Web Analytics **/}
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "e88aa00478e742b0a0427e91f9f56633"}'
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
