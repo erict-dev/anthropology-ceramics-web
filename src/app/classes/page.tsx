@@ -18,7 +18,7 @@ export default function Classes() {
                 className="h-64 w-full object-cover"
               />
 
-              <div className="bg-white p-4 sm:p-6 dark:bg-gray-900 h-full">
+              <div className="p-4 sm:p-6 bg-gray-900 h-full">
                 <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">
                   Adult Group Classes
                 </h3>
@@ -39,7 +39,7 @@ export default function Classes() {
                 className="h-64 w-full object-cover"
               />
 
-              <div className="bg-white p-4 sm:p-6 dark:bg-gray-900 h-full">
+              <div className="p-4 sm:p-6 bg-gray-900 h-full">
                 <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">Kids Group Classes</h3>
 
                 <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Our Kids Group Classes are all about sparking creativity and joy. Your children will have a blast exploring hand-building, throwing, and glazing. These fun and engaging sessions help kids appreciate the wonder of handmade art."}</p>
