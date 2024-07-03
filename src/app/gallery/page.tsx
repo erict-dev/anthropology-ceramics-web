@@ -7,7 +7,7 @@ export default function Gallery() {
         <header>
           <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">earth and tea collection</h2>
 
-          <p className="mt-4 text-gray-500">Discover our exquisite earth and tea collection, a harmonious blend of Chinese and Japanese influences, crafted with meticulous attention to detail. Each piece in this collection reflects the rich heritage of ancient pottery techniques, featuring elegant forms, intricate designs, and vibrant glazes. From delicate teacups to beautifully textured bowls, this gallery showcases the artistry and cultural fusion that define our ceramics.</p>
+          <p className="mt-4 text-black">Explore our Earth and Tea Collection, a celebration of the natural world and the art of tea. Each piece in this collection is crafted with care and intention, reflecting the diverse landscapes and cultures that inspire us. From the earthy tones of Mashiko to the delicate glazes of Jingdezhen, our ceramics invite you to slow down and savor the simple moments. Whether you’re enjoying a quiet tea ceremony or adding a touch of elegance to your home, our collection offers a perfect blend of beauty and functionality.</p>
         </header>
 
         <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
