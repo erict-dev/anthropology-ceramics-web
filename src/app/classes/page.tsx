@@ -8,44 +8,44 @@ export default function Classes() {
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">classes</h2>
         </div>
         <div className="flex flex-row gap-x-4">
-          <article
-            className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
-          >
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              className="h-64 w-full object-cover"
-            />
+          <a href="https://anthropologyceramics.appointy.com">
+            <article
+              className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
+            >
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                className="h-64 w-full object-cover"
+              />
 
-            <div className="bg-white p-4 sm:p-6 dark:bg-gray-900 h-full">
-              <a href="#">
+              <div className="bg-white p-4 sm:p-6 dark:bg-gray-900 h-full">
                 <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">
                   Adult Group Classes
                 </h3>
-              </a>
 
-              <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Rediscover your creative side in our warm and welcoming Adult Group Classes. Enjoy a relaxed atmosphere while learning throwing and glazing techniques. It’s a great way to meet new people and create unique, beautiful pieces."}</p>
-            </div>
-          </article>
+                <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Rediscover your creative side in our warm and welcoming Adult Group Classes. Enjoy a relaxed atmosphere while learning throwing and glazing techniques. It’s a great way to meet new people and create unique, beautiful pieces."}</p>
+              </div>
+            </article>
+          </a>
 
 
-          <article
-            className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
-          >
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              className="h-64 w-full object-cover"
-            />
+          <a href="https://anthropologyceramics.appointy.com">
+            <article
+              className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
+            >
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                className="h-64 w-full object-cover"
+              />
 
-            <div className="bg-white p-4 sm:p-6 dark:bg-gray-900 h-full">
-              <a href="#">
+              <div className="bg-white p-4 sm:p-6 dark:bg-gray-900 h-full">
                 <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">Kids Group Classes</h3>
-              </a>
 
-              <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Our Kids Group Classes are all about sparking creativity and joy. Your children will have a blast exploring hand-building, throwing, and glazing. These fun and engaging sessions help kids appreciate the wonder of handmade art."}</p>
-            </div>
-          </article>
+                <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Our Kids Group Classes are all about sparking creativity and joy. Your children will have a blast exploring hand-building, throwing, and glazing. These fun and engaging sessions help kids appreciate the wonder of handmade art."}</p>
+              </div>
+            </article>
+          </a>
         </div>
         <div className="mt-8 md:mt-16">
           <div className="max-w-3xl">

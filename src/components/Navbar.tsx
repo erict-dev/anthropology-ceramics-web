@@ -46,20 +46,20 @@ export default function Navbar() {
           <nav
             ref={menuRef}
             aria-label="Global"
-            className={`absolute bg-white top-0 left-0 right-0 z-20 p-5 md:static md:bg-transparent md:p-0 md:block ${isMobileMenuOpen ? "block bg-opacity-[0.98]" : "hidden"}`}
+            className={`absolute bg-white top-0 left-0 right-0 z-20 p-5 sm:static sm:bg-transparent sm:p-0 sm:block ${isMobileMenuOpen ? "block bg-opacity-[0.98]" : "hidden"}`}
           >
-            <ul className="leander flex flex-col md:flex-row md:items-center gap-4 md:gap-6 text-xl">
+            <ul className="leander flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 text-xl">
               <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75" href="/about" onClick={closeMobileMenu}>about</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/about" onClick={closeMobileMenu}>about</Link>
               </li>
               <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75" href="/gallery" onClick={closeMobileMenu}>gallery</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/gallery" onClick={closeMobileMenu}>gallery</Link>
               </li>
               <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75" href="/classes" onClick={closeMobileMenu}>classes</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/classes" onClick={closeMobileMenu}>classes</Link>
               </li>
               <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75" href="/shop" onClick={closeMobileMenu}>shop</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/shop" onClick={closeMobileMenu}>shop</Link>
               </li>
             </ul>
           </nav>
@@ -67,15 +67,15 @@ export default function Navbar() {
           <div className="flex items-center gap-4 z-20">
             <button
               onClick={toggleMobileMenu}
-              className="block rounded text-gray-600 transition hover:text-gray-600/75 md:hidden"
+              className="block rounded text-gray-600 transition hover:text-gray-600/75 sm:hidden"
             >
               <span className="sr-only">Toggle menu</span>
               <Image
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 alt="mobile-menu-icon"
                 src="/mobile-menu.png"
-                className="h-5 w-5"
+                className="h-8 w-8"
               />
             </button>
           </div>
