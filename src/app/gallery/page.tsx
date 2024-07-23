@@ -23,7 +23,7 @@ export default function Gallery() {
           <li>
             <a href="#" className="rounded-lg group block overflow-hidden">
               <img
-                src="/gallery/summer-2024/hakeme-2.jpg"
+                src="/gallery/summer-2024/wabi-2.jpg"
                 alt=""
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
@@ -69,7 +69,7 @@ export default function Gallery() {
           <li>
             <a href="#" className="rounded-lg group block overflow-hidden">
               <img
-                src="/gallery/summer-2024/wabi-1.jpg"
+                src="/gallery/summer-2024/kiriniku-1.jpeg"
                 alt=""
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
@@ -78,7 +78,7 @@ export default function Gallery() {
           <li>
             <a href="#" className="rounded-lg group block overflow-hidden">
               <img
-                src="/gallery/summer-2024/wabi-2.jpg"
+                src="/gallery/summer-2024/kiriniku-2.jpeg"
                 alt=""
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
@@ -88,7 +88,7 @@ export default function Gallery() {
           <li>
             <a href="#" className="rounded-lg group block overflow-hidden">
               <img
-                src="/gallery/summer-2024/wabi-3.jpg"
+                src="/gallery/summer-2024/kiriniku-3.jpeg"
                 alt=""
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
