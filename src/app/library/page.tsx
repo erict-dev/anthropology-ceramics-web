@@ -29,7 +29,7 @@ export default function Library() {
         <header>
           <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Pottery styles, designs and techniques from around the world</h2>
           <p className="mt-4 text-gray-600">
-            Explore our ever-growing collection of ceramic styles from diverse cultures across the globe. This living reference showcases pottery techniques we've learned and incorporated into our studio work. As one of humanity's oldest art forms, pottery reflects the unique imprints of cultures throughout history. Our studio is committed to exploring this rich heritage, constantly learning and adapting techniques from various traditions. While not exhaustive, this curated selection offers a glimpse into the beautiful diversity of global ceramic traditions, inviting you to join us on a journey of discovery into the world's pottery styles.
+            {"Explore our ever-growing collection of ceramic styles from diverse cultures across the globe. This living reference showcases pottery techniques we've learned and incorporated into our studio work. As one of humanity's oldest art forms, pottery reflects the unique imprints of cultures throughout history. Our studio is committed to exploring this rich heritage, constantly learning and adapting techniques from various traditions. While not exhaustive, this curated selection offers a glimpse into the beautiful diversity of global ceramic traditions, inviting you to join us on a journey of discovery into the world's pottery styles."}
           </p>
         </header>
         <ul className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
