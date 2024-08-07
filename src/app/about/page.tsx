@@ -31,7 +31,7 @@ export default function About() {
 
         <h4 className="leander text-3xl font-bold sm:text-5xl mt-8 md:mt-16 text-black">our studio</h4>
         <p className="mt-4 mb-4 text-gray-700">
-          {"Nestled in a beautiful garden in Irvine, CA, Anthropology Ceramics is a place where tradition meets innovation. Our studio is a labor of love, built by Christina and Eric to foster creativity and community. Surrounded by abundant greenery and tucked away in a beautiful community, the studio is a perfect escape from the hustle and bustle of everyday life. Here, we create unique ceramic art pieces, inspired by our travels and experiences around the world. We also offer classes, participate in art fairs, galleries, and markets, bringing the beauty and serenity of ceramics to a wider audience."}
+          {"Nestled in the heart of Southern California, Anthropology Ceramics is a place where tradition meets innovation. Our studio is a labor of love, built by Christina and Eric to foster creativity and community. Surrounded by abundant greenery, the studio is a perfect escape from the hustle and bustle of everyday life. Here, we create unique ceramic art pieces, inspired by our travels and experiences around the world. We also offer classes, participate in art fairs, galleries, and markets, bringing the beauty and serenity of ceramics to a wider audience."}
         </p>
         <div className="relative h-64 mt-4 mb-4">
           <Image
