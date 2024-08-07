@@ -21,9 +21,9 @@ export default function About() {
             <p className="mt-4 text-gray-700">{"Anthropology Ceramics is a ceramics studio founded by Christina and Eric. Together, they are dedicated to creating a space that celebrates the timeless art of pottery and the joy of creative expression."}
             </p>
             <p className="mt-4 text-gray-700">
-              {"Welcome to Anthropology Ceramics, a serene ceramics art studio nestled in the heart of sunny Southern California. Founded by Christina and Eric, a dynamic couple who left their corporate careers behind to pursue their passion for pottery, Anthropology Ceramics is a haven for creativity and tranquility. Christina brings a rich background in business consulting and finance, having worked with industry giants like GE, Apollo, and McKinsey. Her journey into the world of ceramics took her from Laguna Beach to the revered pottery hubs of Mashiko and Shigaraki in Japan, and Jingdezhen in China, where she honed her skills under the tutelage of master artisans."}
+              {"Welcome to Anthropology Ceramics, a serene ceramics art studio nestled in the heart of sunny Southern California. Founded by Christina and Eric, a dynamic couple who left their corporate careers behind to pursue their passion for pottery, Anthropology Ceramics is a haven for creativity and tranquility. Christina brings a rich background in business consulting and finance. Her journey into the world of ceramics took her from Laguna Beach to the revered pottery hubs of Mashiko and Shigaraki in Japan, and Jingdezhen in China, where she honed her skills under the tutelage of master artisans."}
             </p>
-            <p className="mt-4 text-gray-700">{"Eric combines his expertise in tech and design with a deep appreciation for the tangible and the tactile. Having worked for tech giants such as Apple, Amazon, Blizzard, and Shopify, Eric realized the importance of grounding ourselves in the physical world, away from the constant digital noise. He found his passion in ceramics after being inspired by Christina. Together, they work to create a sanctuary where art and nature converge, offering a moment of peace and reflection in our hectic lives."}
+            <p className="mt-4 text-gray-700">{"Eric combines his expertise in tech and design with a deep appreciation for the tangible and the tactile. Having worked for tech giants Eric realized the importance of grounding ourselves in the physical world, away from the constant digital noise. He found his passion in ceramics after being inspired by Christina. Together, they work to create a sanctuary where art and nature converge, offering a moment of peace and reflection in our hectic lives."}
             </p>
 
           </div>
@@ -31,7 +31,7 @@ export default function About() {
 
         <h4 className="leander text-3xl font-bold sm:text-5xl mt-8 md:mt-16 text-black">our studio</h4>
         <p className="mt-4 mb-4 text-gray-700">
-          {"Nestled in a beautiful hidden garden studio in Irvine, CA, Anthropology Ceramics is a place where tradition meets innovation. Our studio is a labor of love, built by Christina and Eric to foster creativity and community. Surrounded by abundant greenery and tucked away in a beautiful community, the studio is a perfect escape from the hustle and bustle of everyday life. Here, we create unique ceramic art pieces, inspired by our travels and experiences around the world. We also offer classes, participate in art fairs, galleries, and markets, bringing the beauty and serenity of ceramics to a wider audience."}
+          {"Nestled in a beautiful garden in Irvine, CA, Anthropology Ceramics is a place where tradition meets innovation. Our studio is a labor of love, built by Christina and Eric to foster creativity and community. Surrounded by abundant greenery and tucked away in a beautiful community, the studio is a perfect escape from the hustle and bustle of everyday life. Here, we create unique ceramic art pieces, inspired by our travels and experiences around the world. We also offer classes, participate in art fairs, galleries, and markets, bringing the beauty and serenity of ceramics to a wider audience."}
         </p>
         <div className="relative h-64 mt-4 mb-4">
           <Image
@@ -70,6 +70,10 @@ export default function About() {
             className="absolute inset-0 rounded-lg"
           />
         </div>
+        <h4 className="leander text-3xl font-bold sm:text-5xl mt-8 md:mt-16 text-black">contact</h4>
+        <p className="mt-4 mb-4 text-gray-700">
+          {"We're always happy to hear from you so if you have any questions about our ceramics, our studio, classes, collaborations or events, please get in touch! Our email is: anthropologyceramics@gmail.com."}
+        </p>
       </div>
     </section>
   );
