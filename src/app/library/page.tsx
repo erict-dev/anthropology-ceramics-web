@@ -10,9 +10,9 @@ export default function Library() {
       image: "/library/hakeme/hakeme-pottery-1.jpg"
     },
     {
-      name: "Kiriniku",
+      name: "Kurinuki",
       origin: "Japan",
-      description: "Kiriniku is a traditional Japanese method of carving into clay. Originating in ancient Japan, it has evolved into a popular decorative technique for pottery. Artists use sharp tools to carve out rough cuts, intricate patterns or images on leather-hard clay, often emphasizing the contrast between carved and uncarved surfaces.",
+      description: "Kurinuki is a traditional Japanese method of carving into clay. Originating in ancient Japan, it has evolved into a popular decorative technique for pottery. Artists use sharp tools to carve out rough cuts, intricate patterns or images on leather-hard clay, often emphasizing the contrast between carved and uncarved surfaces.",
       image: "/library/kiriniku/kiriniku-2.jpg"
     },
     {
