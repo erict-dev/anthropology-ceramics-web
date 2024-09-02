@@ -8,7 +8,7 @@ export default function About() {
           <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 md:order-last md:h-full">
             <Image
               alt=""
-              src="/about-us.jpg"
+              src="/about-us-compressed.jpg"
               layout="fill"
               objectFit="cover"
               className="absolute inset-0"
@@ -36,7 +36,7 @@ export default function About() {
         <div className="relative h-64 mt-4 mb-4">
           <Image
             alt=""
-            src="/home-studio-2.jpg"
+            src="/home-studio-2-compressed.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"
@@ -46,7 +46,7 @@ export default function About() {
         <div className="relative h-64 mb-4">
           <Image
             alt=""
-            src="/home-studio-1.jpg"
+            src="/home-studio-1-compressed.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"
@@ -55,7 +55,7 @@ export default function About() {
         <div className="relative h-64 mb-4">
           <Image
             alt=""
-            src="/home-studio-3.jpg"
+            src="/home-studio-3-compressed.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"
@@ -64,7 +64,7 @@ export default function About() {
         <div className="relative h-64 mb-4">
           <Image
             alt=""
-            src="/home-studio-4.jpg"
+            src="/home-studio-4-compressed.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"

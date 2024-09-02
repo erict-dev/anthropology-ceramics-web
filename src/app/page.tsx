@@ -8,7 +8,7 @@ const Home = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="relative w-full max-w-[680px] aspect-[3/2]">
           <Image
-            src="/ac-logo-character.png"
+            src="/ac-logo-character-compressed.png"
             alt="Centered logo"
             layout="fill"
             objectFit="contain"
