@@ -15,7 +15,7 @@ const Home = () => {
             priority
           />
         </div>
-        <h2 className="text-3xl md:text-5xl leander">anthropology ceramics</h2>
+        <h2 className="text-3xl md:text-5xl leander">olomana studios</h2>
       </div>
     </div>
   );

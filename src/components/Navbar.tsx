@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-20 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
 
         <Link className="block leander text-2xl" href="/">
-          anthropology ceramics
+          olomana studios
         </Link>
 
         <div className="flex flex-1 items-center justify-end">

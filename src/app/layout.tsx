@@ -8,8 +8,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anthropology Ceramics",
-  description: "Welcome to Anthropology Ceramics, a Southern California art studio dedicated to bringing people and cultures together through the timeless art of pottery. Nestled in the heart of SoCal, our studio celebrates the ubiquitous feeling of human creative expression, fostering a community where creativity knows no bounds.",
+  title: "Olomana Studios",
+  description: "Welcome to Olomana Studios, a Southern California art studio dedicated to bringing people and cultures together through the timeless art of pottery. Nestled in the heart of SoCal, our studio celebrates the ubiquitous feeling of human creative expression, fostering a community where creativity knows no bounds.",
 };
 
 export default function RootLayout({
