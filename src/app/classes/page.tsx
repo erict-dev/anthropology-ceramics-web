@@ -29,7 +29,7 @@ export default function Classes() {
             </article>
           </a>
 
-
+          {/*
           <a href="https://olomanaceramics.classly.com/classes/pottery-group-class/4813e992-4e34-464e-9c38-a9cdb0581a32">
             <article
               className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
@@ -47,6 +47,8 @@ export default function Classes() {
               </div>
             </article>
           </a>
+
+          */}
         </div>
         <div className="mt-8 md:mt-16">
           <div className="max-w-3xl">
