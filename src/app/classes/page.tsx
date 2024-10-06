@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+OPENAI_API_KEY
 export default function Classes() {
   return (
     <section>
@@ -24,7 +24,7 @@ export default function Classes() {
                   Pottery Group Class
                 </h3>
 
-                <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Learn and create your own pottery with our group classes. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to meet new people and create unique, beautiful pieces that you can use at home."}</p>
+                <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Learn and create your own pottery with our group classes. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}</p>
               </div>
             </article>
           </a>
