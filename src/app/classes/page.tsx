@@ -28,9 +28,7 @@ export default function Classes() {
               </div>
             </article>
           </a>
-
-          {/*
-          <a href="https://olomanaceramics.classly.com/classes/pottery-group-class/4813e992-4e34-464e-9c38-a9cdb0581a32">
+          <a href="https://olomanaceramics.classly.com/classes/kids-and-families-pottery-class/cfce52aa-227f-485d-a9e6-5160503289e5?session_id=da36ca1d-3212-43b9-96cd-3e547bf46d82">
             <article
               className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
             >
@@ -41,14 +39,12 @@ export default function Classes() {
               />
 
               <div className="p-4 sm:p-6 bg-gray-900 h-full">
-                <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">Kids Pottery Class</h3>
+                <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">Kids and Families Pottery Class</h3>
 
-                <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Our Kids Group Classes are all about sparking creativity and joy. Your children will have a blast exploring hand-building pottery and ceramics. These fun and engaging sessions help kids appreciate the wonder of handmade art."}</p>
+                <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Kids love our pottery classes! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity and your kids will have a blast exploring hand-building pottery and ceramics. Parents also welcome to attend this class with their kids and makes for a wonderful family event."}</p>
               </div>
             </article>
           </a>
-
-          */}
         </div>
         <div className="mt-8 md:mt-16">
           <div className="max-w-3xl">
