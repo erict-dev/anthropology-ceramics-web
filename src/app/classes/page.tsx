@@ -8,8 +8,8 @@ export default function Classes() {
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">classes</h2>
           <p className="mt-4 text-black">Come join us for a class! We host group classes in our beautiful home backyard studio located in Quail Hill in Irvine, CA. If you have questions about our class or want to book a private class for your family, friend group or organization, feel free to email us at olomanastudios@gmail.com.</p>
         </div>
-        <div className="flex flex-row gap-x-4">
-          <a href="https://olomanaceramics.classly.com/classes/pottery-group-class/4813e992-4e34-464e-9c38-a9cdb0581a32">
+        <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
+          <a href="https://olomanaceramics.classly.com/classes">
             <article
               className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
             >
@@ -21,14 +21,14 @@ export default function Classes() {
 
               <div className="p-4 sm:p-6 bg-gray-900 h-full">
                 <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">
-                  Pottery Group Class
+                  Pottery Group Class (Adults)
                 </h3>
 
                 <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Learn and create your own pottery with our group classes. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}</p>
               </div>
             </article>
           </a>
-          <a href="https://olomanaceramics.classly.com/classes/kids-and-families-pottery-class/cfce52aa-227f-485d-a9e6-5160503289e5?session_id=da36ca1d-3212-43b9-96cd-3e547bf46d82">
+          <a href="https://olomanaceramics.classly.com/classes">
             <article
               className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
             >
