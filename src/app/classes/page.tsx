@@ -1,5 +1,5 @@
 import Image from 'next/image';
-OPENAI_API_KEY
+
 export default function Classes() {
   return (
     <section>
