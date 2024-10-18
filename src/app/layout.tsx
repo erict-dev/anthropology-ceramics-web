@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Olomana Studios",
   description: "Welcome to Olomana Studios, a Southern California art studio dedicated to bringing people and cultures together through the timeless art of pottery. Nestled in the heart of SoCal, our studio celebrates the ubiquitous feeling of human creative expression, fostering a community where creativity knows no bounds.",
+  alternates: {
+    canonical: 'https://olomanastudios.com'
+  }
 };
 
 export default function RootLayout({
