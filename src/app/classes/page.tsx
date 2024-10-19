@@ -55,7 +55,7 @@ export default function Classes() {
             <div className="relative h-64 rounded-lg overflow-hidden sm:h-80 lg:h-full">
               <Image
                 alt=""
-                src="/pottery.jpg"
+                src="/pottery.JPG"
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0"
