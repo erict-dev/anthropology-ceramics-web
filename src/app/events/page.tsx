@@ -25,7 +25,7 @@ export default function Events() {
           <div className="relative h-80 rounded-lg overflow-hidden">
             <Image
               alt="Participants at a pottery class"
-              src="https://placecats.com/300/200"
+              src="/event-1.jpg"
               layout="fill"
               objectFit="cover"
               className="absolute inset-0"
@@ -87,12 +87,12 @@ export default function Events() {
 
         {/* Event Gallery Section */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Event Gallery</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Gallery</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
                 alt="Finished pottery pieces"
-                src="https://placecats.com/300/200"
+                src="/event-3.jpg"
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0"
@@ -101,7 +101,7 @@ export default function Events() {
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
                 alt="Participants working on pottery"
-                src="https://placecats.com/300/200"
+                src="/event-2.jpg"
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0"
@@ -110,7 +110,7 @@ export default function Events() {
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
                 alt="Pottery pieces after firing"
-                src="https://placecats.com/300/200"
+                src="/event-4.jpg"
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0"
