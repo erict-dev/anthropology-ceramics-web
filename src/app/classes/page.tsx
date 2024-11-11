@@ -11,7 +11,7 @@ export default function Classes() {
         <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
           <a href="https://olomanaceramics.classly.com/classes">
             <article
-              className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
+              className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25"
             >
               <img
                 alt=""
@@ -20,17 +20,17 @@ export default function Classes() {
               />
 
               <div className="p-4 sm:p-6 bg-gray-900 h-full">
-                <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">
+                <h3 className="mt-0.5 text-lg text-gray-900 text-white">
                   Pottery Group Class (Adults)
                 </h3>
 
-                <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Learn and create your own pottery with our group classes. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}</p>
+                <p className="mt-2 text-sm/relaxed text-gray-500 text-gray-400">{"Learn and create your own pottery with our group classes. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}</p>
               </div>
             </article>
           </a>
           <a href="https://olomanaceramics.classly.com/classes">
             <article
-              className="overflow-hidden rounded-lg shadow transition hover:shadow-lg dark:shadow-gray-700/25"
+              className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25"
             >
               <img
                 alt=""
@@ -39,9 +39,9 @@ export default function Classes() {
               />
 
               <div className="p-4 sm:p-6 bg-gray-900 h-full">
-                <h3 className="mt-0.5 text-lg text-gray-900 dark:text-white">Kids and Families Pottery Class</h3>
+                <h3 className="mt-0.5 text-lg text-gray-900 text-white">Kids and Families Pottery Class</h3>
 
-                <p className="mt-2 text-sm/relaxed text-gray-500 dark:text-gray-400">{"Kids love our pottery classes! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity and your kids will have a blast exploring hand-building pottery and ceramics. Parents also welcome to attend this class with their kids and makes for a wonderful family event."}</p>
+                <p className="mt-2 text-sm/relaxed text-gray-500 text-gray-400">{"Kids love our pottery classes! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity and your kids will have a blast exploring hand-building pottery and ceramics. Parents also welcome to attend this class with their kids and makes for a wonderful family event."}</p>
               </div>
             </article>
           </a>
