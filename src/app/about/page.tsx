@@ -14,18 +14,18 @@ export default function About() {
               className="absolute inset-0"
             />
           </div>
-
           <div>
             <h2 className="leander text-black text-3xl font-bold sm:text-5xl">about us</h2>
 
-            <p className="mt-4 text-gray-700">{"Olomana Studios is a ceramics studio founded by Christina and Eric. Together, they are dedicated to creating a space that celebrates the timeless art of pottery and the joy of creative expression."}
+            <p className="mt-4 text-gray-700">
+              {"Olomana Studios is a ceramics studio founded by Christina Jin and her partner, Eric, in Irvine, CA. Together, they are dedicated to creating a space that celebrates the timeless art of pottery and the joy of creative expression."}
             </p>
             <p className="mt-4 text-gray-700">
-              {"Welcome to Olomana Studios, a serene ceramics art studio nestled in the heart of sunny Southern California. Founded by Christina and Eric, a dynamic couple who left their corporate careers behind to pursue their passion for pottery, Olomana Studios is a haven for creativity and tranquility. Christina brings a rich background in business consulting and finance. Her journey into the world of ceramics took her from Laguna Beach to the revered pottery hubs of Mashiko and Shigaraki in Japan, and Jingdezhen in China, where she honed her skills under the tutelage of master artisans."}
+              {"Welcome to Olomana Studios, a serene ceramics art studio nestled in the heart of sunny Southern California. Founded by Christina and Eric, Olomana Studios is a haven where art, nature, and tranquility converge. Christina's journey into ceramics has taken her from Laguna Beach to the pottery villages of Mashiko and Shigaraki in Japan, and Jingdezhen in China, where she apprenticed under master ceramicists Hozan Tanii, Tomoko Yamato, and Changcai Zhang. She draws inspiration from her time living in Japan’s mountains, crafting functional pieces that embody simplicity and interconnectedness."}
             </p>
-            <p className="mt-4 text-gray-700">{"Eric combines his expertise in tech and design with a deep appreciation for the tangible and the tactile. Having worked for tech giants Eric realized the importance of grounding ourselves in the physical world, away from the constant digital noise. He found his passion in ceramics after being inspired by Christina. Together, they work to create a sanctuary where art and nature converge, offering a moment of peace and reflection in our hectic lives."}
+            <p className="mt-4 text-gray-700">
+              {"Eric combines his expertise in tech and design with a deep appreciation for the tangible and the tactile. Having worked for tech giants Eric realized the importance of grounding ourselves in the physical world, away from the constant digital noise. He found his passion in ceramics after being inspired by Christina. Together, they work to create a sanctuary where art and nature converge, offering a moment of peace and reflection in our hectic lives."}
             </p>
-
           </div>
         </div>
 
