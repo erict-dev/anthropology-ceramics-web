@@ -5,8 +5,8 @@ export default function Classes() {
     <section>
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="mb-8">
-          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">classes</h2>
-          <p className="mt-4 text-black">Come join us for a class! We host group classes in our beautiful home backyard studio located in Quail Hill in Irvine, CA. If you have questions about our class or want to book a private class for your family, friend group or organization, feel free to email us at olomanastudios@gmail.com.</p>
+          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">pottery classes</h2>
+          <p className="mt-4 text-black">Come join us for a pottery class! We host group pottery classes in our beautiful home backyard studio located in Quail Hill in Irvine, CA. If you have questions about our class or want to book a private class for your family, friend group or organization, feel free to email us at olomanastudios@gmail.com.</p>
         </div>
         <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
           <a href="https://olomanaceramics.classly.com/classes">
