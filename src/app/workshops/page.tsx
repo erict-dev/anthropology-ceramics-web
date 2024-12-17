@@ -85,8 +85,8 @@ export default function Workshops() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src={`/library/ikebana/ikebana-vase.jpg`}
-                alt={`Ikebana instructor guiding participants`}
+                src={`/library/ikebana/ikebana-vase.JPG`}
+                alt={`Circular ikebana vase`}
                 width={400}
                 height={600}
                 className="object-cover h-full transition duration-500 hover:scale-105"
