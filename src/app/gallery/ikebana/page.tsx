@@ -88,10 +88,10 @@ export default function Ikebana() {
           {"There are many schools and styles of Ikebana, each with its unique traditions and techniques. Some of the most famous include:"}
         </p>
         <ul className="list-disc pl-8 mt-4">
-          <li><strong>Rikka</strong> - Represents the magnificence of nature; it's a complex style that often symbolizes mountains and waterfalls.</li>
-          <li><strong>Shoka</strong> - Seeks to express the life forces of plants; its arrangements are usually more subdued and focus on the vitality of each branch and flower.</li>
-          <li><strong>Moribana</strong> - Known for its "piled-up flowers" style, Moribana uses a shallow vessel to arrange cut flowers, giving a full and lush appearance.</li>
-          <li><strong>Nageire</strong> - A style for tall vases and involves "thrown-in" arrangements that are more informal and spontaneous.</li>
+          <li><strong>Rikka</strong>{"- Represents the magnificence of nature; it's a complex style that often symbolizes mountains and waterfalls."}</li>
+          <li><strong>Shoka</strong>{"- Seeks to express the life forces of plants; its arrangements are usually more subdued and focus on the vitality of each branch and flower."}</li>
+          <li><strong>Moribana</strong>{"- Known for its 'piled-up flowers' style, Moribana uses a shallow vessel to arrange cut flowers, giving a full and lush appearance."}</li>
+          <li><strong>Nageire</strong>{"- A style for tall vases and involves 'thrown-in' arrangements that are more informal and spontaneous."}</li>
         </ul>
 
         <h3 className="mt-8 text-2xl font-bold text-gray-900">Essential Elements of Ikebana</h3>

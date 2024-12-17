@@ -10,7 +10,7 @@ export default function Workshops() {
           <header>
             <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Traditional Matcha Bowl Workshop</h2>
             <p className="mt-4 text-black">
-              Join our <strong>Traditional Matcha Bowl Workshop</strong> in Irvine, CA, where you'll create your own handmade matcha bowl (chawan). This hands-on pottery class introduces the ancient Japanese art of forming vessels specifically for tea ceremonies. Under expert guidance, you’ll shape, texture, and hand-build your matcha bowl to match your creative vision. Perfect for beginners and enthusiasts alike, this workshop provides a meditative, enjoyable experience with a meaningful keepsake to take home.
+              Join our <strong>Traditional Matcha Bowl Workshop</strong> in Irvine, CA, where you will create your own handmade matcha bowl (chawan). This hands-on pottery class introduces the ancient Japanese art of forming vessels specifically for tea ceremonies. Under expert guidance, you will shape, texture, and hand-build your matcha bowl to match your creative vision. Perfect for beginners and enthusiasts alike, this workshop provides a meditative, enjoyable experience with a meaningful keepsake to take home.
             </p>
             <p className="mt-2 text-gray-700">
               <strong>Highlights:</strong> Learn traditional hand-building techniques, discover the cultural significance of matcha bowls, and enjoy a creative, calming environment.
@@ -56,7 +56,7 @@ export default function Workshops() {
           <header>
             <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Ikebana Flower Arrangement Workshop</h2>
             <p className="mt-4 text-black">
-              Experience the beauty and mindfulness of <strong>Ikebana</strong>, the traditional Japanese art of flower arrangement, in our workshop in Irvine, CA. More than arranging flowers, Ikebana is about harmony, balance, and appreciating nature’s simplicity. Guided by experienced instructors, you’ll learn how to create stunning arrangements using seasonal blooms, emphasizing minimalism and the connection between nature and humanity.
+              Experience the beauty and mindfulness of <strong>Ikebana</strong>, the traditional Japanese art of flower arrangement, in our workshop in Irvine, CA. More than arranging flowers, Ikebana is about harmony, balance, and appreciating nature’s simplicity. Guided by experienced instructors, you will learn how to create stunning arrangements using seasonal blooms, emphasizing minimalism and the connection between nature and humanity.
             </p>
             <p className="mt-2 text-gray-700">
               <strong>Highlights:</strong> Discover the philosophy behind Ikebana, master basic design principles, and leave with an elegant floral creation to display in your home.
