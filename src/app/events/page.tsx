@@ -8,7 +8,7 @@ export default function Events() {
         <div className="text-center mb-12">
           <h2 className="leander text-4xl font-bold text-gray-900 sm:text-5xl">Pottery Handbuilding Events</h2>
           <p className="mt-4 text-lg text-gray-600">
-            A fun, creative experience for your group, wherever you are. Perfect for events like corporate retreats, birthdays, or family gatherings.
+            A fun, creative experience for your group, perfect for events like corporate retreats, birthdays, or family gatherings in Irvine, CA or the greater Orange County area.
           </p>
         </div>
 

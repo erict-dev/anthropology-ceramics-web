@@ -53,13 +53,13 @@ export default function Navbar() {
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/about" onClick={closeMobileMenu}>about</Link>
               </li>
               <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/library" onClick={closeMobileMenu}>library</Link>
-              </li>
-              <li>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/gallery" onClick={closeMobileMenu}>gallery</Link>
               </li>
               <li>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/classes" onClick={closeMobileMenu}>classes</Link>
+              </li>
+              <li>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/workshops" onClick={closeMobileMenu}>workshops</Link>
               </li>
               <li>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/events" onClick={closeMobileMenu}>events</Link>
