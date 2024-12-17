@@ -203,7 +203,7 @@ export default function Gallery() {
           <ul className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {library.map((style, index) => (
               <li key={index}>
-                <Link href={`/gallery/${style.name.toLowerCase()}`} className="rounded-lg group block overflow-hidden">
+                <Link href={`/library/${style.name.toLowerCase()}`} className="rounded-lg group block overflow-hidden">
                   <Image
                     src={style.image}
                     alt={`${style.name} pottery style`}
