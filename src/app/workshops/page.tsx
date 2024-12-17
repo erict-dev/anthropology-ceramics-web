@@ -8,9 +8,9 @@ export default function Workshops() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header>
-            <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Traditional Matcha Bowl Workshop</h2>
+            <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Matcha Bowl Pottery Workshop</h2>
             <p className="mt-4 text-black">
-              Join our <strong>Traditional Matcha Bowl Workshop</strong> in Irvine, CA, where you will create your own handmade matcha bowl (chawan). This hands-on pottery class introduces the ancient Japanese art of forming vessels specifically for tea ceremonies. Under expert guidance, you will shape, texture, and hand-build your matcha bowl to match your creative vision. Perfect for beginners and enthusiasts alike, this workshop provides a meditative, enjoyable experience with a meaningful keepsake to take home.
+              Join our <strong>Traditional Matcha Bowl Pottery Workshop</strong> in Irvine, CA, where you will create your own handmade ceramic matcha bowl (chawan). This hands-on pottery class introduces the ancient Japanese art of forming vessels specifically for tea ceremonies. Under expert guidance, you will shape, texture, and hand-build your matcha bowl to match your creative vision. Perfect for beginners and enthusiasts alike, this workshop provides a meditative, enjoyable experience with a meaningful keepsake to take home.
             </p>
             <p className="mt-2 text-gray-700">
               <strong>Highlights:</strong> Learn traditional hand-building techniques, discover the cultural significance of matcha bowls, and enjoy a creative, calming environment.
