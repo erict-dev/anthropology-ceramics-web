@@ -18,14 +18,14 @@ export default function Workshops() {
             <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 2.5 hours</p>
           </header>
 
-          <div className="h-[320px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+          <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden">
               <Image
                 src={`/library/matcha-bowls/matcha-workshop-1.jpg`}
                 alt={`Handmade matcha bowl in progress`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
@@ -34,7 +34,7 @@ export default function Workshops() {
                 alt={`Completed chawan matcha bowl`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="hidden sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
@@ -43,7 +43,7 @@ export default function Workshops() {
                 alt={`Participants shaping their matcha bowls`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="hidden md:block object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
           </div>
@@ -64,14 +64,14 @@ export default function Workshops() {
             <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 2 hours</p>
           </header>
 
-          <div className="h-[320px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+          <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden">
               <Image
                 src={`/library/ikebana/ikebana-main.jpg`}
                 alt={`A minimalist Ikebana arrangement`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
@@ -80,7 +80,7 @@ export default function Workshops() {
                 alt={`Elegant floral design in an Ikebana workshop`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="hidden sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
@@ -89,7 +89,7 @@ export default function Workshops() {
                 alt={`Circular ikebana vase`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="hidden md:block object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
           </div>

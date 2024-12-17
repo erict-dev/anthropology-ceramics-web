@@ -68,14 +68,14 @@ export default function Classes() {
           <p className="mt-4 text-gray-600 text-lg w-full">
             Explore our <strong>Pottery Workshops</strong> in Irvine, CA where we teach you the traditional techniques behind making specific pottery pieces like <em>matcha bowls</em>, <em>ikebana vases</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery and make your own unique pottery piece.
           </p>
-<div className="h-[320px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+          <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden">
               <Image
                 src={`/library/matcha-bowls/matcha-workshop-1.jpg`}
                 alt={`Handmade matcha bowl in progress`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
@@ -84,7 +84,7 @@ export default function Classes() {
                 alt={`Completed chawan matcha bowl`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="hidden sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
@@ -93,7 +93,7 @@ export default function Classes() {
                 alt={`Participants shaping their matcha bowls`}
                 width={400}
                 height={600}
-                className="object-cover h-full transition duration-500 hover:scale-105"
+                className="hidden md:block object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
           </div>
