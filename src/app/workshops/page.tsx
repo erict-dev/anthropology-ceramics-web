@@ -13,9 +13,15 @@ export default function Workshops() {
               Join our <strong>Traditional Matcha Bowl Pottery Workshop</strong> in Irvine, CA, where you will create your own handmade ceramic matcha bowl (chawan). This hands-on pottery class introduces the ancient Japanese art of forming vessels specifically for tea ceremonies. Under expert guidance, you will shape, texture, and hand-build your matcha bowl to match your creative vision. Perfect for beginners and enthusiasts alike, this workshop provides a meditative, enjoyable experience with a meaningful keepsake to take home.
             </p>
             <p className="mt-2 text-gray-700">
-              <strong>Highlights:</strong> Learn traditional hand-building techniques, discover the cultural significance of matcha bowls, and enjoy a creative, calming environment.
+              <strong>Highlights:</strong> Learn traditional hand-building techniques, share a bowl of matcha together, discover the cultural significance of matcha bowls, and enjoy a creative, calming environment.
             </p>
-            <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 2.5 hours</p>
+            <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 2 hours</p>
+          <a
+            href="https://olomanaceramics.classly.com/classes/matcha-bowl-handbuilding-workshop/3881bf61-5c95-424a-bb49-879587e08135?session_id=0be2a33c-0523-411a-82a2-c0c9240ee4f4"
+            className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"
+          >
+            Book online
+          </a>
           </header>
 
           <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
