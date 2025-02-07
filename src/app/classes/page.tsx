@@ -3,6 +3,21 @@ import Image from 'next/image';
 export default function Classes() {
   return (
     <>
+      {/* Valentine's Day Candlelit Pottery Event Banner */}
+      <section className="bg-red-100 py-6 text-center">
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-red-700 text-2xl font-bold sm:text-3xl">💖 Valentine's Day Candlelit Pottery Event 💖</h2>
+          <p className="mt-2 text-gray-700 text-lg">
+            Join us for a romantic candlelit pottery class on February 14th from 6:30pm-8:00pm! Create a special keepsake together in our serene backyard studio.
+          </p>
+          <a
+            href="https://olomanaceramics.classly.com/event/valentines-day-candlelit-pottery/340ad650-80fe-4315-ad28-5fec24a4752f"
+            className="mt-4 inline-block rounded-lg bg-red-600 px-6 py-3 text-white text-lg font-medium transition duration-300 hover:bg-red-700"
+          >
+            Reserve Your Spot Now
+          </a>
+        </div>
+      </section>
       {/* Pottery Classes Section */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
