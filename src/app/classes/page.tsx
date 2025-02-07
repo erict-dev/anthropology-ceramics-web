@@ -6,7 +6,7 @@ export default function Classes() {
       {/* Valentine's Day Candlelit Pottery Event Banner */}
       <section className="bg-red-100 py-6 text-center">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-red-700 text-2xl font-bold sm:text-3xl">💖 Valentine's Day Candlelit Pottery Event 💖</h2>
+          <h2 className="text-red-700 text-2xl font-bold sm:text-3xl">{"💖 Valentine's Day Candlelit Pottery Event 💖"}</h2>
           <p className="mt-2 text-gray-700 text-lg">
             Join us for a romantic candlelit pottery class on February 14th from 6:30pm-8:00pm! Create a special keepsake together in our serene backyard studio.
           </p>
