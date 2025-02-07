@@ -148,7 +148,7 @@ export default function Classes() {
               />
             </div>
             <div className="flex flex-col justify-center">
-              <h3 className="text-xl font-semibold text-gray-900">What You'll Learn:</h3>
+              <h3 className="text-xl font-semibold text-gray-900">{"What You'll Learn:"}</h3>
               <ul className="mt-2 space-y-2 text-gray-700">
                 <li>✅ Centering and shaping clay</li>
                 <li>✅ Pulling walls and forming pottery pieces</li>
