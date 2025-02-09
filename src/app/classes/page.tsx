@@ -8,7 +8,7 @@ export default function Classes() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-red-700 text-2xl font-bold sm:text-3xl">{"💖 Valentine's Day Candlelit Pottery Event 💖"}</h2>
           <p className="mt-2 text-gray-700 text-lg">
-            Join us for a romantic candlelit pottery class on February 14th & 15th from 6:00pm-7:30pm! Create a special keepsake together in our serene backyard studio.
+            Join us for a romantic candlelit pottery class on February 14th from 6:00pm-7:30pm! Create a special keepsake together in our serene backyard studio.
           </p>
           <a
             href="https://olomanaceramics.classly.com/event/valentines-day-candlelit-pottery/340ad650-80fe-4315-ad28-5fec24a4752f"
