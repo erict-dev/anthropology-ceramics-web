@@ -24,7 +24,7 @@ export default function Classes() {
           <div className="mb-8">
             <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Pottery Classes</h2>
             <p className="mt-4 text-gray-600 text-lg">
-              Come join us for a pottery class! We host group pottery classes in our beautiful backyard studio located in Irvine, CA. If you have questions about our class or want to book a private class for your family, friend group, or organization, feel free to email us at olomanastudios@gmail.com.
+              Come join us for a pottery class in Irvine! We host group pottery classes in our beautiful backyard studio. If you have questions about our class or want to book a private class for your family, friend group, or organization, feel free to email us at olomanastudios@gmail.com.
             </p>
           </div>
           <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
@@ -38,11 +38,11 @@ export default function Classes() {
 
                 <div className="p-4 sm:p-6 bg-gray-900 h-full">
                   <h3 className="mt-0.5 text-lg text-gray-900 text-white">
-                    Pottery Group Class (Adults)
+                    Pottery Group Class - Adults
                   </h3>
 
                   <p className="mt-2 text-sm/relaxed text-gray-300">
-                    {"Learn and create your own pottery with our group classes. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}
+                    {"Learn and create your own pottery with our pottery group classes for adults in Irvine. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}
                   </p>
                 </div>
               </article>
@@ -59,7 +59,7 @@ export default function Classes() {
                   <h3 className="mt-0.5 text-lg text-gray-900 text-white">Kids and Families Pottery Class</h3>
 
                   <p className="mt-2 text-sm/relaxed text-gray-300">
-                    {"Kids love our pottery classes! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity, and your kids will have a blast exploring hand-building pottery and ceramics. Parents also welcome to attend this class with their kids and makes for a wonderful family event."}
+                    {"Kids love our pottery group classes in Irvine! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity, and your kids will have a blast exploring hand-building pottery and ceramics. Parents also welcome to attend this class with their kids and makes for a wonderful family event."}
                   </p>
                 </div>
               </article>

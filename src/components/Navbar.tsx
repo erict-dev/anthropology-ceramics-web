@@ -6,28 +6,27 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState('');
   const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const closeMobileMenu = () => {
+  const handleNavItemClick = () => {
     setIsMobileMenuOpen(false);
+    setHoveredItem('')
   };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsMobileMenuOpen(false);
+        setHoveredItem('')
       }
     };
 
-    if (isMobileMenuOpen) {
-      document.addEventListener('mouseup', handleClickOutside);
-    } else {
-      document.removeEventListener('mouseup', handleClickOutside);
-    }
+    document.addEventListener('mouseup', handleClickOutside);
 
     return () => {
       document.removeEventListener('mouseup', handleClickOutside);
@@ -49,20 +48,34 @@ export default function Navbar() {
             className={`absolute bg-white top-0 left-0 right-0 z-20 p-5 md:static md:bg-transparent md:p-0 md:block ${isMobileMenuOpen ? "block bg-opacity-[0.98]" : "hidden"}`}
           >
             <ul className="leander flex flex-col md:flex-row md:items-center gap-4 md:gap-6 text-xl">
-              <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/about" onClick={closeMobileMenu}>about</Link>
+              <li onMouseEnter={() => setHoveredItem('about')}>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/about" onClick={handleNavItemClick}>about</Link>
               </li>
-              <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/gallery" onClick={closeMobileMenu}>gallery</Link>
+              <li onMouseEnter={() => setHoveredItem('gallery')}>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/gallery" onClick={handleNavItemClick}>gallery</Link>
               </li>
-              <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/classes" onClick={closeMobileMenu}>classes</Link>
+              <li className="relative" onMouseEnter={() => setHoveredItem('classes')}>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/classes" onClick={handleNavItemClick}>classes</Link>
+                <ul
+                  className={`left-0 mt-2 w-48 bg-white md:shadow-md rounded-md md:border ${hoveredItem === 'classes' ? 'md:block' : 'md:hidden'} md:absolute md:z-30`}
+                >
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/classes/6-week-pottery-course-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      6 week course
+                    </Link>
+                  </li>
+                </ul>
+
               </li>
-              <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/workshops" onClick={closeMobileMenu}>workshops</Link>
+              <li onMouseEnter={() => setHoveredItem('workshops')}>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/workshops" onClick={handleNavItemClick}>workshops</Link>
               </li>
-              <li>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/events" onClick={closeMobileMenu}>events</Link>
+              <li onMouseEnter={() => setHoveredItem('events')}>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/events" onClick={handleNavItemClick}>events</Link>
               </li>
             </ul>
           </nav>
