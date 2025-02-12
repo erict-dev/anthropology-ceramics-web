@@ -53,8 +53,17 @@ export default function PotteryCourse() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900">Course Schedule</h2>
           <p className="mt-4 text-lg text-gray-700">
-            Classes run weekly for 6 weeks and are held in our home garden studio in Irvine. Each session includes one hour of guided instruction and one hour of self-practice to deepen your learning and creativity. Spots are limited to 4 students per cycle.
+            Classes run weekly for 6 weeks and are held in our beautiful home garden studio in Irvine. Each session includes one hour of guided instruction and one hour of self-practice to deepen your learning and creativity. Spots are limited to 4 students per cycle.
           </p>
+          <div className="relative h-64 mt-4 mb-4">
+            <Image
+              alt=""
+              src="/home-studio-2-compressed.JPG"
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0 rounded-lg"
+            />
+          </div>
           <ul className="mt-6 space-y-2 text-lg text-gray-700">
             <li><strong>Week 1:</strong> Introduction to the wheel – wedging, centering, and basic forms</li>
             <li><strong>Week 2:</strong> Pulling walls and shaping cylinders</li>
