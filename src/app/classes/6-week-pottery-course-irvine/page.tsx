@@ -10,7 +10,7 @@ export default function PotteryCourse() {
             6-Week Pottery Course in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
-            Unlock the art of pottery wheel throwing in this immersive 6-week pottery course, designed for beginners and intermediate students eager to refine their skills. No experience necessary—just a passion to learn and create.
+            Unlock the art of pottery wheel throwing in this immersive 6-week pottery course in Irvine, designed for beginning students eager to improve their skills in a sequential course. No experience necessary—just a passion to learn and create.
           </p>
           <a
             href="https://olomanaceramics.classly.com/courses"
@@ -26,7 +26,7 @@ export default function PotteryCourse() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="overflow-hidden rounded-lg">
             <Image
-              src="/pottery-course.jpg"
+              src="/throwing-pic.jpg"
               alt="Pottery class in Irvine"
               width={600}
               height={400}
@@ -34,16 +34,14 @@ export default function PotteryCourse() {
             />
           </div>
           <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-bold text-gray-900">What You'll Learn</h2>
+            <h2 className="text-3xl font-bold text-gray-900">{"What You'll Learn"}</h2>
             <p className="mt-4 text-gray-700 text-lg">
               This course is perfect for those who have taken an introductory pottery class and want to dive deeper without the commitment of a year-long program. We bridge the gap between a casual one-time class and a formal pottery education, providing structured lessons and dedicated practice time each week.
             </p>
             <p className="mt-4 text-gray-700 text-lg">
               Students will develop a strong foundation in wheel throwing, refining their skills in centering clay, pulling walls, shaping forms, and creating functional pieces. Techniques will include trimming, adding handles, surface decoration, and experimenting with various shapes and forms. The course also covers essential glazing fundamentals, finishing techniques, and the firing process. With a balance of guided instruction and self-practice, students will gain confidence, consistency, and a deeper understanding of the ceramic arts.
             </p>
-            <p className="mt-4 text-lg text-gray-700">
-              With small class sizes (limited to just 4 students per cycle) and expert guidance, you'll refine your skills, gain confidence on the wheel, and build a collection of handmade pottery to take home. Whether you're frustrated by one-off classes that don't offer enough time to develop your technique or looking for a creative escape, this course is designed to give you the in-depth learning experience you need.
-            </p>
+            <p className="mt-4 text-lg text-gray-700">{"With small class sizes (limited to just 4 students per cycle) and expert guidance, you'll refine your skills, gain confidence on the wheel, and build a collection of handmade pottery to take home. Whether you're frustrated by one-off classes that don't offer enough time to develop your technique or looking for a creative escape, this course is designed to give you the in-depth learning experience you need."}</p>
           </div>
         </div>
       </section>
