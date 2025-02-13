@@ -6,7 +6,7 @@ export default function PotteryCourse() {
       {/* Hero Section */}
       <section className="bg-gray-100 py-12 text-center">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h1 className="leander text-black text-4xl font-bold sm:text-6xl">
+          <h1 className="leander text-black text-3xl font-bold sm:text-5xl">
             6-Week Pottery Course in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
