@@ -69,7 +69,7 @@ export default function MatchaBowlWorkshop() {
           </div>
           <div className="overflow-hidden rounded-lg">
             <Image
-              src="/home-studio-2-compressed.jpg"
+              src="/home-studio-2-compressed.JPG"
               alt="Adults enjoying pottery class in Irvine"
               width={600}
               height={400}
