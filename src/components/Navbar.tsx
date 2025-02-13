@@ -62,6 +62,24 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/classes/adult-pottery-group-class-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      adults
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/classes/kids-and-family-pottery-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      kids & family
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       href={'/classes/6-week-pottery-course-irvine'}
                       onClick={handleNavItemClick}
                     >
@@ -71,8 +89,39 @@ export default function Navbar() {
                 </ul>
 
               </li>
-              <li onMouseEnter={() => setHoveredItem('workshops')}>
+              <li className="relative" onMouseEnter={() => setHoveredItem('workshops')}>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/workshops" onClick={handleNavItemClick}>workshops</Link>
+                <ul
+                  className={`left-0 mt-2 w-48 bg-white md:shadow-md rounded-md md:border ${hoveredItem === 'workshops' ? 'md:block' : 'md:hidden'} md:absolute md:z-30`}
+                >
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/workshops/matcha-bowl-pottery-workshop-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      matcha bowl
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/workshops/ikebana-flower-arrangement-workshop-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      ikebana
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/workshops/teapot-pottery-workshop-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      teapot
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li onMouseEnter={() => setHoveredItem('events')}>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/events" onClick={handleNavItemClick}>events</Link>
