@@ -7,7 +7,7 @@ export default function Classes() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <div className="mb-8">
-            <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Pottery Classes</h2>
+            <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Irvine Pottery Classes</h2>
             <p className="mt-4 text-gray-600 text-lg">
               Come join us for a pottery class in Irvine! We host group pottery classes in our beautiful backyard studio. If you have questions about our class or want to book a private class for your family, friend group, or organization, feel free to email us at olomanastudios@gmail.com.
             </p>
