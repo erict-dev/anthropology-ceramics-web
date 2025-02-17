@@ -13,7 +13,7 @@ export default function Classes() {
             </p>
           </div>
           <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
-            <a href="https://olomanaceramics.classly.com/classes">
+            <a href="https://olomanaceramics.classly.com/classes/pottery-group-class-adults/906bcd33-2b1c-47eb-afbb-f880815feaff">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
@@ -29,14 +29,15 @@ export default function Classes() {
                   <p className="mt-2 text-sm/relaxed text-gray-300">
                     {"Learn and create your own pottery with our pottery group classes for adults in Irvine. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}
                   </p>
+                  <p className="pt-2 text-white underline">Book class</p>
                 </div>
               </article>
             </a>
-            <a href="https://olomanaceramics.classly.com/classes">
+            <a href="https://olomanaceramics.classly.com/classes/kids-and-families-pottery-class/c72431a8-4eca-40d3-b946-de4011c9ccb9">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
-                  src="kids-class.JPG"
+                  src="/kids-class.JPG"
                   className="h-64 w-full object-cover"
                 />
 
@@ -46,6 +47,7 @@ export default function Classes() {
                   <p className="mt-2 text-sm/relaxed text-gray-300">
                     {"Kids love our pottery group classes in Irvine! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity, and your kids will have a blast exploring hand-building pottery and ceramics. Parents also welcome to attend this class with their kids and makes for a wonderful family event."}
                   </p>
+                  <p className="pt-2 text-white underline">Book class</p>
                 </div>
               </article>
             </a>
