@@ -64,7 +64,7 @@ export default function MatchaBowlWorkshop() {
               The class begins with a calming tea ritual, where we prepare and share a bowl of organic matcha together. You will then be guided through the process of hand-building and decorating your own traditional matcha bowl using time-honored Japanese pottery techniques. Learn how to shape the clay, carve the bottom to form a foot, refine the spout, and use kurinuki (carving) to create intricate designs.
             </p>
             <p className="mt-4 text-gray-700">
-              After completing your bowl, you will select one of our many food-safe glazes to customize your piece. We will fire it for you, and in just 2-3 weeks, you can pick up your finished matcha bowl, ready to elevate your tea-drinking experience.
+              After completing your bowl, we will fire it for you, and in just 2-3 weeks, you can pick up your finished matcha bowl, ready to elevate your tea-drinking experience.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg">
