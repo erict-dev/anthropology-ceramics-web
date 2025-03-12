@@ -27,7 +27,7 @@ export default function Classes() {
                   </h3>
 
                   <p className="mt-2 text-sm/relaxed text-gray-300">
-                    {"Learn and create your own pottery with our pottery group classes for adults in Irvine. Enjoy a beautiful hour throwing and glazing your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}
+                    {"Learn and create your own pottery with our pottery group classes for adults in Irvine. Enjoy a beautiful hour throwing and handbuilding your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}
                   </p>
                   <p className="pt-2 text-white underline">Book class</p>
                 </div>

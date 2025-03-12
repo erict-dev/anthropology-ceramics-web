@@ -15,7 +15,7 @@ export default function Workshops() {
             <p className="mt-2 text-gray-700">
               <strong>Highlights:</strong> Learn traditional hand-building techniques, share a bowl of matcha together, discover the cultural significance of matcha bowls, and enjoy a creative, calming environment.
             </p>
-            <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 2 hours</p>
+            <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 2.5 hours</p>
           <a
             href="https://olomanaceramics.classly.com/classes/matcha-bowl-handbuilding-workshop/3881bf61-5c95-424a-bb49-879587e08135?session_id=93cc7ca9-d079-41e9-8932-4f7709659433"
             className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"

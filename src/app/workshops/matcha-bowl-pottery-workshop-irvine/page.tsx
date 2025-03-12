@@ -85,7 +85,7 @@ export default function MatchaBowlWorkshop() {
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>Location:</strong> Our home studio in Irvine (Exact address provided upon registration).</li>
-            <li><strong>Class Duration:</strong> 2 hours.</li>
+            <li><strong>Class Duration:</strong> 2.5 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
             <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 2-3 weeks. We use all lead-free, food-safe glazes.</li>
           </ul>
