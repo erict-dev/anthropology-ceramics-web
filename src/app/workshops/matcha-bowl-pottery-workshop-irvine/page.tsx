@@ -22,11 +22,11 @@ export default function MatchaBowlWorkshop() {
           </div>
           </header>
 
-          <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+          <div className="h-[600px] md:h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/library/matcha-bowls/matcha-workshop-1.jpg"
-                alt="Handmade matcha bowl in progress"
+                src={`/irvine-matcha-bowl-class/matcha-bowl-3.jpg`}
+                alt={`Handmade matcha bowl in progress`}
                 width={400}
                 height={600}
                 className="object-cover w-full h-full transition duration-500 hover:scale-105"
@@ -34,20 +34,20 @@ export default function MatchaBowlWorkshop() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/library/matcha-bowls/matcha-workshop-2.jpg"
-                alt="Completed chawan matcha bowl"
+                src={`/irvine-matcha-bowl-class/matcha-bowl-7.jpg`}
+                alt={`Completed chawan matcha bowl`}
                 width={400}
                 height={600}
-                className="hidden sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
+                className="sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/library/matcha-bowls/matcha-workshop-3.jpg"
-                alt="Participants shaping their matcha bowls"
+                src={`/irvine-matcha-bowl-class/matcha-bowl-1.jpg`}
+                alt={`Participants shaping their matcha bowls`}
                 width={400}
                 height={600}
-                className="hidden md:block object-cover w-full h-full transition duration-500 hover:scale-105"
+                className="md:block object-cover w-full h-full transition duration-500 hover:scale-105"
               />
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function MatchaBowlWorkshop() {
             <h2 className="text-3xl font-bold text-gray-900">A Hands-On Matcha Bowl Making Experience</h2>
             <p className="mt-4 text-gray-700">{"Pottery is more than just an art form, it is a meditative and grounding experience. In today’s fast-paced world, making something with your hands is a refreshing escape from screens and mass-produced goods. In this workshop, you’ll experience the beauty of shaping raw clay into a meaningful, everyday object while immersing yourself in the craftsmanship of Japanese ceramics."}</p>
             <p className="mt-4 text-gray-700">
-              The class begins with a calming tea ritual, where we prepare and share a bowl of organic matcha together. You will then be guided through the process of hand-building and decorating your own traditional matcha bowl using time-honored Japanese pottery techniques. Learn how to shape the clay, carve the bottom to form a foot, refine the spout, and use kurinuki (carving) to create intricate designs.
+              In this class you will be guided through the process of hand-building your own traditional matcha bowl using time-honored Japanese pottery techniques. In the middle of class we will also host a calming tea ritual while we wait for our bowls to dry enough for texturing. Learn how to shape the clay, carve the bottom to form a foot and use kurinuki carving techniques to create a natural intricate design.
             </p>
             <p className="mt-4 text-gray-700">
               After completing your bowl, we will fire it for you, and in just 2-3 weeks, you can pick up your finished matcha bowl, ready to elevate your tea-drinking experience.

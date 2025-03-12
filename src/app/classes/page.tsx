@@ -17,7 +17,7 @@ export default function Classes() {
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
-                  src="/adult-classes.jpg"
+                  src="/adults-group-class/adult-group-class.jpg"
                   className="h-64 w-full object-cover"
                 />
 
@@ -37,7 +37,7 @@ export default function Classes() {
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
-                  src="/kids-class.JPG"
+                  src="/kids-pottery.jpg"
                   className="h-64 w-full object-cover"
                 />
 
@@ -73,7 +73,7 @@ export default function Classes() {
           <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src={`/library/matcha-bowls/matcha-workshop-1.jpg`}
+                src={`/irvine-matcha-bowl-class/matcha-bowl-7.jpg`}
                 alt={`Handmade matcha bowl in progress`}
                 width={400}
                 height={600}
