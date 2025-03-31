@@ -61,7 +61,7 @@ export default function MatchaBowlWorkshop() {
             <h2 className="text-3xl font-bold text-gray-900">A Hands-On Matcha Bowl Making Experience</h2>
             <p className="mt-4 text-gray-700">{"Pottery is more than just an art form, it is a meditative and grounding experience. In today’s fast-paced world, making something with your hands is a refreshing escape from screens and mass-produced goods. In this workshop, you’ll experience the beauty of shaping raw clay into a meaningful, everyday object while immersing yourself in the craftsmanship of Japanese ceramics."}</p>
             <p className="mt-4 text-gray-700">
-              In this class you will be guided through the process of hand-building your own traditional matcha bowl using time-honored Japanese pottery techniques. In the middle of class we will also host a calming tea ritual while we wait for our bowls to dry enough for texturing. Learn how to shape the clay, carve the bottom to form a foot and use kurinuki carving techniques to create a natural intricate design.
+              In this class you will be guided through the process of hand-building your own traditional matcha bowl using time-honored Japanese pottery techniques, no prior experience necessary. In the middle of class we will also host a calming tea ritual while we wait for our bowls to dry enough for texturing. Learn how to shape the clay, carve the bottom to form a foot and use kurinuki carving techniques to create a natural intricate design.
             </p>
             <p className="mt-4 text-gray-700">
               After completing your bowl, we will fire it for you, and in just 2-3 weeks, you can pick up your finished matcha bowl, ready to elevate your tea-drinking experience.
