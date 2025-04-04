@@ -93,7 +93,7 @@ export default function IkebanaWorkshop() {
           </ul>
           <div className="mt-6 text-center">
             <a
-              href=""
+              href="https://olomanaceramics.classly.com/classes/ikebana-flower-arrangement-workshop/d3baeac1-1542-4603-9e72-1db3badf8daa"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Your Workshop
