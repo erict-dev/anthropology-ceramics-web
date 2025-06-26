@@ -25,7 +25,7 @@ export default function IkebanaWorkshop() {
           <div className="h-[520px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/workshops/ike-2.jpeg"
+                src="/workshops/ike-5.jpg"
                 alt="Ikebana flower arrangement"
                 width={400}
                 height={600}
@@ -34,7 +34,7 @@ export default function IkebanaWorkshop() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/workshops/ike-1.jpeg"
+                src="/workshops/ike-2.jpeg"
                 alt="Ikebana flower arrangement"
                 width={400}
                 height={600}
@@ -43,7 +43,7 @@ export default function IkebanaWorkshop() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/workshops/ike-3.jpeg"
+                src="/workshops/ike-6.jpg"
                 alt="Ikebana flower arrangement"
                 width={400}
                 height={600}
