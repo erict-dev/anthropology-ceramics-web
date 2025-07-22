@@ -86,6 +86,15 @@ export default function Navbar() {
                       6 week course
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/classes/private-pottery-event-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      private events
+                    </Link>
+                  </li>
                 </ul>
 
               </li>
@@ -123,8 +132,39 @@ export default function Navbar() {
                   </li>
                 </ul>
               </li>
-              <li onMouseEnter={() => setHoveredItem('events')}>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/events" onClick={handleNavItemClick}>events</Link>
+              <li className="relative" onMouseEnter={() => setHoveredItem('open-studio')}>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/open-studio" onClick={handleNavItemClick}>open studio</Link>
+                <ul
+                  className={`left-0 mt-2 w-48 bg-white md:shadow-md rounded-md md:border ${hoveredItem === 'open-studio' ? 'md:block' : 'md:hidden'} md:absolute md:z-30`}
+                >
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/open-studio/afternoon-clay'}
+                      onClick={handleNavItemClick}
+                    >
+                      afternoon clay
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/open-studio/evening-clay'}
+                      onClick={handleNavItemClick}
+                    >
+                      evening clay
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/open-studio/memberships'}
+                      onClick={handleNavItemClick}
+                    >
+                      memberships
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>

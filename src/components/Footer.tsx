@@ -13,6 +13,9 @@ export default function Footer() {
               <li><Link href="/classes/6-week-pottery-course-irvine" className="hover:text-white">6-Week Pottery Course</Link></li>
               <li><Link href="/classes/adult-pottery-group-class-irvine" className="hover:text-white">Adult Pottery Group Class</Link></li>
               <li><Link href="/classes/kids-and-family-pottery-irvine" className="hover:text-white">Kids & Family Pottery</Link></li>
+              <li><Link href="/classes/beginner-pottery-class-irvine" className="hover:text-white">Beginner Pottery Classes</Link></li>
+              <li><Link href="/classes/intermediate-pottery-class-irvine" className="hover:text-white">Intermediate Pottery Classes</Link></li>
+              <li><Link href="/classes/private-pottery-event-irvine" className="hover:text-white">Private Pottery Events</Link></li>
             </ul>
           </div>
           
@@ -37,9 +40,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold">More</h3>
+            <h3 className="text-lg font-semibold">Open Studio</h3>
             <ul className="mt-2 space-y-2 text-gray-300">
-              <li><Link href="/events" className="hover:text-white">Events</Link></li>
+              <li><Link href="/open-studio/memberships" className="hover:text-white">Memberships</Link></li>
+              <li><Link href="/open-studio/afternoon-clay" className="hover:text-white">Afternoon Clay</Link></li>
+              <li><Link href="/open-studio/evening-clay" className="hover:text-white">Evening Clay</Link></li>
             </ul>
           </div>
         </div>
