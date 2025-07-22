@@ -158,7 +158,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href={'/open-studio/memberships'}
+                      href={'/open-studio'}
                       onClick={handleNavItemClick}
                     >
                       memberships

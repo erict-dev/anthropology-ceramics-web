@@ -1,109 +1,186 @@
-// The goal of this page is to target the Google SEO Keyword for beginner pottery class, beginner pottery handbuilding class, beginner pottery wheel throwing class and beginner pottery class in Irvine / Orange County. It should present a menu of our offerings geared towards beginner pottery students interested in improving their skills on the wheel, handbuilding or both.
-// Our level one 6 week course is great for those who have taken a pottery intro group class and want to get better on the wheel. You will learn fundamental pottery skills on the wheel and at the end of this course you will be able to comfortably make cups, bowls small vases and planters on your own, trim them and understand glazing,  how to glaze your pieces and fire them.
-// Our matcha bowl workshop introduces many useful fundamental handbuilding skills
-// Our upcoming handbuilding 6 week course will introduce a full slate of fundamental handbuilding skills.
-
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function BeginnerPotteryClasses() {
   return (
     <div>
-      {/* Traditional Matcha Bowl Workshop */}
+      <Head>
+        <title>Beginner Pottery Class in Irvine | Olomana Studios</title>
+        <meta
+          name="description"
+          content="Join our beginner pottery classes in Irvine! Learn wheel throwing and handbuilding techniques in our 6-week courses and workshops for beginners. Located in Orange County."
+        />
+      </Head>
+
+      {/* Hero Section */}
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <header className="text-center">
-            <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Matcha Bowl Workshop in Irvine</h2>
-            <p className="mt-4 text-black">
-              Experience the art of creating your own <strong>handmade ceramic matcha bowl (chawan)</strong> in our Matcha Bowl Workshop in Irvine, CA. This immersive class blends creativity, tradition, and relaxation as you learn the time-honored techniques of Japanese pottery. Under the guidance of expert instructors, you will hand-build, texture, and shape a matcha bowl that reflects your personal style. Whether you are a beginner or a pottery enthusiast, this workshop offers a meditative, hands-on experience that results in a unique, functional piece for your tea rituals.
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
+            Beginner Pottery Classes in Irvine
+          </h1>
+          <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
+            Looking for a <strong>beginner pottery class</strong> in Irvine or Orange County? 
+            At Olomana Studios, we offer beginner-friendly pottery classes and workshops 
+            that will help you learn and improve your skills in <strong>wheel throwing</strong> and <strong>handbuilding</strong> pottery.
+          </p>
+        </div>
+      </section>
+
+      {/* Classes Section */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          {/* Wheel Throwing 6-Week Course */}
+          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div className="relative h-64 w-full">
+              <Image
+                src="/wheel-throwing-beginner.jpg"
+                alt="Beginner pottery wheel throwing class in Irvine"
+                layout="fill"
+                objectFit="cover"
+                className="hover:scale-105 transition-transform"
+              />
+            </div>
+            <div className="p-6 flex flex-col flex-1">
+              <h2 className="text-2xl font-bold text-gray-900">
+                Level One 6-Week Wheel Throwing Course
+              </h2>
+              <p className="mt-4 text-gray-700 flex-1">
+                Perfect for those who have taken an intro class and want to build their skills. 
+                Learn the fundamentals of throwing on the pottery wheel — centering, pulling walls, trimming, 
+                glazing, and more. By the end, you’ll be able to comfortably make cups, bowls, small vases, and planters.
+              </p>
+              <a
+                href="/classes/wheel-throwing-beginner"
+                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          {/* Matcha Bowl Workshop */}
+          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div className="relative h-64 w-full">
+              <Image
+                src="/matcha-bowl-workshop.jpg"
+                alt="Beginner pottery handbuilding workshop"
+                layout="fill"
+                objectFit="cover"
+                className="hover:scale-105 transition-transform"
+              />
+            </div>
+            <div className="p-6 flex flex-col flex-1">
+              <h2 className="text-2xl font-bold text-gray-900">
+                Matcha Bowl Handbuilding Workshop
+              </h2>
+              <p className="mt-4 text-gray-700 flex-1">
+                A great introduction to handbuilding techniques for beginners. 
+                Learn to shape, texture, and carve a traditional Japanese chawan (matcha bowl) by hand. 
+                This workshop covers foundational skills you can build on in future classes.
+              </p>
+              <a
+                href="/classes/matcha-bowl-workshop"
+                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          {/* Intro Pottery Group Class */}
+          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div className="relative h-64 w-full">
+              <Image
+                src="/intro-pottery-class.jpg"
+                alt="Intro pottery group class for beginners in Irvine"
+                layout="fill"
+                objectFit="cover"
+                className="hover:scale-105 transition-transform"
+              />
+            </div>
+            <div className="p-6 flex flex-col flex-1">
+              <h2 className="text-2xl font-bold text-gray-900">
+                Intro Pottery Group Class
+              </h2>
+              <p className="mt-4 text-gray-700 flex-1">
+                The perfect single-session class for beginners who want to try their hand at the pottery wheel. 
+                Learn the basics of wheel throwing in a fun, relaxed group setting. Great for absolute beginners 
+                looking for a taste of pottery before committing to a full course.
+              </p>
+              <a
+                href="/classes/intro-pottery-group"
+                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Closing CTA */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 space-y-16">
+
+          {/* Block 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="order-2 md:order-1 space-y-4">
+              <p className="text-gray-700">
+                At Olomana Studios, we believe everyone can be a maker — all it takes is a little clay and a willingness to try. Our beginner classes are designed to help you feel comfortable, whether you’ve never touched a pottery wheel before or you’re simply looking for a creative way to unwind. Every pinch, pull, and carve brings you closer to discovering the quiet joy of shaping something with your own hands.
+              </p>
+              <p className="text-gray-700">
+                We know that starting something new can feel intimidating, so we’ve created a warm, welcoming space where mistakes are part of the process and curiosity is celebrated. Here, you’ll learn the fundamentals step by step — and you’ll walk away with pieces you can feel proud of, no matter your experience level.
+              </p>
+            </div>
+            <div className="order-1 md:order-2 h-full relative">
+              <Image
+                src="/beginner-closing-1.jpg"
+                alt="Beginner pottery student shaping clay on wheel"
+                layout="fill"
+                className="rounded-lg shadow-md object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Block 2 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="order-2 md:order-1 h-48 relative">
+              <Image
+                src="/beginner-closing-2.jpg"
+                alt="Handmade beginner pottery pieces drying"
+                layout="fill"
+                className="rounded-lg shadow-md object-cover"
+              />
+            </div>
+            <div className="order-1 md:order-2 space-y-4">
+              <p className="text-gray-700">
+                Pottery has been practiced for thousands of years — and yet every piece you make is completely your own. Whether you’re shaping your very first bowl, carving textures into a matcha chawan, or simply feeling the clay spin under your fingers, we’re here to guide you through it all. This is your chance to slow down, explore your creativity, and create something meaningful.
+              </p>
+            </div>
+          </div>
+
+          {/* Final Invitation */}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Try Pottery With Us
+            </h3>
+            <p className="text-gray-700 max-w-2xl mx-auto">
+              If you’ve been curious about pottery, there’s no better time to start. Join us for a beginner class or workshop in Irvine, and see how a lump of clay can become something beautiful in your hands. We can’t wait to welcome you into our studio and show you just how fun and rewarding pottery can be.
             </p>
-          <div className="mt-6 mb-6 text-center">
             <a
-              href="https://olomanaceramics.classly.com/classes/matcha-bowl-handbuilding-workshop/3881bf61-5c95-424a-bb49-879587e08135"
-              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+              href="/classes"
+              className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium hover:bg-gray-700"
             >
-              Book Online
+              View Beginner Classes
             </a>
           </div>
-          </header>
-
-          <div className="h-[600px] md:h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src={`/irvine-matcha-bowl-class/matcha-bowl-3.jpg`}
-                alt={`Handmade matcha bowl in progress`}
-                width={400}
-                height={600}
-                className="object-cover w-full h-full transition duration-500 hover:scale-105"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src={`/irvine-matcha-bowl-class/matcha-bowl-7.jpg`}
-                alt={`Completed chawan matcha bowl`}
-                width={400}
-                height={600}
-                className="sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src={`/irvine-matcha-bowl-class/matcha-bowl-1.jpg`}
-                alt={`Participants shaping their matcha bowls`}
-                width={400}
-                height={600}
-                className="md:block object-cover w-full h-full transition duration-500 hover:scale-105"
-              />
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* Workshop Experience */}
-      <section className="py-12">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-bold text-gray-900">A Hands-On Matcha Bowl Making Experience</h2>
-            <p className="mt-4 text-gray-700">{"Pottery is more than just an art form, it is a meditative and grounding experience. In today’s fast-paced world, making something with your hands is a refreshing escape from screens and mass-produced goods. In this workshop, you’ll experience the beauty of shaping raw clay into a meaningful, everyday object while immersing yourself in the craftsmanship of Japanese ceramics."}</p>
-            <p className="mt-4 text-gray-700">
-              In this class you will be guided through the process of hand-building your own traditional matcha bowl using time-honored Japanese pottery techniques, no prior experience necessary. In the middle of class we will also host a calming tea ritual while we wait for our bowls to dry enough for texturing. Learn how to shape the clay, carve the bottom to form a foot and use kurinuki carving techniques to create a natural intricate design.
-            </p>
-            <p className="mt-4 text-gray-700">
-              After completing your bowl, we will fire it for you, and in just 2-3 weeks, you can pick up your finished matcha bowl, ready to elevate your tea-drinking experience.
-            </p>
-          </div>
-          <div className="overflow-hidden rounded-lg">
-            <Image
-              src="/home-studio-2-compressed.JPG"
-              alt="Adults enjoying pottery class in Irvine"
-              width={600}
-              height={400}
-              className="object-cover w-full h-full transition duration-500 hover:scale-105"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Important Details */}
-      <section className="py-12">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
-          <ul className="mt-6 space-y-2 text-gray-700">
-            <li><strong>Location:</strong> Our home studio in Irvine (Exact address provided upon registration).</li>
-            <li><strong>Class Duration:</strong> 2.5 hours.</li>
-            <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
-            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 2-3 weeks. We use all lead-free, food-safe glazes.</li>
-          </ul>
-          <div className="mt-6 text-center">
-            <a
-              href="https://olomanaceramics.classly.com/classes/matcha-bowl-handbuilding-workshop/3881bf61-5c95-424a-bb49-879587e08135"
-              className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
-            >
-              Book Your Workshop
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
+

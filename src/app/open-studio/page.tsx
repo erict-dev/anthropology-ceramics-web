@@ -1,17 +1,109 @@
-/**
- * The goal of this page is to target the Google SEO Keyword for Irvine open studio, irvine pottery studio, irvine pottery studio time. This is an offering by our studio for students and enthusiasts who have some pottery experience and would like to come for studio time to practice or make pottery. These are unguided sessions, you can sign up for a timeslot and use the studio. This is membership based and these are our offerings:
- *
- * 1. Drop in for open studio during our afternoon and evening clay hours. This is a handbuilding only open studio offering. Afternoon clay is $47 per session and evening clay is $53 per session. Participants get 1lb ball of clay and use of painting glazes. Come anytime during the 3 hour session and enjoy creative time surrounded by other artists and creatives.
- *
- * 2. 5 session package /month open studio: $280 + $30 initiation fee. Come for open studio sessions 5 times per month. This includes 1 25lb bag of clay, 1 wetbox, use of studio glazes and a half shelf per month of firing
- *
- * 3. Unlimited VIP open studio membership: $475/month + $30 initiation fee. Includes unlimited access to open studios, afternoon and evening clay sessions. 1 25lb bag of clay, 1 wetbox, use of studio glazes, half shelf per month of firing and 10% off all classes/workshops/courses.
+import React from 'react';
+import Head from 'next/head';
 
- **/
+export default function OpenStudioMembership() {
+  return (
+    <div>
+      <Head>
+        <title>Pottery Open Studio in Irvine | Olomana Studios</title>
+        <meta
+          name="description"
+          content="Join Olomana Studios for pottery open studio time in Irvine. Flexible packages and memberships for experienced potters to practice on wheels or handbuild in a creative, supportive environment."
+        />
+      </Head>
 
-export default function OpenStudio(){
-  return(
-    <div>Open studio page here</div>
-  )
+      {/* Hero Section */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
+            Pottery Open Studio Memberships in Irvine
+          </h1>
+          <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
+            Looking for <strong>pottery studio time in Irvine</strong>? Our open studio memberships are designed for students and enthusiasts with some experience who want a creative, supportive space to practice wheel throwing, handbuilding, and glazing. Sign up for a membership or package and enjoy flexible, unguided studio time surrounded by fellow artists.
+          </p>
+        </div>
+      </section>
+
+      {/* Offerings */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12 grid gap-8 md:grid-cols-2">
+          <div className="border rounded-lg shadow-sm p-6">
+            <h2 className="text-2xl font-bold text-gray-800">5 Session Package / Month</h2>
+            <p className="mt-2 text-gray-700">Perfect for potters who want a regular creative outlet each month.</p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$280/month <span className="text-sm font-normal">+ $30 initiation fee</span></p>
+            <ul className="mt-4 space-y-2 text-gray-700">
+              <li>✓ 5 open studio sessions per month</li>
+              <li>✓ 1 25lb bag of clay &amp; wetbox</li>
+              <li>✓ Use of studio wheels, tools, handbuilding tables, glazes</li>
+              <li>✓ Half shelf/month for firing</li>
+            </ul>
+          </div>
+
+          <div className="border rounded-lg shadow-sm p-6">
+            <h2 className="text-2xl font-bold text-gray-800">Unlimited VIP Membership</h2>
+            <p className="mt-2 text-gray-700">For passionate potters who want maximum flexibility and unlimited access.</p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$475/month <span className="text-sm font-normal">+ $30 initiation fee</span></p>
+            <ul className="mt-4 space-y-2 text-gray-700">
+              <li>✓ Unlimited open studio access</li>
+              <li>✓ Includes Afternoon &amp; Evening Clay sessions</li>
+              <li>✓ 1 25lb bag of clay &amp; wetbox</li>
+              <li>✓ Use of studio wheels, tools, handbuilding tables, glazes</li>
+              <li>✓ Half shelf/month for firing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Drop-in Events */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="text-3xl font-bold text-gray-900 text-center">Afternoon & Evening Clay</h2>
+          <p className="mt-4 max-w-3xl mx-auto text-center text-gray-700">
+            If you prefer a casual, handbuilding-only open studio experience, our Afternoon and Evening Clay sessions are perfect drop-in options.
+          </p>
+
+          <div className="grid gap-8 md:grid-cols-2 mt-8">
+            <div className="border rounded-lg shadow-sm p-6 text-center">
+              <h3 className="text-xl font-bold text-gray-800">Afternoon Clay</h3>
+              <p className="mt-2 text-gray-700">1:30 PM – 5:30 PM | $47 per session</p>
+              <ul className="mt-4 space-y-2 text-gray-700">
+                <li>✓ 1lb ball of clay</li>
+                <li>✓ Use of handbuilding tables &amp; painting glazes</li>
+                <li>✓ Enjoy creative time with fellow artists</li>
+              </ul>
+            </div>
+
+            <div className="border rounded-lg shadow-sm p-6 text-center">
+              <h3 className="text-xl font-bold text-gray-800">Evening Clay</h3>
+              <p className="mt-2 text-gray-700">6:00 PM – 8:30 PM | $53 per session</p>
+              <ul className="mt-4 space-y-2 text-gray-700">
+                <li>✓ 1lb ball of clay</li>
+                <li>✓ Use of handbuilding tables &amp; painting glazes</li>
+                <li>✓ A welcoming, creative atmosphere</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Join */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12 text-center">
+          <h2 className="text-3xl font-bold text-gray-900">Why Join Our Pottery Studio?</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-gray-700">
+            At Olomana Studios, we believe in fostering a creative, inclusive community where artists of all levels can grow their craft. Whether you’re honing your wheel throwing skills, handbuilding something special, or simply finding peace through clay, our open studio memberships give you the time, space, and tools you need.
+          </p>
+          <div className="mt-8">
+            <a
+              href="/contact"
+              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+            >
+              Join Today
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
