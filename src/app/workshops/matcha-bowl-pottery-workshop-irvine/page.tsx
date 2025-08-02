@@ -14,7 +14,7 @@ export default function MatchaBowlWorkshop() {
             </p>
           <div className="mt-6 mb-6 text-center">
             <a
-              href="https://olomanaceramics.classly.com/classes/matcha-bowl-handbuilding-workshop/3881bf61-5c95-424a-bb49-879587e08135"
+              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608405/calendar/12365772"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Online
@@ -84,14 +84,14 @@ export default function MatchaBowlWorkshop() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
-            <li><strong>Location:</strong> Our home studio in Irvine (Exact address provided upon registration).</li>
-            <li><strong>Class Duration:</strong> 2.5 hours.</li>
+            <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
+            <li><strong>Class Duration:</strong> 2 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
             <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 2-3 weeks. We use all lead-free, food-safe glazes.</li>
           </ul>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanaceramics.classly.com/classes/matcha-bowl-handbuilding-workshop/3881bf61-5c95-424a-bb49-879587e08135"
+              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608405/calendar/12365772"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Your Workshop

@@ -35,7 +35,7 @@ export default function BeginnerPotteryClasses() {
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 w-full">
               <Image
-                src="/wheel-throwing-beginner.jpg"
+                src="/beginner-pottery-class/6-week-course-rotated.jpeg"
                 alt="Beginner pottery wheel throwing class in Irvine"
                 layout="fill"
                 objectFit="cover"
@@ -55,7 +55,7 @@ export default function BeginnerPotteryClasses() {
                 href="/classes/wheel-throwing-beginner"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
-                Learn More
+                Upcoming Courses
               </a>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function BeginnerPotteryClasses() {
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 w-full">
               <Image
-                src="/matcha-bowl-workshop.jpg"
+                src="/beginner-pottery-class/matcha-bowl-3.jpg"
                 alt="Beginner pottery handbuilding workshop"
                 layout="fill"
                 objectFit="cover"
@@ -84,7 +84,7 @@ export default function BeginnerPotteryClasses() {
                 href="/classes/matcha-bowl-workshop"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
-                Learn More
+                Book Workshop
               </a>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function BeginnerPotteryClasses() {
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 w-full">
               <Image
-                src="/intro-pottery-class.jpg"
+                src="/beginner-pottery-class/intro-pottery-group-class.jpeg"
                 alt="Intro pottery group class for beginners in Irvine"
                 layout="fill"
                 objectFit="cover"
@@ -113,7 +113,7 @@ export default function BeginnerPotteryClasses() {
                 href="/classes/intro-pottery-group"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
-                Learn More
+                View Classes
               </a>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function BeginnerPotteryClasses() {
             </div>
             <div className="order-1 md:order-2 h-full relative">
               <Image
-                src="/beginner-closing-1.jpg"
+                src="/beginner-pottery-class/splash-2.jpeg"
                 alt="Beginner pottery student shaping clay on wheel"
                 layout="fill"
                 className="rounded-lg shadow-md object-cover"
@@ -149,7 +149,7 @@ export default function BeginnerPotteryClasses() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1 h-48 relative">
               <Image
-                src="/beginner-closing-2.jpg"
+                src="/beginner-pottery-class/splash-1.jpeg"
                 alt="Handmade beginner pottery pieces drying"
                 layout="fill"
                 className="rounded-lg shadow-md object-cover"

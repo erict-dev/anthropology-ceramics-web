@@ -13,7 +13,7 @@ export default function Classes() {
             </p>
           </div>
           <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
-            <a href="https://olomanaceramics.classly.com/classes/pottery-group-class-adults/906bcd33-2b1c-47eb-afbb-f880815feaff">
+            <a href="https://olomanastudios.as.me/schedule/66629c2c/appointment/80268514/calendar/12365772">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
@@ -33,7 +33,7 @@ export default function Classes() {
                 </div>
               </article>
             </a>
-            <a href="https://olomanaceramics.classly.com/classes/kids-and-families-pottery-class/c72431a8-4eca-40d3-b946-de4011c9ccb9">
+            <a href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81628903/calendar/12365772">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
