@@ -35,7 +35,7 @@ export default function IntermediatePotteryClasses() {
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 w-full">
               <Image
-                src="/intermediate-wheel-throwing.jpg"
+                src="/intermediate-pottery-class/course.jpeg"
                 alt="Intermediate pottery wheel throwing class in Irvine"
                 layout="fill"
                 objectFit="cover"
@@ -49,12 +49,11 @@ export default function IntermediatePotteryClasses() {
               <p className="mt-4 text-gray-700 flex-1">
                 For students who can already throw small cups, bowls, and plates, this course teaches more advanced forms — medium-sized vases, lidded jars, moon jars, and matcha bowls. Learn to throw with up to 5 lbs of clay, master hump throwing, and refine your glazing skills.
               </p>
-              <a
-                href="/classes/wheel-throwing-intermediate"
-                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
+              <div
+                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium bg-gray-500"
               >
-                Learn More
-              </a>
+                Coming Soon
+              </div>
             </div>
           </div>
 
@@ -62,7 +61,7 @@ export default function IntermediatePotteryClasses() {
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 w-full">
               <Image
-                src="/intermediate-teapot-workshop.jpg"
+                src="/intermediate-pottery-class/teapot-1.jpeg"
                 alt="Intermediate pottery teapot workshop in Irvine"
                 layout="fill"
                 objectFit="cover"
@@ -76,12 +75,11 @@ export default function IntermediatePotteryClasses() {
               <p className="mt-4 text-gray-700 flex-1">
                 This advanced workshop focuses on creating functional teapots, covering spout design, lid fit, handle construction, and body proportion. Ideal for intermediate potters ready to tackle one of ceramics’ most rewarding challenges.
               </p>
-              <a
-                href="/classes/teapot-workshop"
-                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
+              <div
+                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium bg-gray-500"
               >
-                Learn More
-              </a>
+                Coming Soon
+              </div>
             </div>
           </div>
 
@@ -89,7 +87,7 @@ export default function IntermediatePotteryClasses() {
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 w-full">
               <Image
-                src="/intermediate-open-studio.jpg"
+                src="/intermediate-pottery-class/open-studio.jpeg"
                 alt="Open studio membership for intermediate potters in Irvine"
                 layout="fill"
                 objectFit="cover"
@@ -104,7 +102,7 @@ export default function IntermediatePotteryClasses() {
                 For experienced potters looking for a flexible, independent practice space. Our open studio membership gives you access to wheels, tools, glazes, and firings — perfect for refining your skills and producing work on your own schedule.
               </p>
               <a
-                href="/classes/open-studio-membership"
+                href="/open-studio"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Learn More
@@ -131,7 +129,7 @@ export default function IntermediatePotteryClasses() {
             </div>
             <div className="order-1 md:order-2 h-full relative">
               <Image
-                src="/intermediate-closing-1.jpg"
+                src="/intermediate-pottery-class/intermediate-3.jpg"
                 alt="Potter working at wheel in Irvine studio"
                 layout="fill"
                 className="rounded-lg shadow-md object-cover"
@@ -143,7 +141,7 @@ export default function IntermediatePotteryClasses() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1 h-48 relative">
               <Image
-                src="/intermediate-closing-3.jpg"
+                src="/intermediate-pottery-class/intermediate-2.jpeg"
                 alt="Handmade pottery ready for glazing"
                 layout="fill"
                 className="rounded-lg shadow-md object-cover"
@@ -165,7 +163,7 @@ export default function IntermediatePotteryClasses() {
               We’d love to welcome you into our little community of makers. Join us for a class or a workshop, or make this your own creative sanctuary through our open studio membership. Wherever you are in your journey, we can’t wait to see what you’ll create — and to create alongside you.
             </p>
             <a
-              href="/classes"
+              href="https://olomanastudios.as.me/schedule/66629c2c"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium hover:bg-gray-700"
             >
               View All Classes
