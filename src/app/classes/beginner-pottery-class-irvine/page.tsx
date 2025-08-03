@@ -171,10 +171,10 @@ export default function BeginnerPotteryClasses() {
               If you’ve been curious about pottery, there’s no better time to start. Join us for a beginner class or workshop in Irvine, and see how a lump of clay can become something beautiful in your hands. We can’t wait to welcome you into our studio and show you just how fun and rewarding pottery can be.
             </p>
             <a
-              href="/classes"
+              href="https://olomanastudios.as.me/schedule/66629c2c"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium hover:bg-gray-700"
             >
-              View Beginner Classes
+              View All Classes
             </a>
           </div>
         </div>

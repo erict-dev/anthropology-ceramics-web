@@ -28,11 +28,11 @@ export default function OpenStudioMembership() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12 grid gap-8 md:grid-cols-2">
           <div className="border rounded-lg shadow-sm p-6">
-            <h2 className="text-2xl font-bold text-gray-800">5 Session Package / Month</h2>
+            <h2 className="text-2xl font-bold text-gray-800">5 Days / Month</h2>
             <p className="mt-2 text-gray-700">Perfect for potters who want a regular creative outlet each month.</p>
             <p className="mt-4 text-xl font-semibold text-gray-900">$280/month <span className="text-sm font-normal">+ $30 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
-              <li>✓ 5 open studio sessions per month</li>
+              <li>✓ 5 open studio days per month, stay as long as you like per day</li>
               <li>✓ 1 25lb bag of clay &amp; wetbox</li>
               <li>✓ Use of studio wheels, tools, handbuilding tables, glazes</li>
               <li>✓ Half shelf/month for firing</li>
@@ -42,7 +42,7 @@ export default function OpenStudioMembership() {
           <div className="border rounded-lg shadow-sm p-6">
             <h2 className="text-2xl font-bold text-gray-800">Unlimited VIP Membership</h2>
             <p className="mt-2 text-gray-700">For passionate potters who want maximum flexibility and unlimited access.</p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">$475/month <span className="text-sm font-normal">+ $30 initiation fee</span></p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$425/month <span className="text-sm font-normal">+ $30 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Unlimited open studio access</li>
               <li>✓ Includes Afternoon &amp; Evening Clay sessions</li>
