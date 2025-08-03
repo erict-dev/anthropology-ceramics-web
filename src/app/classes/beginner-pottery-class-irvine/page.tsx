@@ -52,7 +52,7 @@ export default function BeginnerPotteryClasses() {
                 glazing, and more. By the end, you’ll be able to comfortably make cups, bowls, small vases, and planters.
               </p>
               <a
-                href="/classes/wheel-throwing-beginner"
+                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Upcoming%20Courses"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Upcoming Courses
@@ -81,7 +81,7 @@ export default function BeginnerPotteryClasses() {
                 This workshop covers foundational skills you can build on in future classes.
               </p>
               <a
-                href="/classes/matcha-bowl-workshop"
+                href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608405/calendar/12365772"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Book Workshop
@@ -110,7 +110,7 @@ export default function BeginnerPotteryClasses() {
                 looking for a taste of pottery before committing to a full course.
               </p>
               <a
-                href="/classes/intro-pottery-group"
+                href="https://olomanastudios.as.me/schedule/66629c2c/appointment/80268514/calendar/12365772"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 View Classes

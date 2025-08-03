@@ -24,7 +24,7 @@ export default function AfternoonClay() {
           </p>
           <div className="mt-6 mb-6 text-center">
             <a
-              href="https://olomanaceramics.classly.com/classes/afternoon-clay-open-studio/your-class-id-here"
+              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608955/calendar/12365772"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Your Spot
@@ -39,7 +39,7 @@ export default function AfternoonClay() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/afternoon-clay/afternoon-clay-1.jpg"
+                src="/afternoon-clay/afternoon-clay-3.jpg"
                 alt="Participants handbuilding pottery at Afternoon Clay"
                 width={400}
                 height={400}
@@ -48,7 +48,7 @@ export default function AfternoonClay() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/afternoon-clay/afternoon-clay-2.jpg"
+                src="/afternoon-clay/afternoon-clay-1.jpg"
                 alt="Pottery open studio in Irvine"
                 width={400}
                 height={400}
@@ -57,7 +57,7 @@ export default function AfternoonClay() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/afternoon-clay/afternoon-clay-3.jpg"
+                src="/afternoon-clay/afternoon-clay-4.jpg"
                 alt="Creative community enjoying pottery"
                 width={400}
                 height={400}
@@ -85,7 +85,7 @@ export default function AfternoonClay() {
           </div>
           <div className="overflow-hidden rounded-lg">
             <Image
-              src="/afternoon-clay/afternoon-clay-4.jpg"
+              src="/afternoon-clay/afternoon-clay-2.jpg"
               alt="Pottery handbuilding in the afternoon"
               width={600}
               height={400}
@@ -108,7 +108,7 @@ export default function AfternoonClay() {
           </ul>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanaceramics.classly.com/classes/afternoon-clay-open-studio/your-class-id-here"
+              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608955/calendar/12365772"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
             >
               Reserve Your Spot
