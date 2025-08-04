@@ -143,7 +143,7 @@ export default function Classes() {
                 <li>✅ Glazing and final firing process</li>
               </ul>
               <a
-                href="https://olomanaceramics.classly.com/courses"
+                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Upcoming%20Courses"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
               >
                 Enroll Now

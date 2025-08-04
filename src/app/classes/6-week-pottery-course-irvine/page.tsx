@@ -13,7 +13,7 @@ export default function PotteryCourse() {
             Unlock the art of pottery wheel throwing in this immersive 6-week pottery course in Irvine, designed for beginning students eager to improve their skills in a sequential course. No experience necessary—just a passion to learn and create.
           </p>
           <a
-            href="https://olomanaceramics.classly.com/courses"
+            href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Upcoming%20Courses"
             className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
           >
             Enroll Now
@@ -75,7 +75,7 @@ export default function PotteryCourse() {
           </p>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanaceramics.classly.com/courses"
+              href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Upcoming%20Courses"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               View our schedule and enroll online

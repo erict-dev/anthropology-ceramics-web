@@ -14,10 +14,10 @@ export default function IkebanaWorkshop() {
             </p>
           <div className="mt-6 mb-6 text-center">
             <a
-              href="https://olomanaceramics.classly.com/classes/ikebana-flower-arrangement-workshop/d3baeac1-1542-4603-9e72-1db3badf8daa"
-              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+              href=""
+              className="inline-block rounded-lg bg-gray-400 px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
-              Book Online
+              Coming Soon
             </a>
           </div>
           </header>
@@ -86,17 +86,17 @@ export default function IkebanaWorkshop() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
-            <li><strong>Location:</strong> Our home studio in Irvine (Exact address provided upon registration).</li>
+            <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong>Class Duration:</strong> 1.5 hours.</li>
             <li><strong>What to Bring:</strong> Comfortable clothing and an open mind for creativity.</li>
             <li><strong>Take Home:</strong> At the end of class we will take professional photos of your arrangement and send it to you. You will keep the flowers that you used. You will also have the option to purchase your vase at a discount.</li>
           </ul>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanaceramics.classly.com/classes/ikebana-flower-arrangement-workshop/d3baeac1-1542-4603-9e72-1db3badf8daa"
-              className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
+              href=""
+              className="mt-6 inline-block rounded-lg bg-gray-400 px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
             >
-              Book Your Workshop
+              Coming Soon
             </a>
           </div>
         </div>

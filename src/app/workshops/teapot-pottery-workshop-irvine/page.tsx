@@ -86,7 +86,7 @@ export default function TeapotMakingWorkshop() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
-            <li><strong>Location:</strong> Our home studio in Irvine (Exact address provided upon registration).</li>
+            <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong>Class Duration:</strong> 3.5 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes, comfortable clothing, and a creative mindset.</li>
             <li><strong>Take Home:</strong> Your handcrafted teapot, after firing (ready in 3-4 weeks).</li>

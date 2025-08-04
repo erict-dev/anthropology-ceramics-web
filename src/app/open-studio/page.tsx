@@ -30,26 +30,43 @@ export default function OpenStudioMembership() {
           <div className="border rounded-lg shadow-sm p-6">
             <h2 className="text-2xl font-bold text-gray-800">5 Days / Month</h2>
             <p className="mt-2 text-gray-700">Perfect for potters who want a regular creative outlet each month.</p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">$280/month <span className="text-sm font-normal">+ $30 initiation fee</span></p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$280/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ 5 open studio days per month, stay as long as you like per day</li>
+              <li>✓ Includes one Evening Clay guest pass per month</li>
               <li>✓ 1 25lb bag of clay &amp; wetbox</li>
               <li>✓ Use of studio wheels, tools, handbuilding tables, glazes</li>
               <li>✓ Half shelf/month for firing</li>
             </ul>
+            <div className="mt-8">
+              <a
+                href="https://app.acuityscheduling.com/catalog/66629c2c"
+                className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+              >
+                View Membership
+              </a>
+            </div>
           </div>
 
           <div className="border rounded-lg shadow-sm p-6">
             <h2 className="text-2xl font-bold text-gray-800">Unlimited VIP Membership</h2>
             <p className="mt-2 text-gray-700">For passionate potters who want maximum flexibility and unlimited access.</p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">$425/month <span className="text-sm font-normal">+ $30 initiation fee</span></p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$435/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
-              <li>✓ Unlimited open studio access</li>
-              <li>✓ Includes Afternoon &amp; Evening Clay sessions</li>
+              <li>✓ Unlimited open studio access during business hours</li>
+              <li>✓ One Evening Clay &amp; one Afternoon Clay guest pass per month</li>
               <li>✓ 1 25lb bag of clay &amp; wetbox</li>
               <li>✓ Use of studio wheels, tools, handbuilding tables, glazes</li>
               <li>✓ Half shelf/month for firing</li>
             </ul>
+            <div className="mt-8">
+              <a
+                href="https://app.acuityscheduling.com/catalog/66629c2c"
+                className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+              >
+                View Membership
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -71,6 +88,14 @@ export default function OpenStudioMembership() {
                 <li>✓ Use of handbuilding tables &amp; painting glazes</li>
                 <li>✓ Enjoy creative time with fellow artists</li>
               </ul>
+              <div className="mt-8">
+                <a
+                  href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608955/calendar/12365772"
+                  className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+                >
+                  Book
+                </a>
+              </div>
             </div>
 
             <div className="border rounded-lg shadow-sm p-6 text-center">
@@ -81,6 +106,14 @@ export default function OpenStudioMembership() {
                 <li>✓ Use of handbuilding tables &amp; painting glazes</li>
                 <li>✓ A welcoming, creative atmosphere</li>
               </ul>
+              <div className="mt-8">
+                <a
+                  href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81610034/calendar/12365772"
+                  className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+                >
+                  Book
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -95,10 +128,10 @@ export default function OpenStudioMembership() {
           </p>
           <div className="mt-8">
             <a
-              href="/contact"
+              href="https://olomanastudios.as.me"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
-              Join Today
+              View All Classes
             </a>
           </div>
         </div>

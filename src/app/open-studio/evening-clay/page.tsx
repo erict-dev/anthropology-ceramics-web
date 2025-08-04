@@ -101,8 +101,8 @@ export default function EveningClay() {
           <h2 className="text-3xl font-bold text-gray-900">Evening Clay Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>When:</strong> Every evening, 6:00–8:30pm</li>
-            <li><strong>Where:</strong> Our home studio in Irvine (address provided after registration)</li>
-            <li><strong>What’s included:</strong> 1 pound of clay, use of paints, tools, firing service</li>
+            <li><strong>What’s included:</strong> 1 pound of clay, use of paints, tools, and firing service</li>
+            <li><strong>Where:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong>Skill level:</strong> All levels welcome — from first-timers to seasoned potters</li>
             <li><strong>Pickup:</strong> Fired and finished pieces ready in 3–4 weeks</li>
           </ul>
