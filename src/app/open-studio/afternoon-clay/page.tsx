@@ -17,7 +17,7 @@ export default function AfternoonClay() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
-            Afternoon Clay – Open Studio in Irvine
+            Afternoon Clay – Pottery in Irvine
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
             Looking for a <strong>creative way to spend your afternoon?</strong> Join our Afternoon Clay open studio — a welcoming space to handbuild pottery, paint, and meet others. A longer, relaxed session perfect for retirees, stay-at-home parents, young professionals, and visiting enthusiasts.

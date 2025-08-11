@@ -17,7 +17,7 @@ export default function EveningClay() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 text-center">
           <h1 className="leander text-4xl sm:text-5xl font-bold text-gray-900">
-            Evening Clay – Open Studio in Irvine
+            Evening Clay – Pottery in Irvine
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
             Looking for <strong>things to do after work in Irvine?</strong> Come join our Evening Clay open studio — a <strong>creative community space</strong> to handbuild pottery, paint, and connect with others. Every evening from 6–8:30pm, no experience needed.
