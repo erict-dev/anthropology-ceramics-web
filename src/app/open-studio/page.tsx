@@ -30,7 +30,7 @@ export default function OpenStudioMembership() {
           <div className="border rounded-lg shadow-sm p-6">
             <h2 className="text-2xl font-bold text-gray-800">5 Days / Month</h2>
             <p className="mt-2 text-gray-700">Perfect for potters who want a regular creative outlet each month.</p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">$280/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$220/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ 5 open studio days per month, stay as long as you like per day</li>
               <li>✓ Includes one Evening Clay guest pass per month</li>
@@ -51,7 +51,7 @@ export default function OpenStudioMembership() {
           <div className="border rounded-lg shadow-sm p-6">
             <h2 className="text-2xl font-bold text-gray-800">Unlimited VIP Membership</h2>
             <p className="mt-2 text-gray-700">For passionate potters who want maximum flexibility and unlimited access.</p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">$435/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$360/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Unlimited open studio access during business hours</li>
               <li>✓ One Evening Clay &amp; one Afternoon Clay guest pass per month</li>
