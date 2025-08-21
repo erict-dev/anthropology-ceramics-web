@@ -30,7 +30,7 @@ export default function OpenStudioMembership() {
           <div className="border rounded-lg shadow-sm p-6">
             <h2 className="text-2xl font-bold text-gray-800">5 Days / Month</h2>
             <p className="mt-2 text-gray-700">Perfect for potters who want a regular creative outlet each month.</p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">$220/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$240/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ 5 open studio days per month, stay as long as you like per day</li>
               <li>✓ Includes one Evening Clay guest pass per month</li>
