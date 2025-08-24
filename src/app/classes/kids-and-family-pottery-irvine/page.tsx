@@ -10,7 +10,7 @@ export default function KidsFamilyPotteryClass() {
             Kids & Family Pottery Class in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
-            A fun and engaging pottery experience for kids and families! Let your creativity flow in our outdoor garden studio.
+            Bring the kids for this fun and engaging pottery experience. This is a great activity to do in Irvine with kids, let your creativity flow and make usable pottery together!.
           </p>
           <a
             href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81628903/calendar/12365772"
@@ -39,7 +39,7 @@ export default function KidsFamilyPotteryClass() {
               Kids love our pottery classes! This 1.5-hour session encourages children to unleash their creativity while learning the fundamentals of hand-building and wheel-throwing pottery techniques.
             </p>
             <p className="mt-4 text-gray-700 text-lg">
-              Parents are welcome to join, making this a perfect family bonding experience! Our sessions are held outdoors in a beautiful backyard garden studio, providing a relaxing and inspiring environment.
+              Parents are encouraged to take this class with their kids, making this a perfect family activity in Irvine! Our sessions are held in our beautiful pottery studio located in Old Town Irvine.
             </p>
             <div className="mt-4">
               <p className="text-lg text-gray-700">
