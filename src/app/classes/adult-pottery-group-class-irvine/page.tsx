@@ -10,7 +10,7 @@ export default function AdultPotteryClass() {
             Pottery Group Class for Adults in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
-            Discover the joy of pottery in a relaxed and creative setting. Learn hand-building and wheel-throwing techniques in our beautiful backyard garden studio.
+            Discover the joy of pottery in a relaxed and creative setting. Learn hand-building and wheel-throwing techniques in our Irvine studio.
           </p>
           <a
             href="https://olomanastudios.as.me/schedule/66629c2c/appointment/80268514/calendar/12365772"

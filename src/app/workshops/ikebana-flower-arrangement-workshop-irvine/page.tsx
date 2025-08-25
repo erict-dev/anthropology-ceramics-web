@@ -10,7 +10,7 @@ export default function IkebanaWorkshop() {
           <header className="text-center">
             <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Ikebana Flower Arrangement Workshop in Irvine</h2>
             <p className="mt-4 text-black">
-              Experience the elegance of <strong>Ikebana</strong>, the traditional Japanese art of flower arrangement, in our immersive ikebana workshop in Irvine, CA. This hands-on class held in our garden studio introduces the principles of balance, harmony, and minimalism that define Ikebana. Guided by expert instructors, you will explore floral design techniques while creating your own stunning arrangement using fresh flowers, kenzans, and vases.
+              Experience the elegance of <strong>Ikebana</strong>, the traditional Japanese art of flower arrangement, in our immersive ikebana workshop in Irvine, CA. This hands-on class held in our studio introduces the principles of balance, harmony, and minimalism that define Ikebana. Guided by expert instructors, you will explore floral design techniques while creating your own stunning arrangement using fresh flowers, kenzans, and vases.
             </p>
           <div className="mt-6 mb-6 text-center">
             <a
