@@ -20,7 +20,7 @@ export default function EveningClay() {
             Handbuilding Ceramics, Evening Clay Session – Pottery in Irvine
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
-            Looking for <strong>things to do after work in Irvine?</strong> Come join our evening handbuilding ceramics sessions, a <strong>creative community space</strong> to handbuild pottery, paint, and connect with others. Every evening from 6–8:30pm, show up any time during the session and we'll get you started! No experience needed, walk-ins welcome.
+            Looking for <strong>things to do after work in Irvine?</strong> Come join our evening handbuilding ceramics sessions, a <strong>creative community space</strong> to handbuild pottery, paint, and connect with others. Every evening from 6–8:30pm, show up any time during the session and we will get you started! No experience needed, walk-ins welcome.
           </p>
           <div className="mt-6 mb-6 text-center">
             <a
