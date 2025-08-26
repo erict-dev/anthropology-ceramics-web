@@ -6,10 +6,10 @@ export default function EveningClay() {
   return (
     <div>
       <Head>
-        <title>Evening Clay | Pottery Open Studio Irvine | Olomana Studios</title>
+        <title>Handbuilding Ceramics | Evening Clay Session in Irvine</title>
         <meta
           name="description"
-          content="Join our Evening Clay pottery open studio in Irvine. A creative community space to handbuild, paint, and connect with others. Every evening 6–8:30pm. Book now."
+          content="Join our evening handbuilding ceramics sessions in Irvine. A creative community event to handbuild, paint, and connect with others. Evenings 6–8:30pm, walk-ins welcome"
         />
       </Head>
 
@@ -17,10 +17,10 @@ export default function EveningClay() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 text-center">
           <h1 className="leander text-4xl sm:text-5xl font-bold text-gray-900">
-            Evening Clay – Pottery in Irvine
+            Handbuilding Ceramics, Evening Clay Session – Pottery in Irvine
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
-            Looking for <strong>things to do after work in Irvine?</strong> Come join our Evening Clay open studio — a <strong>creative community space</strong> to handbuild pottery, paint, and connect with others. Every evening from 6–8:30pm, no experience needed.
+            Looking for <strong>things to do after work in Irvine?</strong> Come join our evening handbuilding ceramics sessions, a <strong>creative community space</strong> to handbuild pottery, paint, and connect with others. Every evening from 6–8:30pm, show up any time during the session and we'll get you started! No experience needed, walk-ins welcome.
           </p>
           <div className="mt-6 mb-6 text-center">
             <a
@@ -40,7 +40,7 @@ export default function EveningClay() {
             <div className="rounded-lg overflow-hidden">
               <Image
                 src="/evening-clay/evening-clay-2.jpeg"
-                alt="Participants handbuilding pottery at Evening Clay"
+                alt="Participants handbuilding pottery at Olomana Studios"
                 width={400}
                 height={400}
                 className="object-cover w-full h-full transition duration-500 hover:scale-105"
@@ -49,7 +49,7 @@ export default function EveningClay() {
             <div className="rounded-lg overflow-hidden">
               <Image
                 src="/evening-clay/evening-clay-7.jpg"
-                alt="Creative community space in Irvine"
+                alt="Creative pottery studio in Irvine"
                 width={400}
                 height={400}
                 className="object-cover w-full h-full transition duration-500 hover:scale-105"
@@ -74,7 +74,7 @@ export default function EveningClay() {
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-bold text-gray-900">A Relaxed, Creative Evening</h2>
             <p className="mt-4 text-gray-700">
-              Evening Clay is all about <strong>artistic self-expression</strong> and building community. You’ll receive one pound of clay to handbuild anything you can imagine, and paint it during your session. Carve your name on the bottom and we’ll fire it for you to pick up in 3–4 weeks.
+              Our handbuilding ceramics evening clay sessions are all about gathering together around art and building community. You’ll receive one pound of clay to handbuild anything you can imagine, and paint it during your session. Carve your name on the bottom and we’ll fire it for you to pick up in 3–4 weeks.
             </p>
             <p className="mt-4 text-gray-700">
               There’s no formal instruction, but we encourage everyone to share, ask questions, and help each other. Whether you’re a beginner or experienced, you’ll find a welcoming space to create, unwind, and connect.
@@ -98,9 +98,9 @@ export default function EveningClay() {
       {/* Details */}
       <section className="py-12">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900">Evening Clay Details</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Evening Handbuilding Session Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
-            <li><strong>When:</strong> Every evening, 6:00–8:30pm</li>
+            <li><strong>When:</strong> Every evening, except mondays, 6:00–8:30pm</li>
             <li><strong>What’s included:</strong> 1 pound of clay, use of paints, tools, and firing service</li>
             <li><strong>Where:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong>Skill level:</strong> All levels welcome — from first-timers to seasoned potters</li>
