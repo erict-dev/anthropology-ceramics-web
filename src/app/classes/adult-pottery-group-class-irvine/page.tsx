@@ -26,7 +26,7 @@ export default function AdultPotteryClass() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="overflow-hidden rounded-lg">
             <Image
-              src="/adults-group-class/4.jpg"
+              src="/adults-group-class/adult-group-class-3.jpg"
               alt="Adults enjoying pottery class in Irvine"
               width={600}
               height={400}
@@ -75,7 +75,7 @@ export default function AdultPotteryClass() {
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
                 alt="Participants working on pottery"
-                src="/adults-group-class/2.jpg"
+                src="/olomana-irvine-pottery-studio/irvine-pottery-studio-wheels.jpg"
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0"
@@ -94,7 +94,7 @@ export default function AdultPotteryClass() {
         <div className="relative h-64 mt-4">
           <Image
             alt="home studio"
-            src="/home-studio-4-compressed.JPG"
+            src="/olomana-irvine-pottery-studio/olomana-studios-irvine-pottery-studio.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"

@@ -55,8 +55,8 @@ export default function PotteryCourse() {
           </p>
           <div className="relative h-64 mt-4 mb-4">
             <Image
-              alt=""
-              src="/home-studio-2-compressed.JPG"
+              alt="olomana studios irvine pottery studio"
+              src="/olomana-irvine-pottery-studio/olomana-studios-irvine-pottery-studio.jpg"
               layout="fill"
               objectFit="cover"
               className="absolute inset-0 rounded-lg"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Head from 'next/head';
 
 export default function OpenStudioMembership() {
@@ -14,13 +15,22 @@ export default function OpenStudioMembership() {
 
       {/* Hero Section */}
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 text-center">
+        <div className="mx-auto max-w-screen-xl px-4 py-12 pb-0 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Pottery Open Studio Memberships in Irvine
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
             Looking for <strong>pottery studio time in Irvine</strong>? Our open studio memberships are designed for students and enthusiasts with some experience who want a creative, supportive space to practice wheel throwing, handbuilding, and glazing. Sign up for a membership or package and enjoy flexible, unguided studio time surrounded by fellow artists.
           </p>
+        <div className="relative h-96 mt-4 mb-4">
+          <Image
+            alt=""
+            src="/olomana-irvine-pottery-studio/olomana-studios-irvine-pottery-studio.jpg"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0 rounded-lg"
+          />
+        </div>
         </div>
       </section>
 
@@ -78,7 +88,6 @@ export default function OpenStudioMembership() {
           <p className="mt-4 max-w-3xl mx-auto text-center text-gray-700">
             If you prefer a casual, handbuilding-only open studio experience, our Afternoon and Evening Clay sessions are perfect drop-in options.
           </p>
-
           <div className="grid gap-8 md:grid-cols-2 mt-8">
             <div className="border rounded-lg shadow-sm p-6 text-center">
               <h3 className="text-xl font-bold text-gray-800">Afternoon Clay</h3>

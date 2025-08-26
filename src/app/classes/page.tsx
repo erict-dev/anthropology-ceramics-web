@@ -9,7 +9,7 @@ export default function Classes() {
           <div className="mb-8">
             <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Irvine Pottery Classes</h2>
             <p className="mt-4 text-gray-600 text-lg">
-              Come join us for a pottery class in Irvine! We host group pottery classes in our beautiful backyard studio. If you have questions about our class or want to book a private class for your family, friend group, or organization, feel free to email us at olomanastudios@gmail.com.
+              Come join us for a pottery class in Irvine! We host group pottery classes in our historic studio in Old Town Irvine. If you have questions about our class or want to book a private class for your family, friend group, or organization, feel free to email us at olomanastudios@gmail.com.
             </p>
           </div>
           <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
@@ -17,7 +17,7 @@ export default function Classes() {
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
-                  src="/adults-group-class/adult-group-class.jpg"
+                  src="/adults-group-class/adult-group-class-3.jpg"
                   className="h-64 w-full object-cover"
                 />
 

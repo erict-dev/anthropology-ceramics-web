@@ -31,40 +31,40 @@ export default function About() {
 
         <h4 className="leander text-3xl font-bold sm:text-5xl mt-8 md:mt-16 text-black">our studio</h4>
         <p className="mt-4 mb-4 text-gray-700">
-          {"Nestled in the heart of Southern California, Olomana Studios is a place where tradition meets innovation. Our studio is a labor of love, built by Christina and Eric to foster creativity and community. Surrounded by abundant greenery, the studio is a perfect escape from the hustle and bustle of everyday life. Here, we create unique ceramic art pieces, inspired by our travels and experiences around the world. We also offer classes, participate in art fairs, galleries, and markets, bringing the beauty and serenity of ceramics to a wider audience."}
+          {"Nestled in the heart of Southern California, Olomana Studios is a place where tradition meets innovation. Our studio is a labor of love, built by Christina and Eric to foster creativity and community. Situated in a historic building in Old Town Irvine, the studio is a perfect escape from the hustle and bustle of everyday life. Here, we create unique ceramic art pieces, inspired by our travels and experiences around the world. We also offer classes, participate in art fairs, galleries, and markets, bringing the beauty and serenity of ceramics to a wider audience."}
         </p>
-        <div className="relative h-64 mt-4 mb-4">
+        <div className="relative h-96 mt-4 mb-4">
           <Image
             alt=""
-            src="/home-studio-2-compressed.JPG"
+            src="/olomana-irvine-pottery-studio/olomana-studios-irvine-pottery-studio.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"
           />
         </div>
 
-        <div className="relative h-64 mb-4">
+        <div className="relative h-96 mb-4">
           <Image
             alt=""
-            src="/home-studio-1-compressed.JPG"
+            src="/olomana-irvine-pottery-studio/olomana-studios-irvine-pottery-studio-tools.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"
           />
         </div>
-        <div className="relative h-64 mb-4">
+        <div className="relative h-96 mb-4">
           <Image
             alt=""
-            src="/home-studio-3-compressed.JPG"
+            src="/olomana-irvine-pottery-studio/irvine-pottery-studio-wheels.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"
           />
         </div>
-        <div className="relative h-64 mb-4">
+        <div className="relative h-96 mb-4">
           <Image
             alt=""
-            src="/home-studio-4-compressed.JPG"
+            src="/olomana-irvine-pottery-studio/olomana-studios-greenware-pottery.jpg"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 rounded-lg"
@@ -99,6 +99,9 @@ export default function About() {
         <h4 className="leander text-3xl font-bold sm:text-5xl mt-8 md:mt-16 text-black">contact</h4>
         <p className="mt-4 mb-4 text-gray-700">
           {"We're always happy to hear from you so if you have any questions about our ceramics, our studio, classes, collaborations or events, please get in touch! Our email is: olomanastudios@gmail.com."}
+        </p>
+        <p className="mt-4 mb-4 text-gray-700">
+          {"We are located at 14988 Sand Canyon Ave Studio 6, Irvine, CA 92618. Our hours are 10am to 8:30pm everyday except mondays."}
         </p>
       </div>
     </section>

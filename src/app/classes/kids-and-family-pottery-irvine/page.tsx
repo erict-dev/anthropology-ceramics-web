@@ -90,15 +90,6 @@ export default function KidsFamilyPotteryClass() {
               />
             </div>
           </div>
-        <div className="relative h-64 mt-4">
-          <Image
-            alt=""
-            src="/home-studio-1-compressed.JPG"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0 rounded-lg"
-          />
-        </div>
         </div>
       </section>
 

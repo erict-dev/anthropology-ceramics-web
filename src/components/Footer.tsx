@@ -48,11 +48,18 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* Address & Hours Section */}
+        <div className="mt-8 text-center text-gray-300 text-sm">
+          <p>14988 Sand Canyon Ave Studio 6, Irvine CA 92618</p>
+          <p>Open 10:00am – 8:30pm every day except Mondays</p>
+        </div>
         
-        <div className="text-center text-gray-400 mt-8 text-sm">
+        <div className="text-center text-gray-400 mt-4 text-sm">
           © {new Date().getFullYear()} Olomana Studios. All Rights Reserved.
         </div>
       </div>
     </footer>
   );
 }
+
