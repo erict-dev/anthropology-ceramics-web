@@ -91,7 +91,7 @@ export default function OpenStudioMembership() {
           <div className="grid gap-8 md:grid-cols-2 mt-8">
             <div className="border rounded-lg shadow-sm p-6 text-center">
               <h3 className="text-xl font-bold text-gray-800">Afternoon Clay</h3>
-              <p className="mt-2 text-gray-700">1:30 PM – 5:30 PM | $47 per session</p>
+              <p className="mt-2 text-gray-700">1:30 PM – 5:30 PM | $38 per session</p>
               <ul className="mt-4 space-y-2 text-gray-700">
                 <li>✓ 1lb ball of clay</li>
                 <li>✓ Use of handbuilding tables &amp; painting glazes</li>
@@ -109,7 +109,7 @@ export default function OpenStudioMembership() {
 
             <div className="border rounded-lg shadow-sm p-6 text-center">
               <h3 className="text-xl font-bold text-gray-800">Evening Clay</h3>
-              <p className="mt-2 text-gray-700">6:00 PM – 8:30 PM | $53 per session</p>
+              <p className="mt-2 text-gray-700">6:00 PM – 8:30 PM | $42 per session</p>
               <ul className="mt-4 space-y-2 text-gray-700">
                 <li>✓ 1lb ball of clay</li>
                 <li>✓ Use of handbuilding tables &amp; painting glazes</li>
