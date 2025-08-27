@@ -39,7 +39,7 @@ export default function EveningClay() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/evening-clay/evening-clay-2.jpeg"
+                src="/evening-clay/evening-clay-pottery-studio-irvine.jpg"
                 alt="Participants handbuilding pottery at Olomana Studios"
                 width={400}
                 height={400}
