@@ -44,7 +44,6 @@ export default function OpenStudioMembership() {
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Come any time during our Afternoon/Evening Clay Handbuilding Sessions</li>
               <li>✓ Includes one Evening Clay guest pass per month</li>
-              <li>✓ Free 1lb ball of clay every day you come for hand-building</li>
               <li>✓ Use of studio tools, handbuilding tables, and brushing glazes</li>
               <li>✓ Half shelf/month for firing</li>
             </ul>
