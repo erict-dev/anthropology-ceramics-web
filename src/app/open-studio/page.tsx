@@ -60,8 +60,8 @@ export default function OpenStudioMembership() {
 
           <div className="border rounded-lg shadow-sm p-6">
             <h2 className="text-2xl font-bold text-gray-800">Unlimited VIP Membership</h2>
-            <p className="mt-2 text-gray-700">For passionate potters who want maximum flexibility and unlimited access.</p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">$360/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
+            <p className="mt-2 text-gray-700">For passionate potters who want maximum flexibility and unlimited access.<b> 20% off if you have taken any of our 4 or 6 week pottery courses</b></p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$280/month*<span className="text-sm font-normal">+ $25 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Unlimited open studio access during business hours</li>
               <li>✓ One Evening Clay &amp; one Afternoon Clay guest pass per month</li>
