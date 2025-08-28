@@ -38,14 +38,14 @@ export default function OpenStudioMembership() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12 grid gap-8 md:grid-cols-2">
           <div className="border rounded-lg shadow-sm p-6">
-            <h2 className="text-2xl font-bold text-gray-800">5 Days / Month</h2>
-            <p className="mt-2 text-gray-700">Perfect for potters who want a regular creative outlet each month.</p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">$240/month <span className="text-sm font-normal">+ $35 initiation fee</span></p>
+            <h2 className="text-2xl font-bold text-gray-800">Handbuilding Ceramics Membership</h2>
+            <p className="mt-2 text-gray-700">Perfect for artists and crafters who just want to do hand-building and be a part of our creative community.</p>
+            <p className="mt-4 text-xl font-semibold text-gray-900">$185/month <span className="text-sm font-normal">+ $15 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
-              <li>✓ 5 open studio days per month, stay as long as you like per day</li>
+              <li>✓ Come any time during our Afternoon/Evening Clay Handbuilding Sessions</li>
               <li>✓ Includes one Evening Clay guest pass per month</li>
-              <li>✓ 1 25lb bag of clay &amp; wetbox</li>
-              <li>✓ Use of studio wheels, tools, handbuilding tables, glazes</li>
+              <li>✓ Free 1lb ball of clay every day you come for hand-building</li>
+              <li>✓ Use of studio tools, handbuilding tables, and brushing glazes</li>
               <li>✓ Half shelf/month for firing</li>
             </ul>
             <div className="mt-8">
@@ -59,7 +59,7 @@ export default function OpenStudioMembership() {
           </div>
 
           <div className="border rounded-lg shadow-sm p-6">
-            <h2 className="text-2xl font-bold text-gray-800">Unlimited VIP Membership</h2>
+            <h2 className="text-2xl font-bold text-gray-800">Open Studio Membership</h2>
             <p className="mt-2 text-gray-700">For passionate potters who want maximum flexibility and unlimited access.<b> 20% off if you have taken any of our 4 or 6 week pottery courses</b></p>
             <p className="mt-4 text-xl font-semibold text-gray-900">$280/month*<span className="text-sm font-normal">+ $25 initiation fee</span></p>
             <ul className="mt-4 space-y-2 text-gray-700">
