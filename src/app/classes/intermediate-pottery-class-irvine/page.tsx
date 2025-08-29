@@ -9,7 +9,7 @@ export default function IntermediatePotteryClasses() {
         <title>Intermediate Pottery Class in Irvine | Olomana Studios</title>
         <meta
           name="description"
-          content="Join our intermediate pottery classes in Irvine! Advance your wheel throwing and handbuilding techniques in 6-week courses, teapot workshops, and open studio memberships. Located in Orange County."
+          content="Join our intermediate pottery classes in Irvine! Advance your wheel throwing and handbuilding techniques in 4-week courses, teapot workshops, and open studio memberships. Located in Orange County."
         />
       </Head>
 
@@ -44,16 +44,17 @@ export default function IntermediatePotteryClasses() {
             </div>
             <div className="p-6 flex flex-col flex-1">
               <h2 className="text-2xl font-bold text-gray-900">
-                Level Two 6-Week Wheel Throwing Course
+                Level Two 4-Week Wheel Throwing Course
               </h2>
               <p className="mt-4 text-gray-700 flex-1">
                 For students who can already throw small cups, bowls, and plates, this course teaches more advanced forms — medium-sized vases, lidded jars, moon jars, and matcha bowls. Learn to throw with up to 5 lbs of clay, master hump throwing, and refine your glazing skills.
               </p>
-              <div
-                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium bg-gray-500"
+              <a
+                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Courses"
+                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
-                Coming Soon
-              </div>
+                Upcoming Courses
+              </a>
             </div>
           </div>
 

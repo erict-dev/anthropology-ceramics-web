@@ -116,12 +116,12 @@ export default function Classes() {
         className="mt-8 mb-8 w-full h-1.5"
       />
 
-      {/* New 6-Week Wheel Throwing Course Section */}
+      {/* New 4-Week Wheel Throwing Course Section */}
       <section className="pb-12 bg-gray-100">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">6-Week Wheel Throwing Course</h2>
+          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Wheel Throwing Course</h2>
           <p className="mt-4 text-gray-600 text-lg">
-            Join our 6-week wheel throwing course and immerse yourself in the art of pottery! Each session includes one hour of guided instruction and one hour of self-practice, giving you the time to develop your skills and create functional ceramics.
+            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes one hour of guided instruction and one hour of self-practice, giving you the time to develop your skills and create functional ceramics.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
@@ -143,7 +143,7 @@ export default function Classes() {
                 <li>✅ Glazing and final firing process</li>
               </ul>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Upcoming%20Courses"
+                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Courses"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
               >
                 Enroll Now

@@ -80,10 +80,10 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href={'/classes/6-week-pottery-course-irvine'}
+                      href={'/classes/4-week-pottery-course-irvine'}
                       onClick={handleNavItemClick}
                     >
-                      6 week course
+                      4 week course
                     </Link>
                   </li>
                   <li>

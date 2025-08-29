@@ -9,7 +9,7 @@ export default function BeginnerPotteryClasses() {
         <title>Beginner Pottery Class in Irvine | Olomana Studios</title>
         <meta
           name="description"
-          content="Join our beginner pottery classes in Irvine! Learn wheel throwing and handbuilding techniques in our 6-week courses and workshops for beginners. Located in Orange County."
+          content="Join our beginner pottery classes in Irvine! Learn wheel throwing and handbuilding techniques in our 4-week courses and workshops for beginners. Located in Orange County."
         />
       </Head>
 
@@ -31,7 +31,7 @@ export default function BeginnerPotteryClasses() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          {/* Wheel Throwing 6-Week Course */}
+          {/* Wheel Throwing 4-Week Course */}
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 w-full">
               <Image
@@ -52,7 +52,7 @@ export default function BeginnerPotteryClasses() {
                 glazing, and more. By the end, you’ll be able to comfortably make cups, bowls, small vases, and planters.
               </p>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Upcoming%20Courses"
+                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Courses"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Upcoming Courses

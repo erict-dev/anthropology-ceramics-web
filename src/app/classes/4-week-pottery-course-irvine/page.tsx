@@ -7,13 +7,13 @@ export default function PotteryCourse() {
       <section className="bg-gray-100 py-12 text-center">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h1 className="leander text-black text-3xl font-bold sm:text-5xl">
-            6-Week Pottery Course in Irvine
+            4-Week Pottery Course in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
-            Unlock the art of pottery wheel throwing in this immersive 6-week pottery course in Irvine, designed for beginning students eager to improve their skills in a sequential course. No experience necessary—just a passion to learn and create.
+            Unlock the art of pottery wheel throwing in this immersive 4-week pottery course in Irvine, designed for beginning students eager to improve their skills in a sequential course. No experience necessary—just a passion to learn and create.
           </p>
           <a
-            href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Upcoming%20Courses"
+            href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Courses"
             className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
           >
             Enroll Now
@@ -51,7 +51,7 @@ export default function PotteryCourse() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900">Course Schedule</h2>
           <p className="mt-4 text-lg text-gray-700">
-            Classes run weekly for 6 weeks and are held in our studio in Irvine. Each session includes one hour of guided instruction and one hour of self-practice to deepen your learning and creativity. Spots are limited to 4 students per cycle.
+            Classes run weekly for 4 weeks and are held in our studio in Irvine. Each session includes one hour of guided instruction and one hour of self-practice to deepen your learning and creativity. Spots are limited to 4 students per cycle.
           </p>
           <div className="relative h-64 mt-4 mb-4">
             <Image
@@ -66,16 +66,14 @@ export default function PotteryCourse() {
             <li><strong>Week 1:</strong> Introduction to the wheel – wedging, centering, and basic forms</li>
             <li><strong>Week 2:</strong> Pulling walls and shaping cylinders</li>
             <li><strong>Week 3:</strong> Trimming and surface decoration techniques</li>
-            <li><strong>Week 4:</strong> Refining shapes and introducing handles</li>
-            <li><strong>Week 5:</strong> Glazing fundamentals and creative finishes</li>
-            <li><strong>Week 6:</strong> Final touches and preparing for a kiln firing</li>
+            <li><strong>Week 4:</strong> Glazing fundamentals and creative finishes</li>
           </ul>
           <p className="mt-4 text-lg text-gray-700">
-            We release signups for the next 6-week cycle about one month beforehand.
+            We release signups for the next 4-week cycle about one month beforehand.
           </p>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Upcoming%20Courses"
+              href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Courses"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               View our schedule and enroll online

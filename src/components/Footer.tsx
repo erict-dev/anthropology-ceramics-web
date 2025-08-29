@@ -10,7 +10,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Classes</h3>
             <ul className="mt-2 space-y-2 text-gray-300">
               <li><Link href="/classes" className="hover:text-white">All Classes</Link></li>
-              <li><Link href="/classes/6-week-pottery-course-irvine" className="hover:text-white">6-Week Pottery Course</Link></li>
+              <li><Link href="/classes/4-week-pottery-course-irvine" className="hover:text-white">4-Week Pottery Course</Link></li>
               <li><Link href="/classes/adult-pottery-group-class-irvine" className="hover:text-white">Adult Pottery Group Class</Link></li>
               <li><Link href="/classes/kids-and-family-pottery-irvine" className="hover:text-white">Kids & Family Pottery</Link></li>
               <li><Link href="/classes/beginner-pottery-class-irvine" className="hover:text-white">Beginner Pottery Classes</Link></li>
