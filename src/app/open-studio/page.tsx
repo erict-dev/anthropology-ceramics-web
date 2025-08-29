@@ -45,7 +45,7 @@ export default function OpenStudioMembership() {
               <li>✓ Come any time during our Afternoon/Evening Clay Handbuilding Sessions</li>
               <li>✓ Includes one Evening Clay guest pass per month</li>
               <li>✓ Use of studio tools, handbuilding tables, and brushing glazes</li>
-              <li>✓ Half shelf/month for firing</li>
+              <li>✓ Half shelf/month for firing. Our studio fires to Cone 5/6</li>
             </ul>
             <div className="mt-8">
               <a
@@ -66,7 +66,7 @@ export default function OpenStudioMembership() {
               <li>✓ One Evening Clay &amp; one Afternoon Clay guest pass per month</li>
               <li>✓ 1 25lb bag of clay &amp; wetbox</li>
               <li>✓ Use of studio wheels, tools, handbuilding tables, glazes</li>
-              <li>✓ Half shelf/month for firing</li>
+              <li>✓ Half shelf/month for firing. Our studio fires to Cone 5/6</li>
             </ul>
             <div className="mt-8">
               <a

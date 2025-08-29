@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Script from 'next/script'
 import Link from 'next/link';
 import { Inter } from "next/font/google";
+import EmailRibbon from "@/components/EmailRibbon";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <EmailRibbon />
         {children}
         <Footer />
         {/** Cloudflare Web Analytics **/}
