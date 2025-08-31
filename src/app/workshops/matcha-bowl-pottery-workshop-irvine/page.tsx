@@ -64,12 +64,12 @@ export default function MatchaBowlWorkshop() {
               In this class you will be guided through the process of hand-building your own traditional matcha bowl using time-honored Japanese pottery techniques, no prior experience necessary. Learn how to shape the clay, carve the bottom to form a foot and use kurinuki carving techniques to create a natural intricate design.
             </p>
             <p className="mt-4 text-gray-700">
-              After completing your bowl, we will fire it for you, and in just 2-3 weeks, you can pick up your finished matcha bowl, ready to elevate your tea-drinking experience.
+              After completing your bowl, we will fire it for you, and in 3-4 weeks, you can pick up your finished matcha bowl, ready to elevate your tea-drinking experience.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg">
             <Image
-              src="/home-studio-2-compressed.JPG"
+              src="/olomana-irvine-pottery-studio/matcha-bowl-workshop-table.jpg"
               alt="Adults enjoying pottery class in Irvine"
               width={600}
               height={400}
@@ -85,9 +85,9 @@ export default function MatchaBowlWorkshop() {
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
-            <li><strong>Class Duration:</strong> 2 hours.</li>
+            <li><strong>Class Duration:</strong> ~2 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
-            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 2-3 weeks. We use all lead-free, food-safe glazes.</li>
+            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 3-4 weeks. We use all lead-free, food-safe glazes.</li>
           </ul>
           <div className="mt-6 text-center">
             <a

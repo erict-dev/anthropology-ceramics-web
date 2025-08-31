@@ -14,10 +14,10 @@ export default function IkebanaWorkshop() {
             </p>
           <div className="mt-6 mb-6 text-center">
             <a
-              href=""
-              className="inline-block rounded-lg bg-gray-400 px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/82663099/calendar/12365772"
+              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
-              Coming Soon
+              Book Online
             </a>
           </div>
           </header>
@@ -93,10 +93,10 @@ export default function IkebanaWorkshop() {
           </ul>
           <div className="mt-6 text-center">
             <a
-              href=""
-              className="mt-6 inline-block rounded-lg bg-gray-400 px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
+              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/82663099/calendar/12365772"
+              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
-              Coming Soon
+              Book Online
             </a>
           </div>
         </div>
