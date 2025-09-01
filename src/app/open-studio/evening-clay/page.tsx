@@ -79,9 +79,6 @@ export default function EveningClay() {
             <p className="mt-4 text-gray-700">
               There’s no formal instruction, but we encourage everyone to share, ask questions, and help each other. Whether you’re a beginner or experienced, you’ll find a welcoming space to create, unwind, and connect.
             </p>
-            <p className="mt-4 text-gray-700">
-              This is your <strong>third place</strong> — a place to meet new friends, have conversations, and feel part of a creative community.
-            </p>
           </div>
           <div className="overflow-hidden rounded-lg">
             <Image
@@ -101,7 +98,7 @@ export default function EveningClay() {
           <h2 className="text-3xl font-bold text-gray-900">Evening Handbuilding Session Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>When:</strong> Every evening, except mondays, 6:00–8:30pm</li>
-            <li><strong>What’s included:</strong> 1 pound of clay, use of paints, tools, and firing service</li>
+            <li><strong>What’s included:</strong> 1 pound of clay, use of paints, tools, and firing for 1 piece</li>
             <li><strong>Where:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong>Skill level:</strong> All levels welcome — from first-timers to seasoned potters</li>
             <li><strong>Pickup:</strong> Fired and finished pieces ready in 3–4 weeks</li>

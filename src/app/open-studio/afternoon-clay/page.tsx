@@ -20,7 +20,7 @@ export default function AfternoonClay() {
             Afternoon Clay – Pottery in Irvine
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
-            Looking for a <strong>creative way to spend your afternoon?</strong> Join our Afternoon Clay open studio — a welcoming space to handbuild pottery, paint, and meet others. A longer, relaxed session perfect for retirees, stay-at-home parents, young professionals, and visiting enthusiasts.
+            Looking for a creative way to spend your afternoon? Join our Afternoon Clay open studio, a welcoming space to handbuild pottery, paint, and meet others. A longer, relaxed session perfect for retirees, stay-at-home parents, young professionals, and visiting enthusiasts.
           </p>
           <div className="mt-6 mb-6 text-center">
             <a
@@ -74,13 +74,13 @@ export default function AfternoonClay() {
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-bold text-gray-900">A Peaceful, Creative Afternoon</h2>
             <p className="mt-4 text-gray-700">
-              Afternoon Clay is a longer, more leisurely session designed for <strong>artistic self-expression</strong> and connection. You’ll receive one pound of clay to create whatever you like, paint it, and carve your name on the bottom. We’ll fire your piece, ready for pickup in 3–4 weeks.
+              Afternoon Clay is a longer, more leisurely session designed for artistic self-expression and connection. You’ll receive one pound of clay to create whatever you like, paint it, and carve your name on the bottom. We’ll fire your piece, ready for pickup in 3–4 weeks.
             </p>
             <p className="mt-4 text-gray-700">
               With no formal instruction, you’re free to work at your own pace while chatting and sharing ideas with others in the studio. Everyone is welcome — whether you’re a retiree, stay-at-home parent, visiting the area, or simply enjoying an afternoon off.
             </p>
             <p className="mt-4 text-gray-700">
-              Take a break from your routine and enjoy a <strong>creative community space</strong> that feels like your own third place.
+              Take a break from your routine and enjoy a creative community space that feels like your own third place.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg">
@@ -102,7 +102,7 @@ export default function AfternoonClay() {
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>When:</strong> Every afternoon, 1:30–5:30pm</li>
             <li><strong>Where:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
-            <li><strong>What’s included:</strong> 1 pound of clay, use of paints, tools, and firing service</li>
+            <li><strong>What’s included:</strong> 1 pound of clay, use of paints, tools, and firing for 1 piece</li>
             <li><strong>Skill level:</strong> All levels welcome — no experience required</li>
             <li><strong>Pickup:</strong> Finished, fired pieces ready in 3–4 weeks</li>
           </ul>

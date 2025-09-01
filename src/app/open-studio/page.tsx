@@ -94,6 +94,7 @@ export default function OpenStudioMembership() {
               <ul className="mt-4 space-y-2 text-gray-700">
                 <li>✓ 1lb ball of clay</li>
                 <li>✓ Use of handbuilding tables &amp; painting glazes</li>
+                <li>✓ Firing for 1 finished piece</li>
                 <li>✓ Enjoy creative time with fellow artists</li>
               </ul>
               <div className="mt-8">
@@ -112,6 +113,7 @@ export default function OpenStudioMembership() {
               <ul className="mt-4 space-y-2 text-gray-700">
                 <li>✓ 1lb ball of clay</li>
                 <li>✓ Use of handbuilding tables &amp; painting glazes</li>
+                <li>✓ Firing for 1 finished piece</li>
                 <li>✓ A welcoming, creative atmosphere</li>
               </ul>
               <div className="mt-8">
