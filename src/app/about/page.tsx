@@ -18,7 +18,7 @@ export default function About() {
             <h2 className="leander text-black text-3xl font-bold sm:text-5xl">about us</h2>
 
             <p className="mt-4 text-gray-700">
-              {"Olomana Studios is a ceramics studio founded by Christina Jin and her partner, Eric, in Irvine, CA. Together, they are dedicated to creating a space that celebrates the timeless art of pottery and the joy of creative expression."}
+              {"Olomana Studios is a ceramics studio founded by Christina and her partner, Eric, in Irvine, CA. Together, they are dedicated to creating a space that celebrates the timeless art of pottery and the joy of creative expression."}
             </p>
             <p className="mt-4 text-gray-700">
               {"Welcome to Olomana Studios, a serene ceramics art studio nestled in the heart of sunny Southern California. Founded by Christina and Eric, Olomana Studios is a haven where art, nature, and tranquility converge. Christina's journey into ceramics has taken her from Laguna Beach to the pottery villages of Mashiko and Shigaraki in Japan, and Jingdezhen in China, where she apprenticed under master ceramicists Hozan Tanii, Tomoko Yamato, and Changcai Zhang. She draws inspiration from her time living in Japan’s mountains, crafting functional pieces that embody simplicity and interconnectedness."}
