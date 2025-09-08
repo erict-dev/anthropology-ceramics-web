@@ -41,7 +41,7 @@ export default function PotteryCourse() {
             <p className="mt-4 text-gray-700 text-lg">
               Students will develop a strong foundation in wheel throwing, refining their skills in centering clay, pulling walls, shaping forms, and creating functional pieces. Techniques will include trimming, adding handles, surface decoration, and experimenting with various shapes and forms. The course also covers essential glazing fundamentals, finishing techniques, and the firing process. With a balance of guided instruction and self-practice, students will gain confidence, consistency, and a deeper understanding of the ceramic arts.
             </p>
-            <p className="mt-4 text-lg text-gray-700">{"With small class sizes (limited to just 4 students per cycle) and expert guidance, you'll refine your skills, gain confidence on the wheel, and build a collection of handmade pottery to take home. Whether you're frustrated by one-off classes that don't offer enough time to develop your technique or looking for a creative escape, this course is designed to give you the in-depth learning experience you need."}</p>
+            <p className="mt-4 text-lg text-gray-700">{"With small class sizes and expert guidance, you'll refine your skills, gain confidence on the wheel, and build a collection of handmade pottery to take home. Whether you're frustrated by one-off classes that don't offer enough time to develop your technique or looking for a creative escape, this course is designed to give you the in-depth learning experience you need."}</p>
           </div>
         </div>
       </section>
@@ -51,7 +51,7 @@ export default function PotteryCourse() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900">Course Schedule</h2>
           <p className="mt-4 text-lg text-gray-700">
-            Classes run weekly for 4 weeks and are held in our studio in Irvine. Each session includes one hour of guided instruction and one hour of self-practice to deepen your learning and creativity. Spots are limited to 4 students per cycle.
+            Classes run weekly for 4 weeks and are held in our studio in Irvine. Each session includes one hour of guided instruction and one hour of self-practice to deepen your learning and creativity. Spots are limited and often fill up.
           </p>
           <div className="relative h-64 mt-4 mb-4">
             <Image
