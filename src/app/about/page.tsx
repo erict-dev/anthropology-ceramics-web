@@ -101,7 +101,7 @@ export default function About() {
           {"We're always happy to hear from you so if you have any questions about our ceramics, our studio, classes, collaborations or events, please get in touch! Our email is: olomanastudios@gmail.com."}
         </p>
         <p className="mt-4 mb-4 text-gray-700">
-          {"We are located at 14988 Sand Canyon Ave Studio 6, Irvine, CA 92618. Our hours are 10am to 8:30pm everyday except mondays."}
+          {"We are located at 14988 Sand Canyon Ave Studio 6, Irvine, CA 92618. Our hours are 10am to 8:30pm Wednesday to Sunday. We are closed Mondays and Tuesday."}
         </p>
       </div>
     </section>
