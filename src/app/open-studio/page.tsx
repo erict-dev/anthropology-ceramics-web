@@ -43,7 +43,7 @@ export default function OpenStudioMembership() {
               For artists who prefer handbuilding and want to be part of a small, supportive community.
             </p>
             <p className="mt-4 text-xl font-semibold text-gray-900">
-              $185/month <span className="text-sm font-normal">+ $25 initiation fee</span>
+              $189/month <span className="text-sm font-normal">+ $25 initiation fee</span>
             </p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Access during designated open studio hours (handbuilding)</li>
@@ -62,7 +62,7 @@ export default function OpenStudioMembership() {
               For experienced potters seeking flexible, independent practice time and want to be a part of a small artist community.
             </p>
             <p className="mt-4 text-xl font-semibold text-gray-900">
-              $224/month <span className="text-sm font-normal">+ $25 initiation fee</span>
+              $248/month <span className="text-sm font-normal">+ $25 initiation fee</span>
             </p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Open studio access during business hours</li>
