@@ -39,7 +39,7 @@ export default function KidsFamilyPotteryClass() {
               Kids love our pottery classes! This 1 hour session encourages children to unleash their creativity while learning the fundamentals of hand-building and wheel-throwing pottery techniques.
             </p>
             <p className="mt-4 text-gray-700 text-lg">
-              Parents are encouraged to take this class with their kids, making this a perfect family activity in Irvine! Our sessions are held in our beautiful pottery studio located in Old Town Irvine.
+              Parents can book this class with their kids, making this a perfect family activity in Irvine! Our sessions are held in our beautiful pottery studio located in Old Town Irvine.
             </p>
             <div className="mt-4">
               <p className="text-lg text-gray-700">

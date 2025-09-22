@@ -42,10 +42,10 @@ export default function Classes() {
                 />
 
                 <div className="p-4 sm:p-6 bg-gray-900 h-full">
-                  <h3 className="mt-0.5 text-lg text-gray-900 text-white">One-Time Pottery Group Class - Kids and Families</h3>
+                  <h3 className="mt-0.5 text-lg text-gray-900 text-white">One-Time Pottery Group Class - Kids 6+</h3>
 
                   <p className="mt-2 text-sm/relaxed text-gray-300">
-                    {"Kids love our pottery group classes in Irvine! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity, and your kids will have a blast exploring hand-building pottery and ceramics. Parents also welcome to attend this class with their kids and makes for a wonderful family event."}
+                    {"Kids love our pottery group classes in Irvine! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity, and your kids will have a blast exploring hand-building pottery and ceramics. Parents can also book this class with their kids, which makes for a wonderful family event."}
                   </p>
                   <p className="pt-2 text-white underline">Book class</p>
                 </div>
