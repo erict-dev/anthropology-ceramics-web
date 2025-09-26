@@ -52,7 +52,7 @@ export default function Footer() {
         {/* Address & Hours Section */}
         <div className="mt-8 text-center text-gray-300 text-sm">
           <p>14988 Sand Canyon Ave Studio 6, Irvine CA 92618</p>
-          <p>Open 10:00am – 8:30pm every day except Tuesdays</p>
+          <p>Check our Google Maps listing for the most up to date business hours</p>
         </div>
         
         <div className="text-center text-gray-400 mt-4 text-sm">
