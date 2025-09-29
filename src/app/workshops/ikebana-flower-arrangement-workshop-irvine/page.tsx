@@ -66,7 +66,7 @@ export default function IkebanaWorkshop() {
               In this workshop, you will learn the fundamental principles of Japanese floral arrangement, including line, space, and balance. You will have access to a selection of fresh flowers, kenzans (floral pin holders), and vases to create a composition that embodies natural beauty and simplicity.
             </p>
             <p className="mt-4 text-gray-700">
-              At the end of the class, we will take professional photos of your arrangement, and you will take home the flowers that you used. If you wish, you can also purchase the vase at a special workshop discount.
+              At the end of the class you will take home the flowers that you used. If you wish, you can also purchase the vase at a special workshop discount.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg">
@@ -89,7 +89,6 @@ export default function IkebanaWorkshop() {
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong>Class Duration:</strong> 1.5 hours.</li>
             <li><strong>What to Bring:</strong> Comfortable clothing and an open mind for creativity.</li>
-            <li><strong>Take Home:</strong> At the end of class we will take professional photos of your arrangement and send it to you. You will keep the flowers that you used. You will also have the option to purchase your vase at a discount.</li>
           </ul>
           <div className="mt-6 text-center">
             <a
