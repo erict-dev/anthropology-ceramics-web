@@ -33,18 +33,23 @@ export default function Events() {
             Private group class options are based on headcount and the number of wheel and handbuilding table spaces our studio has.
           </p>
 
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Wrap columns in flex with borders that change direction responsively */}
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 divide-y-[3px] md:divide-y-0 md:divide-x-[3px] divide-gray-300">
             {/* 6–8 */}
-            <div>
+            <div className="p-6">
               <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
                 6 – 8 people
               </div>
 
-
               {/* Card: Handbuilding */}
               <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
                 <div className="relative w-full aspect-[4/2]">
-                  <Image alt="Pottery handbuilding class" src="/private-pottery-event/handbuilding.jpg" fill className="object-cover" />
+                  <Image
+                    alt="Pottery handbuilding class"
+                    src="/private-pottery-event/handbuilding.jpg"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-5">
                   <div className="flex justify-between items-center">
@@ -93,11 +98,10 @@ export default function Events() {
                   </p>
                 </div>
               </div>
-
             </div>
 
             {/* 8–24 */}
-            <div>
+            <div className="p-6">
               <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
                 8 – 24 people
               </div>
@@ -105,7 +109,12 @@ export default function Events() {
               {/* Card: Handbuilding */}
               <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
                 <div className="relative w-full aspect-[4/2]">
-                  <Image alt="Pottery handbuilding class" src="/private-pottery-event/handbuilding.jpg" fill className="object-cover" />
+                  <Image
+                    alt="Pottery handbuilding class"
+                    src="/private-pottery-event/handbuilding.jpg"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-5">
                   <div className="flex justify-between items-center">
@@ -136,7 +145,7 @@ export default function Events() {
             </div>
 
             {/* 24+ */}
-            <div>
+            <div className="p-6">
               <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
                 24+ people
               </div>
@@ -144,7 +153,12 @@ export default function Events() {
               {/* Card: Handbuilding */}
               <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
                 <div className="relative w-full aspect-[4/2]">
-                  <Image alt="Pottery handbuilding class" src="/private-pottery-event/handbuilding.jpg" fill className="object-cover" />
+                  <Image
+                    alt="Pottery handbuilding class"
+                    src="/private-pottery-event/handbuilding.jpg"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-5">
                   <div className="flex justify-between items-center">
@@ -158,7 +172,19 @@ export default function Events() {
               </div>
             </div>
           </div>
+
+          <p className="text-center text-gray-600 mt-4 px-8">
+            Note: We do not allow food at our studio because it attracts ants and classes can get messy. Balloons and other small party decorations are okay for large groups, but understand that there may be other classes or open studio members in the studio.
+          </p>
         </div>
+
+      <Image
+        alt="Decorative line"
+        src="/handdrawn-line.png"
+        width={1920}
+        height={6}
+        className="mt-8 mb-8 w-full h-1.5"
+      />
 
         {/* How It Works */}
         <div className="mb-16">
