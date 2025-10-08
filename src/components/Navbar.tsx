@@ -140,24 +140,6 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href={'/open-studio/afternoon-clay'}
-                      onClick={handleNavItemClick}
-                    >
-                      afternoon clay
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href={'/open-studio/evening-clay'}
-                      onClick={handleNavItemClick}
-                    >
-                      evening clay
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       href={'/open-studio'}
                       onClick={handleNavItemClick}
                     >

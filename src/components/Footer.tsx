@@ -43,8 +43,6 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Open Studio</h3>
             <ul className="mt-2 space-y-2 text-gray-300">
               <li><Link href="/open-studio" className="hover:text-white">Memberships</Link></li>
-              <li><Link href="/open-studio/afternoon-clay" className="hover:text-white">Afternoon Clay</Link></li>
-              <li><Link href="/open-studio/evening-clay" className="hover:text-white">Evening Clay</Link></li>
             </ul>
           </div>
         </div>

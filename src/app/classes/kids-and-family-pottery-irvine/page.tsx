@@ -10,7 +10,7 @@ export default function KidsFamilyPotteryClass() {
             Kids & Family Pottery Class in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
-            Bring the kids for this fun and engaging pottery experience. This is a great activity to do in Irvine with kids, let your creativity flow and make usable pottery together!.
+            Bring the kids for this fun and engaging pottery experience. This is a great activity to do in Irvine with kids, let your creativity flow and make usable pottery together!
           </p>
           <a
             href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81628903/calendar/12365772"
@@ -36,14 +36,14 @@ export default function KidsFamilyPotteryClass() {
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-bold text-gray-900">A Creative & Fun Learning Experience</h2>
             <p className="mt-4 text-gray-700 text-lg">
-              Kids love our pottery classes! This 1 hour session encourages children to unleash their creativity while learning the fundamentals of hand-building and wheel-throwing pottery techniques.
+              Kids love our pottery classes! We encourage children to unleash their creativity while learning basic hand-building and wheel-throwing pottery techniques.
             </p>
             <p className="mt-4 text-gray-700 text-lg">
               Parents can book this class with their kids, making this a perfect family activity in Irvine! Our sessions are held in our beautiful pottery studio located in Old Town Irvine.
             </p>
             <div className="mt-4">
               <p className="text-lg text-gray-700">
-                🏺 Learn to make two pottery pieces: one hand-built and one wheel-thrown.
+                🏺 Learn to make pottery! Either hand-built or on the pottery wheel.
               </p>
               <p className="text-lg text-gray-700 mt-2">
                 🌴 Guidance from patient instructors in a friendly, relaxed atmosphere.
@@ -99,9 +99,9 @@ export default function KidsFamilyPotteryClass() {
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-lg text-gray-700">
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
-            <li><strong>Class Duration:</strong> 1 hour.</li>
+            <li><strong>Class Duration:</strong> 1 - 1.5 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
-            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 3-4 weeks. We use all lead-free food-safe glazes for our pottery pieces.</li>
+            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 4-5 weeks. We use all lead-free food-safe glazes for our pottery pieces.</li>
           </ul>
           <div className="mt-6 text-center">
             <a

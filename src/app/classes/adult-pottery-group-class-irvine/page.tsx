@@ -40,11 +40,11 @@ export default function AdultPotteryClass() {
               Join our pottery class designed for adults who want to explore their creativity and experience the joys of working with clay. Whether you are a complete beginner or looking for a new creative outlet, this class is for you.
             </p>
             <p className="mt-4 text-gray-700 text-lg">
-              In this 1 hour session, you will create two pottery pieces: a wheel-thrown cup or bowl, and a hand-built piece limited only by your imagination (and a few clay limitations/guidelines which we will teach you). Our expert instructors will guide you through the process, ensuring you have a fun and rewarding experience.
+              In our classes, you will learn the art of pottery wheel throwing or handbuilding. Each style has it's appeal and our expert instructors will guide you through the process and help you have a fun, creative and rewarding experience.
             </p>
             <div className="mt-4">
               <p className="text-lg text-gray-700">
-                🏺 Learn to make 2 pieces of pottery, one on the wheel and one hand-built
+                🏺 Learn to make pottery, on the wheel or hand-built
               </p>
               <p className="text-lg text-gray-700 mt-2">
                 🌴 Enjoy a hands-on creative experience.
@@ -109,9 +109,9 @@ export default function AdultPotteryClass() {
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-lg text-gray-700">
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
-            <li><strong>Class Duration:</strong> 1 hour.</li>
+            <li><strong>Class Duration:</strong> 1 - 1.5 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
-            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 3-4 weeks. We use all lead-free, food-safe glazes.</li>
+            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 4-6 weeks. We use all lead-free, food-safe glazes.</li>
           </ul>
           <div className="mt-6 text-center">
             <a

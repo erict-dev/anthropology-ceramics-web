@@ -17,7 +17,7 @@ export default function TeapotMakingWorkshop() {
               href=""
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
-              Book Online
+              Coming Summer 2026
             </a>
           </div>
           </header>
@@ -87,16 +87,16 @@ export default function TeapotMakingWorkshop() {
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
-            <li><strong>Class Duration:</strong> 3.5 hours.</li>
+            <li><strong>Class Duration:</strong> 8 hours, split across 2 days</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes, comfortable clothing, and a creative mindset.</li>
-            <li><strong>Take Home:</strong> Your handcrafted teapot, after firing (ready in 3-4 weeks).</li>
+            <li><strong>Take Home:</strong> Your handcrafted teapot, after firing (ready in 4 weeks).</li>
           </ul>
           <div className="mt-6 text-center">
             <a
               href=""
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
             >
-              Book Your Workshop
+              Coming Summer 2026
             </a>
           </div>
         </div>

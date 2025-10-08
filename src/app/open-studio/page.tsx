@@ -47,7 +47,8 @@ export default function OpenStudioMembership() {
             </p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Access during designated open studio hours (handbuilding)</li>
-              <li>✓ 1 × 25lb bag of clay &amp; wetbox</li>
+              <li>✓ 1 wetbox at the studio</li>
+              <li>✓ Free reclaimed clay, new clay available for purchase</li>
               <li>✓ Use of studio tools, handbuilding tables, and brushing glazes</li>
               <li>✓ Half shelf/month for firing (Cone 5/6)</li>
             </ul>
@@ -66,7 +67,8 @@ export default function OpenStudioMembership() {
             </p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Open studio access during business hours</li>
-              <li>✓ 1 × 25lb bag of clay &amp; wetbox</li>
+              <li>✓ 1 wetbox at the studio</li>
+              <li>✓ Free reclaimed clay, new clay available for purchase</li>
               <li>✓ Use of studio wheels, tools, handbuilding tables, and glazes</li>
               <li>✓ Half shelf/month for firing (Cone 5/6)</li>
             </ul>
