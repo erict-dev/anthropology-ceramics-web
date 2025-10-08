@@ -40,7 +40,7 @@ export default function AdultPotteryClass() {
               Join our pottery class designed for adults who want to explore their creativity and experience the joys of working with clay. Whether you are a complete beginner or looking for a new creative outlet, this class is for you.
             </p>
             <p className="mt-4 text-gray-700 text-lg">
-              In our classes, you will learn the art of pottery wheel throwing or handbuilding. Each style has it's appeal and our expert instructors will guide you through the process and help you have a fun, creative and rewarding experience.
+              In our classes, you will learn the art of pottery wheel throwing or handbuilding. Our expert instructors will guide you through the process and help you have a fun, creative and rewarding experience.
             </p>
             <div className="mt-4">
               <p className="text-lg text-gray-700">

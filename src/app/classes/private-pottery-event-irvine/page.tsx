@@ -170,9 +170,9 @@ export default function Events() {
                 <div className="w-16 h-16 bg-olomana-yellow text-2xl text-white rounded-full flex items-center justify-center">1</div>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-gray-900">Email us with your group's information</h4>
+                <h4 className="text-lg font-bold text-gray-900">Email us with information about your group</h4>
                 <p className="mt-2 text-gray-700">
-                  Email <strong>olomanastudios@gmail.com</strong> with 2-3 date/time preferences and estimated headcount (minimum 6, max 30). We’ll confirm details and provide a private booking link. <strong>No deposit required.</strong>.
+                  Email <strong>olomanastudios@gmail.com</strong> with 2-3 date/time preferences and estimated headcount (minimum 6, max 30). We will confirm details and provide a private booking link. <strong>No deposit required.</strong>.
                 </p>
               </div>
             </div>
@@ -198,7 +198,7 @@ export default function Events() {
               <div>
                 <h4 className="text-lg font-bold text-gray-900">Enjoy the Class</h4>
                 <p className="mt-2 text-gray-700">
-                  Arrive 10 minutes early, and we’ll take it from there. Our instructors guide everyone through making their own piece, no experience required. Expect an easygoing, social vibe with lots of laughter as participants try the potter's wheel or get creative with handbuilding.
+                  Arrive 10 minutes early, and we will take it from there. Our instructors guide everyone through making their own piece, no experience required. Expect an easygoing, social vibe with lots of laughter as participants try the pottery wheel or get creative with handbuilding.
                 </p>
               </div>
             </div>
