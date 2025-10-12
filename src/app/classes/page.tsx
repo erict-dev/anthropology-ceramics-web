@@ -13,7 +13,7 @@ export default function Classes() {
             </p>
           </div>
           <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
-            <a href="https://olomanastudios.as.me/schedule/66629c2c/appointment/80268514/calendar/12365772">
+            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
@@ -33,7 +33,7 @@ export default function Classes() {
                 </div>
               </article>
             </a>
-            <a href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81628903/calendar/12365772">
+            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
