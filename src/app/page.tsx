@@ -58,7 +58,7 @@ export default function Home() {
             />
             <ClassCard
               title="Kids Pottery Group Class (Ages 7+)"
-              imgSrc="/pottery.jpg"
+              imgSrc="/kids-pottery-class.jpg"
               price="$56 / person"
               meta="1 hr"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/84238798/calendar/12365772"
