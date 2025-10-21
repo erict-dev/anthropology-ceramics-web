@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import ClassCard from '@/components/ClassCard'
+import Link from 'next/link';
 
 export default function Classes() {
   return (
@@ -13,7 +15,7 @@ export default function Classes() {
             </p>
           </div>
           <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
-            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)">
+            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
@@ -33,7 +35,7 @@ export default function Classes() {
                 </div>
               </article>
             </a>
-            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)">
+            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/84238798/calendar/12365772">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt=""
@@ -42,7 +44,7 @@ export default function Classes() {
                 />
 
                 <div className="p-4 sm:p-6 bg-gray-900 h-full">
-                  <h3 className="mt-0.5 text-lg text-gray-900 text-white">One-Time Pottery Group Class - Kids 6+</h3>
+                  <h3 className="mt-0.5 text-lg text-gray-900 text-white">Kids Pottery Group Class - Ages 7+</h3>
 
                   <p className="mt-2 text-sm/relaxed text-gray-300">
                     {"Kids love our pottery group classes in Irvine! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity, and your kids will have a blast exploring hand-building pottery and ceramics. Parents can also book this class with their kids, which makes for a wonderful family event."}
@@ -70,41 +72,24 @@ export default function Classes() {
           <p className="mt-4 text-gray-600 text-lg w-full">
             Explore our <strong>Pottery Workshops</strong> in Irvine, CA where we teach you the traditional techniques behind making specific pottery pieces like <em>matcha bowls</em>, <em>ikebana vases</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery and make your own unique pottery piece.
           </p>
-          <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src={`/irvine-matcha-bowl-class/matcha-bowl-7.jpg`}
-                alt={`Handmade matcha bowl in progress`}
-                width={400}
-                height={600}
-                className="object-cover w-full h-full transition duration-500 hover:scale-105"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src={`/library/matcha-bowls/matcha-workshop-2.jpg`}
-                alt={`Completed chawan matcha bowl`}
-                width={400}
-                height={600}
-                className="hidden sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src={`/library/ikebana/ikebana-main.jpg`}
-                alt={`Participants shaping their matcha bowls`}
-                width={400}
-                height={600}
-                className="hidden md:block object-cover w-full h-full transition duration-500 hover:scale-105"
-              />
-            </div>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ClassCard
+              title="Traditional Matcha Bowl Workshop"
+              imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
+              price="$85 / person"
+              meta="2.5 hrs"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
+              description="Carve a chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks."
+            />
+            <ClassCard
+              title="Ikebana Flower Arrangement Workshop"
+              imgSrc="/workshops/ike-4.jpeg"
+              price="$64 / person"
+              meta="1.5 hrs"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/82663099/calendar/12365772"
+              description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
+            />
           </div>
-          <a
-            href="/workshops"
-            className="inline-block mt-6 rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
-          >
-            View Workshops
-          </a>
         </div>
       </section>
 
@@ -121,35 +106,51 @@ export default function Classes() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Wheel Throwing Course</h2>
           <p className="mt-4 text-gray-600 text-lg">
-            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes one hour of guided instruction and one hour of self-practice, giving you the time to develop your skills and create functional ceramics.
+            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes one hour of guided instruction, one hour of self-practice, and one open studio seesion per week, giving you the time to develop your skills and create functional ceramics.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-            <div className="overflow-hidden rounded-lg">
-              <Image
-                src="/pottery-course.jpg"
-                alt="pottery course"
-                width={600}
-                height={400}
-                className="object-cover w-full h-full transition duration-500 hover:scale-105"
-              />
-            </div>
-            <div className="flex flex-col justify-center">
-              <h3 className="text-xl font-semibold text-gray-900">{"What You'll Learn:"}</h3>
-              <ul className="mt-2 space-y-2 text-gray-700">
-                <li>✅ Centering and shaping clay</li>
-                <li>✅ Pulling walls and forming pottery pieces</li>
-                <li>✅ Trimming, handles, and surface decoration</li>
-                <li>✅ Glazing and final firing process</li>
-              </ul>
-              <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Courses"
-                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
-              >
-                Enroll Now
-              </a>
-            </div>
+          {/* Row 1: Level 1–3 (3 cols at lg, 1 col below) */}
+          <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <ClassCard
+              title="Level 1"
+              imgSrc="/level-1-pottery-irvine-olomana-course.jpg"
+              price="$285"
+              meta="4 sessions"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25201?categories%5B%5D=Pottery+Courses+-+Level+1"
+              description="Foundations: wedging clay, centering, pulling even walls, and forming cylinders, cups, vases and bowls. Learn how to apply glaze. Firing included for work made during the course."
+            />
+            <ClassCard
+              title="Level 2"
+              imgSrc="/level-2-pottery-irvine-olomana.jpg"
+              price="$285"
+              meta="4 sessions"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25202/appointment/84417491/calendar/12365772?categories%5B%5D=Pottery+Courses+-+Level+1"
+              description="Refine control and consistency, explore curves, shapes and handles. Learn to control clay moisture and trim foot rings. Firing included for work made during the course."
+            />
+            <ClassCard
+              title="Level 3"
+              imgSrc="/level-3-pottery-irvine-olomana.jpg"
+              price="$285"
+              meta="4 sessions"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25203?categories%5B%5D=Pottery+Courses+-+Level+1"
+              description="Create jars with matching lids, throw multiple pieces off the hump and marble different clays together for unique colors. Firing included for work made during the course."
+            />
           </div>
+        </div>
+      </section>
+
+      <Image
+        alt="Decorative line"
+        src="/handdrawn-line.png"
+        width={1920}
+        height={6}
+        className="mt-8 mb-8 w-full h-1.5"
+      />
+
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
+          <p className="text-center text-gray-700 text-lg">For groups of 8 or more, contact us at <strong>olomanastudios@gmail.com</strong> for a private pottery event booking.</p>
+          <p className="text-center text-gray-700 text-lg">Private group prices are the same as our regular group classes. Learn more <Link href="/classes/private-pottery-event-irvine" className="underline">here.</Link></p>
         </div>
       </section>
     </>

@@ -30,7 +30,7 @@ export default function Events() {
         <div className="mb-16">
           <h3 className="text-4xl font-bold text-gray-900 text-center">Group Options by Size</h3>
           <p className="text-center text-gray-600 mt-2">
-            Private group class options are based on headcount and the number of wheel and handbuilding table spaces our studio has.
+            Private group class options are limited by the number of available wheels our studio has.
           </p>
 
           {/* Wrap columns in flex with borders that change direction responsively */}
@@ -38,7 +38,28 @@ export default function Events() {
             {/* 6–8 */}
             <div className="p-6">
               <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
-                6 – 8 people
+                8 people
+              </div>
+
+              {/* Card: Wheel */}
+              <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
+                <div className="relative w-full aspect-[4/2]">
+                  <Image
+                    alt="Pottery wheel class"
+                    src="/private-pottery-event/private-group-pottery-wheel-throwing.jpg"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-5">
+                  <div className="flex justify-between items-center">
+                    <h4 className="font-semibold text-gray-900">Pottery Wheel Class</h4>
+                    <span className="text-sm text-gray-700 font-medium">$62/person</span>
+                  </div>
+                  <p className="text-sm text-gray-500 mt-1">
+                    1 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
+                  </p>
+                </div>
               </div>
 
               {/* Card: Handbuilding */}
@@ -70,7 +91,7 @@ export default function Events() {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <h4 className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$84/person</span>
+                    <span className="text-sm text-gray-700 font-medium">$74/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
                     1.5 hour class · includes 2 lbs of clay, firing and glazing for 2 pieces · pickup in 4–5 weeks
@@ -78,26 +99,6 @@ export default function Events() {
                 </div>
               </div>
 
-              {/* Card: Wheel */}
-              <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
-                <div className="relative w-full aspect-[4/2]">
-                  <Image
-                    alt="Pottery wheel class"
-                    src="/private-pottery-event/private-group-pottery-wheel-throwing.jpg"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <div className="flex justify-between items-center">
-                    <h4 className="font-semibold text-gray-900">Pottery Wheel Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$62/person</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">
-                    1 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* 8–24 */}
@@ -135,7 +136,7 @@ export default function Events() {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <h4 className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$84/person</span>
+                    <span className="text-sm text-gray-700 font-medium">$74/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
                     1.5 hour class · includes 2 lbs of clay, firing and glazing for 2 pieces · pickup in 4–5 weeks
