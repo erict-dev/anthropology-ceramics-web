@@ -21,7 +21,7 @@ export default function OpenStudioMembership() {
             Pottery Open Studio Memberships in Irvine
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
-            Our open studio memberships spots are limited and application based due to our small studio space and our focus on a high-quality experience for every student and member. If you’re interested in being considered, please apply here: <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfXj5xszuDSy3dcACVk764UGQF4xtG39IeigQpPtEizpJ0_Ig/viewform?usp=dialog"><strong className="underline">Open Studio Application</strong></Link>.
+            Our open studio memberships spots are limited and application based due to our small studio space and our focus on a high-quality experience for every student and member. If you are interested in joining, please apply here: <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfXj5xszuDSy3dcACVk764UGQF4xtG39IeigQpPtEizpJ0_Ig/viewform?usp=dialog"><strong className="underline">Open Studio Application</strong></Link>.
           </p>
           <div className="relative h-96 mt-4 mb-4">
             <Image
