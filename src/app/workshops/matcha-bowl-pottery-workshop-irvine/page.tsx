@@ -14,7 +14,7 @@ export default function MatchaBowlWorkshop() {
             </p>
           <div className="mt-6 mb-6 text-center">
             <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608405/calendar/12365772"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Online
@@ -91,7 +91,7 @@ export default function MatchaBowlWorkshop() {
           </ul>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608405/calendar/12365772"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Your Workshop

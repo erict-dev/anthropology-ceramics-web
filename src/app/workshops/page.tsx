@@ -17,7 +17,7 @@ export default function Workshops() {
             </p>
             <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 2.5 hours</p>
           <a
-            href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608405/calendar/12365772"
+            href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
             className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"
           >
             Book online
@@ -76,6 +76,12 @@ export default function Workshops() {
               <strong>Highlights:</strong> Discover the philosophy behind Ikebana, master basic design principles, and leave with an elegant floral creation to display in your home.
             </p>
             <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 2 hours</p>
+          <a
+            href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/82663099/calendar/12365772"
+            className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"
+          >
+            Book online
+          </a>
           </header>
 
           <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
