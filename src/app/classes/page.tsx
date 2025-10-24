@@ -15,10 +15,10 @@ export default function Classes() {
             </p>
           </div>
           <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
-            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)">
+            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
-                  alt=""
+                  alt="adults group class"
                   src="/adults-group-class/adult-group-class-3.jpg"
                   className="h-64 w-full object-cover"
                 />
@@ -38,7 +38,7 @@ export default function Classes() {
             <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/84238798/calendar/12365772">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
-                  alt=""
+                  alt="kids group class"
                   src="/kids-pottery.jpg"
                   className="h-64 w-full object-cover"
                 />
