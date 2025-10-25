@@ -42,27 +42,27 @@ export default function Home() {
       {/* One-Time Pottery Classes (Adults) — 2 cards, stretch to 2 cols at md */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">One-Time Pottery Classes</h2>
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Irvine Pottery Classes</h2>
           <p className="mt-2 text-gray-600">
-            Perfect for first-timers and people who want to try pottery, make a finished piece in a single session.
+            Perfect for first-timers and people who want to try pottery, no experience necessary.
           </p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
-              title="One-time Pottery Wheel Class (Adults)"
+              title="One-Time Pottery Wheel Class (Adults)"
               imgSrc="/adults-group-class/adult-group-class-3-resize.jpg"
-              price="$62 / person"
-              meta="1 hr"
+              price="$58 / person"
+              meta="75 mins"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
               description="Learn how to use a pottery wheel to make a unique cup, bowl, planter or vase. Includes 1.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks after class."
             />
             <ClassCard
-              title="Kids Pottery Group Class (Ages 7+)"
+              title="Kids Pottery Series (Ages 7+)"
               imgSrc="/kids-pottery-class.jpg"
-              price="$56 / person"
-              meta="1 hr"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/84238798/calendar/12365772"
-              description="Kids love learning pottery! Each participant will learn pottery handbuilding basics and make a unique piece, no experience necessary. Includes 1lbs of clay and firing for 1 piece. Pickup in 4-5 weeks after class."
+              price="$50 / session"
+              meta="4 sessions"
+              href="https://olomanastudios.as.me/schedule/66629c2c?appointmentTypeIds%5B%5D=84238798"
+              description="Over the course of 4 weeks, kids will learn pottery handbuilding basics and make their own unique pottery pieces. Includes clay and firing for all pieces made during the series."
             />
           </div>
 

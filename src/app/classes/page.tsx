@@ -35,7 +35,7 @@ export default function Classes() {
                 </div>
               </article>
             </a>
-            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/84238798/calendar/12365772">
+            <a href="https://olomanastudios.as.me/schedule/66629c2c?appointmentTypeIds%5B%5D=84238798">
               <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
                 <img
                   alt="kids group class"
@@ -44,12 +44,12 @@ export default function Classes() {
                 />
 
                 <div className="p-4 sm:p-6 bg-gray-900 h-full">
-                  <h3 className="mt-0.5 text-lg text-gray-900 text-white">Kids Pottery Group Class - Ages 7+</h3>
+                  <h3 className="mt-0.5 text-lg text-gray-900 text-white">Kids Pottery Class Series - Ages 7+</h3>
 
                   <p className="mt-2 text-sm/relaxed text-gray-300">
-                    {"Kids love our pottery group classes in Irvine! The class is all about sparking creativity and joy. We encourage and empower your child to exercise their innate creativity, and your kids will have a blast exploring hand-building pottery and ceramics. Parents can also book this class with their kids, which makes for a wonderful family event."}
+                    {"This class will teach your kids focus and patience while they have fun  making unique pieces of pottery! This series runs for 4 weeks and meets once a week. Includes clay and firing for all pieces made during the series."}
                   </p>
-                  <p className="pt-2 text-white underline">Book class</p>
+                  <p className="pt-2 text-white underline">Book series</p>
                 </div>
               </article>
             </a>

@@ -8,7 +8,7 @@ export default function Events() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">Private Pottery Group Events</h2>
           <p className="mt-4 text-lg text-gray-600">
-            Our private pottery events in Irvine are available for groups of 6 or more. This hands-on, pottery making event is great for celebrations, team building, and gatherings.
+            Our private pottery events in Irvine are available for groups of 8 or more. This hands-on, pottery making event is great for celebrations, team building, and gatherings.
             No experience necessary, we guide everyone step by step and each participant gets to make their own unqiue piece of pottery!
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function Events() {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <h4 className="font-semibold text-gray-900">Pottery Wheel Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$62/person</span>
+                    <span className="text-sm text-gray-700 font-medium">$58/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
                     1 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
@@ -75,7 +75,7 @@ export default function Events() {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <h4 className="font-semibold text-gray-900">Pottery Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$62/person</span>
+                    <span className="text-sm text-gray-700 font-medium">$58/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
                     1 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
@@ -91,7 +91,7 @@ export default function Events() {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <h4 className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$74/person</span>
+                    <span className="text-sm text-gray-700 font-medium">$68/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
                     1.5 hour class · includes 2 lbs of clay, firing and glazing for 2 pieces · pickup in 4–5 weeks
@@ -120,7 +120,7 @@ export default function Events() {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <h4 className="font-semibold text-gray-900">Pottery Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$62/person</span>
+                    <span className="text-sm text-gray-700 font-medium">$58/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
                     1 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
@@ -136,7 +136,7 @@ export default function Events() {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <h4 className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$74/person</span>
+                    <span className="text-sm text-gray-700 font-medium">$68/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
                     1.5 hour class · includes 2 lbs of clay, firing and glazing for 2 pieces · pickup in 4–5 weeks
@@ -164,7 +164,7 @@ export default function Events() {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <h4 className="font-semibold text-gray-900">Pottery Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$62/person</span>
+                    <span className="text-sm text-gray-700 font-medium">$58/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
                     1.5 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–6 weeks
