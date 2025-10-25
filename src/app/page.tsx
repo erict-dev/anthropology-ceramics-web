@@ -49,7 +49,7 @@ export default function Home() {
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
-              title="One-Time Pottery Wheel Class (Adults)"
+              title="One-Time Pottery Group Class (Adults)"
               imgSrc="/adults-group-class/adult-group-class-3-resize.jpg"
               price="$58 / person"
               meta="75 mins"
