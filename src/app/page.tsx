@@ -50,11 +50,11 @@ export default function Home() {
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
               title="One-Time Pottery Group Class (Adults)"
-              imgSrc="/adults-group-class/adult-group-class-3-resize.jpg"
+              imgSrc="/one-time-pottery-class-irvine.jpg"
               price="$68 / person"
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
-              description="In this one-time class each person will create 2 unique pieces of pottery, no experience necessary. We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials, firing and glazing included."
+              description="In this class you will learn how to make 2 unique pieces of pottery, no experience necessary! We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials, firing and glazing included."
             />
             <ClassCard
               title="Kids Pottery Series (Ages 7+)"
@@ -62,7 +62,7 @@ export default function Home() {
               price="$50 / session"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c?appointmentTypeIds%5B%5D=84238798"
-              description="Over the course of 4 weeks, kids will learn pottery handbuilding basics and make their own unique pottery pieces! Kids love getting messy and creative, plus it's a great chance for them to exercise their focus and patience! Includes clay and firing for all pieces made during the series."
+              description="Students will learn pottery handbuilding basics and make unique pottery pieces! Your kids will love getting messy and creative, plus it's a great chance for them to exercise their focus and patience! Class runs for 4 weeks and includes clay and firing for all pieces made during the series."
             />
           </div>
 
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
             <ClassCard
               title="Level 1"
-              imgSrc="/level-1-pottery-irvine-olomana-course.jpg"
+              imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               price="$285"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25201?categories%5B%5D=Pottery+Courses+-+Level+1"
