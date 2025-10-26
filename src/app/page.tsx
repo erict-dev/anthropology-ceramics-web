@@ -51,10 +51,10 @@ export default function Home() {
             <ClassCard
               title="One-Time Pottery Group Class (Adults)"
               imgSrc="/adults-group-class/adult-group-class-3-resize.jpg"
-              price="$58 / person"
-              meta="75 mins"
+              price="$68 / person"
+              meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
-              description="Learn how to use a pottery wheel to make a unique cup, bowl, planter or vase. Includes 1.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks after class."
+              description="In this one-time class each person will create 2 unique pieces of pottery, no experience necessary. We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials, firing and glazing included."
             />
             <ClassCard
               title="Kids Pottery Series (Ages 7+)"
@@ -62,7 +62,7 @@ export default function Home() {
               price="$50 / session"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c?appointmentTypeIds%5B%5D=84238798"
-              description="Over the course of 4 weeks, kids will learn pottery handbuilding basics and make their own unique pottery pieces. Includes clay and firing for all pieces made during the series."
+              description="Over the course of 4 weeks, kids will learn pottery handbuilding basics and make their own unique pottery pieces! Kids love getting messy and creative, plus it's a great chance for them to exercise their focus and patience! Includes clay and firing for all pieces made during the series."
             />
           </div>
 

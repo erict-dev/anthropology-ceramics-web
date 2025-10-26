@@ -14,45 +14,23 @@ export default function Classes() {
               Come join us for a pottery class in Irvine! We host group pottery classes in our historic studio in Old Town Irvine. If you have questions about our class or want to book a private class for your family, friend group, or organization, feel free to email us at olomanastudios@gmail.com.
             </p>
           </div>
-          <div className="flex flex-col gap-y-4 md:flex-row gap-x-4">
-            <a href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772">
-              <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
-                <img
-                  alt="adults group class"
-                  src="/adults-group-class/adult-group-class-3.jpg"
-                  className="h-64 w-full object-cover"
-                />
-
-                <div className="p-4 sm:p-6 bg-gray-900 h-full">
-                  <h3 className="mt-0.5 text-lg text-gray-900 text-white">
-                    One-Time Pottery Group Class - Adults
-                  </h3>
-
-                  <p className="mt-2 text-sm/relaxed text-gray-300">
-                    {"Learn and create your own pottery with our pottery group classes for adults in Irvine. Enjoy a beautiful hour throwing and handbuilding your own ceramics. It's a great way to relax, learn something new and create unique, beautiful pieces that you can use at home."}
-                  </p>
-                  <p className="pt-2 text-white underline">Book class</p>
-                </div>
-              </article>
-            </a>
-            <a href="https://olomanastudios.as.me/schedule/66629c2c?appointmentTypeIds%5B%5D=84238798">
-              <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg shadow-gray-700/25">
-                <img
-                  alt="kids group class"
-                  src="/kids-pottery.jpg"
-                  className="h-64 w-full object-cover"
-                />
-
-                <div className="p-4 sm:p-6 bg-gray-900 h-full">
-                  <h3 className="mt-0.5 text-lg text-gray-900 text-white">Kids Pottery Class Series - Ages 7+</h3>
-
-                  <p className="mt-2 text-sm/relaxed text-gray-300">
-                    {"This class will teach your kids focus and patience while they have fun  making unique pieces of pottery! This series runs for 4 weeks and meets once a week. Includes clay and firing for all pieces made during the series."}
-                  </p>
-                  <p className="pt-2 text-white underline">Book series</p>
-                </div>
-              </article>
-            </a>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ClassCard
+              title="One-Time Pottery Group Class (Adults)"
+              imgSrc="/adults-group-class/adult-group-class-3-resize.jpg"
+              price="$68 / person"
+              meta="1.5 hrs"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
+              description="In this one-time class each person will create 2 unique pieces of pottery, no experience necessary. We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials, firing and glazing included."
+            />
+            <ClassCard
+              title="Kids Pottery Series (Ages 7+)"
+              imgSrc="/kids-pottery-class.jpg"
+              price="$50 / session"
+              meta="4 sessions"
+              href="https://olomanastudios.as.me/schedule/66629c2c?appointmentTypeIds%5B%5D=84238798"
+              description="Over the course of 4 weeks, kids will learn pottery handbuilding basics and make their own unique pottery pieces! Kids love getting messy and creative, plus it's a great chance for them to exercise their focus and patience! Includes clay and firing for all pieces made during the series."
+            />
           </div>
         </div>
       </section>
