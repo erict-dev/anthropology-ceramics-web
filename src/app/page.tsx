@@ -51,7 +51,6 @@ export default function Home() {
             <ClassCard
               title="One-Time Pottery Group Class (Adults)"
               imgSrc="/one-time-pottery-class-irvine.jpg"
-              price="$68 / person"
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
               description="In this class you will learn how to make 2 unique pieces of pottery, no experience necessary! We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials, firing and glazing included."
@@ -59,7 +58,6 @@ export default function Home() {
             <ClassCard
               title="Kids Pottery Series (Ages 7+)"
               imgSrc="/kids-pottery-class.jpg"
-              price="$50 / session"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c?appointmentTypeIds%5B%5D=84238798"
               description="Students will learn pottery handbuilding basics and make unique pottery pieces! Your kids will love getting messy and creative, plus it's a great chance for them to exercise their focus and patience! Class runs for 4 weeks and includes clay and firing for all pieces made during the series."
@@ -87,7 +85,6 @@ export default function Home() {
             <ClassCard
               title="Traditional Matcha Bowl Workshop"
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
-              price="$85 / person"
               meta="2.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
               description="Carve a chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks."
@@ -95,7 +92,6 @@ export default function Home() {
             <ClassCard
               title="Ikebana Flower Arrangement Workshop"
               imgSrc="/workshops/ike-4.jpeg"
-              price="$64 / person"
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/82663099/calendar/12365772"
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
