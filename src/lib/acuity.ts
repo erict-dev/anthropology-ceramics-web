@@ -67,7 +67,6 @@ function base64(str: string) {
   // Use whichever exists so this works in both.
   // @ts-ignore
   if (typeof btoa === "function") return btoa(str);
-  // eslint-disable-next-line n/no-deprecated-api
   // @ts-ignore
   return Buffer.from(str).toString("base64");
 }
