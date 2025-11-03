@@ -89,7 +89,6 @@ async function fetchAppointmentTypes(): Promise<Map<number, AcuityAppointmentTyp
 
   const res = await fetch("https://acuityscheduling.com/api/v1/appointment-types", {
     headers: { Authorization: getAuthHeader(), Accept: "application/json" },
-    cache: "no-store",
   });
   if (!res.ok) throw new Error(`Acuity appointment-types error ${res.status}: ${await res.text()}`);
   const types = (await res.json()) as AcuityAppointmentType[];
@@ -189,7 +188,6 @@ export async function fetchAvailableClasses(opts?: {
     `https://acuityscheduling.com/api/v1/availability/classes?${params.toString()}`,
     {
       headers: { Authorization: getAuthHeader(), Accept: "application/json" },
-      cache: "no-store",
     }
   );
   if (!res.ok) {
@@ -228,7 +226,6 @@ export async function fetchAvailableClassesRolling(opts?: {
 }
 
 /** --------------- Mapping to CalendarEvent schema --------------- */
-/** Appointment type -> visual style (replace IDs with your real ones if desired) */
 const TYPE_STYLES: Record<number, { title: string; color: string }> = {
   101: { title: "One-Time Pottery",     color: "#3b82f6" },
   102: { title: "Kids Pottery Series",  color: "#f97316" },
@@ -262,7 +259,6 @@ export async function toCalendarEvents(
       const t = types.get(c.appointmentTypeID);
       const typeColor = (t?.color && /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(t.color)) ? t.color : null;
 
-      // Prefer a configured style; else use appointment type name/color; else fallback
       const style = typeStyles[c.appointmentTypeID] ?? {
         title: t?.name ?? c.name,
         color: typeColor ?? DEFAULT_COLOR,

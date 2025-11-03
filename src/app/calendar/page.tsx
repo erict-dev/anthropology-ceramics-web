@@ -1,5 +1,7 @@
 // app/calendar/page.tsx
 export const runtime = 'edge';
+export const dynamic = "force-dynamic";
+
 import { fetchAvailableClassEventsRolling } from "@/lib/acuity";
 import StudioCalendar from "./StudioCalendar";
 
