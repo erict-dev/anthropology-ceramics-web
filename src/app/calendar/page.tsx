@@ -1,4 +1,5 @@
 // app/calendar/page.tsx
+export const runtime = 'edge';
 import { fetchAvailableClassEventsRolling } from "@/lib/acuity";
 import StudioCalendar from "./StudioCalendar";
 

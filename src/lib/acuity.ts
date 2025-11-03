@@ -62,12 +62,22 @@ export type CalendarEvent = {
   };
 };
 
+function base64(str: string) {
+  // Edge runtime has btoa; Node has Buffer.
+  // Use whichever exists so this works in both.
+  // @ts-ignore
+  if (typeof btoa === "function") return btoa(str);
+  // eslint-disable-next-line n/no-deprecated-api
+  // @ts-ignore
+  return Buffer.from(str).toString("base64");
+}
+
 /** ---------------- Private auth for server-side Acuity calls ---------------- */
 function getAuthHeader() {
   const userId = process.env.ACUITY_USER_ID;
   const apiKey = process.env.ACUITY_API_KEY;
   if (!userId || !apiKey) throw new Error("Missing ACUITY_USER_ID or ACUITY_API_KEY");
-  const token = Buffer.from(`${userId}:${apiKey}`).toString("base64");
+  const token = base64(`${userId}:${apiKey}`);
   return `Basic ${token}`;
 }
 
