@@ -117,7 +117,7 @@ export default function StudioCalendar({ events }: Props) {
       selectMirror
       dayMaxEvents
       stickyHeaderDates
-      timeZone="local"
+      timeZone="America/Los_Angeles"
       allDaySlot={true}
       events={fcEvents}
       eventContent={renderEventContent}

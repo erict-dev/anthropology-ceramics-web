@@ -109,6 +109,26 @@ function toLocalYYYYMMDDTHHMM(d: Date) {
   const mm = String(d.getMinutes()).padStart(2, "0");
   return `${y}-${m}-${day}T${hh}:${mm}`;
 }
+// Build "YYYY-MM-DDTHH:mm" in a specific IANA timezone (no offset in the string)
+function toPacificYYYYMMDDTHHMM(date: Date) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).formatToParts(date);
+
+  const get = (type: string) => parts.find(p => p.type === type)?.value ?? "";
+  const y = get("year");
+  const m = get("month");
+  const d = get("day");
+  const hh = get("hour");
+  const mm = get("minute");
+  return `${y}-${m}-${d}T${hh}:${mm}`;
+}
 function fmtYYYYMM(d: Date) {
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, "0");
@@ -277,8 +297,8 @@ export async function toCalendarEvents(
 
       const ev: CalendarEvent = {
         title: style.title,
-        start: toLocalYYYYMMDDTHHMM(startDate),
-        end: toLocalYYYYMMDDTHHMM(endDate),
+        start: toPacificYYYYMMDDTHHMM(startDate),
+        end: toPacificYYYYMMDDTHHMM(endDate),
         color: style.color,
         details: {
           bookingUrl,
