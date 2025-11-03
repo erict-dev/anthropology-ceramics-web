@@ -1,6 +1,12 @@
+// app/calendar/page.tsx
+import { fetchAvailableClassEventsRolling } from "@/lib/acuity";
 import StudioCalendar from "./StudioCalendar";
 
-export default function CalendarPage() {
+export default async function CalendarPage() {
+  const events = await fetchAvailableClassEventsRolling({
+    monthsAhead: 2,
+  });
+
   return (
     <>
       {/* Pottery Classes Section */}
@@ -15,9 +21,8 @@ export default function CalendarPage() {
             </p>
           </div>
 
-          {/* Calendar */}
           <div className="rounded-2xl border border-gray-200 shadow-sm p-3 sm:p-4">
-            <StudioCalendar />
+            <StudioCalendar events={events} />
           </div>
         </div>
       </section>
