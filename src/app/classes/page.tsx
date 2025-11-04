@@ -23,11 +23,11 @@ export default function Classes() {
               description="In this class you will learn how to make 2 unique pieces of pottery, no experience necessary! We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials, firing and glazing included."
             />
             <ClassCard
-              title="Kids Pottery Series (Ages 7+)"
+              title="Kids Pottery Classes"
               imgSrc="/kids-pottery-class.jpg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c?appointmentTypeIds%5B%5D=84238798"
-              description="Students will learn pottery handbuilding basics and make unique pottery pieces! Your kids will love getting messy and creative, plus it's a great chance for them to exercise their focus and patience! Class runs for 4 weeks and includes clay and firing for all pieces made during the series."
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%2520Group%2520Classes%2520(Youths)"
+              description="In our kids pottery classes students will learn pottery basics and make their own pottery through fun instructor guided projects. This class is a great way for kids to exercise their creativity, focus and patience. We have both one-time classes and a 4-week series."
             />
           </div>
         </div>
