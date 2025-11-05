@@ -57,7 +57,7 @@ export default function Events() {
                     <span className="text-sm text-gray-700 font-medium">$58/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
-                    1 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
+                    1 hour class · includes 1 lb of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
                   </p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function Events() {
                     <span className="text-sm text-gray-700 font-medium">$58/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
-                    1 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
+                    1 hour class · includes 1 lb of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
                   </p>
                 </div>
               </div>
