@@ -48,6 +48,8 @@ export default function StudioCalendar({ events }: Props) {
             padding: "2px 4px",
             lineHeight: "1.1",
             width: "100%",
+            maxHeight: "100%",
+            overflow: "clip"
         }}
       >
         {!isMonth && timeText && (
@@ -56,7 +58,6 @@ export default function StudioCalendar({ events }: Props) {
         <div
           style={{
             fontSize: "12px",
-              whiteSpace: "nowrap",
               overflow: "hidden",
               textOverflow: "ellipsis",
           }}
