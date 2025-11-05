@@ -200,7 +200,8 @@ export async function fetchAvailableClasses(opts?: {
   calendarID?: number | string;
 }) {
   const month = opts?.month ?? fmtYYYYMM(new Date());
-  const params = new URLSearchParams({ month });
+  const includeUnavailable = 'true'
+  const params = new URLSearchParams({ month, includeUnavailable });
   if (opts?.appointmentTypeID != null) params.set("appointmentTypeID", String(opts.appointmentTypeID));
   if (opts?.calendarID != null) params.set("calendarID", String(opts.calendarID));
 

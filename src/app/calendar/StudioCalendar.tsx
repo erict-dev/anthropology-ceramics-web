@@ -43,11 +43,11 @@ export default function StudioCalendar({ events }: Props) {
       <div
         style={{
           backgroundColor: event.backgroundColor || event.color || "#3b82f6",
-          color: "white",
-          borderRadius: "4px",
-          padding: "2px 4px",
-          lineHeight: "1.1",
-          width: "100%",
+            color: "white",
+            borderRadius: "4px",
+            padding: "2px 4px",
+            lineHeight: "1.1",
+            width: "100%",
         }}
       >
         {!isMonth && timeText && (
@@ -56,9 +56,9 @@ export default function StudioCalendar({ events }: Props) {
         <div
           style={{
             fontSize: "12px",
-            whiteSpace: "nowrap",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
           }}
         >
           {event.title}
@@ -93,38 +93,71 @@ export default function StudioCalendar({ events }: Props) {
   }));
 
   return (
-    <FullCalendar
-      ref={calendarRef as any}
-      plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-      headerToolbar={{
-        left: "prev,next today",
-        center: "title",
-        right: "dayGridMonth,timeGridWeek,timeGridDay",
-      }}
-      initialView="dayGridMonth"
-      validRange={validRange}
-      slotMinTime="08:00:00"
-      slotMaxTime="23:00:00"
-      businessHours={[
-        { daysOfWeek: [3, 4], startTime: "12:00", endTime: "21:00" },
-        { daysOfWeek: [5], startTime: "12:00", endTime: "22:00" },
-        { daysOfWeek: [6], startTime: "10:00", endTime: "22:00" },
-        { daysOfWeek: [0], startTime: "10:00", endTime: "20:00" },
-      ]}
-      nowIndicator
-      navLinks
-      selectable={false}
-      selectMirror
-      dayMaxEvents
-      stickyHeaderDates
-      timeZone="America/Los_Angeles"
-      allDaySlot={true}
-      events={fcEvents}
-      eventContent={renderEventContent}
-      eventClassNames="hover:cursor-pointer"
-      eventClick={onEventClick}
-      height="auto"
-      aspectRatio={1.6}
-    />
+    <>
+      <FullCalendar
+        ref={calendarRef as any}
+        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+        views={{
+          '3-day': {
+            type: 'timeGrid',
+              duration: { days: 3 }
+          }
+        }}
+        headerToolbar={{
+          left: "prev,today,next",
+          center: "title",
+          right: "dayGridMonth,timeGridWeek,3-day",
+        }}
+        initialView="dayGridMonth"
+        validRange={validRange}
+        slotMinTime="08:00:00"
+        slotMaxTime="23:00:00"
+        businessHours={[
+          { daysOfWeek: [3, 4], startTime: "12:00", endTime: "21:00" },
+          { daysOfWeek: [5], startTime: "12:00", endTime: "22:00" },
+          { daysOfWeek: [6], startTime: "10:00", endTime: "22:00" },
+          { daysOfWeek: [0], startTime: "10:00", endTime: "20:00" },
+        ]}
+        nowIndicator
+        navLinks
+        selectable={false}
+        selectMirror
+        dayMaxEvents
+        stickyHeaderDates
+        timeZone="America/Los_Angeles"
+        allDaySlot={true}
+        events={fcEvents}
+        eventContent={renderEventContent}
+        eventClassNames="hover:cursor-pointer"
+        eventClick={onEventClick}
+        height="auto"
+        aspectRatio={1.6}
+      />
+      <style jsx global>{`
+        .fc .fc-toolbar-title {
+          font-size: 1.5rem; /* ~text-2xl */
+          padding: 0 10px;
+        }
+
+        @media (max-width: 1024px) {
+          .fc .fc-toolbar-title {
+            font-size: 1.25rem; /* ~text-xl */
+          }
+          .fc .fc-button {
+            font-size: 1rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .fc .fc-toolbar-title {
+            font-size: 1rem; /* ~text-lg */
+            text-align: center;
+          }
+          .fc .fc-button {
+            font-size: 0.75rem;
+          }
+        }
+    `}</style>
+    </>
   );
 }
