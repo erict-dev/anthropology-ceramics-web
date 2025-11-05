@@ -58,7 +58,7 @@ export default function Home() {
             <ClassCard
               title="Kids Pottery Classes"
               imgSrc="/kids-pottery-class.jpg"
-              meta="4 sessions"
+              meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%2520Group%2520Classes%2520(Youths)"
               description="In our kids pottery classes students will learn pottery basics and make their own pottery through fun instructor guided projects. This class is a great way for kids to exercise their creativity, focus and patience. We have both one-time classes and a 4-week series."
             />
@@ -118,25 +118,22 @@ export default function Home() {
           {/* Row 1: Level 1–3 (3 cols at lg, 1 col below) */}
           <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
             <ClassCard
-              title="Level 1"
+              title="Level 1 - Beginner"
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
-              price="$285"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25201?categories%5B%5D=Pottery+Courses+-+Level+1"
               description="Foundations: wedging clay, centering, pulling even walls, and forming cylinders, cups, vases and bowls. Learn how to apply glaze. Firing included for work made during the course."
             />
             <ClassCard
-              title="Level 2"
+              title="Level 2 - Intermediate"
               imgSrc="/level-2-pottery-irvine-olomana.jpg"
-              price="$285"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25202/appointment/84417491/calendar/12365772?categories%5B%5D=Pottery+Courses+-+Level+1"
               description="Refine control and consistency, explore curves, shapes and handles. Learn to control clay moisture and trim foot rings. Firing included for work made during the course."
             />
             <ClassCard
-              title="Level 3"
+              title="Level 3 - Advanced"
               imgSrc="/level-3-pottery-irvine-olomana.jpg"
-              price="$285"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25203?categories%5B%5D=Pottery+Courses+-+Level+1"
               description="Create jars with matching lids, throw multiple pieces off the hump and marble different clays together for unique colors. Firing included for work made during the course."
