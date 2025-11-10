@@ -35,6 +35,29 @@ export default function StudioCalendar({ events }: Props) {
     return { start, end };
   }
 
+  // ---- Past-event detection & transform ----
+  function isPast(startISO: string, endISO?: string) {
+    const end = endISO ? new Date(endISO) : new Date(startISO);
+    return end.getTime() < Date.now();
+  }
+
+  function toFcEvents(src: CalendarEvent[]) {
+    return src.map((e) => {
+      const past = isPast(e.start, e.end);
+      return {
+        title: e.title,
+        start: e.start,
+        end: e.end,
+        // Grey out past events
+        color: past ? "#9CA3AF" /* gray-400 */ : e.color,
+        extendedProps: {
+          details: e.details,
+          isPast: past,
+        },
+      };
+    });
+  }
+
   // ---- Event rendering ----
   function renderEventContent(content: any) {
     const { timeText, event, view } = content;
@@ -43,13 +66,13 @@ export default function StudioCalendar({ events }: Props) {
       <div
         style={{
           backgroundColor: event.backgroundColor || event.color || "#3b82f6",
-            color: "white",
-            borderRadius: "4px",
-            padding: "2px 4px",
-            lineHeight: "1.1",
-            width: "100%",
-            maxHeight: "100%",
-            overflow: "clip"
+          color: "white",
+          borderRadius: "4px",
+          padding: "2px 4px",
+          lineHeight: "1.1",
+          width: "100%",
+          maxHeight: "100%",
+          overflow: "clip",
         }}
       >
         {!isMonth && timeText && (
@@ -58,8 +81,8 @@ export default function StudioCalendar({ events }: Props) {
         <div
           style={{
             fontSize: "12px",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
           }}
         >
           {event.title}
@@ -68,15 +91,22 @@ export default function StudioCalendar({ events }: Props) {
     );
   }
 
-  // ---- On click: open booking URL ----
+  // ---- On click: open booking URL (noop for past; alert for sold-out) ----
   function onEventClick(info: any) {
     info.jsEvent?.preventDefault();
     const details = info.event.extendedProps?.details ?? {};
-    const url = details.bookingUrl;
     const isSoldOut = details.isSoldOut === true;
+    const isPast = info.event.extendedProps?.isPast === true;
 
-    if (isSoldOut) return; // no action if sold out
+    if (isPast) return;
 
+    if (isSoldOut) {
+      // simplest, universal browser popup
+      window.alert("Sorry, this class is sold out.");
+      return;
+    }
+
+    const url = details.bookingUrl;
     if (url) {
       window.open(url, "_blank", "noopener,noreferrer");
     } else {
@@ -85,13 +115,7 @@ export default function StudioCalendar({ events }: Props) {
   }
 
   // ---- Transform events for FullCalendar ----
-  const fcEvents = events.map((e) => ({
-    title: e.title,
-    start: e.start,
-    end: e.end,
-    color: e.color,
-    extendedProps: { details: e.details },
-  }));
+  const fcEvents = toFcEvents(events);
 
   return (
     <>
@@ -99,10 +123,10 @@ export default function StudioCalendar({ events }: Props) {
         ref={calendarRef as any}
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         views={{
-          '3-day': {
-            type: 'timeGrid',
-              duration: { days: 3 }
-          }
+          "3-day": {
+            type: "timeGrid",
+            duration: { days: 3 },
+          },
         }}
         headerToolbar={{
           left: "prev,today,next",
@@ -129,7 +153,12 @@ export default function StudioCalendar({ events }: Props) {
         allDaySlot={true}
         events={fcEvents}
         eventContent={renderEventContent}
-        eventClassNames="hover:cursor-pointer"
+        // Tailwind classes per-event based on past/future
+        eventClassNames={(arg) =>
+          arg.event.extendedProps?.isPast
+            ? ["opacity-60", "cursor-not-allowed", "pointer-events-none"]
+            : ["hover:cursor-pointer"]
+        }
         eventClick={onEventClick}
         height="auto"
         aspectRatio={1.6}
@@ -158,7 +187,7 @@ export default function StudioCalendar({ events }: Props) {
             font-size: 0.75rem;
           }
         }
-    `}</style>
+      `}</style>
     </>
   );
 }

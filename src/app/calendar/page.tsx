@@ -10,6 +10,7 @@ export default async function CalendarPage() {
     monthsAhead: 2,
   });
 
+
   return (
     <>
       {/* Pottery Classes Section */}

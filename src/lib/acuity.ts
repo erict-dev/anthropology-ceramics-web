@@ -162,8 +162,8 @@ function doubleEncode(s: string) {
  */
 async function buildAsMeBookingPath(opts: {
   appointmentTypeID: number;
-  calendarId: number;  // classes.calendarID
-  startTime: string;   // classes.time (includes offset)
+  calendarId: number;
+  startTime: string;
 }): Promise<string | undefined> {
   const base = process.env.NEXT_PUBLIC_ACUITY_BASE_URL;
   const prefix = process.env.NEXT_PUBLIC_ACUITY_SCHEDULE_PREFIX;
@@ -183,6 +183,13 @@ async function buildAsMeBookingPath(opts: {
   parts.push("appointment", String(opts.appointmentTypeID));
   parts.push("calendar", String(opts.calendarId));
 
+  // --- NEW: series does not use a datetime segment ---
+  if (t?.type === "series") {
+    url.pathname = parts.join("/");
+    return url.toString();
+  }
+  // ---------------------------------------------------
+
   // Ensure seconds and colon in offset, then encode
   const withSeconds = ensureSeconds(opts.startTime);
   const withColonOffset = ensureOffsetHasColon(withSeconds);
@@ -192,6 +199,7 @@ async function buildAsMeBookingPath(opts: {
   url.pathname = parts.join("/");
   return url.toString();
 }
+
 
 /** ---------------- Fetch classes ---------------- */
 export async function fetchAvailableClasses(opts?: {
