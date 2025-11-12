@@ -7,16 +7,16 @@ export default function KidsFamilyPotteryClass() {
       <section className="bg-gray-100 py-12 text-center">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h1 className="leander text-black text-3xl font-bold sm:text-5xl">
-            Kids & Family Pottery Class in Irvine
+            Kids Pottery Class in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-lg">
             Bring the kids for this fun and engaging pottery experience. This is a great activity to do in Irvine with kids, let your creativity flow and make usable pottery together!
           </p>
           <a
-            href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81628903/calendar/12365772"
+            href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%2520Group%2520Classes%2520(Youths)"
             className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
           >
-            Book a Class
+            Book a class
           </a>
         </div>
       </section>
@@ -99,16 +99,16 @@ export default function KidsFamilyPotteryClass() {
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-lg text-gray-700">
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
-            <li><strong>Class Duration:</strong> 1 - 1.5 hours.</li>
+            <li><strong>Class Duration:</strong> ~1.5 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
             <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 4-5 weeks. We use all lead-free food-safe glazes for our pottery pieces.</li>
           </ul>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81628903/calendar/12365772"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%2520Group%2520Classes%2520(Youths)"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
-              Book Your Class Now
+              Book a class
             </a>
           </div>
         </div>

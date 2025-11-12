@@ -10,7 +10,7 @@ export default function TeapotMakingWorkshop() {
           <header className="text-center">
             <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Teapot Pottery Workshop in Irvine</h2>
             <p className="mt-4 text-black">
-              Experience the traditional art of <strong>teapot making</strong> in our immersive pottery workshop in Irvine, CA. This 3.5-hour class guides you through the techniques used to handbuild unique, functional teapots perfect for tea ceremonies or everyday use. Under the guidance of expert instructors, you will learn to shape, assemble, and refine your teapot using traditional pottery handbuilding methods.
+              Experience the traditional art of <strong>teapot making</strong> in our immersive pottery workshop in Irvine, CA. This full day workshop guides you through the techniques used to handbuild unique, functional teapots perfect for tea ceremonies or everyday use. Under the guidance of expert instructors, you will learn to shape, assemble, and refine your teapot using traditional pottery handbuilding methods.
             </p>
           <div className="mt-6 mb-6 text-center">
             <a
@@ -87,7 +87,7 @@ export default function TeapotMakingWorkshop() {
           <h2 className="text-3xl font-bold text-gray-900">Important Details</h2>
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
-            <li><strong>Class Duration:</strong> 8 hours, split across 2 days</li>
+            <li><strong>Class Duration:</strong> 8 hours</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes, comfortable clothing, and a creative mindset.</li>
             <li><strong>Take Home:</strong> Your handcrafted teapot, after firing (ready in 4 weeks).</li>
           </ul>

@@ -183,14 +183,11 @@ async function buildAsMeBookingPath(opts: {
   parts.push("appointment", String(opts.appointmentTypeID));
   parts.push("calendar", String(opts.calendarId));
 
-  // --- NEW: series does not use a datetime segment ---
-  if (t?.type === "series") {
-    url.pathname = parts.join("/");
-    return url.toString();
-  }
-  // ---------------------------------------------------
+  url.pathname = parts.join("/");
+  return url.toString();
 
-  // Ensure seconds and colon in offset, then encode
+  /**
+   * Not linking to specific time because it requires additional logic and components to select the quantity. May add this in the future but for now it's too much additional logic
   const withSeconds = ensureSeconds(opts.startTime);
   const withColonOffset = ensureOffsetHasColon(withSeconds);
   const datetimeSeg = encodeURIComponent(withColonOffset);
@@ -198,6 +195,7 @@ async function buildAsMeBookingPath(opts: {
 
   url.pathname = parts.join("/");
   return url.toString();
+  **/
 }
 
 

@@ -51,8 +51,8 @@ export default function Navbar() {
               <li onMouseEnter={() => setHoveredItem('about')}>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/about" onClick={handleNavItemClick}>about</Link>
               </li>
-              <li onMouseEnter={() => setHoveredItem('gallery')}>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/gallery" onClick={handleNavItemClick}>gallery</Link>
+              <li onMouseEnter={() => setHoveredItem('calendar')}>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/calendar" onClick={handleNavItemClick}>calendar</Link>
               </li>
               <li className="relative" onMouseEnter={() => setHoveredItem('classes')}>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/classes" onClick={handleNavItemClick}>classes</Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
                       href={'/classes/adult-pottery-group-class-irvine'}
                       onClick={handleNavItemClick}
                     >
-                      adults
+                      adult classes
                     </Link>
                   </li>
                   <li>
@@ -74,7 +74,7 @@ export default function Navbar() {
                       href={'/classes/kids-and-family-pottery-irvine'}
                       onClick={handleNavItemClick}
                     >
-                      kids & family
+                      kids classes
                     </Link>
                   </li>
                   <li>
