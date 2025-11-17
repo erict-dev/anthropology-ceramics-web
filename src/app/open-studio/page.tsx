@@ -37,27 +37,7 @@ export default function OpenStudioMembership() {
 
       {/* Offerings (Invite-Only) */}
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12 grid gap-8 md:grid-cols-2">
-          <div className="border rounded-lg shadow-sm p-6">
-            <h2 className="text-2xl font-bold text-gray-800">Handbuilding Ceramics Membership</h2>
-            <p className="mt-2 text-gray-700">
-              For artists who prefer handbuilding and want to be part of a small, supportive community.
-            </p>
-            <p className="mt-4 text-xl font-semibold text-gray-900">
-              $189/month <span className="text-sm font-normal">+ $25 initiation fee</span>
-            </p>
-            <ul className="mt-4 space-y-2 text-gray-700">
-              <li>✓ Access during designated open studio hours (handbuilding)</li>
-              <li>✓ 1 wetbox at the studio</li>
-              <li>✓ Free reclaimed clay, new clay available for purchase</li>
-              <li>✓ Use of studio tools, handbuilding tables, and brushing glazes</li>
-              <li>✓ Half shelf/month for firing (Cone 5/6)</li>
-            </ul>
-            <p className="mt-6 text-gray-600">
-              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfXj5xszuDSy3dcACVk764UGQF4xtG39IeigQpPtEizpJ0_Ig/viewform?usp=dialog"><strong className="underline">Apply here for an invite</strong></Link>
-            </p>
-          </div>
-
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12 grid gap-8">
           <div className="border rounded-lg shadow-sm p-6">
             <h2 className="text-2xl font-bold text-gray-800">Open Studio Membership</h2>
             <p className="mt-2 text-gray-700">
