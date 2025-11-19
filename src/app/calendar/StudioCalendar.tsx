@@ -48,8 +48,7 @@ export default function StudioCalendar({ events }: Props) {
         title: e.title,
         start: e.start,
         end: e.end,
-        // Grey out past events
-        color: past ? "#9CA3AF" /* gray-400 */ : e.color,
+        color: past ? "#9CA3AF" : e.color,
         extendedProps: {
           details: e.details,
           isPast: past,
@@ -91,7 +90,7 @@ export default function StudioCalendar({ events }: Props) {
     );
   }
 
-  // ---- On click: open booking URL (noop for past; alert for sold-out) ----
+  // ---- On click: open booking URL (open in SAME tab + alert for sold-out) ----
   function onEventClick(info: any) {
     info.jsEvent?.preventDefault();
     const details = info.event.extendedProps?.details ?? {};
@@ -101,14 +100,14 @@ export default function StudioCalendar({ events }: Props) {
     if (isPast) return;
 
     if (isSoldOut) {
-      // simplest, universal browser popup
       window.alert("Sorry, this class is sold out.");
       return;
     }
 
     const url = details.bookingUrl;
     if (url) {
-      window.open(url, "_blank", "noopener,noreferrer");
+      // open in the same tab
+      window.location.href = url;
     } else {
       window.location.href = "https://olomanastudios.as.me";
     }
@@ -116,6 +115,12 @@ export default function StudioCalendar({ events }: Props) {
 
   // ---- Transform events for FullCalendar ----
   const fcEvents = toFcEvents(events);
+
+  // ---- NEW: Responsive default view ----
+  const initialView =
+    typeof window !== "undefined" && window.innerWidth < 768
+      ? "3-day"
+      : "dayGridMonth";
 
   return (
     <>
@@ -133,7 +138,7 @@ export default function StudioCalendar({ events }: Props) {
           center: "title",
           right: "dayGridMonth,timeGridWeek,3-day",
         }}
-        initialView="dayGridMonth"
+        initialView={initialView}
         validRange={validRange}
         slotMinTime="08:00:00"
         slotMaxTime="23:00:00"
@@ -153,7 +158,6 @@ export default function StudioCalendar({ events }: Props) {
         allDaySlot={true}
         events={fcEvents}
         eventContent={renderEventContent}
-        // Tailwind classes per-event based on past/future
         eventClassNames={(arg) =>
           arg.event.extendedProps?.isPast
             ? ["opacity-60", "cursor-not-allowed", "pointer-events-none"]
@@ -163,24 +167,24 @@ export default function StudioCalendar({ events }: Props) {
         height="auto"
         aspectRatio={1.6}
       />
+
+      {/* styles unchanged */}
       <style jsx global>{`
         .fc .fc-toolbar-title {
-          font-size: 1.5rem; /* ~text-2xl */
+          font-size: 1.5rem;
           padding: 0 10px;
         }
-
         @media (max-width: 1024px) {
           .fc .fc-toolbar-title {
-            font-size: 1.25rem; /* ~text-xl */
+            font-size: 1.25rem;
           }
           .fc .fc-button {
             font-size: 1rem;
           }
         }
-
         @media (max-width: 768px) {
           .fc .fc-toolbar-title {
-            font-size: 1rem; /* ~text-lg */
+            font-size: 1rem;
             text-align: center;
           }
           .fc .fc-button {
