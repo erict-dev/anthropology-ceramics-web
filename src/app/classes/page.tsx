@@ -89,21 +89,21 @@ export default function Classes() {
               title="Level 1 - Beginner"
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25201?categories%5B%5D=Pottery+Courses+-+Level+1"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25201%2520(Beginner)"
               description="Foundations: wedging clay, centering, pulling even walls, and forming cylinders, cups, vases and bowls. Learn how to apply glaze. Firing included for work made during the course."
             />
             <ClassCard
               title="Level 2 - Intermediate"
               imgSrc="/intermediate-pottery-class/4-week-pottery-lvl2-olomana-irivne.jpg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25202/appointment/84417491/calendar/12365772?categories%5B%5D=Pottery+Courses+-+Level+1"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25202%2520(Intermediate)"
               description="Refine control and consistency, explore curves, shapes and handles. Learn to control clay moisture and trim foot rings. Firing included for work made during the course."
             />
             <ClassCard
               title="Level 3 - Advanced"
               imgSrc="/level-3-pottery-irvine-olomana.jpg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25203?categories%5B%5D=Pottery+Courses+-+Level+1"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25203%2520(Advanced)"
               description="Create jars with matching lids, throw multiple pieces off the hump and marble different clays together for unique colors. Firing included for work made during the course."
             />
           </div>
