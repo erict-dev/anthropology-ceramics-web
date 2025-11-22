@@ -95,6 +95,15 @@ export default function Navbar() {
                       private events
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'https://app.acuityscheduling.com/catalog/66629c2c/'}
+                      onClick={handleNavItemClick}
+                    >
+                      gift cards
+                    </Link>
+                  </li>
                 </ul>
 
               </li>
@@ -128,6 +137,15 @@ export default function Navbar() {
                       onClick={handleNavItemClick}
                     >
                       teapot
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'https://app.acuityscheduling.com/catalog/66629c2c/'}
+                      onClick={handleNavItemClick}
+                    >
+                      gift cards
                     </Link>
                   </li>
                 </ul>
