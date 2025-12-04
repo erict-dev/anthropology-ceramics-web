@@ -150,7 +150,6 @@ export default function Navbar() {
               </li>
               <li className="relative" onMouseEnter={() => setHoveredItem('gift-cards')}>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/gift-cards" onClick={handleNavItemClick}>gift cards</Link>
-                <span className="absolute -top-1 -right-2 bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-semibold leading-none">new</span>
               </li>
             </ul>
           </nav>
