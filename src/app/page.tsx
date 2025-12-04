@@ -150,6 +150,33 @@ export default function Home() {
           />
         </div>
       </section>
+      {/* Gift Cards Section */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Gift Cards</h2>
+          <p className="mt-2 text-gray-600">
+            Give a gift that lasts. Our pottery class and workshop gift cards open the door to community, meaningful moments of creativity, and memories that last long after the clay has been fired.
+          </p>
+          <div className="mt-6">
+            <Link
+              href="/gift-cards"
+              className="inline-block rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
+            >
+              Browse Gift Cards →
+            </Link>
+          </div>
+
+          {/* Divider */}
+          <Image
+            alt="Decorative line"
+            src="/handdrawn-line.png"
+            width={1920}
+            height={6}
+            className="mt-8 mb-8 w-full h-1.5"
+          />
+        </div>
+      </section>
+
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
           <p className="text-center text-gray-700 text-lg">For groups of 8 or more, contact us at <strong>olomanastudios@gmail.com</strong> for a private pottery event booking.</p>

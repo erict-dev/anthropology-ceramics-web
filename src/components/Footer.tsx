@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 text-center sm:text-left sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 text-center sm:text-left sm:grid-cols-2 md:grid-cols-5 gap-8">
           {/* Classes Section */}
           <div>
             <h3 className="text-lg font-semibold">Classes</h3>
@@ -43,6 +43,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Open Studio</h3>
             <ul className="mt-2 space-y-2 text-gray-300">
               <li><Link href="/open-studio" className="hover:text-white">Memberships</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold">Gift Cards</h3>
+            <ul className="mt-2 space-y-2 text-gray-300">
+              <li><Link href="/gift-cards" className="hover:text-white">Gift Cards</Link></li>
             </ul>
           </div>
         </div>
