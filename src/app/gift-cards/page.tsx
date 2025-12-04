@@ -58,7 +58,7 @@ export default function GiftCards() {
                 )}
               </div>
               <p className="text-gray-600 mb-4 flex-1">
-                This gift certificate can be redeemed for $68 towards any of our pottery classes or workshops including our one-time pottery group class for adults, kids or towards our 4-week pottery course.
+                This gift certificate can be redeemed towards our one-time pottery group class for adults or kids.
               </p>
               <a
                 href="https://olomanastudios.as.me/catalog/66629c2c?categories=Gift%20Certificates"
@@ -96,7 +96,7 @@ export default function GiftCards() {
                 )}
               </div>
               <p className="text-gray-600 mb-4 flex-1">
-                This gift certificate is redeemable for our Ikebana Flower Arrangement Workshop or $64 towards any of our pottery classes or workshops including our one-time pottery group class for adults, kids or towards our 4-week pottery course.
+                This gift certificate is redeemable for our Ikebana Flower Arrangement Workshop.
               </p>
               <a
                 href="https://olomanastudios.as.me/catalog/66629c2c?categories=Gift%20Certificates"
@@ -135,7 +135,7 @@ export default function GiftCards() {
                 )}
               </div>
               <p className="text-gray-600 mb-4 flex-1">
-                This gift certificate is redeemable for our Traditional Matcha Bowl Carving Workshop or $85 towards any of our pottery classes or workshops including our one-time pottery group class for adults, kids or towards our 4-week pottery course.
+                This gift certificate is redeemable for our Traditional Matcha Bowl Workshop.
               </p>
               <a
                 href="https://olomanastudios.as.me/catalog/66629c2c?categories=Gift%20Certificates"
@@ -186,7 +186,7 @@ export default function GiftCards() {
               <div className="text-3xl mb-4">3️⃣</div>
               <h3 className="leander text-xl font-bold text-gray-900 mb-2">Redeem</h3>
               <p className="text-gray-600">
-                Recipients can use their gift card to book any class, workshop, or open studio session. Simply enter the gift card code at checkout.
+                Recipients can book the class on our website. The certificate includes the instructions and link to schedule and book the class, simply enter the gift certificate code at checkout.
               </p>
             </div>
           </div>
