@@ -47,15 +47,15 @@ export default function Navbar() {
             aria-label="Global"
             className={`absolute bg-white top-0 left-0 right-0 z-20 p-5 md:static md:bg-transparent md:p-0 md:block ${isMobileMenuOpen ? "block bg-opacity-[0.98]" : "hidden"}`}
           >
-            <ul className="leander flex flex-col md:flex-row md:items-center gap-4 md:gap-6 text-xl">
+            <ul className="leander flex flex-col md:flex-row md:items-center gap-3 md:gap-4 lg:gap-5 text-lg md:text-xl">
               <li onMouseEnter={() => setHoveredItem('about')}>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/about" onClick={handleNavItemClick}>about</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/about" onClick={handleNavItemClick}>about</Link>
               </li>
               <li onMouseEnter={() => setHoveredItem('calendar')}>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/calendar" onClick={handleNavItemClick}>calendar</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/calendar" onClick={handleNavItemClick}>calendar</Link>
               </li>
               <li className="relative" onMouseEnter={() => setHoveredItem('classes')}>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/classes" onClick={handleNavItemClick}>classes</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/classes" onClick={handleNavItemClick}>classes</Link>
                 <ul
                   className={`left-0 mt-2 w-48 bg-white md:shadow-md rounded-md md:border ${hoveredItem === 'classes' ? 'md:block' : 'md:hidden'} md:absolute md:z-30`}
                 >
@@ -95,20 +95,11 @@ export default function Navbar() {
                       private events
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href={'https://app.acuityscheduling.com/catalog/66629c2c/'}
-                      onClick={handleNavItemClick}
-                    >
-                      gift cards
-                    </Link>
-                  </li>
                 </ul>
 
               </li>
               <li className="relative" onMouseEnter={() => setHoveredItem('workshops')}>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/workshops" onClick={handleNavItemClick}>workshops</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/workshops" onClick={handleNavItemClick}>workshops</Link>
                 <ul
                   className={`left-0 mt-2 w-48 bg-white md:shadow-md rounded-md md:border ${hoveredItem === 'workshops' ? 'md:block' : 'md:hidden'} md:absolute md:z-30`}
                 >
@@ -139,19 +130,10 @@ export default function Navbar() {
                       teapot
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href={'https://app.acuityscheduling.com/catalog/66629c2c/'}
-                      onClick={handleNavItemClick}
-                    >
-                      gift cards
-                    </Link>
-                  </li>
                 </ul>
               </li>
               <li className="relative" onMouseEnter={() => setHoveredItem('open-studio')}>
-                <Link className="text-gray-700 transition hover:text-gray-500/75 block" href="/open-studio" onClick={handleNavItemClick}>open studio</Link>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/open-studio" onClick={handleNavItemClick}>open studio</Link>
                 <ul
                   className={`left-0 mt-2 w-48 bg-white md:shadow-md rounded-md md:border ${hoveredItem === 'open-studio' ? 'md:block' : 'md:hidden'} md:absolute md:z-30`}
                 >
@@ -165,6 +147,9 @@ export default function Navbar() {
                     </Link>
                   </li>
                 </ul>
+              </li>
+              <li onMouseEnter={() => setHoveredItem('gift-cards')}>
+                <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/gift-cards" onClick={handleNavItemClick}>gift cards</Link>
               </li>
             </ul>
           </nav>
