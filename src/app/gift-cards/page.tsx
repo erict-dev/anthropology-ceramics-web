@@ -172,7 +172,7 @@ export default function GiftCards() {
               <div className="text-3xl mb-4">1️⃣</div>
               <h3 className="leander text-xl font-bold text-gray-900 mb-2">Purchase</h3>
               <p className="text-gray-600">
-                Choose your gift card and complete your purchase online. You'll receive a confirmation email with your gift card details.
+                Choose your gift card and complete your purchase online. You will receive a confirmation email with your gift card details.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
