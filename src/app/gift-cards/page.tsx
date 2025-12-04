@@ -24,7 +24,7 @@ export default function GiftCards() {
               Our pottery class & workshop gift cards open the door to meaningful experiences, shared moments of creativity, and memories that last long after the clay has been fired.
               {daysUntilChristmas > 0 && (
                 <span className="block mt-2 font-semibold text-red-600">
-                  🎄 10% discount on all gift cards until Christmas! 🎄
+                  🎄 10% discount on all gift cards until Christmas with code: <span className="underline">HOLIDAY-GIFT-2025</span> at checkout 🎄
                 </span>
               )}
             </p>
