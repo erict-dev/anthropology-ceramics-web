@@ -1,8 +1,10 @@
+export const runtime = 'edge';
+export const dynamic = "force-dynamic";
+
 import { getFilteredClasses, generateStudioAvailability, getAvailability, filterShortAvailabilities, slotsToCalendarEvents, generateLimitedOpenStudioAvailability } from '@/lib/availability';
 import AvailabilityTabs from './AvailabilityTabs';
 import Link from 'next/link';
 
-export const dynamic = "force-dynamic";
 
 export default async function OpenStudioWheelAvailability() {
   const { oneTimePotteryClasses, fourWeekCourseClasses } = await getFilteredClasses(1);
