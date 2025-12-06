@@ -199,13 +199,26 @@ export function generateLimitedOpenStudioAvailability(slots: FreeTimeSlot[]): Fr
 
 /**
  * Converts a Date to ISO string format for FullCalendar (YYYY-MM-DDTHH:mm)
+ * in Los Angeles timezone, accounting for daylight savings time.
  */
 function toISOStringLocal(date: Date): string {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
+  // Use Intl.DateTimeFormat to get Los Angeles time, which automatically handles DST
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).formatToParts(date);
+
+  const get = (type: string) => parts.find(p => p.type === type)?.value ?? "";
+  const year = get("year");
+  const month = get("month");
+  const day = get("day");
+  const hours = get("hour");
+  const minutes = get("minute");
   return `${year}-${month}-${day}T${hours}:${minutes}`;
 }
 
