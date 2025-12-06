@@ -112,7 +112,7 @@ export default function AvailabilityCalendar({ events }: Props) {
           right: "timeGridWeek,3-day,1-day",
         }}
         buttonText={{
-          week: "Week",
+          week: "week",
           "3-day": "3-day",
           "1-day": "1-day",
         }}

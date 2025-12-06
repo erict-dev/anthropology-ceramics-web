@@ -111,6 +111,93 @@ export function filterShortAvailabilities(slots: FreeTimeSlot[]): FreeTimeSlot[]
 }
 
 /**
+ * Generates limited open studio availability by:
+ * - Removing all availability on Mondays and Tuesdays
+ * - Removing availability between 12pm-1pm and 5pm-6pm on all other days
+ * 
+ * @param slots - Array of free time slots to filter
+ * @returns New array of filtered free time slots (does not modify original)
+ */
+export function generateLimitedOpenStudioAvailability(slots: FreeTimeSlot[]): FreeTimeSlot[] {
+  const filteredSlots: FreeTimeSlot[] = [];
+  
+  for (const slot of slots) {
+    const slotStart = new Date(slot.start);
+    const slotEnd = new Date(slot.end);
+    const dayOfWeek = slotStart.getDay(); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
+    
+    // Remove all availability on Mondays (1) and Tuesdays (2)
+    if (dayOfWeek === 1 || dayOfWeek === 2) {
+      continue;
+    }
+    
+    // Create blocked time ranges for this day (12pm-1pm and 5pm-6pm)
+    const blockedRanges: { start: Date; end: Date }[] = [];
+    
+    // 12pm-1pm blocked range
+    const blocked12pm = new Date(slotStart);
+    blocked12pm.setHours(12, 0, 0, 0);
+    const blocked1pm = new Date(slotStart);
+    blocked1pm.setHours(13, 0, 0, 0);
+    blockedRanges.push({ start: blocked12pm, end: blocked1pm });
+    
+    // 5pm-6pm blocked range
+    const blocked5pm = new Date(slotStart);
+    blocked5pm.setHours(17, 0, 0, 0);
+    const blocked6pm = new Date(slotStart);
+    blocked6pm.setHours(18, 0, 0, 0);
+    blockedRanges.push({ start: blocked5pm, end: blocked6pm });
+    
+    // Sort blocked ranges by start time
+    blockedRanges.sort((a, b) => a.start.getTime() - b.start.getTime());
+    
+    // Split the slot around blocked ranges
+    let currentStart = slotStart;
+    
+    for (const blocked of blockedRanges) {
+      // If slot ends before this blocked range starts, keep the remaining part
+      if (slotEnd <= blocked.start) {
+        if (currentStart < slotEnd) {
+          filteredSlots.push({
+            start: new Date(currentStart),
+            end: new Date(slotEnd),
+          });
+        }
+        currentStart = slotEnd; // Mark as processed
+        break;
+      }
+      
+      // If slot starts after this blocked range ends, continue to next blocked range
+      if (currentStart >= blocked.end) {
+        continue;
+      }
+      
+      // If there's a part before the blocked range, add it
+      if (currentStart < blocked.start) {
+        filteredSlots.push({
+          start: new Date(currentStart),
+          end: new Date(blocked.start),
+        });
+      }
+      
+      // Move currentStart to after the blocked range
+      currentStart = blocked.end;
+    }
+    
+    // Add any remaining part of the slot after all blocked ranges
+    if (currentStart < slotEnd) {
+      filteredSlots.push({
+        start: new Date(currentStart),
+        end: new Date(slotEnd),
+      });
+    }
+  }
+  
+  // Filter out slots that are 30 minutes or less after splitting
+  return filterShortAvailabilities(filteredSlots);
+}
+
+/**
  * Converts a Date to ISO string format for FullCalendar (YYYY-MM-DDTHH:mm)
  */
 function toISOStringLocal(date: Date): string {
@@ -143,16 +230,9 @@ export function slotsToCalendarEvents(
     isAvailability: boolean;
   };
 }> {
-  return slots.map((slot, idx) => {
-    const durationMinutes = (slot.end.getTime() - slot.start.getTime()) / (1000 * 60);
-    const hours = Math.floor(durationMinutes / 60);
-    const minutes = durationMinutes % 60;
-    const durationText = hours > 0 
-      ? `${hours}h ${minutes > 0 ? `${Math.round(minutes)}m` : ''}`.trim()
-      : `${Math.round(minutes)}m`;
-    
+  return slots.map((slot) => {
     return {
-      title: `${titlePrefix} - ${durationText}`,
+      title: `${titlePrefix}`,
       start: toISOStringLocal(slot.start),
       end: toISOStringLocal(slot.end),
       color: color,
