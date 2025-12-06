@@ -146,15 +146,6 @@ export default function Navbar() {
                       memberships
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href={'/open-studio/availability'}
-                      onClick={handleNavItemClick}
-                    >
-                      availability
-                    </Link>
-                  </li>
                 </ul>
               </li>
               <li className="relative" onMouseEnter={() => setHoveredItem('gift-cards')}>

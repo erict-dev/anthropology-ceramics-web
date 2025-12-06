@@ -43,6 +43,116 @@ export type FreeTimeSlot = {
 };
 
 /**
+ * Helper functions to work with Los Angeles timezone, avoiding server-local time issues.
+ */
+
+/**
+ * Gets date components (year, month, day) for a Date in Los Angeles timezone.
+ */
+function getLADateComponents(date: Date): { year: number; month: number; day: number } {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  }).formatToParts(date);
+
+  const get = (type: string) => {
+    const value = parts.find(p => p.type === type)?.value ?? "0";
+    return parseInt(value, 10);
+  };
+
+  return {
+    year: get("year"),
+    month: get("month"),
+    day: get("day"),
+  };
+}
+
+/**
+ * Gets hours and minutes for a Date in Los Angeles timezone.
+ */
+function getLATimeComponents(date: Date): { hours: number; minutes: number } {
+  const hourStr = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    hour: "2-digit",
+    hour12: false,
+  }).format(date);
+  const minuteStr = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    minute: "2-digit",
+  }).format(date);
+  
+  return {
+    hours: parseInt(hourStr, 10),
+    minutes: parseInt(minuteStr, 10),
+  };
+}
+
+/**
+ * Gets day of week (0 = Sunday, 1 = Monday, etc.) for a Date in Los Angeles timezone.
+ */
+function getLADayOfWeek(date: Date): number {
+  const dayName = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    weekday: "long",
+  }).format(date);
+  
+  const dayMap: Record<string, number> = {
+    "Sunday": 0, "Monday": 1, "Tuesday": 2, "Wednesday": 3,
+    "Thursday": 4, "Friday": 5, "Saturday": 6
+  };
+  return dayMap[dayName] ?? 0;
+}
+
+/**
+ * Creates a date string in ISO format with LA timezone offset for a specific date/time in LA.
+ * This properly handles DST by determining the correct offset.
+ */
+function createDateStringInLA(
+  year: number,
+  month: number,
+  day: number,
+  hours: number = 0,
+  minutes: number = 0,
+  seconds: number = 0
+): string {
+  // Create a date string and try both offsets to find the correct one
+  const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}T${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  
+  // Test PST first
+  const testPST = new Date(`${dateStr}-08:00`);
+  const testPSTParts = getLADateComponents(testPST);
+  const testPSTTimeParts = getLATimeComponents(testPST);
+  
+  if (testPSTParts.year === year && 
+      testPSTParts.month === month && 
+      testPSTParts.day === day &&
+      testPSTTimeParts.hours === hours &&
+      testPSTTimeParts.minutes === minutes) {
+    return `${dateStr}-08:00`;
+  }
+  
+  // Try PDT
+  const testPDT = new Date(`${dateStr}-07:00`);
+  const testPDTParts = getLADateComponents(testPDT);
+  const testPDTTimeParts = getLATimeComponents(testPDT);
+  
+  if (testPDTParts.year === year && 
+      testPDTParts.month === month && 
+      testPDTParts.day === day &&
+      testPDTTimeParts.hours === hours &&
+      testPDTTimeParts.minutes === minutes) {
+    return `${dateStr}-07:00`;
+  }
+  
+  // Fallback: use PST for winter months, PDT for summer months
+  // DST in US typically: second Sunday in March to first Sunday in November
+  const offset = (month >= 4 && month <= 10) || (month === 3 && day >= 14) || (month === 11 && day < 7) ? '-07:00' : '-08:00';
+  return `${dateStr}${offset}`;
+}
+
+/**
  * Extracts all dates from first to last class date, including days with no classes.
  * Returns dates in the same format as classItem.time (ISO format with timezone).
  * Days without classes will be included so they show as fully available.
@@ -55,43 +165,49 @@ export function getAvailability(classes: AcuityClassSession[]): string[] {
     return [];
   }
 
-  // Find first and last class dates
+  // Find first and last class dates (using LA timezone for date components)
   const classDates = classes.map((classItem) => {
     const classDate = new Date(classItem.time);
     return {
       date: classDate,
-      timezone: (classItem.time.match(/([+-]\d{4})$/) || ['', '-0800'])[1],
+      laComponents: getLADateComponents(classDate),
     };
   });
 
   // Sort by date to find first and last
   classDates.sort((a, b) => a.date.getTime() - b.date.getTime());
   
-  const firstDate = classDates[0].date;
-  const lastDate = classDates[classDates.length - 1].date;
-  
-  // Use the timezone from the first class (assuming all classes use same timezone)
-  const timezoneOffset = classDates[0].timezone;
+  const firstLAComponents = classDates[0].laComponents;
+  const lastLAComponents = classDates[classDates.length - 1].laComponents;
 
-  // Get all dates from first to last (inclusive)
+  // Get all dates from first to last (inclusive) in LA timezone
   const allDates: string[] = [];
-  const currentDate = new Date(firstDate);
-  currentDate.setHours(0, 0, 0, 0);
+  let currentYear = firstLAComponents.year;
+  let currentMonth = firstLAComponents.month;
+  let currentDay = firstLAComponents.day;
   
-  const endDate = new Date(lastDate);
-  endDate.setHours(0, 0, 0, 0);
+  const lastYear = lastLAComponents.year;
+  const lastMonth = lastLAComponents.month;
+  const lastDay = lastLAComponents.day;
 
-  while (currentDate <= endDate) {
-    const year = currentDate.getFullYear();
-    const month = currentDate.getMonth();
-    const day = currentDate.getDate();
-    
-    // Create date string in same format: YYYY-MM-DDTHH:mm:ss+offset (using midnight)
-    const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}T00:00:00${timezoneOffset}`;
+  while (
+    currentYear < lastYear ||
+    (currentYear === lastYear && currentMonth < lastMonth) ||
+    (currentYear === lastYear && currentMonth === lastMonth && currentDay <= lastDay)
+  ) {
+    // Create date string for this day at midnight in LA timezone
+    const dateStr = createDateStringInLA(currentYear, currentMonth, currentDay, 0, 0, 0);
     allDates.push(dateStr);
     
-    // Move to next day
-    currentDate.setDate(currentDate.getDate() + 1);
+    // Move to next day in LA timezone
+    // Create a date for the next day to get components
+    const currentDateStr = createDateStringInLA(currentYear, currentMonth, currentDay, 12, 0, 0);
+    const currentDate = new Date(currentDateStr);
+    const nextDate = new Date(currentDate.getTime() + 24 * 60 * 60 * 1000);
+    const nextComponents = getLADateComponents(nextDate);
+    currentYear = nextComponents.year;
+    currentMonth = nextComponents.month;
+    currentDay = nextComponents.day;
   }
 
   return allDates;
@@ -124,29 +240,28 @@ export function generateLimitedOpenStudioAvailability(slots: FreeTimeSlot[]): Fr
   for (const slot of slots) {
     const slotStart = new Date(slot.start);
     const slotEnd = new Date(slot.end);
-    const dayOfWeek = slotStart.getDay(); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
+    const dayOfWeek = getLADayOfWeek(slotStart); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
     
     // Remove all availability on Mondays (1) and Tuesdays (2)
     if (dayOfWeek === 1 || dayOfWeek === 2) {
       continue;
     }
     
-    // Create blocked time ranges for this day (12pm-1pm and 5pm-6pm)
+    // Create blocked time ranges for this day (12pm-1pm and 5pm-6pm) in LA timezone
     const blockedRanges: { start: Date; end: Date }[] = [];
     
-    // 12pm-1pm blocked range
-    const blocked12pm = new Date(slotStart);
-    blocked12pm.setHours(12, 0, 0, 0);
-    const blocked1pm = new Date(slotStart);
-    blocked1pm.setHours(13, 0, 0, 0);
-    blockedRanges.push({ start: blocked12pm, end: blocked1pm });
+    // Get date components in LA timezone for the slot start
+    const slotStartLA = getLADateComponents(slotStart);
     
-    // 5pm-6pm blocked range
-    const blocked5pm = new Date(slotStart);
-    blocked5pm.setHours(17, 0, 0, 0);
-    const blocked6pm = new Date(slotStart);
-    blocked6pm.setHours(18, 0, 0, 0);
-    blockedRanges.push({ start: blocked5pm, end: blocked6pm });
+    // 12pm-1pm blocked range in LA timezone
+    const blocked12pmStr = createDateStringInLA(slotStartLA.year, slotStartLA.month, slotStartLA.day, 12, 0, 0);
+    const blocked1pmStr = createDateStringInLA(slotStartLA.year, slotStartLA.month, slotStartLA.day, 13, 0, 0);
+    blockedRanges.push({ start: new Date(blocked12pmStr), end: new Date(blocked1pmStr) });
+    
+    // 5pm-6pm blocked range in LA timezone
+    const blocked5pmStr = createDateStringInLA(slotStartLA.year, slotStartLA.month, slotStartLA.day, 17, 0, 0);
+    const blocked6pmStr = createDateStringInLA(slotStartLA.year, slotStartLA.month, slotStartLA.day, 18, 0, 0);
+    blockedRanges.push({ start: new Date(blocked5pmStr), end: new Date(blocked6pmStr) });
     
     // Sort blocked ranges by start time
     blockedRanges.sort((a, b) => a.start.getTime() - b.start.getTime());
@@ -296,32 +411,26 @@ export function generateStudioAvailability(
   classes: AcuityClassSession[],
   dateString: string
 ): FreeTimeSlot[] {
-  // Parse the date string to get the date part (YYYY-MM-DD)
+  // Parse the date string and get date components in LA timezone
   const dateObj = new Date(dateString);
-  const year = dateObj.getFullYear();
-  const month = dateObj.getMonth();
-  const day = dateObj.getDate();
+  const laComponents = getLADateComponents(dateObj);
+  const year = laComponents.year;
+  const month = laComponents.month;
+  const day = laComponents.day;
   
-  // Get timezone offset from the date string (e.g., -0800)
-  const timezoneMatch = dateString.match(/([+-]\d{4})$/);
-  const timezoneOffset = timezoneMatch ? timezoneMatch[1] : '-0800';
-  
-  // Create business hours in the same timezone: 10am to 8pm
-  // Format: YYYY-MM-DDTHH:mm:ss+offset
-  const businessStartStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}T10:00:00${timezoneOffset}`;
-  const businessEndStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}T20:00:00${timezoneOffset}`;
+  // Create business hours in LA timezone: 10am to 8pm
+  const businessStartStr = createDateStringInLA(year, month, day, 10, 0, 0);
+  const businessEndStr = createDateStringInLA(year, month, day, 20, 0, 0);
   
   const businessStart = new Date(businessStartStr);
   const businessEnd = new Date(businessEndStr);
 
-  // Filter classes for the given date (compare YYYY-MM-DD)
-  const targetDateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+  // Filter classes for the given date (compare YYYY-MM-DD in LA timezone)
+  const targetDateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
   const classesOnDate = classes.filter((classItem) => {
     const classDate = new Date(classItem.time);
-    const classYear = classDate.getFullYear();
-    const classMonth = classDate.getMonth();
-    const classDay = classDate.getDate();
-    const classDateStr = `${classYear}-${String(classMonth + 1).padStart(2, '0')}-${String(classDay).padStart(2, '0')}`;
+    const classLAComponents = getLADateComponents(classDate);
+    const classDateStr = `${classLAComponents.year}-${String(classLAComponents.month).padStart(2, '0')}-${String(classLAComponents.day).padStart(2, '0')}`;
     return classDateStr === targetDateStr;
   });
 
