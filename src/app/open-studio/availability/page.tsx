@@ -50,36 +50,9 @@ export default async function OpenStudioWheelAvailability() {
       {/* Brief Description */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 pb-4">
-          <p className="text-sm sm:text-base text-gray-700 text-center max-w-2xl mx-auto">
-            Use this calendar to plan your open studio visits, but please note that this calendar is a planning tool and not a guarantee of availability.
+          <p className="text-sm sm:text-base text-gray-700 text-center max-w-4xl mx-auto">
+            Use this calendar to plan your open studio visits, but please note that this calendar is a planning tool and not a guarantee of availability. May not be accurate for dates more than one month in the future.
           </p>
-        </div>
-      </section>
-
-      {/* Member Type Info - Side by side on desktop */}
-      <section>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 pb-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-4xl mx-auto">
-            <div className="border-2 border-gray rounded-lg p-3 text-center md:text-left">
-              <h3 className="text-sm font-semibold text-gray-900 mb-1">Open Studio Members</h3>
-              <p className="text-xs text-gray-700">
-                Full access 7 days a week, 10am-8pm, outside of class times.{' '}
-                <Link href="/open-studio" className="text-blue-600 hover:text-blue-800 underline font-medium">
-                  Apply for open studio
-                </Link>
-              </p>
-            </div>
-
-            <div className="border-2 border-gray rounded-lg p-3 text-center md:text-left">
-              <h3 className="text-sm font-semibold text-gray-900 mb-1">4-Week Course Students</h3>
-              <p className="text-xs text-gray-700">
-                Limited access once a week during business hours, outside of class times.{' '}
-                <Link href="/classes/4-week-pottery-course-irvine" className="text-blue-600 hover:text-blue-800 underline font-medium">
-                  Register for a course
-                </Link>
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -91,6 +64,32 @@ export default async function OpenStudioWheelAvailability() {
               fullOpenStudioEvents={fullOpenStudioEvents}
               limitedOpenStudioEvents={limitedOpenStudioEvents}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Member Type Info - Side by side on desktop */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-4xl mx-auto">
+            <div className="border-2 border-gray rounded-lg p-3 text-center md:text-left">
+              <h3 className="text-sm font-semibold text-gray-900 mb-1">4-Week Course Students</h3>
+              <p className="text-xs text-gray-700">
+                Limited access once a week during business hours, outside of class times.{' '}
+                <Link href="/classes/4-week-pottery-course-irvine" className="text-blue-600 hover:text-blue-800 underline font-medium">
+                  Register for a course
+                </Link>
+              </p>
+            </div>
+            <div className="border-2 border-gray rounded-lg p-3 text-center md:text-left">
+              <h3 className="text-sm font-semibold text-gray-900 mb-1">Open Studio Members</h3>
+              <p className="text-xs text-gray-700">
+                Full access 7 days a week, 10am-8pm, outside of class times.{' '}
+                <Link href="/open-studio" className="text-blue-600 hover:text-blue-800 underline font-medium">
+                  Apply for open studio
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
       </section>
