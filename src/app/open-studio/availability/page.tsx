@@ -104,9 +104,9 @@ export default async function OpenStudioWheelAvailability() {
                 This calendar does not show the following special situations:
               </p>
               <ul className="list-disc list-inside space-y-1.5 text-sm text-gray-700 ml-2">
-                <li>When wheels may be available during a class time if the class isn't full</li>
+                <li>When wheels may be available during a class time if the class is not full</li>
                 <li>If there is a special event going on that uses the wheels (uncommon)</li>
-                <li>If open studio wheels are full (generally this hasn't been a problem so far since we limit the number of open studio members, but it could happen in rare cases)</li>
+                <li>If open studio wheels are full (generally this has not been a problem since we limit the number of open studio members our studio accepts, but it could happen in rare cases)</li>
               </ul>
             </div>
           </div>
