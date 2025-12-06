@@ -34,7 +34,7 @@ export default function AvailabilityTabs({ fullOpenStudioEvents, limitedOpenStud
                 : "text-gray-700 hover:text-gray-900"
             }`}
           >
-            Full Open Studio
+            Open Studio Members
           </button>
           <button
             onClick={() => setActiveTab("limited")}
@@ -44,7 +44,7 @@ export default function AvailabilityTabs({ fullOpenStudioEvents, limitedOpenStud
                 : "text-gray-700 hover:text-gray-900"
             }`}
           >
-            Limited Open Studio
+            4-Week Course Students
           </button>
         </div>
       </div>
