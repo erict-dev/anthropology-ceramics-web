@@ -43,6 +43,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Open Studio</h3>
             <ul className="mt-2 space-y-2 text-gray-300">
               <li><Link href="/open-studio" className="hover:text-white">Memberships</Link></li>
+              <li><Link href="/open-studio/availability" className="hover:text-white">Availability</Link></li>
             </ul>
           </div>
 
