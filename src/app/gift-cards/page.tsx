@@ -48,14 +48,9 @@ export default function GiftCards() {
                   Pottery Class Gift Certificate
                 </h3>
               <div className="mb-4">
-                {daysUntilChristmas > 0 ? (
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-3xl font-bold line-through text-red-600">$68</span>
-                    <span className="text-3xl font-bold text-gray-900">$61</span>
-                  </div>
-                ) : (
-                  <span className="text-3xl font-bold text-gray-900">$68.00</span>
-                )}
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold text-gray-900">$68</span>
+                </div>
               </div>
               <p className="text-gray-600 mb-4 flex-1">
                 This gift certificate can be redeemed towards our one-time pottery group class for adults or kids.
@@ -86,14 +81,9 @@ export default function GiftCards() {
                   Ikebana Flower Arrangement Workshop Gift Certificate
                 </h3>
               <div className="mb-4">
-                {daysUntilChristmas > 0 ? (
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-3xl font-bold line-through text-red-600">$64</span>
-                    <span className="text-3xl font-bold text-gray-900">$58</span>
-                  </div>
-                ) : (
-                  <span className="text-3xl font-bold text-gray-900">$64.00</span>
-                )}
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold text-gray-900">$64</span>
+                </div>
               </div>
               <p className="text-gray-600 mb-4 flex-1">
                 This gift certificate is redeemable for our Ikebana Flower Arrangement Workshop.
@@ -125,14 +115,9 @@ export default function GiftCards() {
                   Matcha Bowl Workshop Gift Certificate
                 </h3>
               <div className="mb-4">
-                {daysUntilChristmas > 0 ? (
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-3xl font-bold line-through text-red-600">$85</span>
-                    <span className="text-3xl font-bold text-gray-900">$77</span>
-                  </div>
-                ) : (
-                  <span className="text-3xl font-bold text-gray-900">$85.00</span>
-                )}
+                <div className="flex items-baseline gap-2">
+                  <span className="text-3xl font-bold text-gray-900">$85</span>
+                </div>
               </div>
               <p className="text-gray-600 mb-4 flex-1">
                 This gift certificate is redeemable for our Traditional Matcha Bowl Workshop.
