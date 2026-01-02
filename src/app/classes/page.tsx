@@ -11,7 +11,7 @@ export default function Classes() {
           <div className="mb-8">
             <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Irvine Pottery Classes</h2>
             <p className="mt-4 text-gray-600 text-lg">
-              Come join us for a pottery class in Irvine! We host group pottery classes in our historic studio in Old Town Irvine. If you have questions about our class or want to book a private class for your family, friend group, or organization, feel free to email us at olomanastudios@gmail.com.
+              Come join us for a pottery class in Irvine! We host group pottery classes in our historic studio in Old Town Irvine. If you have questions about our class or want to book a private class for your family, friend group, or organization, feel free to email us at contact@olomanastudios.com.
             </p>
           </div>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -120,7 +120,7 @@ export default function Classes() {
 
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-700 text-lg">For groups of 8 or more, contact us at <strong>olomanastudios@gmail.com</strong> for a private pottery event booking.</p>
+          <p className="text-center text-gray-700 text-lg">For groups of 8 or more, contact us at <strong>contact@olomanastudios.com</strong> for a private pottery event booking.</p>
           <p className="text-center text-gray-700 text-lg">Private group prices are the same as our regular group classes. Learn more <Link href="/classes/private-pottery-event-irvine" className="underline">here.</Link></p>
         </div>
       </section>

@@ -10,7 +10,7 @@ export default function OpenStudioMembership() {
         <title>Pottery Open Studio in Irvine | Olomana Studios</title>
         <meta
           name="description"
-          content="Olomana Studios open studio membership spots are limited due to our small studio space and focus on a quality experience. If you're interested, email olomanastudios@gmail.com."
+          content="Olomana Studios open studio membership spots are limited due to our small studio space and focus on a quality experience. If you're interested, email contact@olomanastudios.com."
         />
       </Head>
 
@@ -66,7 +66,7 @@ export default function OpenStudioMembership() {
           <h2 className="text-3xl font-bold text-gray-900">Why Join Our Pottery Studio?</h2>
           <p className="mt-4 max-w-2xl mx-auto text-gray-700">
             We keep memberships intentionally small to protect a calm, focused atmosphere where you can grow your craft. If our approach resonates with you, reach out at{" "}
-            <a className="underline" href="mailto:olomanastudios@gmail.com">olomanastudios@gmail.com</a>.
+            <a className="underline" href="mailto:contact@olomanastudios.com">contact@olomanastudios.com</a>.
           </p>
           <div className="mt-8">
             <a

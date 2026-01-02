@@ -179,7 +179,7 @@ export default function Home() {
 
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-700 text-lg">For groups of 8 or more, contact us at <strong>olomanastudios@gmail.com</strong> for a private pottery event booking.</p>
+          <p className="text-center text-gray-700 text-lg">For groups of 8 or more, email us at <strong>contact@olomanastudios.com</strong> for a private pottery event booking.</p>
           <p className="text-center text-gray-700 text-lg">Private group prices are the same as our regular group classes. Learn more <Link href="/classes/private-pottery-event-irvine" className="underline">here.</Link></p>
         </div>
       </section>

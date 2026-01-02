@@ -199,7 +199,7 @@ export default function Events() {
               <div>
                 <h4 className="text-lg font-bold text-gray-900">Email us with information about your group</h4>
                 <p className="mt-2 text-gray-700">
-                  Email <strong>olomanastudios@gmail.com</strong> with 2-3 date/time preferences and estimated headcount (minimum 6, max 30). We will confirm details and provide a private booking link. <strong>No deposit required.</strong>.
+                  Email <strong>contact@olomanastudios.com</strong> with 2-3 date/time preferences and estimated headcount (minimum 8, max 30). We will confirm details and provide a private booking link. <strong>No deposit required.</strong>.
                 </p>
               </div>
             </div>

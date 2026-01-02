@@ -98,7 +98,7 @@ export default function About() {
         </div>
         <h4 className="leander text-3xl font-bold sm:text-5xl mt-8 md:mt-16 text-black">contact</h4>
         <p className="mt-4 mb-4 text-gray-700">
-          {"We're always happy to hear from you so if you have any questions about our ceramics, our studio, classes, collaborations or events, please get in touch! Our email is: olomanastudios@gmail.com."}
+          {"We're always happy to hear from you so if you have any questions about our ceramics, our studio, classes, collaborations or events, please get in touch! Our email is: contact@olomanastudios.com."}
         </p>
         <p className="mt-4 mb-4 text-gray-700">
           {"We are located at 14988 Sand Canyon Ave Studio 6, Irvine, CA 92618. See our Google Maps listings for the most up to date hours. We are closed Mondays and Tuesday."}

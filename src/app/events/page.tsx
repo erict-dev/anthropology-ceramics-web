@@ -47,7 +47,7 @@ export default function Events() {
               <div>
                 <h4 className="leander text-lg font-bold text-gray-900">Book Your Event</h4>
                 <p className="mt-2 text-gray-600">
-                  Email us at <strong>olomanastudios@gmail.com</strong> to schedule your pottery event. Tell us about your space (does it have tables/chairs) and approximately how many attendees. We will ask for a 30% deposit to reserve the date.
+                  Email us at <strong>contact@olomanastudios.com</strong> to schedule your pottery event. Tell us about your space (does it have tables/chairs) and approximately how many attendees. We will ask for a 30% deposit to reserve the date.
                 </p>
               </div>
             </div>
@@ -122,10 +122,10 @@ export default function Events() {
         {/* Call to Action Section */}
         <div className="text-center">
           <a
-            href="mailto:olomanastudios@gmail.com"
+            href="mailto:contact@olomanastudios.com"
             className="inline-block px-8 py-4 text-lg font-bold text-white bg-blue-600 rounded-full hover:bg-olomana-yellow transition"
           >
-            Email us at olomanastudios@gmail.com to book your pottery event
+            Email us at contact@olomanastudios.com to book your pottery event
           </a>
         </div>
       </div>
