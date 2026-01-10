@@ -2,15 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function GiftCards() {
-  // Calculate days until Christmas
-  const today = new Date();
-  const currentYear = today.getFullYear();
-  const christmas = new Date(currentYear, 11, 25); // December 25
-  if (today > christmas) {
-    christmas.setFullYear(currentYear + 1);
-  }
-  const daysUntilChristmas = Math.ceil((christmas.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
-
   return (
     <>
       {/* Gift Card Options */}
@@ -22,11 +13,6 @@ export default function GiftCards() {
             </h2>
             <p className="text-gray-600 text-lg">
               Our pottery class & workshop gift cards open the door to meaningful experiences, shared moments of creativity, and memories that last long after the clay has been fired.
-              {daysUntilChristmas > 0 && (
-                <span className="block mt-2 font-semibold text-red-600">
-                  🎄 10% discount on all gift cards until Christmas with code: <span className="underline">HOLIDAY-GIFT-2025</span> at checkout 🎄
-                </span>
-              )}
             </p>
           </div>
 

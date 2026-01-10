@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function About() {
@@ -101,7 +102,7 @@ export default function About() {
           {"We're always happy to hear from you so if you have any questions about our ceramics, our studio, classes, collaborations or events, please get in touch! Our email is: contact@olomanastudios.com."}
         </p>
         <p className="mt-4 mb-4 text-gray-700">
-          {"We are located at 14988 Sand Canyon Ave Studio 6, Irvine, CA 92618. See our Google Maps listings for the most up to date hours. We are closed Mondays and Tuesday."}
+          We are located at 14988 Sand Canyon Ave Studio 6, Irvine, CA 92618. See our <Link href="https://share.google/YVWMAyRy8UHpgOVam" target="_blank">Google Maps</Link> listing for the most up to date hours. We are closed Mondays and Tuesday.
         </p>
       </div>
     </section>
