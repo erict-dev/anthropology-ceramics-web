@@ -17,11 +17,11 @@ export default function BusinessHoursSmall() {
           </li>
           <li className="flex justify-between rounded-lg bg-white/10 px-2 py-1">
             <span className="font-medium text-gray-100">Wed–Sat</span>
-            <span className="text-gray-300">10:00am–8:30pm</span>
+            <span className="text-gray-300">10:30am–8:30pm</span>
           </li>
           <li className="flex justify-between rounded-lg bg-white/10 px-2 py-1">
             <span className="font-medium text-gray-100">Sunday</span>
-            <span className="text-gray-300">10:00am–5:00pm</span>
+            <span className="text-gray-300">10:30am–5:00pm</span>
           </li>
         </ul>
 

@@ -19,11 +19,11 @@ export default function BusinessHours() {
           </li>
           <li className="flex justify-between gap-4 rounded-xl bg-white/70 px-3 py-2 sm:px-4">
             <span className="font-medium text-gray-800">Wed–Sat</span>
-            <span className="text-gray-700">10:00am – 8:30pm</span>
+            <span className="text-gray-700">10:30am – 8:30pm</span>
           </li>
           <li className="flex justify-between gap-4 rounded-xl bg-white/70 px-3 py-2 sm:px-4">
             <span className="font-medium text-gray-800">Sunday</span>
-            <span className="text-gray-700">10:00am – 5:00pm</span>
+            <span className="text-gray-700">10:30am – 5:00pm</span>
           </li>
         </ul>
 
