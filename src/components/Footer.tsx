@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import BusinessHoursSmall from '@/components/BusinessHoursSmall'
 
 export default function Footer() {
   return (
@@ -57,7 +58,7 @@ export default function Footer() {
         {/* Address & Hours Section */}
         <div className="mt-8 text-center text-gray-300 text-sm">
           <p>14988 Sand Canyon Ave Studio 6, Irvine CA 92618</p>
-          <p>Check our <Link href="https://share.google/80U7yzMdXeW0ck1kb" target='_blank' className="underline">Google Maps listing</Link> for the most up to date business hours</p>
+          <BusinessHoursSmall />
         </div>
         
         <div className="text-center text-gray-400 mt-4 text-sm">

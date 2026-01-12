@@ -143,10 +143,8 @@ export default function StudioCalendar({ events }: Props) {
         slotMinTime="08:00:00"
         slotMaxTime="23:00:00"
         businessHours={[
-          { daysOfWeek: [3, 4], startTime: "12:00", endTime: "21:00" },
-          { daysOfWeek: [5], startTime: "12:00", endTime: "22:00" },
-          { daysOfWeek: [6], startTime: "10:00", endTime: "22:00" },
-          { daysOfWeek: [0], startTime: "10:00", endTime: "20:00" },
+          { daysOfWeek: [3, 4, 5, 6], startTime: "10:30", endTime: "20:30" },
+          { daysOfWeek: [0], startTime: "10:30", endTime: "17:00" },
         ]}
         nowIndicator
         navLinks
@@ -155,7 +153,7 @@ export default function StudioCalendar({ events }: Props) {
         dayMaxEvents
         stickyHeaderDates
         timeZone="America/Los_Angeles"
-        allDaySlot={true}
+        allDaySlot={false}
         events={fcEvents}
         eventContent={renderEventContent}
         eventClassNames={(arg) =>
