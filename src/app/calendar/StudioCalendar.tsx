@@ -168,6 +168,9 @@ export default function StudioCalendar({ events }: Props) {
 
       {/* styles unchanged */}
       <style jsx global>{`
+        .fc .fc-non-business {
+          background: #D6D6D6E0;
+        }
         .fc .fc-toolbar-title {
           font-size: 1.5rem;
           padding: 0 10px;
