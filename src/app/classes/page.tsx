@@ -66,11 +66,11 @@ export default function Classes() {
               description="Refine control and consistency, explore curves, shapes and handles. Learn to control clay moisture and trim foot rings. Firing included for work made during the course."
             />
             <ClassCard
-              title="Level 3 - Advanced"
+              title="Level 3 - Intermediate+"
               imgSrc="/level-3-pottery-irvine-olomana.jpg"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25203%2520(Advanced)"
-              description="Create jars with matching lids, throw multiple pieces off the hump and marble different clays together for unique colors. Firing included for work made during the course."
+              description="Learn to make jars with matching lids, throw multiple pieces off the hump and marble different clays together for unique colors. Firing included for work made during the course."
             />
           </div>
         </div>
