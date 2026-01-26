@@ -75,40 +75,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Special Workshops — 2 cards, stretch to 2 cols at md */}
-      <section>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Special Workshops</h2>
-          <p className="mt-2 text-gray-600">Longer, focused sessions that dive deeper into technique and tradition.</p>
-
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <ClassCard
-              title="Traditional Matcha Bowl Workshop"
-              imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
-              meta="2.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
-              description="Carve a chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks."
-            />
-            <ClassCard
-              title="Ikebana Flower Arrangement Workshop"
-              imgSrc="/workshops/ike-4.jpeg"
-              meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/86745632/calendar/12365772"
-              description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
-            />
-          </div>
-
-          {/* Divider */}
-          <Image
-            alt="Decorative line"
-            src="/handdrawn-line.png"
-            width={1920}
-            height={6}
-            className="mt-8 mb-8 w-full h-1.5"
-          />
-        </div>
-      </section>
-
       {/* 4-Week Pottery Course — Row 1: Levels 1–3; Row 2: two advanced */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -150,6 +116,41 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* Special Workshops — 2 cards, stretch to 2 cols at md */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Special Workshops</h2>
+          <p className="mt-2 text-gray-600">Longer, focused sessions that dive deeper into technique and tradition.</p>
+
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ClassCard
+              title="Traditional Matcha Bowl Workshop"
+              imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
+              meta="2.5 hrs"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
+              description="Carve a chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks."
+            />
+            <ClassCard
+              title="Ikebana Flower Arrangement Workshop"
+              imgSrc="/workshops/ike-4.jpeg"
+              meta="1.5 hrs"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/86745632/calendar/12365772"
+              description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
+            />
+          </div>
+
+          {/* Divider */}
+          <Image
+            alt="Decorative line"
+            src="/handdrawn-line.png"
+            width={1920}
+            height={6}
+            className="mt-8 mb-8 w-full h-1.5"
+          />
+        </div>
+      </section>
+
       {/* Gift Cards Section */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">

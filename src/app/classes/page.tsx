@@ -41,40 +41,6 @@ export default function Classes() {
         className="mt-8 mb-8 w-full h-1.5"
       />
 
-      {/* Workshops Promotional Section */}
-      <section className="pb-12">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Pottery Workshops</h2>
-          <p className="mt-4 text-gray-600 text-lg w-full">
-            Explore our <strong>Pottery Workshops</strong> in Irvine, CA where we teach you the traditional techniques behind making specific pottery pieces like <em>matcha bowls</em>, <em>ikebana vases</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery and make your own unique pottery piece.
-          </p>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <ClassCard
-              title="Traditional Matcha Bowl Workshop"
-              imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
-              meta="2.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
-              description="Carve a chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks."
-            />
-            <ClassCard
-              title="Ikebana Flower Arrangement Workshop"
-              imgSrc="/workshops/ike-4.jpeg"
-              meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/82663099/calendar/12365772"
-              description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
-            />
-          </div>
-        </div>
-      </section>
-
-      <Image
-        alt="Decorative line"
-        src="/handdrawn-line.png"
-        width={1920}
-        height={6}
-        className="mt-8 mb-8 w-full h-1.5"
-      />
-
       {/* New 4-Week Wheel Throwing Course Section */}
       <section className="pb-12 bg-gray-100">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -105,6 +71,41 @@ export default function Classes() {
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25203%2520(Advanced)"
               description="Create jars with matching lids, throw multiple pieces off the hump and marble different clays together for unique colors. Firing included for work made during the course."
+            />
+          </div>
+        </div>
+      </section>
+
+      <Image
+        alt="Decorative line"
+        src="/handdrawn-line.png"
+        width={1920}
+        height={6}
+        className="mt-8 mb-8 w-full h-1.5"
+      />
+
+
+      {/* Workshops Promotional Section */}
+      <section className="pb-12">
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Pottery Workshops</h2>
+          <p className="mt-4 text-gray-600 text-lg w-full">
+            Explore our <strong>Pottery Workshops</strong> in Irvine, CA where we teach you the traditional techniques behind making specific pottery pieces like <em>matcha bowls</em>, <em>ikebana vases</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery and make your own unique pottery piece.
+          </p>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ClassCard
+              title="Traditional Matcha Bowl Workshop"
+              imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
+              meta="2.5 hrs"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
+              description="Carve a chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks."
+            />
+            <ClassCard
+              title="Ikebana Flower Arrangement Workshop"
+              imgSrc="/workshops/ike-4.jpeg"
+              meta="1.5 hrs"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/82663099/calendar/12365772"
+              description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
             />
           </div>
         </div>
