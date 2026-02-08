@@ -8,6 +8,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState('');
   const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -19,17 +20,35 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
     const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
         setIsMobileMenuOpen(false);
         setHoveredItem('')
       }
     };
 
-    document.addEventListener('mouseup', handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
-      document.removeEventListener('mouseup', handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
     };
   }, [isMobileMenuOpen]);
 
@@ -43,6 +62,7 @@ export default function Navbar() {
 
         <div className="flex flex-1 items-center justify-end">
           <nav
+            id="mobile-nav"
             ref={menuRef}
             aria-label="Global"
             className={`absolute bg-white top-0 left-0 right-0 z-20 p-5 md:static md:bg-transparent md:p-0 md:block ${isMobileMenuOpen ? "block bg-opacity-[0.98]" : "hidden"}`}
@@ -156,17 +176,26 @@ export default function Navbar() {
 
           <div className="flex items-center gap-4 z-20">
             <button
+              ref={buttonRef}
               onClick={toggleMobileMenu}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-nav"
               className="block rounded text-gray-600 transition hover:text-gray-600/75 md:hidden"
             >
-              <span className="sr-only">Toggle menu</span>
-              <Image
-                width={100}
-                height={100}
-                alt="mobile-menu-icon"
-                src="/mobile-menu.png"
-                className="h-8 w-8"
-              />
+              <span className="sr-only">{isMobileMenuOpen ? 'Close menu' : 'Open menu'}</span>
+              {isMobileMenuOpen ? (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <Image
+                  width={100}
+                  height={100}
+                  alt=""
+                  src="/mobile-menu.png"
+                  className="h-8 w-8"
+                />
+              )}
             </button>
           </div>
         </div>
