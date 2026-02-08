@@ -32,11 +32,14 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold">Library</h3>
+            <h3 className="text-lg font-semibold">Resources</h3>
             <ul className="mt-2 space-y-2 text-gray-300">
-              <li><Link href="/library/celadon" className="hover:text-white">Celadon</Link></li>
-              <li><Link href="/library/hakeme" className="hover:text-white">Hakeme</Link></li>
-              <li><Link href="/library/kurinuki" className="hover:text-white">Kurinuki</Link></li>
+              <li><Link href="/resources/beginner-pottery-guide" className="hover:text-white">Beginner Pottery Guide</Link></li>
+              <li><Link href="/resources/date-night-ideas-irvine" className="hover:text-white">Date Night Ideas</Link></li>
+              <li><Link href="/resources/family-activities-irvine" className="hover:text-white">Family Activities</Link></li>
+              <li><Link href="/resources/team-building-activities-irvine" className="hover:text-white">Team Building</Link></li>
+              <li><Link href="/resources/things-to-do-in-irvine" className="hover:text-white">Things to Do in Irvine</Link></li>
+              <li><Link href="/resources/pottery-classes-orange-county" className="hover:text-white">Orange County Pottery</Link></li>
             </ul>
           </div>
 
