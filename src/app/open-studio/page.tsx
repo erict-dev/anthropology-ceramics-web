@@ -2,8 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { SHOW_OPEN_STUDIO } from '@/config/features';
 
 export default function OpenStudioMembership() {
+  // Feature flag: SHOW_OPEN_STUDIO
+  if (!SHOW_OPEN_STUDIO) notFound();
+
   return (
     <div>
       <Head>

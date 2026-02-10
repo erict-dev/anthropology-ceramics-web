@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import BusinessHoursSmall from '@/components/BusinessHoursSmall'
+import { SHOW_OPEN_STUDIO } from '@/config/features';
 
 export default function Footer() {
   return (
@@ -43,12 +44,15 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Feature flag: SHOW_OPEN_STUDIO */}
+          {SHOW_OPEN_STUDIO && (
           <div>
             <h3 className="text-lg font-semibold">Open Studio</h3>
             <ul className="mt-2 space-y-2 text-gray-300">
               <li><Link href="/open-studio" className="hover:text-white">Memberships</Link></li>
             </ul>
           </div>
+          )}
 
           <div>
             <h3 className="text-lg font-semibold">Gift Cards</h3>

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
+import { SHOW_OPEN_STUDIO } from '@/config/features';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -152,6 +153,8 @@ export default function Navbar() {
                   </li>
                 </ul>
               </li>
+              {/* Feature flag: SHOW_OPEN_STUDIO */}
+              {SHOW_OPEN_STUDIO && (
               <li className="relative" onMouseEnter={() => setHoveredItem('open-studio')}>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/open-studio" onClick={handleNavItemClick}>open studio</Link>
                 <ul
@@ -168,6 +171,7 @@ export default function Navbar() {
                   </li>
                 </ul>
               </li>
+              )}
               <li className="relative" onMouseEnter={() => setHoveredItem('gift-cards')}>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/gift-cards" onClick={handleNavItemClick}>gift cards</Link>
               </li>
