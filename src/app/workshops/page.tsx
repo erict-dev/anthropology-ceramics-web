@@ -115,6 +115,48 @@ export default function Workshops() {
           </div>
         </div>
       </section>
+
+      <Image
+        alt="Decorative line"
+        src="/handdrawn-line.png"
+        width={1920}
+        height={6}
+        className="mt-8 mb-8 w-full h-1.5"
+      />
+
+      {/* Ceramic Charm Workshop */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <header>
+            <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Ceramic Charm Workshop</h2>
+            <p className="mt-4 text-black">
+              Create your own adorable <strong>ceramic charms</strong> at our workshop in Irvine, CA. Design and paint 3 custom charms, from cute animal figures and food miniatures to personalized pendants and keychains. This beginner-friendly workshop is perfect for anyone who loves small, detailed art projects. All materials, glazing, and kiln firing are included. Pick up your finished charms in 4 weeks!
+            </p>
+            <p className="mt-2 text-gray-700">
+              <strong>Highlights:</strong> Design 3 custom charms, learn hand-building and painting techniques, and take home one-of-a-kind wearable art pieces.
+            </p>
+            <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 1.5 hours</p>
+          <a
+            href="#"
+            className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"
+          >
+            Book online
+          </a>
+          </header>
+
+          <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <div className="rounded-lg overflow-hidden bg-rose-100 flex items-center justify-center">
+              <p className="text-rose-400 text-sm font-medium">Charm workshop: shaping clay</p>
+            </div>
+            <div className="rounded-lg overflow-hidden bg-amber-100 hidden sm:flex items-center justify-center">
+              <p className="text-amber-400 text-sm font-medium">Charm workshop: painting details</p>
+            </div>
+            <div className="rounded-lg overflow-hidden bg-sky-100 hidden md:flex items-center justify-center">
+              <p className="text-sky-400 text-sm font-medium">Charm workshop: finished charms</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

@@ -29,6 +29,7 @@ export default function Footer() {
               <li><Link href="/workshops/matcha-bowl-pottery-workshop-irvine" className="hover:text-white">Matcha Bowl Workshop</Link></li>
               <li><Link href="/workshops/teapot-pottery-workshop-irvine" className="hover:text-white">Teapot Workshop</Link></li>
               <li><Link href="/workshops/ikebana-flower-arrangement-workshop-irvine" className="hover:text-white">Ikebana Flower Arrangement</Link></li>
+              <li><Link href="/workshops/ceramic-charm-workshop-irvine" className="hover:text-white">Ceramic Charm Workshop</Link></li>
             </ul>
           </div>
           

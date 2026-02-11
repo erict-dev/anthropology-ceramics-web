@@ -151,6 +151,15 @@ export default function Navbar() {
                       teapot
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/workshops/ceramic-charm-workshop-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      charm making
+                    </Link>
+                  </li>
                 </ul>
               </li>
               {/* Feature flag: SHOW_OPEN_STUDIO */}
