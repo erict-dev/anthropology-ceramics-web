@@ -123,7 +123,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Special Workshops</h2>
           <p className="mt-2 text-gray-600">Longer, focused sessions that dive deeper into technique and tradition.</p>
 
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ClassCard
               title="Traditional Matcha Bowl Workshop"
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
@@ -137,6 +137,13 @@ export default function Home() {
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/86745632/calendar/12365772"
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
+            />
+            <ClassCard
+              title="Ceramic Charms Workshop"
+              imgSrc="/workshops/charms-workshop.jpg"
+              meta="1 hr"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
+              description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials and firing included. Pick up your finished charms in 4 weeks!"
             />
           </div>
 
