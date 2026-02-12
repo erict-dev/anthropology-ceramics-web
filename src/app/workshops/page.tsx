@@ -135,7 +135,7 @@ export default function Workshops() {
             <p className="mt-2 text-gray-700">
               <strong>Highlights:</strong> Design 3 custom charms, learn hand-building and painting techniques, and take home one-of-a-kind wearable art pieces.
             </p>
-            <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 1.5 hours</p>
+            <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 1 hour</p>
           <a
             href="#"
             className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"

@@ -139,10 +139,10 @@ export default function Home() {
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
             />
             <ClassCard
-              title="Ceramic Charm Workshop"
-              imgSrc="/workshops/charm-placeholder.jpg"
-              meta="1.5 hrs"
-              href="/workshops/ceramic-charm-workshop-irvine"
+              title="Ceramic Charms Workshop"
+              imgSrc="/workshops/charms-workshop.jpg"
+              meta="1 hr"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
               description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials and firing included. Pick up your finished charms in 4 weeks!"
             />
           </div>

@@ -79,18 +79,17 @@ export default function CharmWorkshopContent() {
       `}</style>
 
       {/* ── Hero ── multi-color splash background with wiggling charm */}
-      <section style={{ background: '#e8c4b0' }}>
+      <section style={{ background: '#f3d390' }}>
         <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Wiggling charm image — first on mobile, right on desktop */}
             <div className="anim-fade-up-d2 flex justify-center order-1 md:order-2">
               <div
-                className="charm-wiggle relative overflow-hidden shadow-2xl w-[240px] h-[240px] sm:w-[300px] sm:h-[300px]"
+                className="charm-wiggle relative overflow-hidden w-[288px] h-[288px] sm:w-[360px] sm:h-[360px]"
               >
-                {/* Replace src with your charm PNG */}
                 <Image
-                  src="/workshops/charm-hero.png"
-                  alt="Handmade ceramic charm from a charm making workshop in Irvine"
+                  src="/workshops/3-charms-workshop-irvine-pottery.jpg"
+                  alt="Three handmade ceramic charms from a charm making workshop in Irvine"
                   fill
                   className="object-cover"
                   sizes="(max-width: 520px) 240px, 300px"
@@ -108,27 +107,31 @@ export default function CharmWorkshopContent() {
                 Charm Making Workshop
               </h1>
               <p className="anim-fade-up-d2 mt-5 text-lg sm:text-xl leading-relaxed" style={{ color: '#5c2e1f' }}>
-                Make <strong>3 handmade ceramic charms</strong> in this 1.5-hour charm making workshop in Irvine.
+                Make <strong>3 handmade ceramic charms</strong> in this 1-hour charm making workshop in Irvine.
                 Sculpt your own pendants, keychains, and miniature figures from clay, then paint them
                 however you like. All materials and kiln firing included.
               </p>
 
               {/* Pills */}
               <div className="anim-fade-up-d3 mt-6 flex flex-wrap gap-2.5">
-                {['1.5 hours', '3 charms', 'All levels'].map((tag) => (
+                {[
+                  { label: '1 hour', bg: '#fce4ec', color: '#7a3b2e' },
+                  { label: '3 charms', bg: '#e0f2f1', color: '#2d4a3e' },
+                  { label: 'All levels', bg: '#e8dff5', color: '#4a2d73' },
+                ].map((tag) => (
                   <span
-                    key={tag}
+                    key={tag.label}
                     className="rounded-full px-4 py-1.5 text-sm font-semibold"
-                    style={{ background: '#f5ddd0', color: '#7a3b2e' }}
+                    style={{ background: tag.bg, color: tag.color }}
                   >
-                    {tag}
+                    {tag.label}
                   </span>
                 ))}
               </div>
 
               <div className="anim-fade-up-d4 mt-8">
                 <a
-                  href="#"
+                  href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
                   className="charm-cta inline-block rounded-full px-10 py-3.5 text-lg font-semibold transition-all duration-300"
                   style={{ background: '#3d1c12', color: '#f5ddd0' }}
                 >
@@ -144,12 +147,15 @@ export default function CharmWorkshopContent() {
       <section style={{ background: '#2d4a3e' }}>
         <div className="mx-auto max-w-screen-xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
-            {/* Placeholder image — first on mobile, left on desktop */}
-            <div
-              className="rounded-3xl overflow-hidden flex items-center justify-center h-72 sm:h-80 md:h-96"
-              style={{ background: '#3d6353' }}
-            >
-              <span className="anim-float text-6xl select-none" aria-hidden="true">&#x2728;</span>
+            {/* Workshop image — first on mobile, left on desktop */}
+            <div className="rounded-3xl overflow-hidden relative h-72 sm:h-80 md:h-96">
+              <Image
+                src="/workshops/irvine-clay-jewlery-workshop.jpg"
+                alt="Handmade ceramic charms from a clay jewelry workshop in Irvine"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
 
             <div>
@@ -189,7 +195,7 @@ export default function CharmWorkshopContent() {
               {
                 step: '1',
                 title: 'Shape',
-                desc: 'Roll, pinch, and sculpt soft clay into 3 ceramic charm shapes. Think cute animals, geometric pendants, tiny food, initials, whatever you want.',
+                desc: 'Roll, pinch, and sculpt clay into 3 ceramic charm shapes. Think cute animals, geometric pendants, tiny food, initials, whatever you want.',
                 bg: '#e8c4b0',
                 accent: '#7a3b2e',
                 text: '#5c2e1f',
@@ -204,8 +210,8 @@ export default function CharmWorkshopContent() {
               },
               {
                 step: '3',
-                title: 'Fire & Collect',
-                desc: 'We glaze and kiln-fire your handmade charms until they\'re strong and glossy. Pick them up in about 4 weeks, ready to wear, attach, or gift.',
+                title: 'Collect',
+                desc: 'We glaze and fire your handmade charms until they\'re strong and glossy. Pick them up in about 4 weeks, ready to wear, attach, or gift.',
                 bg: '#b5d8c7',
                 accent: '#2d4a3e',
                 text: '#1f3a2e',
@@ -241,12 +247,15 @@ export default function CharmWorkshopContent() {
       <section style={{ background: '#c9b8e0' }}>
         <div className="mx-auto max-w-screen-xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
-            {/* Placeholder image — first on mobile, right on desktop */}
-            <div
-              className="rounded-3xl overflow-hidden flex items-center justify-center h-72 sm:h-80 md:h-96 order-1 md:order-2"
-              style={{ background: '#b5a3d4' }}
-            >
-              <span className="anim-float text-6xl select-none" aria-hidden="true">&#x1F3A8;</span>
+            {/* Workshop image — first on mobile, right on desktop */}
+            <div className="rounded-3xl overflow-hidden relative h-72 sm:h-80 md:h-96 order-1 md:order-2">
+              <Image
+                src="/workshops/charms-collection-ceramic-workshop-irvine.jpg"
+                alt="Collection of handmade ceramic charms from a charm making workshop in Irvine"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
 
             <div className="order-2 md:order-1">
@@ -325,7 +334,7 @@ export default function CharmWorkshopContent() {
           </h2>
           <ul className="mt-8 space-y-4 text-lg" style={{ color: '#d4a895' }}>
             <li><strong style={{ color: '#f5ddd0' }}>Location:</strong> Olomana Studios, 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
-            <li><strong style={{ color: '#f5ddd0' }}>Duration:</strong> 1.5 hours</li>
+            <li><strong style={{ color: '#f5ddd0' }}>Duration:</strong> 1 hour</li>
             <li><strong style={{ color: '#f5ddd0' }}>What You Make:</strong> 3 ceramic charms (1 to 2 inches each), any shapes you like</li>
             <li><strong style={{ color: '#f5ddd0' }}>Includes:</strong> All clay, underglazes, tools, and kiln firing. Nothing extra to buy.</li>
             <li><strong style={{ color: '#f5ddd0' }}>Charm Pickup:</strong> Your finished ceramic charms will be ready in approximately 4 weeks</li>
@@ -334,7 +343,7 @@ export default function CharmWorkshopContent() {
           </ul>
           <div className="mt-10 text-center">
             <a
-              href="#"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
               className="charm-cta inline-block rounded-full px-10 py-4 text-lg font-semibold transition-all duration-300"
               style={{ background: '#e8c4b0', color: '#3d1c12' }}
             >

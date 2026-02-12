@@ -157,7 +157,7 @@ export default function Navbar() {
                       href={'/workshops/ceramic-charm-workshop-irvine'}
                       onClick={handleNavItemClick}
                     >
-                      charm making
+                      jewelry charms
                     </Link>
                   </li>
                 </ul>

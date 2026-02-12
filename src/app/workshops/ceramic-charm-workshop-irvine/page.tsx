@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'Olomana Studios',
     title: 'Charm Making Workshop in Irvine | Ceramic Jewelry Making Class',
     description:
-      'Design and paint 3 handmade ceramic charms in this 1.5-hour ceramic jewelry making workshop in Irvine. Shape pendants, figures, and keychains from clay. All materials and kiln firing included.',
+      'Design and paint 3 handmade ceramic charms in this 1-hour ceramic jewelry making workshop in Irvine. Shape pendants, figures, and keychains from clay. All materials and kiln firing included.',
     images: [
       {
         url: '/og/olomana-og.jpg',

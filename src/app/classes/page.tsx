@@ -88,11 +88,11 @@ export default function Classes() {
       {/* Workshops Promotional Section */}
       <section className="pb-12">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Pottery Workshops</h2>
+          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Special Art & Pottery Workshops</h2>
           <p className="mt-4 text-gray-600 text-lg w-full">
-            Explore our <strong>Pottery Workshops</strong> in Irvine, CA where we teach you the traditional techniques behind making specific pottery pieces like <em>matcha bowls</em>, <em>ikebana vases</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery and make your own unique pottery piece.
+            Explore our <strong>Special Art Workshops</strong> in Irvine, CA where we teach you the techniques behind specific pottery pieces like <em>matcha bowls</em>, <em>ceramic jewlery</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery or pottery related art.
           </p>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ClassCard
               title="Traditional Matcha Bowl Workshop"
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
@@ -106,6 +106,13 @@ export default function Classes() {
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/82663099/calendar/12365772"
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
+            />
+            <ClassCard
+              title="Ceramic Charms Workshop"
+              imgSrc="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
+              meta="1 hr"
+              href="/workshops/ceramic-charm-workshop-irvine"
+              description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials and firing included. Pick up your finished charms in 4 weeks!"
             />
           </div>
         </div>
