@@ -46,7 +46,7 @@ export default function Classes() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Wheel Throwing Course</h2>
           <p className="mt-4 text-gray-600 text-lg">
-            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes one hour of guided instruction, one hour of self-practice, and one open studio seesion per week, giving you the time to develop your skills and create functional ceramics.
+            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes two hours of guided instruction and one open studio session per week, giving you the time to develop your skills and create functional ceramics.
           </p>
 
           {/* Row 1: Level 1–3 (3 cols at lg, 1 col below) */}

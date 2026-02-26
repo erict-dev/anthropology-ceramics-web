@@ -111,7 +111,7 @@ export default function AdultPotteryClass() {
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong>Class Duration:</strong> 1 - 1.5 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
-            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 4-6 weeks. We use all lead-free, food-safe glazes.</li>
+            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 4-5 weeks. We use all lead-free, food-safe glazes.</li>
           </ul>
           <div className="mt-6 text-center">
             <a

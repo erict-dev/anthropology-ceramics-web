@@ -104,7 +104,7 @@ export default function Events() {
             {/* 8–24 */}
             <div className="p-6">
               <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
-                8 – 24 people
+                8 – 16 people
               </div>
 
               {/* Card: Handbuilding */}
@@ -148,7 +148,7 @@ export default function Events() {
             {/* 24+ */}
             <div className="p-6">
               <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
-                24+ people
+                16+ people
               </div>
 
               {/* Card: Handbuilding */}
@@ -167,7 +167,7 @@ export default function Events() {
                     <span className="text-sm text-gray-700 font-medium">$58/person</span>
                   </div>
                   <p className="text-sm text-gray-500 mt-1">
-                    1.5 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–6 weeks
+                    1.5 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
                   </p>
                 </div>
               </div>
@@ -212,7 +212,7 @@ export default function Events() {
               <div>
                 <h4 className="text-lg font-bold text-gray-900">Share Your Private Booking Link</h4>
                 <p className="mt-2 text-gray-700">
-                  Use your link to pay as a group or send the booking link to participants to book & pay separately. <strong>Once your private group class gets at least 6 bookings you are confirmed for your event.</strong>
+                  Use your link to pay as a group or send the booking link to participants to book & pay separately. <strong>Once your private group class gets at least 8 bookings you are confirmed for your event.</strong>
                 </p>
               </div>
             </div>
@@ -238,7 +238,7 @@ export default function Events() {
               <div>
                 <h4 className="text-lg font-bold text-gray-900">Firing & Pickup</h4>
                 <p className="mt-2 text-gray-700">
-                  We handle the drying, firing, and glazing. <strong>Pickup in about 4-6 weeks</strong>. Finished pieces are
+                  We handle the drying, firing, and glazing. <strong>Pickup in about 4-5 weeks</strong>. Finished pieces are
                   lead-free and food-safe, ready to use or gift.
                 </p>
               </div>

@@ -68,7 +68,7 @@ export default function GiftCards() {
                 </h3>
               <div className="mb-4">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-bold text-gray-900">$64</span>
+                  <span className="text-3xl font-bold text-gray-900">$72</span>
                 </div>
               </div>
               <p className="text-gray-600 mb-4 flex-1">
