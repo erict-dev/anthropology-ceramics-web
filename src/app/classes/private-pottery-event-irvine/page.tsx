@@ -33,143 +33,50 @@ export default function Events() {
             Private group class options are limited by the number of available wheels our studio has.
           </p>
 
-          {/* Wrap columns in flex with borders that change direction responsively */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 divide-y-[3px] md:divide-y-0 md:divide-x-[3px] divide-gray-300">
-            {/* 6–8 */}
-            <div className="p-6">
-              <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
-                8 people
-              </div>
-
-              {/* Card: Wheel */}
-              <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
-                <div className="relative w-full aspect-[4/2]">
-                  <Image
-                    alt="Pottery wheel class"
-                    src="/private-pottery-event/private-group-pottery-wheel-throwing.jpg"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <div className="flex justify-between items-center">
-                    <h4 className="font-semibold text-gray-900">Pottery Wheel Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$58/person</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">
-                    1 hour class · includes 1 lb of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
-                  </p>
-                </div>
-              </div>
-
-              {/* Card: Handbuilding */}
-              <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
-                <div className="relative w-full aspect-[4/2]">
-                  <Image
-                    alt="Pottery handbuilding class"
-                    src="/private-pottery-event/handbuilding.jpg"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <div className="flex justify-between items-center">
-                    <h4 className="font-semibold text-gray-900">Pottery Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$58/person</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">
-                    1 hour class · includes 1 lb of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
-                  </p>
-                </div>
-              </div>
-
-              {/* Card: Wheel & Handbuilding */}
-              <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
-                <div className="relative w-full aspect-[4/2]">
-                  <Image alt="Wheel & Handbuilding class" src="/event-1.jpg" fill className="object-cover" />
-                </div>
-                <div className="p-5">
-                  <div className="flex justify-between items-center">
-                    <h4 className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$68/person</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">
-                    1.5 hour class · includes 2 lbs of clay, firing and glazing for 2 pieces · pickup in 4–5 weeks
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
-            {/* 8–24 */}
-            <div className="p-6">
-              <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
+          {/* Two group size options side by side */}
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* 8–16 people */}
+            <div className="rounded-2xl border border-gray-200 bg-white overflow-hidden">
+              <div className="bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900 border-b border-gray-200">
                 8 – 16 people
               </div>
 
-              {/* Card: Handbuilding */}
-              <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
-                <div className="relative w-full aspect-[4/2]">
-                  <Image
-                    alt="Pottery handbuilding class"
-                    src="/private-pottery-event/handbuilding.jpg"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <div className="flex justify-between items-center">
-                    <h4 className="font-semibold text-gray-900">Pottery Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$58/person</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">
-                    1 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
-                  </p>
-                </div>
+              <div className="relative w-full aspect-[4/2]">
+                <Image alt="Wheel & Handbuilding class" src="/event-1.jpg" fill className="object-cover" />
               </div>
-
-              {/* Card: Wheel & Handbuilding */}
-              <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
-                <div className="relative w-full aspect-[4/2]">
-                  <Image alt="Wheel & Handbuilding class" src="/event-1.jpg" fill className="object-cover" />
+              <div className="p-5">
+                <div className="flex justify-between items-center">
+                  <h4 className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
+                  <span className="text-sm text-gray-700 font-medium">$68/person</span>
                 </div>
-                <div className="p-5">
-                  <div className="flex justify-between items-center">
-                    <h4 className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$68/person</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">
-                    1.5 hour class · includes 2 lbs of clay, firing and glazing for 2 pieces · pickup in 4–5 weeks
-                  </p>
-                </div>
+                <p className="text-sm text-gray-500 mt-1">
+                  1.5 hour class · includes 2 lbs of clay, firing and glazing for 2 pieces · pickup in 4–5 weeks
+                </p>
               </div>
             </div>
 
-            {/* 24+ */}
-            <div className="p-6">
-              <div className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900">
+            {/* 16+ people */}
+            <div className="rounded-2xl border border-gray-200 bg-white overflow-hidden">
+              <div className="bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900 border-b border-gray-200">
                 16+ people
               </div>
 
-              {/* Card: Handbuilding */}
-              <div className="mt-3 rounded-2xl border border-gray-200 overflow-hidden bg-white">
-                <div className="relative w-full aspect-[4/2]">
-                  <Image
-                    alt="Pottery handbuilding class"
-                    src="/private-pottery-event/handbuilding.jpg"
-                    fill
-                    className="object-cover"
-                  />
+              <div className="relative w-full aspect-[4/2]">
+                <Image
+                  alt="Pottery handbuilding class"
+                  src="/private-pottery-event/handbuilding.jpg"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-5">
+                <div className="flex justify-between items-center">
+                  <h4 className="font-semibold text-gray-900">Pottery Handbuilding Class</h4>
+                  <span className="text-sm text-gray-700 font-medium">$58/person</span>
                 </div>
-                <div className="p-5">
-                  <div className="flex justify-between items-center">
-                    <h4 className="font-semibold text-gray-900">Pottery Handbuilding Class</h4>
-                    <span className="text-sm text-gray-700 font-medium">$58/person</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">
-                    1.5 hour class · includes 1.5 lbs of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
-                  </p>
-                </div>
+                <p className="text-sm text-gray-500 mt-1">
+                  1 hour class · includes 1 lb of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
+                </p>
               </div>
             </div>
           </div>
