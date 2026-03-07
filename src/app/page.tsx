@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* One-Time Pottery Classes (Adults) — 2 cards, stretch to 2 cols at md */}
+      {/* One-Time Pottery Classes (Adults),2 cards, stretch to 2 cols at md */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Irvine Pottery Classes</h2>
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4-Week Pottery Course — Row 1: Levels 1–3; Row 2: two advanced */}
+      {/* 4-Week Pottery Course,Row 1: Levels 1–3; Row 2: two advanced */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">4-Week Pottery Course</h2>
@@ -117,13 +117,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Special Workshops — 2 cards, stretch to 2 cols at md */}
+      {/* Special Workshops,2 cards, stretch to 2 cols at md */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Special Workshops</h2>
           <p className="mt-2 text-gray-600">Longer, focused sessions that dive deeper into technique and tradition.</p>
 
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
               title="Traditional Matcha Bowl Workshop"
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
@@ -144,6 +144,14 @@ export default function Home() {
               meta="1 hr"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
               description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials and firing included. Pick up your finished charms in 4 weeks!"
+            />
+            <ClassCard
+              title="5-Week Teapot Making Course"
+              imgSrc="/workshops/teapot-workshop/teapot-workshop-4.jpeg"
+              imgPosition="center 60%"
+              meta="5 sessions, once a week"
+              href="https://olomanastudios.as.me/teapot"
+              description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
             />
           </div>
 

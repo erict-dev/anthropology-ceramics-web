@@ -124,6 +124,66 @@ export default function Workshops() {
         className="mt-8 mb-8 w-full h-1.5"
       />
 
+      {/* 5-Week Teapot Making Course */}
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <header>
+            <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">5-Week Teapot Making Course</h2>
+            <p className="mt-4 text-black">
+              Learn how to throw and assemble the different parts of a <strong>teapot</strong>, refine spouts and lids, and create accompanying yunomi (Japanese tea cups). Teapots are one of the most rewarding forms in pottery, and this course will guide students step-by-step through the process. Not a beginner course: students must be able to center and throw basic pottery shapes using 1-2 lbs of clay.
+            </p>
+            <p className="mt-2 text-gray-700">
+              <strong>Highlights:</strong> Throw and assemble a complete teapot (body, lid, spout, and handle) plus two yunomi tea cups over 5 weeks of guided instruction.
+            </p>
+            <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 5 weeks, meets once a week</p>
+          <a
+            href="https://olomanastudios.as.me/teapot"
+            className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"
+          >
+            Book online
+          </a>
+          </header>
+
+          <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src="/workshops/teapot-workshop/teapot-workshop-4.jpeg"
+                alt="Student shaping a teapot body"
+                width={400}
+                height={600}
+                className="object-cover w-full h-full transition duration-500 hover:scale-105"
+              />
+            </div>
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src="/workshops/teapot-workshop/teapot-workshop-3.jpeg"
+                alt="Handmade teapot and cups displayed on a board"
+                width={400}
+                height={600}
+                className="hidden sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
+              />
+            </div>
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src="/workshops/teapot-workshop/teapot-workshop-6.jpeg"
+                alt="Finished glazed teapot held in hand"
+                width={400}
+                height={600}
+                className="hidden md:block object-cover w-full h-full transition duration-500 hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Image
+        alt="Decorative line"
+        src="/handdrawn-line.png"
+        width={1920}
+        height={6}
+        className="mt-8 mb-8 w-full h-1.5"
+      />
+
       {/* Ceramic Charm Workshop */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
@@ -137,7 +197,7 @@ export default function Workshops() {
             </p>
             <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 1 hour</p>
           <a
-            href="#"
+            href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
             className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"
           >
             Book online
@@ -145,14 +205,32 @@ export default function Workshops() {
           </header>
 
           <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-            <div className="rounded-lg overflow-hidden bg-rose-100 flex items-center justify-center">
-              <p className="text-rose-400 text-sm font-medium">Charm workshop: shaping clay</p>
+            <div className="rounded-lg overflow-hidden">
+              <Image
+                src="/workshops/irvine-clay-jewlery-workshop.jpg"
+                alt="Hand holding a finished ceramic charm"
+                width={400}
+                height={600}
+                className="object-cover w-full h-full transition duration-500 hover:scale-105"
+              />
             </div>
-            <div className="rounded-lg overflow-hidden bg-amber-100 hidden sm:flex items-center justify-center">
-              <p className="text-amber-400 text-sm font-medium">Charm workshop: painting details</p>
+            <div className="hidden sm:block rounded-lg overflow-hidden">
+              <Image
+                src="/workshops/3-charms-workshop-irvine-pottery.jpg"
+                alt="Three ceramic charms on a necklace"
+                width={400}
+                height={600}
+                className="object-cover w-full h-full transition duration-500 hover:scale-105"
+              />
             </div>
-            <div className="rounded-lg overflow-hidden bg-sky-100 hidden md:flex items-center justify-center">
-              <p className="text-sky-400 text-sm font-medium">Charm workshop: finished charms</p>
+            <div className="hidden md:block rounded-lg overflow-hidden">
+              <Image
+                src="/workshops/charms-collection-ceramic-workshop-irvine.jpg"
+                alt="Collection of finished ceramic charms"
+                width={400}
+                height={600}
+                className="object-cover w-full h-full transition duration-500 hover:scale-105"
+              />
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import JsonLd from '@/components/JsonLd';
 export const metadata: Metadata = {
   title: 'Beginner Pottery Guide | What to Expect at Your First Class | Olomana Studios',
   description:
-    'New to pottery? Here is everything you need to know before your first class — what to wear, what you will learn, and what to expect at Olomana Studios.',
+    'New to pottery? Here is everything you need to know before your first class: what to wear, what you will learn, and what to expect at Olomana Studios.',
   alternates: {
     canonical: 'https://olomanastudios.com/resources/beginner-pottery-guide',
   },

@@ -48,7 +48,7 @@ export default function BeginnerPotteryClasses() {
               </h2>
               <p className="mt-4 text-gray-700 flex-1">
                 Perfect for those who have taken an intro class and want to build their skills. 
-                Learn the fundamentals of throwing on the pottery wheel — centering, pulling walls, trimming, 
+                Learn the fundamentals of throwing on the pottery wheel: centering, pulling walls, trimming, 
                 glazing, and more. By the end, you’ll be able to comfortably make cups, bowls, small vases, and planters.
               </p>
               <a
@@ -129,10 +129,10 @@ export default function BeginnerPotteryClasses() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1 space-y-4">
               <p className="text-gray-700">
-                At Olomana Studios, we believe everyone can be a maker — all it takes is a little clay and a willingness to try. Our beginner classes are designed to help you feel comfortable, whether you’ve never touched a pottery wheel before or you’re simply looking for a creative way to unwind. Every pinch, pull, and carve brings you closer to discovering the quiet joy of shaping something with your own hands.
+                At Olomana Studios, we believe everyone can be a maker. All it takes is a little clay and a willingness to try. Our beginner classes are designed to help you feel comfortable, whether you’ve never touched a pottery wheel before or you’re simply looking for a creative way to unwind. Every pinch, pull, and carve brings you closer to discovering the quiet joy of shaping something with your own hands.
               </p>
               <p className="text-gray-700">
-                We know that starting something new can feel intimidating, so we’ve created a warm, welcoming space where mistakes are part of the process and curiosity is celebrated. Here, you’ll learn the fundamentals step by step — and you’ll walk away with pieces you can feel proud of, no matter your experience level.
+                We know that starting something new can feel intimidating, so we’ve created a warm, welcoming space where mistakes are part of the process and curiosity is celebrated. Here, you’ll learn the fundamentals step by step, and you’ll walk away with pieces you can feel proud of, no matter your experience level.
               </p>
             </div>
             <div className="order-1 md:order-2 h-full relative">
@@ -157,7 +157,7 @@ export default function BeginnerPotteryClasses() {
             </div>
             <div className="order-1 md:order-2 space-y-4">
               <p className="text-gray-700">
-                Pottery has been practiced for thousands of years — and yet every piece you make is completely your own. Whether you’re shaping your very first bowl, carving textures into a matcha chawan, or simply feeling the clay spin under your fingers, we’re here to guide you through it all. This is your chance to slow down, explore your creativity, and create something meaningful.
+                Pottery has been practiced for thousands of years, and yet every piece you make is completely your own. Whether you’re shaping your very first bowl, carving textures into a matcha chawan, or simply feeling the clay spin under your fingers, we’re here to guide you through it all. This is your chance to slow down, explore your creativity, and create something meaningful.
               </p>
             </div>
           </div>

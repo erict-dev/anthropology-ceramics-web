@@ -76,7 +76,7 @@ export default function Gallery() {
             <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Earthen Collection</h2>
 
             <p className="mt-4 text-black">
-              Explore our Earthen Collection, a celebration of the natural world and the art of tea. Each piece is crafted with care, reflecting diverse landscapes and cultural inspirations—from the earthy tones of Mashiko to the delicate glazes of Jingdezhen. These ceramics invite you to savor simple, quiet moments, offering a perfect blend of beauty and functionality.
+              Explore our Earthen Collection, a celebration of the natural world and the art of tea. Each piece is crafted with care, reflecting diverse landscapes and cultural inspirations, from the earthy tones of Mashiko to the delicate glazes of Jingdezhen. These ceramics invite you to savor simple, quiet moments, offering a perfect blend of beauty and functionality.
             </p>
           </header>
 
