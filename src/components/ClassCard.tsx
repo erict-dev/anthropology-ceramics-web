@@ -5,12 +5,13 @@ type ClassCardProps = {
   title: string;
   href?: string;
   imgSrc: string;
+  imgPosition?: string;
   price?: string;
   meta?: string; // e.g., "1 hr", "4 sessions"
   description: string;
 };
 
-export default function ClassCard({ title, href, imgSrc, price, meta, description }: ClassCardProps) {
+export default function ClassCard({ title, href, imgSrc, imgPosition, price, meta, description }: ClassCardProps) {
   const CardInner = (
     <article className="group overflow-hidden rounded-2xl border border-gray-800 bg-black shadow transition hover:shadow-lg hover:border-gray-700">
       {/* Image: keep compact height like on events table */}
@@ -20,6 +21,7 @@ export default function ClassCard({ title, href, imgSrc, price, meta, descriptio
           src={imgSrc}
           fill
           className="object-cover transition duration-300 group-hover:scale-[1.02]"
+          style={imgPosition ? { objectPosition: imgPosition } : undefined}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 400px"
         />
       </div>

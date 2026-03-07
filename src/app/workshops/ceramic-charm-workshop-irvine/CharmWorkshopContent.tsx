@@ -82,7 +82,7 @@ export default function CharmWorkshopContent() {
       <section style={{ background: '#f3d390' }}>
         <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Wiggling charm image — first on mobile, right on desktop */}
+            {/* Wiggling charm image -first on mobile, right on desktop */}
             <div className="anim-fade-up-d2 flex justify-center order-1 md:order-2">
               <div
                 className="charm-wiggle relative overflow-hidden w-[288px] h-[288px] sm:w-[360px] sm:h-[360px]"
@@ -98,7 +98,7 @@ export default function CharmWorkshopContent() {
               </div>
             </div>
 
-            {/* Text — second on mobile, left on desktop */}
+            {/* Text -second on mobile, left on desktop */}
             <div className="order-2 md:order-1">
               <p className="anim-fade-up text-sm font-bold uppercase tracking-widest" style={{ color: '#7a3b2e' }}>
                 Ceramic Jewelry Making Workshop in Irvine
@@ -147,7 +147,7 @@ export default function CharmWorkshopContent() {
       <section style={{ background: '#2d4a3e' }}>
         <div className="mx-auto max-w-screen-xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
-            {/* Workshop image — first on mobile, left on desktop */}
+            {/* Workshop image -first on mobile, left on desktop */}
             <div className="rounded-3xl overflow-hidden relative h-72 sm:h-80 md:h-96">
               <Image
                 src="/workshops/irvine-clay-jewlery-workshop.jpg"
@@ -247,7 +247,7 @@ export default function CharmWorkshopContent() {
       <section style={{ background: '#c9b8e0' }}>
         <div className="mx-auto max-w-screen-xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
-            {/* Workshop image — first on mobile, right on desktop */}
+            {/* Workshop image -first on mobile, right on desktop */}
             <div className="rounded-3xl overflow-hidden relative h-72 sm:h-80 md:h-96 order-1 md:order-2">
               <Image
                 src="/workshops/charms-collection-ceramic-workshop-irvine.jpg"

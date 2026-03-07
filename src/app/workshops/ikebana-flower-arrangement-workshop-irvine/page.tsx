@@ -60,7 +60,7 @@ export default function IkebanaWorkshop() {
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-bold text-gray-900">A Hands-On Ikebana Flower Arrangement Experience</h2>
             <p className="mt-4 text-gray-700">
-              Ikebana is more than just arranging flowers—it’s a mindful and grounding practice that brings balance and tranquility. In today’s fast-paced world, engaging in a creative and hands-on activity like Ikebana provides a refreshing escape from digital distractions and mass-produced decor.
+              Ikebana is more than just arranging flowers. It’s a mindful and grounding practice that brings balance and tranquility. In today’s fast-paced world, engaging in a creative and hands-on activity like Ikebana provides a refreshing escape from digital distractions and mass-produced decor.
             </p>
             <p className="mt-4 text-gray-700">
               In this workshop, you will learn the fundamental principles of Japanese floral arrangement, including line, space, and balance. You will have access to a selection of fresh flowers, kenzans (floral pin holders), and vases to create a composition that embodies natural beauty and simplicity.

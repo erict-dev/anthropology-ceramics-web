@@ -92,7 +92,7 @@ export default function Classes() {
           <p className="mt-4 text-gray-600 text-lg w-full">
             Explore our <strong>Special Art Workshops</strong> in Irvine, CA where we teach you the techniques behind specific pottery pieces like <em>matcha bowls</em>, <em>ceramic jewlery</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery or pottery related art.
           </p>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
               title="Traditional Matcha Bowl Workshop"
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
@@ -109,10 +109,18 @@ export default function Classes() {
             />
             <ClassCard
               title="Ceramic Charms Workshop"
-              imgSrc="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
+              imgSrc="/workshops/charms-workshop.jpg"
               meta="1 hr"
               href="/workshops/ceramic-charm-workshop-irvine"
               description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials and firing included. Pick up your finished charms in 4 weeks!"
+            />
+            <ClassCard
+              title="5-Week Teapot Making Course"
+              imgSrc="/workshops/teapot-workshop/teapot-workshop-4.jpeg"
+              imgPosition="center 60%"
+              meta="5 sessions, once a week"
+              href="https://olomanastudios.as.me/teapot"
+              description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
             />
           </div>
         </div>
