@@ -147,7 +147,7 @@ export default function Workshops() {
           <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/workshops/teapot-workshop/teapot-workshop-4.jpeg"
+                src="/workshops/teapot-workshop/teapot-workshop-4b.jpeg"
                 alt="Student shaping a teapot body"
                 width={400}
                 height={600}

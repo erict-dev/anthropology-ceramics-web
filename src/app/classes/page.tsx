@@ -116,7 +116,7 @@ export default function Classes() {
             />
             <ClassCard
               title="5-Week Teapot Making Course"
-              imgSrc="/workshops/teapot-workshop/teapot-workshop-4.jpeg"
+              imgSrc="/workshops/teapot-workshop/teapot-workshop-4b.jpeg"
               imgPosition="center 60%"
               meta="5 sessions, once a week"
               href="https://olomanastudios.as.me/teapot"

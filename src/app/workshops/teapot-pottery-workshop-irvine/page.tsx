@@ -66,9 +66,9 @@ export default function TeapotWheelThrowingCourse() {
               Making a teapot by hand requires throwing multiple components (body, lid, spout, and handle) and assembling them into a single, cohesive piece. Every element must work together: the lid must fit snugly, the spout must pour cleanly, and the handle must feel balanced in the hand. This course breaks down each step over five weeks so students can focus on one stage at a time. By the end, you will have a complete, functional tea set made entirely by your own hands.
             </p>
           </div>
-          <div className="overflow-hidden rounded-lg max-h-[320px]">
+          <div className="overflow-hidden rounded-lg max-h-[420px]">
             <Image
-              src="/workshops/teapot-workshop/teapot-workshop-4.jpeg"
+              src="/workshops/teapot-workshop/teapot-workshop-4b.jpeg"
               alt="Student shaping a teapot body"
               width={600}
               height={400}
