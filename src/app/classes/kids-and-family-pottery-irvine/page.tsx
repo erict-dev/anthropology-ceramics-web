@@ -13,7 +13,7 @@ export default function KidsFamilyPotteryClass() {
             Bring the kids for this fun and engaging pottery experience. This is a great activity to do in Irvine with kids, let your creativity flow and make usable pottery together!
           </p>
           <a
-            href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%2520Group%2520Classes%2520(Youths)"
+            href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/81628903/calendar/12365772"
             className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
           >
             Book a class
@@ -105,7 +105,7 @@ export default function KidsFamilyPotteryClass() {
           </ul>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%2520Group%2520Classes%2520(Youths)"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/81628903/calendar/12365772"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book a class
