@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import Link from 'next/link';
 
 export default function OpenStudioMembership() {
 
@@ -74,12 +73,6 @@ export default function OpenStudioMembership() {
                 className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
               >
                 Apply for Membership
-              </a>
-              <a
-                href="https://membership.olomanastudios.com/login"
-                className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
-              >
-                Member Sign In
               </a>
             </div>
           </div>
