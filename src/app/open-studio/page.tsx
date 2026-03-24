@@ -22,8 +22,22 @@ export default function OpenStudioMembership() {
             Pottery Open Studio Memberships in Irvine
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
-            Our open studio memberships spots are limited and application based due to our small studio space and our focus on a high-quality experience for every student and member. If you are interested in joining, please apply here: <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfXj5xszuDSy3dcACVk764UGQF4xtG39IeigQpPtEizpJ0_Ig/viewform?usp=dialog"><strong className="underline">Open Studio Application</strong></Link>.
+            Our open studio memberships spots are limited and application based due to our small studio space and our focus on a high-quality experience for every student and member.
           </p>
+          <div className="mt-6 flex justify-center gap-4">
+            <a
+              href="https://membership.olomanastudios.com/apply"
+              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+            >
+              Apply for Membership
+            </a>
+            <a
+              href="https://membership.olomanastudios.com/login"
+              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+            >
+              Member Sign In
+            </a>
+          </div>
           <div className="relative h-96 mt-4 mb-4">
             <Image
               alt=""
@@ -54,9 +68,20 @@ export default function OpenStudioMembership() {
               <li>✓ Use of studio wheels, tools, handbuilding tables, and glazes</li>
               <li>✓ Half shelf/month for firing (Cone 5/6)</li>
             </ul>
-            <p className="mt-6 text-gray-600">
-              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfXj5xszuDSy3dcACVk764UGQF4xtG39IeigQpPtEizpJ0_Ig/viewform?usp=dialog"><strong className="underline">Apply here for an invite</strong></Link>
-            </p>
+            <div className="mt-6 flex gap-4">
+              <a
+                href="https://membership.olomanastudios.com/apply"
+                className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+              >
+                Apply for Membership
+              </a>
+              <a
+                href="https://membership.olomanastudios.com/login"
+                className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+              >
+                Member Sign In
+              </a>
+            </div>
           </div>
         </div>
       </section>
