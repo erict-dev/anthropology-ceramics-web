@@ -17,6 +17,7 @@ export default function Footer() {
               <li><Link href="/classes/kids-and-family-pottery-irvine" className="hover:text-white">Kids & Family Pottery</Link></li>
               <li><Link href="/classes/beginner-pottery-class-irvine" className="hover:text-white">Beginner Pottery Classes</Link></li>
               <li><Link href="/classes/intermediate-pottery-class-irvine" className="hover:text-white">Intermediate Pottery Classes</Link></li>
+              <li><Link href="/classes/pottery-summer-camp-irvine" className="hover:text-white">Summer Camp</Link></li>
               <li><Link href="/classes/private-pottery-event-irvine" className="hover:text-white">Private Pottery Events</Link></li>
             </ul>
           </div>

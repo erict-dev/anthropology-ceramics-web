@@ -110,6 +110,15 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      href={'/classes/pottery-summer-camp-irvine'}
+                      onClick={handleNavItemClick}
+                    >
+                      summer camp
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       href={'/classes/private-pottery-event-irvine'}
                       onClick={handleNavItemClick}
                     >
