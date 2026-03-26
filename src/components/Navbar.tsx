@@ -78,7 +78,7 @@ export default function Navbar() {
               <li className="relative" onMouseEnter={() => setHoveredItem('classes')}>
                 <Link className="text-gray-700 transition hover:text-gray-500/75 block whitespace-nowrap" href="/classes" onClick={handleNavItemClick}>classes</Link>
                 <ul
-                  className={`left-0 mt-2 w-48 bg-white md:shadow-md rounded-md md:border ${hoveredItem === 'classes' ? 'md:block' : 'md:hidden'} md:absolute md:z-30`}
+                  className={`left-0 mt-2 w-52 bg-white md:shadow-md rounded-md md:border ${hoveredItem === 'classes' ? 'md:block' : 'md:hidden'} md:absolute md:z-30`}
                 >
                   <li>
                     <Link
@@ -109,11 +109,11 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap"
                       href={'/classes/pottery-summer-camp-irvine'}
                       onClick={handleNavItemClick}
                     >
-                      summer camp
+                      summer camp<span className="text-red-500 text-[10px] font-semibold align-super ml-0.5" style={{ fontFamily: 'system-ui, sans-serif' }}>2026</span>
                     </Link>
                   </li>
                   <li>
