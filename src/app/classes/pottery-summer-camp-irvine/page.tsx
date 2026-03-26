@@ -286,7 +286,7 @@ export default function PotterySummerCampIrvine() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-3xl sm:text-4xl font-bold text-gray-900">
-            Why Parents Love This Camp
+            Why Kids & Parents Love This Camp
           </h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
