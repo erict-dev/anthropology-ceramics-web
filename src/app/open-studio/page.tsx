@@ -58,7 +58,7 @@ export default function OpenStudioMembership() {
               For experienced potters seeking flexible, independent practice time and want to be a part of a small artist community.
             </p>
             <p className="mt-4 text-xl font-semibold text-gray-900">
-              $268/month <span className="text-sm font-normal">+ $25 initiation fee</span>
+              $268/month
             </p>
             <ul className="mt-4 space-y-2 text-gray-700">
               <li>✓ Open studio access during business hours</li>
