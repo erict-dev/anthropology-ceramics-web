@@ -11,29 +11,22 @@ export default function PotteryCourse() {
             4-Week Pottery Course in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-center text-lg">
-            Unlock the art of pottery wheel throwing in this immersive 4-week pottery course in Irvine, designed for beginners who want to learn something new or students eager to improve their skills in a sequential course. No experience necessary, just a passion to learn and create.
+            Unlock the art of pottery wheel throwing in this immersive 4-week pottery course in Irvine. Whether you're a complete beginner or a returning student looking to refine your skills, our 101 and 201 courses offer structured lessons and dedicated practice time each week.
           </p>
-          <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
-              title="Level 1 - Beginner"
+              title="Intro to Wheel Throwing - 101"
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25201%2520(Beginner)"
-              description="Foundations: wedging clay, centering, pulling even walls, and forming cylinders, cups, vases and bowls. Learn how to apply glaze. Firing included for work made during the course."
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
+              description="Perfect for beginners and first timers. Learn the foundations of wheel throwing from scratch. You'll practice centering clay, pulling walls, and shaping your own cups, bowls, and vases. No experience needed. Glazing, firing, and all materials included."
             />
             <ClassCard
-              title="Level 2 - Intermediate"
+              title="Continuing Wheel Throwing - 201"
               imgSrc="/intermediate-pottery-class/4-week-pottery-lvl2-olomana-irivne.jpg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25202%2520(Intermediate)"
-              description="Refine control and consistency, explore curves, shapes and handles. Learn to control clay moisture and trim foot rings. Firing included for work made during the course."
-            />
-            <ClassCard
-              title="Level 3 - Intermediate+"
-              imgSrc="/level-3-pottery-irvine-olomana.jpg"
-              meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25203%2520(Intermediate%252B)"
-              description="Learn to make jars with matching lids, throw multiple pieces off the hump and marble different clays together for unique colors. Firing included for work made during the course."
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
+              description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Firing included."
             />
           </div>
         </div>

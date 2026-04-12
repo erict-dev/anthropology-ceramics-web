@@ -44,7 +44,7 @@ export default function BeginnerPotteryClasses() {
             </div>
             <div className="p-6 flex flex-col flex-1">
               <h2 className="text-2xl font-bold text-gray-900">
-                Level One 6-Week Wheel Throwing Course
+                Intro to Wheel Throwing - 101
               </h2>
               <p className="mt-4 text-gray-700 flex-1">
                 Perfect for those who have taken an intro class and want to build their skills. 
@@ -52,7 +52,7 @@ export default function BeginnerPotteryClasses() {
                 glazing, and more. By the end, you’ll be able to comfortably make cups, bowls, small vases, and planters.
               </p>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Courses"
+                href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Upcoming Courses

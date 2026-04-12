@@ -287,7 +287,7 @@ export default function BeginnerPotteryGuide() {
               title="4-Week Pottery Course (Level 1)"
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25201%2520(Beginner)"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
               description="Learn pottery fundamentals over 4 sessions. Perfect if you want to build real skills and practice between classes."
             />
           </div>

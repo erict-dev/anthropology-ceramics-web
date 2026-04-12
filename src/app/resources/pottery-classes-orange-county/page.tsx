@@ -29,7 +29,7 @@ const faqs = [
   {
     question: 'What types of pottery classes do you offer?',
     answer:
-      'One-time group classes (1.5 hours, great for beginners), 4-week pottery courses (Levels 1 through 3 for building skills over time), specialty workshops like our matcha bowl and ikebana classes, kids classes, and private group events.',
+      'One-time group classes (1.5 hours, great for beginners), 4-week pottery courses (101 Intro to Wheel and 201 Continuing Wheel Throwing), specialty workshops like our matcha bowl and ikebana classes, kids classes, and private group events.',
   },
   {
     question: 'Do you teach wheel throwing or handbuilding?',

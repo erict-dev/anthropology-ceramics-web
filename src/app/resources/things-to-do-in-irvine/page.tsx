@@ -239,7 +239,7 @@ export default function ThingsToDoIrvine() {
               title="4-Week Pottery Course"
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520Level%25201%2520(Beginner)"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
               description="Build real skills over time. Learn centering, pulling walls, trimming, and glazing across 4 guided sessions."
             />
           </div>

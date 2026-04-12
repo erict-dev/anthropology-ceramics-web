@@ -44,13 +44,13 @@ export default function IntermediatePotteryClasses() {
             </div>
             <div className="p-6 flex flex-col flex-1">
               <h2 className="text-2xl font-bold text-gray-900">
-                Level Two 4-Week Wheel Throwing Course
+                Continuing Wheel Throwing - 201
               </h2>
               <p className="mt-4 text-gray-700 flex-1">
-                For students who can already throw small cups, bowls, and plates, this course teaches more advanced forms: medium-sized vases, lidded jars, moon jars, and matcha bowls. Learn to throw with up to 5 lbs of clay, master hump throwing, and refine your glazing skills.
+                Designed for returning students, this course focuses on refining technique and building confidence. Practice centering with more clay, refining trimming foot rings, shaping more intentional forms, such as matcha bowls and lidded jars, discovering new surface decoration techniques, and improving consistency through repetition and guidance.
               </p>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/?categories[]=Courses"
+                href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Upcoming Courses
