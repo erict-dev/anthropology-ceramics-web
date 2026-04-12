@@ -11,7 +11,7 @@ export default function PotteryCourse() {
             4-Week Pottery Course in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-center text-lg">
-            Unlock the art of pottery wheel throwing in this immersive 4-week pottery course in Irvine. Whether you're a complete beginner or a returning student looking to refine your skills, our 101 and 201 courses offer structured lessons and dedicated practice time each week.
+            {"Unlock the art of pottery wheel throwing in this immersive 4-week pottery course in Irvine. Whether you're a complete beginner or a returning student looking to refine your skills, our 101 and 201 courses offer structured lessons and dedicated practice time each week."}
           </p>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
