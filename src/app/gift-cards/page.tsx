@@ -33,11 +33,6 @@ export default function GiftCards() {
                 <h3 className="leander text-xl font-bold text-gray-900 mb-3">
                   Pottery Class Gift Certificate
                 </h3>
-              <div className="mb-4">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-bold text-gray-900">$68</span>
-                </div>
-              </div>
               <p className="text-gray-600 mb-4 flex-1">
                 This gift certificate can be redeemed towards our one-time pottery group class for adults or kids.
               </p>
@@ -66,11 +61,6 @@ export default function GiftCards() {
                 <h3 className="leander text-xl font-bold text-gray-900 mb-3">
                   Ikebana Flower Arrangement Workshop Gift Certificate
                 </h3>
-              <div className="mb-4">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-bold text-gray-900">$72</span>
-                </div>
-              </div>
               <p className="text-gray-600 mb-4 flex-1">
                 This gift certificate is redeemable for our Ikebana Flower Arrangement Workshop.
               </p>
@@ -100,11 +90,6 @@ export default function GiftCards() {
                 <h3 className="leander text-xl font-bold text-gray-900 mb-3">
                   Matcha Bowl Workshop Gift Certificate
                 </h3>
-              <div className="mb-4">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-bold text-gray-900">$85</span>
-                </div>
-              </div>
               <p className="text-gray-600 mb-4 flex-1">
                 This gift certificate is redeemable for our Traditional Matcha Bowl Workshop.
               </p>
