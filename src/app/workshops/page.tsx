@@ -137,7 +137,7 @@ export default function Workshops() {
             </p>
             <p className="mt-2 text-gray-700"><strong>Location:</strong> Olomana Studios, Irvine, CA | <strong>Duration:</strong> 5 weeks, meets once a week</p>
           <a
-            href="https://olomanastudios.as.me/teapot"
+            href="https://olomanastudios.as.me/schedule/66629c2c/?appointmentTypeIds[]=92337408"
             className="inline-block mt-4 rounded-lg bg-black px-4 py-2 text-white text-md font-medium transition duration-300 hover:bg-gray-700"
           >
             Book online

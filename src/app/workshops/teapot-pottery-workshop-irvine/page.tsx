@@ -14,7 +14,7 @@ export default function TeapotWheelThrowingCourse() {
             </p>
           <div className="mt-6 mb-6 text-center">
             <a
-              href="https://olomanastudios.as.me/teapot"
+              href="https://olomanastudios.as.me/schedule/66629c2c/?appointmentTypeIds[]=92337408"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Register Now
@@ -101,7 +101,7 @@ export default function TeapotWheelThrowingCourse() {
 
           <div className="mt-6 text-center">
             <a
-              href="https://olomanastudios.as.me/teapot"
+              href="https://olomanastudios.as.me/schedule/66629c2c/?appointmentTypeIds[]=92337408"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
             >
               Register Now

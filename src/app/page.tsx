@@ -111,7 +111,7 @@ export default function Home() {
               imgSrc="/workshops/teapot-workshop/teapot-workshop-4b.jpeg"
               imgPosition="center 60%"
               meta="5 sessions, once a week"
-              href="https://olomanastudios.as.me/teapot"
+              href="https://olomanastudios.as.me/schedule/66629c2c/?appointmentTypeIds[]=92337408"
               description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
             />
           </div>
