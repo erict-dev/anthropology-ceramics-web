@@ -34,8 +34,8 @@ export default function TeapotWheelThrowingCourse() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/workshops/teapot-workshop/teapot-workshop-1.jpeg"
-                alt="Instructor working at bench with handmade teapots"
+                src="/workshops/teapot-workshop/teapot-making.jpeg"
+                alt="Bisque-fired teapots and yunomi cups on the workbench with pottery tools"
                 width={400}
                 height={600}
                 className="hidden sm:block object-cover w-full h-full transition duration-500 hover:scale-105"

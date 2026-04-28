@@ -249,7 +249,7 @@ export default function TeamBuildingIrvine() {
               imgSrc="/private-pottery-event/private-group.jpg"
               meta="8+ people"
               href="/classes/private-pottery-event-irvine"
-              description="Groups of 8 or more can book a private class at a custom time. Choose wheel throwing, hand-building, or both."
+              description="Groups of 8 to 30 can book a private 1.5 hour wheel & handbuilding class at a custom time. Each guest makes a piece on the wheel and one by hand."
             />
             <ClassCard
               title="One-Time Pottery Group Class"
