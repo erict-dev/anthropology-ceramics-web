@@ -65,6 +65,17 @@ export default function Home() {
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Firing included."
             />
+            <div className="md:col-span-2 md:flex md:justify-center">
+              <div className="w-full md:w-[calc(50%-0.75rem)]">
+                <ClassCard
+                  title="5-Week Teapot Making Course"
+                  imgSrc="/workshops/teapot-workshop/teapot-finished.jpeg"
+                  meta="5 sessions, once a week"
+                  href="https://olomanastudios.as.me/schedule/66629c2c/?appointmentTypeIds[]=92337408"
+                  description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
+                />
+              </div>
+            </div>
           </div>
 
           {/* Divider */}
@@ -98,21 +109,6 @@ export default function Home() {
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/86745632/calendar/12365772"
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
-            />
-            <ClassCard
-              title="Ceramic Charms Workshop"
-              imgSrc="/workshops/charms-workshop.jpg"
-              meta="1 hr"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
-              description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials and firing included. Pick up your finished charms in 4 weeks!"
-            />
-            <ClassCard
-              title="5-Week Teapot Making Course"
-              imgSrc="/workshops/teapot-workshop/teapot-workshop-4b.jpeg"
-              imgPosition="center 60%"
-              meta="5 sessions, once a week"
-              href="https://olomanastudios.as.me/schedule/66629c2c/?appointmentTypeIds[]=92337408"
-              description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
             />
           </div>
 
@@ -187,7 +183,7 @@ export default function Home() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Private Group Events</h2>
-          <p className="mt-2 text-gray-600">Celebrations, team building, and gatherings for groups of 8 or more.</p>
+          <p className="mt-2 text-gray-600">Celebrations, team building, and gatherings for groups of 8 to 30 people.</p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-1">
@@ -211,28 +207,20 @@ export default function Home() {
             </div>
             <div className="md:col-span-2">
               <p className="text-lg text-gray-700">
-                Host a hands-on pottery experience for your group at our Irvine studio. No experience necessary. Our instructors guide everyone step by step through wheel throwing or handbuilding, and each guest takes home their own piece of pottery.
+                Host a hands-on pottery experience for your group at our Irvine studio. No experience necessary. Our instructors guide everyone step by step through wheel throwing and handbuilding, and each guest takes home two pieces of pottery they made themselves.
               </p>
-              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="rounded-xl border border-gray-200 bg-white p-4 flex gap-3 items-center">
-                  <div className="relative w-16 h-16 shrink-0 rounded-lg overflow-hidden">
-                    <Image alt="Wheel throwing private event" src="/event-1.jpg" fill className="object-cover" sizes="64px" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">8 &ndash; 16 people</p>
-                    <p className="text-sm text-gray-600 mt-1">Wheel &amp; handbuilding class, 1.5 hrs</p>
-                    <p className="text-sm font-medium text-gray-900 mt-1">$68/person</p>
-                  </div>
+              <div className="mt-4 rounded-xl border border-gray-200 bg-white p-4 flex gap-4 items-center">
+                <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden">
+                  <Image alt="Wheel and handbuilding private event" src="/event-1.jpg" fill className="object-cover" sizes="80px" />
                 </div>
-                <div className="rounded-xl border border-gray-200 bg-white p-4 flex gap-3 items-center">
-                  <div className="relative w-16 h-16 shrink-0 rounded-lg overflow-hidden">
-                    <Image alt="Handbuilding private event" src="/private-pottery-event/handbuilding.jpg" fill className="object-cover" sizes="64px" />
+                <div className="flex-1">
+                  <div className="flex justify-between items-start gap-4">
+                    <p className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</p>
+                    <span className="text-sm font-medium text-gray-900 whitespace-nowrap">$68/person</span>
                   </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">16+ people</p>
-                    <p className="text-sm text-gray-600 mt-1">Handbuilding class, 1 hr</p>
-                    <p className="text-sm font-medium text-gray-900 mt-1">$58/person</p>
-                  </div>
+                  <p className="text-sm text-gray-600 mt-1">
+                    1.5 hour class for groups of 8 to 30 people. Includes 2 lbs of clay per person and time on both the pottery wheel and at the handbuilding table.
+                  </p>
                 </div>
               </div>
               <p className="mt-4 text-gray-600 text-sm">All materials, firing, and glazing included. Finished pieces ready for pickup in 4-5 weeks.</p>

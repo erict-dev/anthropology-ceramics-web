@@ -23,65 +23,58 @@ export default function Events() {
           />
         </div>
 
-        {/* Quick Facts / At a Glance */}
-        <div className="mb-12"></div>
-
-        {/* Group Options by Size (columns = group sizes; cards stack under each) */}
+        {/* Event Overview */}
         <div className="mb-16">
-          <h3 className="text-4xl font-bold text-gray-900 text-center">Group Options by Size</h3>
+          <h3 className="text-4xl font-bold text-gray-900 text-center">Event Overview</h3>
           <p className="text-center text-gray-600 mt-2">
-            Private group class options are limited by the number of available wheels our studio has.
+            One private class option for groups of 8 to 30 people. Everyone makes a piece on the wheel and a piece by hand.
           </p>
 
-          {/* Two group size options side by side */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* 8–16 people */}
-            <div className="rounded-2xl border border-gray-200 bg-white overflow-hidden">
-              <div className="bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900 border-b border-gray-200">
-                8 – 16 people
-              </div>
-
-              <div className="relative w-full aspect-[4/2]">
-                <Image alt="Wheel & Handbuilding class" src="/event-1.jpg" fill className="object-cover" />
-              </div>
-              <div className="p-5">
-                <div className="flex justify-between items-center">
-                  <h4 className="font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
-                  <span className="text-sm text-gray-700 font-medium">$68/person</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-1">
-                  1.5 hour class · includes 2 lbs of clay, firing and glazing for 2 pieces · pickup in 4–5 weeks
-                </p>
-              </div>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image
+                alt="Small group enjoying a private pottery class at Olomana Studios in Irvine"
+                src="/info/pottery-class-small.jpg"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
 
-            {/* 16+ people */}
-            <div className="rounded-2xl border border-gray-200 bg-white overflow-hidden">
-              <div className="bg-gray-50 px-4 py-3 text-center font-semibold text-gray-900 border-b border-gray-200">
-                16+ people
+            <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 flex flex-col">
+              <div className="flex justify-between items-start gap-4">
+                <h4 className="text-2xl font-semibold text-gray-900">Wheel &amp; Handbuilding Class</h4>
+                <span className="text-base text-gray-700 font-medium whitespace-nowrap">$68/person</span>
               </div>
-
-              <div className="relative w-full aspect-[4/2]">
-                <Image
-                  alt="Pottery handbuilding class"
-                  src="/private-pottery-event/handbuilding.jpg"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-5">
-                <div className="flex justify-between items-center">
-                  <h4 className="font-semibold text-gray-900">Pottery Handbuilding Class</h4>
-                  <span className="text-sm text-gray-700 font-medium">$58/person</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-1">
-                  1 hour class · includes 1 lb of clay, firing and glazing for 1 piece · pickup in 4–5 weeks
-                </p>
-              </div>
+              <p className="mt-3 text-gray-700">
+                Our instructors guide your group through making two unique pieces of pottery. Everyone gets time on the wheel and time at the handbuilding table, no experience necessary.
+              </p>
+              <ul className="mt-5 space-y-3 text-gray-700">
+                <li className="flex gap-3">
+                  <span className="font-semibold text-gray-900 min-w-[110px]">Duration:</span>
+                  <span>1.5 hour class</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="font-semibold text-gray-900 min-w-[110px]">Group Size:</span>
+                  <span>8 to 30 people</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="font-semibold text-gray-900 min-w-[110px]">Materials:</span>
+                  <span>2 lbs of clay per person, firing and glazing included</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="font-semibold text-gray-900 min-w-[110px]">You&apos;ll Make:</span>
+                  <span>One piece on the pottery wheel and one handbuilt piece</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="font-semibold text-gray-900 min-w-[110px]">Pickup:</span>
+                  <span>About 4 to 5 weeks after your event</span>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <p className="text-center text-gray-600 mt-4 px-8">
+          <p className="text-center text-gray-600 mt-8 px-8">
             Note: We do not allow food at our studio because it attracts ants and classes can get messy. Balloons and other small party decorations are okay for large groups, but understand that there may be other classes or open studio members in the studio.
           </p>
         </div>
