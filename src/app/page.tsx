@@ -71,7 +71,7 @@ export default function Home() {
                   title="5-Week Teapot Making Course"
                   imgSrc="/workshops/teapot-workshop/teapot-finished.jpeg"
                   meta="5 sessions, once a week"
-                  href="https://olomanastudios.as.me/schedule/66629c2c/?appointmentTypeIds[]=92337408"
+                  href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/92337408/calendar/12365772"
                   description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
                 />
               </div>
