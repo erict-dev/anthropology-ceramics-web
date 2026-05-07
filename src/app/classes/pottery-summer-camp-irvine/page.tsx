@@ -65,10 +65,9 @@ const faqs = [
 ];
 
 const campWeeks = [
-  { dates: 'June 29 - July 3', label: 'Week 1', morning: 'https://olomanastudios.as.me/?appointmentType=90322678', afternoon: 'https://olomanastudios.as.me/?appointmentType=91050875' },
-  { dates: 'July 6 - July 10', label: 'Week 2', morning: 'https://olomanastudios.as.me/?appointmentType=91050968', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051004' },
-  { dates: 'July 13 - July 17', label: 'Week 3', morning: 'https://olomanastudios.as.me/?appointmentType=91051122', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051179' },
-  { dates: 'July 20 - July 24', label: 'Week 4', morning: 'https://olomanastudios.as.me/?appointmentType=91051270', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051300' },
+  { dates: 'July 6 - July 10', label: 'Week 1', morning: 'https://olomanastudios.as.me/?appointmentType=91050968', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051004' },
+  { dates: 'July 13 - July 17', label: 'Week 2', morning: 'https://olomanastudios.as.me/?appointmentType=91051122', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051179' },
+  { dates: 'July 20 - July 24', label: 'Week 3', morning: 'https://olomanastudios.as.me/?appointmentType=91051270', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051300' },
 ];
 
 const curriculum = [
@@ -115,7 +114,7 @@ export default function PotterySummerCampIrvine() {
             name: 'Kids Pottery Summer Camp',
             description:
               'A week-long half-day pottery camp for kids ages 6-12. Campers learn hand-building, wheel throwing, underglazing, and trimming while creating mugs, bowls, vases, and clay sculptures.',
-            startDate: '2026-06-29',
+            startDate: '2026-07-06',
             endDate: '2026-07-24',
             eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
             eventStatus: 'https://schema.org/EventScheduled',
@@ -167,7 +166,7 @@ export default function PotterySummerCampIrvine() {
                 Kids Pottery Summer Camp in Irvine
               </h1>
               <p className="mt-2 text-lg font-semibold text-gray-900">
-                June 29 &ndash; July 24 &middot; $348/week
+                July 6 &ndash; July 24 &middot; $348/week
               </p>
               <p className="mt-3 text-lg text-gray-700">
                 Let your child unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn hand-building, pottery wheel throwing, and glazing techniques while making real pottery they get to keep.
