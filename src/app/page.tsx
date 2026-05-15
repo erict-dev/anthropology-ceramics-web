@@ -22,7 +22,7 @@ export default function Home() {
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
-              description="In this class you will learn how to make 2 unique pieces of pottery, no experience necessary! We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials, firing and glazing included."
+              description="In this class you will learn how to make 2 unique pieces of pottery, no experience necessary! We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials included."
             />
             <ClassCard
               title="Kids Pottery Classes"
@@ -48,7 +48,7 @@ export default function Home() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">4-Week Pottery Course</h2>
-          <p className="mt-2 text-gray-600">Build skills week by week. Each session includes guided instruction, practice time and open studio days.</p>
+          <p className="mt-2 text-gray-600">Build skills week by week with guided instruction and focused wheel-throwing projects.</p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
@@ -56,14 +56,14 @@ export default function Home() {
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
-              description="Perfect for beginners and first timers. Learn the foundations of wheel throwing from scratch. You'll practice centering clay, pulling walls, and shaping your own cups, bowls, and vases. No experience needed. Glazing, firing, and all materials included."
+              description="Perfect for beginners and first timers. Learn the foundations of wheel throwing from scratch. You'll practice centering clay, pulling walls, and shaping your own cups, bowls, and vases. No experience needed. All materials included."
             />
             <ClassCard
               title="Continuing Wheel Throwing - 201"
               imgSrc="/intermediate-pottery-class/4-week-pottery-lvl2-olomana-irivne.jpg"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
-              description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Firing included."
+              description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
             />
             <div className="md:col-span-2 md:flex md:justify-center">
               <div className="w-full md:w-[calc(50%-0.75rem)]">
@@ -101,7 +101,7 @@ export default function Home() {
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
               meta="2.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
-              description="Carve a chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks."
+              description="Learn to carve your own traditional chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay and materials for 1 piece."
             />
             <ClassCard
               title="Ikebana Flower Arrangement Workshop"
@@ -127,7 +127,7 @@ export default function Home() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Kids Pottery Summer Camp</h2>
-          <p className="mt-2 text-gray-600">A week-long half-day camp where kids ages 6 to 12 learn hand-building, wheel throwing, and glazing.</p>
+          <p className="mt-2 text-gray-600">A week-long half-day camp where kids ages 6 to 12 learn hand-building, wheel throwing, and surface decoration.</p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-1">
@@ -152,7 +152,7 @@ export default function Home() {
             <div className="md:col-span-2">
               <p className="text-sm uppercase tracking-wide text-gray-500 font-medium">Summer 2026 &middot; Ages 6&ndash;12</p>
               <p className="mt-2 text-gray-700">
-                Let your child unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn wheel throwing, hand-building, and glazing. Small groups of 8 with dedicated instructors, all materials included.
+                Let your child unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn wheel throwing, hand-building, and surface decoration. Small groups of 8 with dedicated instructors, all materials included.
               </p>
               <ul className="mt-3 space-y-1 text-base text-gray-700">
                 <li className="flex gap-2">
@@ -183,7 +183,7 @@ export default function Home() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Private Group Events</h2>
-          <p className="mt-2 text-gray-600">Celebrations, team building, and gatherings for groups of 8 to 30 people.</p>
+          <p className="mt-2 text-gray-600">Reserve an entire class just for your team, group or family!</p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-1">
@@ -207,7 +207,7 @@ export default function Home() {
             </div>
             <div className="md:col-span-2">
               <p className="text-lg text-gray-700">
-                Host a hands-on pottery experience for your group at our Irvine studio. No experience necessary. Our instructors guide everyone step by step through wheel throwing and handbuilding, and each guest takes home two pieces of pottery they made themselves.
+                Book a hands-on pottery class for your group at our Irvine studio. No experience necessary. Our instructors guide everyone step by step through wheel throwing and handbuilding, and each guest takes home two pieces of pottery they made themselves.
               </p>
               <div className="mt-4 rounded-xl border border-gray-200 bg-white p-4 flex gap-4 items-center">
                 <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden">
@@ -219,11 +219,11 @@ export default function Home() {
                     <span className="text-sm font-medium text-gray-900 whitespace-nowrap">$68/person</span>
                   </div>
                   <p className="text-sm text-gray-600 mt-1">
-                    1.5 hour class for groups of 8 to 30 people. Includes 2 lbs of clay per person and time on both the pottery wheel and at the handbuilding table.
+                    1.5 hour private class. Includes 2 lbs of clay per person and time on both the pottery wheel and at the handbuilding table.
                   </p>
                 </div>
               </div>
-              <p className="mt-4 text-gray-600 text-sm">All materials, firing, and glazing included. Finished pieces ready for pickup in 4-5 weeks.</p>
+              <p className="mt-4 text-gray-600 text-sm">All materials included.</p>
             </div>
           </div>
 

@@ -109,7 +109,7 @@ export default function CharmWorkshopContent() {
               <p className="anim-fade-up-d2 mt-5 text-lg sm:text-xl leading-relaxed" style={{ color: '#5c2e1f' }}>
                 Make <strong>3 handmade ceramic charms</strong> in this 1-hour charm making workshop in Irvine.
                 Sculpt your own pendants, keychains, and miniature figures from clay, then paint them
-                however you like. All materials and kiln firing included.
+                however you like. All materials included.
               </p>
 
               {/* Pills */}
@@ -168,13 +168,11 @@ export default function CharmWorkshopContent() {
               <p className="mt-5 text-lg leading-relaxed" style={{ color: '#c8ddd2' }}>
                 Each ceramic charm is 1–2 inches of pure creativity. In this ceramic jewelry making class
                 in Irvine you will sculpt miniature animals, flowers, letters, food, abstract
-                shapes, anything you can imagine. Then paint them with colorful underglazes
+                shapes, anything you can imagine. Then paint them with colorful details
                 to make one-of-a-kind wearable art.
               </p>
               <p className="mt-4 text-lg leading-relaxed" style={{ color: '#c8ddd2' }}>
                 Our instructors guide every step. No pottery or ceramic jewelry making experience needed.
-                After class we kiln-fire your ceramic charms so they become durable,
-                glossy keepsakes you can pick up in about 4 weeks.
               </p>
             </div>
           </div>
@@ -203,7 +201,7 @@ export default function CharmWorkshopContent() {
               {
                 step: '2',
                 title: 'Paint',
-                desc: 'Use colorful underglazes to add patterns, faces, and fine details. Mix and match our full palette to your heart\'s content.',
+                desc: 'Use colorful materials to add patterns, faces, and fine details. Mix and match our full palette to your heart\'s content.',
                 bg: '#c9b8e0',
                 accent: '#4a2d73',
                 text: '#3a2459',
@@ -211,7 +209,7 @@ export default function CharmWorkshopContent() {
               {
                 step: '3',
                 title: 'Collect',
-                desc: 'We glaze and fire your handmade charms until they\'re strong and glossy. Pick them up in about 4 weeks, ready to wear, attach, or gift.',
+                desc: 'Pick up your finished handmade charms in about 4 weeks, ready to wear, attach, or gift.',
                 bg: '#b5d8c7',
                 accent: '#2d4a3e',
                 text: '#1f3a2e',
@@ -336,8 +334,7 @@ export default function CharmWorkshopContent() {
             <li><strong style={{ color: '#f5ddd0' }}>Location:</strong> Olomana Studios, 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong style={{ color: '#f5ddd0' }}>Duration:</strong> 1 hour</li>
             <li><strong style={{ color: '#f5ddd0' }}>What You Make:</strong> 3 ceramic charms (1 to 2 inches each), any shapes you like</li>
-            <li><strong style={{ color: '#f5ddd0' }}>Includes:</strong> All clay, underglazes, tools, and kiln firing. Nothing extra to buy.</li>
-            <li><strong style={{ color: '#f5ddd0' }}>Charm Pickup:</strong> Your finished ceramic charms will be ready in approximately 4 weeks</li>
+            <li><strong style={{ color: '#f5ddd0' }}>Includes:</strong> All clay, colors, tools, and materials. Nothing extra to buy.</li>
             <li><strong style={{ color: '#f5ddd0' }}>What to Wear:</strong> Comfortable clothes you don&apos;t mind getting a little clay on</li>
             <li><strong style={{ color: '#f5ddd0' }}>Skill Level:</strong> No experience needed. This charm making class is completely beginner-friendly.</li>
           </ul>

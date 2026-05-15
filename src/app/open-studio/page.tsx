@@ -66,8 +66,8 @@ export default function OpenStudioMembership() {
               <li>✓ Open studio access during business hours</li>
               <li>✓ 1 wetbox at the studio</li>
               <li>✓ Free reclaimed clay, new clay available for purchase</li>
-              <li>✓ Use of studio wheels, tools, handbuilding tables, and glazes</li>
-              <li>✓ Half shelf/month for firing (Cone 5/6)</li>
+              <li>✓ Use of studio wheels, tools, and handbuilding tables</li>
+              <li>✓ Half shelf/month for works in progress</li>
             </ul>
             <div className="mt-6 flex gap-4">
               <a

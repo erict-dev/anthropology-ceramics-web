@@ -166,7 +166,7 @@ export default function Workshops() {
             <div className="rounded-lg overflow-hidden">
               <Image
                 src="/workshops/teapot-workshop/teapot-workshop-6.jpeg"
-                alt="Finished glazed teapot held in hand"
+                alt="Finished teapot held in hand"
                 width={400}
                 height={600}
                 className="hidden md:block object-cover w-full h-full transition duration-500 hover:scale-105"
@@ -190,7 +190,7 @@ export default function Workshops() {
           <header>
             <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Ceramic Charm Workshop</h2>
             <p className="mt-4 text-black">
-              Create your own adorable <strong>ceramic charms</strong> at our workshop in Irvine, CA. Design and paint 3 custom charms, from cute animal figures and food miniatures to personalized pendants and keychains. This beginner-friendly workshop is perfect for anyone who loves small, detailed art projects. All materials, glazing, and kiln firing are included. Pick up your finished charms in 4 weeks!
+              Create your own adorable <strong>ceramic charms</strong> at our workshop in Irvine, CA. Design and paint 3 custom charms, from cute animal figures and food miniatures to personalized pendants and keychains. This beginner-friendly workshop is perfect for anyone who loves small, detailed art projects. All materials included. Pick up your finished charms in 4 weeks!
             </p>
             <p className="mt-2 text-gray-700">
               <strong>Highlights:</strong> Design 3 custom charms, learn hand-building and painting techniques, and take home one-of-a-kind wearable art pieces.
@@ -238,4 +238,3 @@ export default function Workshops() {
     </div>
   );
 }
-

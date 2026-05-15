@@ -26,7 +26,7 @@ export default function TeapotWheelThrowingCourse() {
             <div className="rounded-lg overflow-hidden">
               <Image
                 src="/workshops/teapot-workshop/teapot-workshop-6.jpeg"
-                alt="Finished glazed teapot held in hand"
+                alt="Finished teapot held in hand"
                 width={400}
                 height={600}
                 className="object-cover w-full h-full transition duration-500 hover:scale-105"
@@ -35,7 +35,7 @@ export default function TeapotWheelThrowingCourse() {
             <div className="rounded-lg overflow-hidden">
               <Image
                 src="/workshops/teapot-workshop/teapot-making.jpeg"
-                alt="Bisque-fired teapots and yunomi cups on the workbench with pottery tools"
+                alt="Teapots and yunomi cups on the workbench with pottery tools"
                 width={400}
                 height={600}
                 className="hidden sm:block object-cover w-full h-full transition duration-500 hover:scale-105"
@@ -96,7 +96,7 @@ export default function TeapotWheelThrowingCourse() {
             <li><strong>Week 2:</strong> Making teapot spout &amp; handle and trimming</li>
             <li><strong>Week 3:</strong> Assembling the teapot</li>
             <li><strong>Week 4:</strong> Throwing yunomi and applying surface decoration</li>
-            <li><strong>Week 5:</strong> Glazing and preparing the teapot for firing</li>
+            <li><strong>Week 5:</strong> Finishing details and final teapot preparation</li>
           </ul>
 
           <div className="mt-6 text-center">

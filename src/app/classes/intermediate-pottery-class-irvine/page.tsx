@@ -9,7 +9,7 @@ export default function IntermediatePotteryClasses() {
         <title>Intermediate Pottery Class in Irvine | Olomana Studios</title>
         <meta
           name="description"
-          content="Join our intermediate pottery classes in Irvine! Advance your wheel throwing and handbuilding techniques in 4-week courses, teapot workshops, and open studio memberships. Located in Orange County."
+          content="Join our intermediate pottery classes in Irvine! Advance your wheel throwing and handbuilding techniques in 4-week courses and teapot workshops. Located in Orange County."
         />
       </Head>
 
@@ -21,15 +21,14 @@ export default function IntermediatePotteryClasses() {
           </h1>
           <p className="mt-4 text-lg text-black max-w-2xl mx-auto">
             Looking for an <strong>intermediate pottery class</strong> in Irvine or Orange County? 
-            At Olomana Studios, we offer intermediate-level pottery classes, workshops, and open studio 
-            options to help you advance your skills in <strong>wheel throwing</strong> and <strong>handbuilding</strong>.
+            At Olomana Studios, we offer intermediate-level pottery classes and workshops to help you advance your skills in <strong>wheel throwing</strong> and <strong>handbuilding</strong>.
           </p>
         </div>
       </section>
 
       {/* Classes Section */}
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {/* Level Two Wheel Throwing 6-Week Course */}
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -84,33 +83,6 @@ export default function IntermediatePotteryClasses() {
             </div>
           </div>
 
-          {/* Open Studio Membership */}
-          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-64 w-full">
-              <Image
-                src="/intermediate-pottery-class/open-studio.jpeg"
-                alt="Open studio membership for intermediate potters in Irvine"
-                layout="fill"
-                objectFit="cover"
-                className="hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="p-6 flex flex-col flex-1">
-              <h2 className="text-2xl font-bold text-gray-900">
-                Open Studio Membership
-              </h2>
-              <p className="mt-4 text-gray-700 flex-1">
-                For experienced potters looking for a flexible, independent practice space. Our open studio membership gives you access to wheels, tools, glazes, and firings, perfect for refining your skills and producing work on your own schedule.
-              </p>
-              <a
-                href="/open-studio"
-                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-
         </div>
       </section>
 
@@ -125,7 +97,7 @@ export default function IntermediatePotteryClasses() {
                 At Olomana Studios, we believe that pottery is more than just learning a technique. It’s a way to slow down and reconnect with what really matters. Each time we sit at the wheel or shape a piece of clay, we’re reminded of the joy of creating something tangible, something made with care and intention. Our intermediate classes aren’t just about making bigger or more complex pieces. They’re about deepening your understanding of the craft and finding your own rhythm in the process.
               </p>
               <p className="text-gray-700">
-                We’ve designed our studio to be more than a classroom. It’s a creative home, a space where people come together to practice, to learn from one another, and to share in the quiet satisfaction of making. You’ll find a supportive community of fellow makers here, all at different points in their journey, but all with the same love for the clay and the stories it can hold. Whether you’re working on mastering lidded jars, throwing larger forms, crafting your first teapot, or simply spending time in the open studio refining your skills, we’re here to guide you and cheer you on.
+                We’ve designed our studio to be more than a classroom. It’s a creative home, a space where people come together to learn from one another and to share in the quiet satisfaction of making. You’ll find a supportive community of fellow makers here, all at different points in their journey, but all with the same love for the clay and the stories it can hold. Whether you’re working on mastering lidded jars, throwing larger forms, or crafting your first teapot, we’re here to guide you and cheer you on.
               </p>
             </div>
             <div className="order-1 md:order-2 h-full relative">
@@ -143,7 +115,7 @@ export default function IntermediatePotteryClasses() {
             <div className="order-2 md:order-1 h-48 relative">
               <Image
                 src="/intermediate-pottery-class/intermediate-2.jpeg"
-                alt="Handmade pottery ready for glazing"
+                alt="Handmade pottery pieces on a shelf"
                 layout="fill"
                 className="rounded-lg shadow-md object-cover"
               />
@@ -161,7 +133,7 @@ export default function IntermediatePotteryClasses() {
               Come Create With Us
             </h3>
             <p className="text-gray-700 max-w-2xl mx-auto">
-              We’d love to welcome you into our little community of makers. Join us for a class or a workshop, or make this your own creative sanctuary through our open studio membership. Wherever you are in your journey, we can’t wait to see what you’ll create, and to create alongside you.
+              We’d love to welcome you into our little community of makers. Join us for a class or a workshop. Wherever you are in your journey, we can’t wait to see what you’ll create, and to create alongside you.
             </p>
             <a
               href="https://olomanastudios.as.me/schedule/66629c2c"

@@ -34,12 +34,12 @@ const faqs = [
   {
     question: 'What do we get to take home?',
     answer:
-      'Each person makes 2 pieces during class. We handle the drying, firing, and glazing, and you pick up your finished, food-safe pottery in about 4 to 5 weeks.',
+      'Each person makes 2 pieces during class, and you pick up your finished pottery in about 4 to 5 weeks.',
   },
   {
     question: 'Can we book a private pottery date night?',
     answer:
-      'Yes! You can book a private event for just the two of you or invite other couples. Email contact@olomanastudios.com with your preferred dates.',
+      'Yes! Email contact@olomanastudios.com with your preferred dates and event details.',
   },
 ];
 
@@ -162,7 +162,7 @@ export default function DateNightIrvine() {
             </div>
             <div className="space-y-4">
               <p className="text-lg text-gray-700">
-                Our 1.5-hour group class covers both wheel throwing and hand-building. Your instructor demonstrates each step, then works with you one-on-one. You&apos;ll make 2 pieces each, maybe a bowl and a mug, or a vase and a small planter. All materials, firing, and glazing are included.
+                Our 1.5-hour group class covers both wheel throwing and hand-building. Your instructor demonstrates each step, then works with you one-on-one. You&apos;ll make 2 pieces each, maybe a bowl and a mug, or a vase and a small planter. All materials included.
               </p>
               <p className="text-lg text-gray-700">
                 The studio is small and relaxed. Classes stay small so you get real attention. Wear clothes you don&apos;t mind getting a little clay on (we provide aprons), and just show up ready to have fun.
@@ -238,7 +238,7 @@ export default function DateNightIrvine() {
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
-              description="Learn wheel throwing and hand-building in a small group. No experience needed. Make 2 pieces each with all materials, firing, and glazing included."
+              description="Learn wheel throwing and hand-building in a small group. No experience needed. Make 2 pieces each with all materials included."
             />
             <ClassCard
               title="Traditional Matcha Bowl Workshop"

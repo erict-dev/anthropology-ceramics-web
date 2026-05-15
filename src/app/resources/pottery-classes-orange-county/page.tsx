@@ -39,7 +39,7 @@ const faqs = [
   {
     question: 'What is included in the class price?',
     answer:
-      'Everything. Clay, tools, instruction, firing, and glazing. You don\'t need to bring anything except clothes you don\'t mind getting a little messy (we provide aprons). Finished pieces are food-safe and ready for pickup in about 4 to 5 weeks.',
+      'Everything you need for class. Clay, tools, instruction, and materials are included. You don\'t need to bring anything except clothes you don\'t mind getting a little messy (we provide aprons).',
   },
 ];
 
@@ -84,7 +84,7 @@ export default function PotteryClassesOrangeCounty() {
                 Pottery Classes in Orange County
               </h1>
               <p className="mt-4 text-lg text-gray-700">
-                <span className="leander">Olomana Studios</span> is a pottery and art studio in Irvine with classes for every skill level. If you&apos;ve never touched clay, our beginner classes walk you through everything. If you&apos;re looking for a studio to keep developing your skills, our multi-week courses and open studio time give you space to grow. Small classes, real instruction, and a cozy space in the heart of Orange County.
+                <span className="leander">Olomana Studios</span> is a pottery and art studio in Irvine with classes for every skill level. If you&apos;ve never touched clay, our beginner classes walk you through everything. If you&apos;re looking to keep developing your skills, our multi-week courses offer structured instruction over multiple sessions. Small classes, real instruction, and a cozy space in the heart of Orange County.
               </p>
               <a
                 href="https://olomanastudios.as.me/schedule/66629c2c"
@@ -127,7 +127,7 @@ export default function PotteryClassesOrangeCounty() {
                 Our <strong>one-time group classes</strong> are the easiest way to try pottery. In 1.5 hours you&apos;ll learn the basics of both wheel throwing and hand-building, and you&apos;ll make 2 pieces to take home. No experience, no pressure. Just a fun creative session.
               </p>
               <p className="text-lg text-gray-700">
-                Want to go deeper? Our <strong>4-week pottery courses</strong> take you from beginner to confident maker. Level 1 covers the fundamentals: centering, pulling walls, forming cylinders and bowls. Levels 2 and 3 push into more complex forms, handles, lids, and decorative techniques. Each level includes open studio time to practice between sessions.
+                Want to go deeper? Our <strong>4-week pottery courses</strong> take you from beginner to confident maker through weekly guided lessons. Level 1 covers the fundamentals: centering, pulling walls, forming cylinders and bowls. Levels 2 and 3 push into more complex forms, handles, lids, and decorative techniques.
               </p>
               <p className="text-lg text-gray-700">
                 For something different, try one of our <strong>specialty workshops</strong>. The traditional matcha bowl workshop teaches Japanese hand-building techniques, and our ikebana flower arrangement class combines pottery with the art of Japanese floral design.
@@ -154,7 +154,7 @@ export default function PotteryClassesOrangeCounty() {
           </h2>
           <div className="mt-6 space-y-4 max-w-3xl">
             <p className="text-lg text-gray-700">
-              We&apos;re in Irvine&apos;s Sand Canyon plaza, centrally located and easy to reach from anywhere in Orange County. The studio is equipped with Brent pottery wheels, a full glazing station, and kilns on-site. Classes stay small so every student gets real one-on-one time with the instructor.
+              We&apos;re in Irvine&apos;s Sand Canyon plaza, centrally located and easy to reach from anywhere in Orange County. The studio is equipped with Brent pottery wheels and hands-on workstations. Classes stay small so every student gets real one-on-one time with the instructor.
             </p>
             <p className="text-lg text-gray-700">
               People drive in from Tustin, Lake Forest, Newport Beach, Costa Mesa, and all over the OC. Free parking, a relaxed atmosphere, and instructors who are working artists and love what they do.
@@ -236,7 +236,7 @@ export default function PotteryClassesOrangeCounty() {
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
               href="/classes/4-week-pottery-course-irvine"
-              description="Build foundational skills: centering, pulling walls, trimming, and glazing over 4 guided sessions."
+              description="Build foundational skills: centering, pulling walls, trimming, and surface decoration over 4 guided sessions."
             />
             <ClassCard
               title="Traditional Matcha Bowl Workshop"

@@ -16,15 +16,15 @@ export const metadata: Metadata = {
     description:
       'Book a private pottery class for your team at Olomana Studios in Irvine. Creative, hands-on, and something people actually look forward to.',
     url: 'https://olomanastudios.com/resources/team-building-activities-irvine',
-    images: [{ url: '/resources/big-group-young-pottery.jpg', width: 1200, height: 900, alt: 'Large group enjoying a pottery class at Olomana Studios' }],
+    images: [{ url: '/resources/big-group-young-pottery.jpg', width: 1200, height: 900, alt: 'Team enjoying a pottery class at Olomana Studios' }],
   },
 };
 
 const faqs = [
   {
-    question: 'How many people can you accommodate for a team event?',
+    question: 'Can we book a private pottery event for our team?',
     answer:
-      'We host private group events for 8 to 30 people. For groups under 8, you\'re welcome to book individual spots in our regular group classes. Email contact@olomanastudios.com with your headcount and preferred dates.',
+      'We host private group events for teams that want a hands-on creative activity. Email contact@olomanastudios.com with your preferred dates and event details.',
   },
   {
     question: 'How much does a team building pottery event cost?',
@@ -34,12 +34,12 @@ const faqs = [
   {
     question: 'Do you handle all the logistics?',
     answer:
-      'Yes. We provide all materials, aprons, tools, and instruction. We also handle the firing and glazing after the event. Each participant picks up their finished piece in about 4 to 6 weeks. All you need to do is show up.',
+      'Yes. We provide all materials, aprons, tools, and instruction. Each participant picks up their finished piece in about 4 to 6 weeks. All you need to do is show up.',
   },
   {
     question: 'Can we bring food or decorations?',
     answer:
-      'We don\'t allow food at the studio because it attracts ants and classes can get messy. Balloons and small party decorations are fine for large groups, but keep in mind there may be other classes or open studio members in the space.',
+      'We don\'t allow food at the studio because it attracts ants and classes can get messy. Balloons and small party decorations are fine, but keep in mind there may be other scheduled classes in the space.',
   },
 ];
 
@@ -84,7 +84,7 @@ export default function TeamBuildingIrvine() {
                 Team Building Activities in Irvine
               </h1>
               <p className="mt-4 text-lg text-gray-700">
-                At <span className="leander">Olomana Studios</span>, we host private pottery classes for corporate teams and groups of all sizes. Everyone makes something real with their hands, everyone learns something new, and everyone walks away with a handmade piece they&apos;re proud of. It&apos;s team building that actually brings people together.
+                At <span className="leander">Olomana Studios</span>, we host private pottery classes for corporate teams and group events. Everyone makes something real with their hands, everyone learns something new, and everyone walks away with a handmade piece they&apos;re proud of. It&apos;s team building that actually brings people together.
               </p>
               <p className="mt-6 text-lg text-gray-700">
                 Email <strong>contact@olomanastudios.com</strong> to inquire and book.
@@ -92,7 +92,7 @@ export default function TeamBuildingIrvine() {
             </div>
             <div className="relative w-full aspect-[4/3]">
               <Image
-                alt="Large group of people at pottery wheels during a team event at Olomana Studios"
+                alt="Team at pottery wheels during an event at Olomana Studios"
                 src="/info/big-group-young-pottery.jpg"
                 fill
                 priority
@@ -162,13 +162,13 @@ export default function TeamBuildingIrvine() {
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Booking Your Event</h3>
                 <p className="text-lg text-gray-700">
-                  Email us with your group size (8 to 30 people) and 2 to 3 preferred dates. We&apos;ll confirm a time slot and send you a private booking link. No deposit required. Participants can pay individually or you can pay as a group.
+                  Email us with 2 to 3 preferred dates and a few details about your event. We&apos;ll confirm a time slot and send you a private booking link. No deposit required. Participants can pay individually or you can pay as a group.
                 </p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Day of Your Event</h3>
                 <p className="text-lg text-gray-700">
-                  Your team shows up and our instructors handle everything. We guide everyone through making their own pottery piece (wheel throwing, hand-building, or both depending on the format). Sessions run 1 to 1.5 hours. We fire and glaze the pieces afterward, and they&apos;re ready for pickup in about 4 to 6 weeks.
+                  Your team shows up and our instructors handle everything. We guide everyone through making their own pottery piece (wheel throwing, hand-building, or both depending on the format). Sessions run 1 to 1.5 hours. Finished pieces are ready for pickup in about 4 to 6 weeks.
                 </p>
               </div>
             </div>
@@ -247,16 +247,16 @@ export default function TeamBuildingIrvine() {
             <ClassCard
               title="Private Pottery Event"
               imgSrc="/private-pottery-event/private-group.jpg"
-              meta="8+ people"
+              meta="Private event"
               href="/classes/private-pottery-event-irvine"
-              description="Groups of 8 to 30 can book a private 1.5 hour wheel & handbuilding class at a custom time. Each guest makes a piece on the wheel and one by hand."
+              description="Book a private 1.5 hour wheel and handbuilding class at a custom time. Each guest makes a piece on the wheel and one by hand."
             />
             <ClassCard
               title="One-Time Pottery Group Class"
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
-              description="Groups of 8 or less can book individual spots in our regular group class. Learn wheel throwing and hand-building in a relaxed, social setting."
+              description="Book individual spots in our regular group class. Learn wheel throwing and hand-building in a relaxed, social setting."
             />
           </div>
 
@@ -294,7 +294,7 @@ export default function TeamBuildingIrvine() {
             Plan Your Team Event
           </h2>
           <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-            Email <strong>contact@olomanastudios.com</strong> with your group size and preferred dates to get started.
+            Email <strong>contact@olomanastudios.com</strong> with your preferred dates to get started.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
