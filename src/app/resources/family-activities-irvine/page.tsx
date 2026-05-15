@@ -34,7 +34,7 @@ const faqs = [
   {
     question: 'What will my child make?',
     answer:
-      'In our kids classes, students work on fun instructor-guided projects using hand-building techniques. They might make animal figurines, pinch pots, small bowls, or other creative pieces. All materials, firing, and glazing are included.',
+      'In our kids classes, students work on fun instructor-guided projects using hand-building techniques. They might make animal figurines, pinch pots, small bowls, or other creative pieces. All materials are included.',
   },
   {
     question: 'Do kids need any experience?',
@@ -127,7 +127,7 @@ export default function FamilyActivitiesIrvine() {
                 Pottery is one of those rare activities where a 7-year-old and a 40-year-old are on equal footing. Nobody has an advantage. Everyone&apos;s learning, experimenting, and getting a little messy, and that levels the playing field in a way that makes the experience feel shared.
               </p>
               <p className="text-lg text-gray-700">
-                Kids build focus, patience, and fine motor skills without even realizing it. And parents get to watch their children light up when they see the bowl or figurine they shaped with their own hands. Weeks later, you pick up real, glazed pottery that becomes part of your daily life at home.
+                Kids build focus, patience, and fine motor skills without even realizing it. And parents get to watch their children light up when they see the bowl or figurine they shaped with their own hands. Weeks later, you pick up real pottery that becomes part of your daily life at home.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -162,7 +162,7 @@ export default function FamilyActivitiesIrvine() {
           </h2>
           <div className="mt-6 space-y-4">
             <p className="text-lg text-gray-700 max-w-3xl">
-              Our kids classes are 1.5 hours of guided instruction. Students learn pottery basics through fun projects: animal figurines, small bowls, creative sculptures. Instructors keep things moving and encourage kids to experiment. All materials are provided, and finished pieces are fired and glazed by our team.
+              Our kids classes are 1.5 hours of guided instruction. Students learn pottery basics through fun projects: animal figurines, small bowls, creative sculptures. Instructors keep things moving and encourage kids to experiment. All materials are provided.
             </p>
             <p className="text-lg text-gray-700 max-w-3xl">
               For families who want to create together, our adult group classes welcome participants of all ages. Parents and older kids can try the pottery wheel while younger kids work on hand-building projects at the table. It&apos;s a relaxed, no-pressure environment where the goal is just having fun together.
@@ -237,7 +237,7 @@ export default function FamilyActivitiesIrvine() {
               imgSrc="/kids-pottery-class.jpg"
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/81628903/calendar/12365772"
-              description="Instructor-guided projects for kids ages 6+. Students learn pottery basics through fun, creative projects. All materials, firing, and glazing included."
+              description="Instructor-guided projects for kids ages 6+. Students learn pottery basics through fun, creative projects. All materials included."
             />
             <ClassCard
               title="One-Time Pottery Group Class (Adults)"

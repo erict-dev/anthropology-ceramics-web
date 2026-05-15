@@ -82,7 +82,7 @@ export default function KidsFamilyPotteryClass() {
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
-                alt="Pottery pieces after firing"
+                alt="Finished pottery pieces"
                 src="/event-4.jpg"
                 layout="fill"
                 objectFit="cover"
@@ -101,7 +101,6 @@ export default function KidsFamilyPotteryClass() {
             <li><strong>Location:</strong> Olomana Studios - 14988 Sand Canyon Ave Studio 6, Irvine CA 92618</li>
             <li><strong>Class Duration:</strong> ~1.5 hours.</li>
             <li><strong>What to Bring:</strong> Closed-toed shoes with socks, long pants, and clothes that can get dirty.</li>
-            <li><strong>Pottery Pickup:</strong> Pieces will be dried, fired, and ready for pickup in 4-5 weeks. We use all lead-free food-safe glazes for our pottery pieces.</li>
           </ul>
           <div className="mt-6 text-center">
             <a

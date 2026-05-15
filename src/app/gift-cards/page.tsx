@@ -12,7 +12,7 @@ export default function GiftCards() {
               Gift Cards
             </h2>
             <p className="text-gray-600 text-lg">
-              Our pottery class & workshop gift cards open the door to meaningful experiences, shared moments of creativity, and memories that last long after the clay has been fired.
+              Our pottery class & workshop gift cards open the door to meaningful experiences, shared moments of creativity, and memories that last long after class ends.
             </p>
           </div>
 
@@ -204,4 +204,3 @@ export default function GiftCards() {
     </>
   );
 }
-

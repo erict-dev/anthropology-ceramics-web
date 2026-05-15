@@ -20,7 +20,7 @@ export default function Classes() {
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
-              description="In this class you will learn how to make 2 unique pieces of pottery, no experience necessary! We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials, firing and glazing included."
+              description="In this class you will learn how to make 2 unique pieces of pottery, no experience necessary! We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials included."
             />
             <ClassCard
               title="Kids Pottery Classes"
@@ -46,7 +46,7 @@ export default function Classes() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Wheel Throwing Course</h2>
           <p className="mt-4 text-gray-600 text-lg">
-            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes two hours of guided instruction and one open studio session per week, giving you the time to develop your skills and create functional ceramics.
+            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes two hours of guided instruction, helping you develop your skills and create functional ceramics over four weekly classes.
           </p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -55,14 +55,14 @@ export default function Classes() {
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
-              description="Perfect for beginners and first timers. Learn the foundations of wheel throwing from scratch. You'll practice centering clay, pulling walls, and shaping your own cups, bowls, and vases. No experience needed. Glazing, firing, and all materials included."
+              description="Perfect for beginners and first timers. Learn the foundations of wheel throwing from scratch. You'll practice centering clay, pulling walls, and shaping your own cups, bowls, and vases. No experience needed. All materials included."
             />
             <ClassCard
               title="Continuing Wheel Throwing - 201"
               imgSrc="/intermediate-pottery-class/4-week-pottery-lvl2-olomana-irivne.jpg"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
-              description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Firing included."
+              description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
             />
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Classes() {
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
               meta="2.5 hrs"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
-              description="Carve a chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay, firing and glazing for 1 piece. Pickup in 4–5 weeks."
+              description="Carve a traditional chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay and materials for 1 piece."
             />
             <ClassCard
               title="Ikebana Flower Arrangement Workshop"
@@ -104,7 +104,7 @@ export default function Classes() {
               imgSrc="/workshops/charms-workshop.jpg"
               meta="1 hr"
               href="/workshops/ceramic-charm-workshop-irvine"
-              description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials and firing included. Pick up your finished charms in 4 weeks!"
+              description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials included. Pick up your finished charms in 4 weeks!"
             />
             <ClassCard
               title="5-Week Teapot Making Course"
@@ -128,7 +128,7 @@ export default function Classes() {
 
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-700 text-lg">For groups of 8 or more, contact us at <strong>contact@olomanastudios.com</strong> for a private pottery event booking.</p>
+          <p className="text-center text-gray-700 text-lg">Contact us at <strong>contact@olomanastudios.com</strong> for a private pottery event booking.</p>
           <p className="text-center text-gray-700 text-lg">Private group prices are the same as our regular group classes. Learn more <Link href="/classes/private-pottery-event-irvine" className="underline">here.</Link></p>
         </div>
       </section>

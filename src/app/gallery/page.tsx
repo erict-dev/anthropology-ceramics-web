@@ -17,7 +17,7 @@ const library = [
   {
     name: "Celadon",
     origin: "China",
-    description: "Celadon is a term for pottery with a pale green glaze, first developed in China during the Eastern Han Dynasty (25-220 AD). It became highly prized throughout East Asia for its jade-like appearance. The distinctive color is achieved through a reduction firing process, which transforms iron oxide in the glaze into its ferrous state.",
+    description: "Celadon is a term for pottery with a pale green surface, first developed in China during the Eastern Han Dynasty (25-220 AD). It became highly prized throughout East Asia for its jade-like appearance and distinctive color.",
     image: "/gallery/summer-2024/celadon-2.jpg"
   }
 ];
@@ -76,7 +76,7 @@ export default function Gallery() {
             <h2 className="leander text-3xl font-bold text-gray-900 sm:text-5xl">Earthen Collection</h2>
 
             <p className="mt-4 text-black">
-              Explore our Earthen Collection, a celebration of the natural world and the art of tea. Each piece is crafted with care, reflecting diverse landscapes and cultural inspirations, from the earthy tones of Mashiko to the delicate glazes of Jingdezhen. These ceramics invite you to savor simple, quiet moments, offering a perfect blend of beauty and functionality.
+              Explore our Earthen Collection, a celebration of the natural world and the art of tea. Each piece is crafted with care, reflecting diverse landscapes and cultural inspirations, from the earthy tones of Mashiko to the delicate surfaces of Jingdezhen. These ceramics invite you to savor simple, quiet moments, offering a perfect blend of beauty and functionality.
             </p>
           </header>
 

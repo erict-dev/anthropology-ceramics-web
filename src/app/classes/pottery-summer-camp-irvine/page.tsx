@@ -6,14 +6,14 @@ import JsonLd from '@/components/JsonLd';
 export const metadata: Metadata = {
   title: 'Kids Pottery Summer Camp in Irvine | Ages 6-12 | Olomana Studios',
   description:
-    'Hands-on pottery summer camp for kids ages 6-12 in Irvine, CA. Week-long half-day sessions with hand-building, wheel throwing, glazing, and more. Your child takes home real pottery they made themselves.',
+    'Hands-on pottery summer camp for kids ages 6-12 in Irvine, CA. Week-long half-day sessions with hand-building, wheel throwing, surface decoration, and more. Your child takes home real pottery they made themselves.',
   alternates: {
     canonical: 'https://olomanastudios.com/classes/pottery-summer-camp-irvine',
   },
   openGraph: {
     title: 'Kids Pottery Summer Camp in Irvine | Summer 2026',
     description:
-      'A week-long pottery camp where kids ages 6-12 learn hand-building, wheel throwing, and glazing. Half-day sessions, small groups, real pottery to keep.',
+      'A week-long pottery camp where kids ages 6-12 learn hand-building, wheel throwing, and surface decoration. Half-day sessions, small groups, real pottery to keep.',
     url: 'https://olomanastudios.com/classes/pottery-summer-camp-irvine',
     images: [
       {
@@ -35,17 +35,17 @@ const faqs = [
   {
     question: 'Does my child need any pottery experience?',
     answer:
-      'No experience needed at all. The camp is structured to take complete beginners from their first time touching clay all the way through wheel throwing and glazing by the end of the week.',
+      'No experience needed at all. The camp is structured to take complete beginners from their first time touching clay all the way through wheel throwing and finishing details by the end of the week.',
   },
   {
     question: 'What will my child take home?',
     answer:
-      'Campers create multiple pieces throughout the week: pinch pot animals, a mug, a planter, bowls, and a vase. All pieces are fired, glazed, and ready for pickup about 4-5 weeks after camp ends.',
+      'Campers create multiple pieces throughout the week: pinch pot animals, a mug, a planter, bowls, and a vase.',
   },
   {
     question: 'What should my child wear and bring?',
     answer:
-      'Wear clothes that can get dirty, closed-toed shoes with socks, and long pants. All clay, tools, glazes, and firing are included in the camp fee.',
+      'Wear clothes that can get dirty, closed-toed shoes with socks, and long pants. All clay, tools, and materials are included in the camp fee.',
   },
   {
     question: 'What are the half-day camp time options?',
@@ -97,9 +97,9 @@ const curriculum = [
   },
   {
     day: 'Friday',
-    title: 'Underglazing',
+    title: 'Color & Details',
     img: '/summer-camp/kids-pottery-5.jpg',
-    items: ['Learn underglazing techniques', 'Apply colorful underglazes to the week\'s pieces', 'Add final personal touches to all creations'],
+    items: ['Learn surface decoration techniques', 'Apply colorful details to the week\'s pieces', 'Add final personal touches to all creations'],
   },
 ];
 
@@ -113,7 +113,7 @@ export default function PotterySummerCampIrvine() {
             '@type': 'Event',
             name: 'Kids Pottery Summer Camp',
             description:
-              'A week-long half-day pottery camp for kids ages 6-12. Campers learn hand-building, wheel throwing, underglazing, and trimming while creating mugs, bowls, vases, and clay sculptures.',
+              'A week-long half-day pottery camp for kids ages 6-12. Campers learn hand-building, wheel throwing, surface decoration, and trimming while creating mugs, bowls, vases, and clay sculptures.',
             startDate: '2026-07-06',
             endDate: '2026-07-24',
             eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
@@ -169,7 +169,7 @@ export default function PotterySummerCampIrvine() {
                 July 6 &ndash; July 24 &middot; $348/week
               </p>
               <p className="mt-3 text-lg text-gray-700">
-                Let your child unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn hand-building, pottery wheel throwing, and glazing techniques while making real pottery they get to keep.
+                Let your child unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn hand-building, pottery wheel throwing, and surface decoration while making real pottery they get to keep.
               </p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <a
@@ -293,7 +293,7 @@ export default function PotterySummerCampIrvine() {
                 Most summer camps keep kids busy. This one gives them something real to show for it. By Friday, your child will have a collection of handmade pottery: mugs, bowls, a vase, a planter, and clay sculptures they shaped with their own hands.
               </p>
               <p className="text-lg text-gray-700">
-                Our camp is designed so kids build on what they learn each day. They start on the pottery wheel, learning to center clay and throw cups, bowls, and vases. Mid-week they move into hand-building, sculpting animals, mugs, and planters. By Friday, they are underglazing all their pieces with their own colors and designs.
+                Our camp is designed so kids build on what they learn each day. They start on the pottery wheel, learning to center clay and throw cups, bowls, and vases. Mid-week they move into hand-building, sculpting animals, mugs, and planters. By Friday, they are adding their own colors and designs.
               </p>
               <p className="text-lg text-gray-700">
                 Small group sizes mean every child gets individual attention from our instructors. No screens, no sitting around. Just hands in clay, creativity flowing, and skills that stick.
@@ -319,7 +319,7 @@ export default function PotterySummerCampIrvine() {
             What Your Child Will Learn
           </h2>
           <p className="mt-3 text-lg text-gray-700 max-w-3xl">
-            Each day builds on the last. Campers start the week on the pottery wheel, move into hand-building mid-week, and finish by underglazing all their creations on Friday.
+            Each day builds on the last. Campers start the week on the pottery wheel, move into hand-building mid-week, and finish by adding color and personal details on Friday.
           </p>
 
           <div className="mt-8 space-y-4">
@@ -393,12 +393,9 @@ export default function PotterySummerCampIrvine() {
               </h2>
               <ul className="mt-6 space-y-3">
                 {[
-                  'All clay, tools, glazes, and underglazes',
-                  'Kiln firing for every piece',
-                  'Lead-free, food-safe glazes on all pottery',
+                  'All clay, tools, and materials',
                   'Max 8 campers per session with dedicated instructors',
                   'Both hand-building and pottery wheel time',
-                  'Finished pieces ready for pickup in 4-5 weeks',
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3 text-lg text-gray-700">
                     <svg className="w-5 h-5 mt-1 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">

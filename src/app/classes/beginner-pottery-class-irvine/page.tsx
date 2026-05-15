@@ -49,7 +49,7 @@ export default function BeginnerPotteryClasses() {
               <p className="mt-4 text-gray-700 flex-1">
                 Perfect for those who have taken an intro class and want to build their skills. 
                 Learn the fundamentals of throwing on the pottery wheel: centering, pulling walls, trimming, 
-                glazing, and more. By the end, you’ll be able to comfortably make cups, bowls, small vases, and planters.
+                surface decoration, and more. By the end, you’ll be able to comfortably make cups, bowls, small vases, and planters.
               </p>
               <a
                 href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
@@ -183,4 +183,3 @@ export default function BeginnerPotteryClasses() {
     </div>
   );
 }
-

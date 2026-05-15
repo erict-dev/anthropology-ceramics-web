@@ -34,12 +34,12 @@ const faqs = [
   {
     question: 'What types of classes do you offer?',
     answer:
-      'One-time pottery group classes (1.5 hours), 4-week pottery courses for building skills over time, specialty workshops like our matcha bowl and ikebana classes, kids classes, and private group events for 8 to 30 people.',
+      'One-time pottery group classes (1.5 hours), 4-week pottery courses for building skills over time, specialty workshops like our matcha bowl and ikebana classes, kids classes, and private group events.',
   },
   {
     question: 'How much do classes cost?',
     answer:
-      'Our one-time group classes include all materials, instruction, firing, and glazing. You take home finished, food-safe pottery in about 4 to 5 weeks. Check the booking page for current pricing.',
+      'Our one-time group classes include all materials and instruction. You take home finished pottery in about 4 to 5 weeks. Check the booking page for current pricing.',
   },
 ];
 
@@ -154,7 +154,7 @@ export default function ThingsToDoIrvine() {
               We have something for every interest and schedule. Our <strong>one-time group classes</strong> are the most popular: 1.5 hours of wheel throwing and hand-building where you make 2 pieces. If you want to go deeper, our <strong>4-week pottery courses</strong> build real technique over multiple sessions. And for something more focused, try one of our <strong>specialty workshops</strong> like the traditional matcha bowl or ikebana flower arrangement.
             </p>
             <p className="text-lg text-gray-700">
-              We also offer <strong>kids classes</strong>, <strong>private group events</strong> for birthdays and corporate outings, and <strong>open studio time</strong> for members who want to practice on their own. All materials, firing, and glazing are included in every class.
+              We also offer <strong>kids classes</strong> and <strong>private group events</strong> for birthdays and corporate outings. All materials are included in every class.
             </p>
           </div>
 
@@ -240,7 +240,7 @@ export default function ThingsToDoIrvine() {
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
-              description="Build real skills over time. Learn centering, pulling walls, trimming, and glazing across 4 guided sessions."
+              description="Build real skills over time. Learn centering, pulling walls, trimming, and surface decoration across 4 guided sessions."
             />
           </div>
 

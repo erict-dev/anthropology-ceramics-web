@@ -29,7 +29,7 @@ const faqs = [
   {
     question: 'Will I actually make something I can keep?',
     answer:
-      'Yes. In our one-time group class, you\'ll make 2 pieces, one on the wheel and one by hand. We fire and glaze them for you, and they\'re ready for pickup in about 4 to 5 weeks. They\'re food-safe and meant to be used.',
+      'Yes. In our one-time group class, you\'ll make 2 pieces, one on the wheel and one by hand.',
   },
   {
     question: 'What if I\'m bad at it?',
@@ -168,7 +168,7 @@ export default function BeginnerPotteryGuide() {
               },
               {
                 title: 'After Class',
-                text: 'We fire and glaze your pieces. Pick them up in 4 to 5 weeks. They\'re food-safe and ready to use at home.',
+                text: 'Pick up your finished pieces in 4 to 5 weeks. They\'re ready to use at home.',
               },
             ].map((item, i) => (
               <div key={i} className="rounded-2xl border border-gray-200 bg-white p-6">
@@ -288,7 +288,7 @@ export default function BeginnerPotteryGuide() {
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
-              description="Learn pottery fundamentals over 4 sessions. Perfect if you want to build real skills and practice between classes."
+              description="Learn pottery fundamentals over 4 guided sessions. Perfect if you want to build real skills week by week."
             />
           </div>
         </div>
