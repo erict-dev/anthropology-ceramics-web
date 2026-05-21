@@ -4,16 +4,16 @@ import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Kids Pottery Summer Camp in Irvine | Ages 6-12 | Olomana Studios',
+  title: 'Kids & Teens Pottery Summer Camp in Irvine | Ages 6-16 | Olomana Studios',
   description:
-    'Hands-on pottery summer camp for kids ages 6-12 in Irvine, CA. Week-long half-day sessions with hand-building, wheel throwing, surface decoration, and more. Your child takes home real pottery they made themselves.',
+    'Hands-on pottery summer camp for kids and teens in Irvine, CA. Kids sessions are for ages 6-12, with a dedicated teens session for ages 13-16. Campers make real pottery they keep.',
   alternates: {
     canonical: 'https://olomanastudios.com/classes/pottery-summer-camp-irvine',
   },
   openGraph: {
-    title: 'Kids Pottery Summer Camp in Irvine | Summer 2026',
+    title: 'Kids & Teens Pottery Summer Camp in Irvine | Summer 2026',
     description:
-      'A week-long pottery camp where kids ages 6-12 learn hand-building, wheel throwing, and surface decoration. Half-day sessions, small groups, real pottery to keep.',
+      'A week-long pottery camp where kids and teens learn hand-building, wheel throwing, and surface decoration. Half-day sessions, small groups, real pottery to keep.',
     url: 'https://olomanastudios.com/classes/pottery-summer-camp-irvine',
     images: [
       {
@@ -30,20 +30,20 @@ const faqs = [
   {
     question: 'What ages is the pottery summer camp for?',
     answer:
-      'Our pottery summer camp is designed for kids ages 6 to 12. Campers work in small groups so instructors can give each child hands-on guidance at their skill level.',
+      'Our pottery summer camp includes kids sessions for ages 6 to 12, plus a teens session for ages 13 to 16 during the July 13-17 morning camp. Campers work in small groups so instructors can give each student hands-on guidance at their skill level.',
   },
   {
-    question: 'Does my child need any pottery experience?',
+    question: 'Does my child or teen need any pottery experience?',
     answer:
       'No experience needed at all. The camp is structured to take complete beginners from their first time touching clay all the way through wheel throwing and finishing details by the end of the week.',
   },
   {
-    question: 'What will my child take home?',
+    question: 'What will campers take home?',
     answer:
       'Campers create multiple pieces throughout the week: pinch pot animals, a mug, a planter, bowls, and a vase.',
   },
   {
-    question: 'What should my child wear and bring?',
+    question: 'What should campers wear and bring?',
     answer:
       'Wear clothes that can get dirty, closed-toed shoes with socks, and long pants. All clay, tools, and materials are included in the camp fee.',
   },
@@ -66,7 +66,7 @@ const faqs = [
 
 const campWeeks = [
   { dates: 'July 6 - July 10', label: 'Week 1', morning: 'https://olomanastudios.as.me/?appointmentType=91050968', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051004' },
-  { dates: 'July 13 - July 17', label: 'Week 2', morning: 'https://olomanastudios.as.me/?appointmentType=91051122', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051179' },
+  { dates: 'July 13 - July 17', label: 'Week 2', morning: 'https://olomanastudios.as.me/?appointmentType=91051122', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051179', teenLabel: 'Teens' },
   { dates: 'July 20 - July 24', label: 'Week 3', morning: 'https://olomanastudios.as.me/?appointmentType=91051270', afternoon: 'https://olomanastudios.as.me/?appointmentType=91051300' },
 ];
 
@@ -111,9 +111,9 @@ export default function PotterySummerCampIrvine() {
           {
             '@context': 'https://schema.org',
             '@type': 'Event',
-            name: 'Kids Pottery Summer Camp',
+            name: 'Kids & Teens Pottery Summer Camp',
             description:
-              'A week-long half-day pottery camp for kids ages 6-12. Campers learn hand-building, wheel throwing, surface decoration, and trimming while creating mugs, bowls, vases, and clay sculptures.',
+              'A week-long half-day pottery camp for kids and teens. Kids sessions are for ages 6-12, with a dedicated teens session for ages 13-16 during the July 13-17 morning camp. Campers learn hand-building, wheel throwing, surface decoration, and trimming while creating mugs, bowls, vases, and clay sculptures.',
             startDate: '2026-07-06',
             endDate: '2026-07-24',
             eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
@@ -142,7 +142,7 @@ export default function PotterySummerCampIrvine() {
               url: 'https://olomanastudios.com/classes/pottery-summer-camp-irvine',
             },
             image: 'https://olomanastudios.com/summer-camp/pottery-summer-camp-1.jpg',
-            typicalAgeRange: '6-12',
+            typicalAgeRange: '6-16',
           },
           {
             '@context': 'https://schema.org',
@@ -161,15 +161,15 @@ export default function PotterySummerCampIrvine() {
         <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-sm uppercase tracking-wide text-gray-500 font-medium">Summer 2026 &middot; Ages 6&ndash;12</p>
+              <p className="text-sm uppercase tracking-wide text-gray-500 font-medium">Summer 2026 &middot; Ages 6&ndash;12 kids sessions &middot; 13&ndash;16 teens session</p>
               <h1 className="leander mt-2 text-4xl sm:text-5xl font-bold text-gray-900">
-                Kids Pottery Summer Camp in Irvine
+                Kids &amp; Teens Pottery Summer Camp in Irvine
               </h1>
               <p className="mt-2 text-lg font-semibold text-gray-900">
                 July 6 &ndash; July 24 &middot; $348/week
               </p>
               <p className="mt-3 text-lg text-gray-700">
-                Let your child unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn hand-building, pottery wheel throwing, and surface decoration while making real pottery they get to keep.
+                Let your young artist unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn hand-building, pottery wheel throwing, and surface decoration while making real pottery they get to keep. Kids sessions are for ages 6 to 12, and the July 13&ndash;17 morning session is reserved for teens ages 13 to 16.
               </p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <a
@@ -182,7 +182,7 @@ export default function PotterySummerCampIrvine() {
             </div>
             <div className="relative w-full aspect-[3/2]">
               <Image
-                alt="Kids working with clay at the pottery table during summer camp at Olomana Studios in Irvine"
+                alt="Kids and teens working with clay at the pottery table during summer camp at Olomana Studios in Irvine"
                 src="/summer-camp/pottery-summer-camp-2.jpg"
                 fill
                 priority
@@ -215,9 +215,14 @@ export default function PotterySummerCampIrvine() {
                         <div className="flex gap-2">
                           <a
                             href={week.morning}
-                            className="rounded-lg border border-gray-900 px-3 py-1.5 text-sm text-gray-900 font-medium transition hover:bg-gray-100"
+                            className="relative rounded-lg border border-gray-900 px-3 py-1.5 text-sm text-gray-900 font-medium transition hover:bg-gray-100"
                           >
                             9am&ndash;12pm
+                            {week.teenLabel ? (
+                              <sup className="absolute -right-2 -top-2 rounded-full bg-amber-300 px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none text-gray-900 shadow-sm">
+                                {week.teenLabel}
+                              </sup>
+                            ) : null}
                           </a>
                           <a
                             href={week.afternoon}
@@ -252,7 +257,7 @@ export default function PotterySummerCampIrvine() {
                   </li>
                   <li className="flex gap-3 text-gray-700">
                     <span className="shrink-0 font-semibold text-gray-900">Ages:</span>
-                    6&ndash;12 years old
+                    6&ndash;12 years old (kids sessions), 13&ndash;16 years old (teens session)
                   </li>
                   <li className="flex gap-3 text-gray-700">
                     <span className="shrink-0 font-semibold text-gray-900">Group size:</span>
@@ -281,22 +286,22 @@ export default function PotterySummerCampIrvine() {
         </div>
       </section>
 
-      {/* Why Parents Choose This Camp */}
+      {/* Why Families Choose This Camp */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-3xl sm:text-4xl font-bold text-gray-900">
-            Why Kids & Parents Love This Camp
+            Why Kids, Teens &amp; Parents Love This Camp
           </h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <p className="text-lg text-gray-700">
-                Most summer camps keep kids busy. This one gives them something real to show for it. By Friday, your child will have a collection of handmade pottery: mugs, bowls, a vase, a planter, and clay sculptures they shaped with their own hands.
+                Most summer camps keep kids and teens busy. This one gives them something real to show for it. By Friday, your camper will have a collection of handmade pottery: mugs, bowls, a vase, a planter, and clay sculptures they shaped with their own hands.
               </p>
               <p className="text-lg text-gray-700">
-                Our camp is designed so kids build on what they learn each day. They start on the pottery wheel, learning to center clay and throw cups, bowls, and vases. Mid-week they move into hand-building, sculpting animals, mugs, and planters. By Friday, they are adding their own colors and designs.
+                Our camp is designed so young artists build on what they learn each day. They start on the pottery wheel, learning to center clay and throw cups, bowls, and vases. Mid-week they move into hand-building, sculpting animals, mugs, and planters. By Friday, they are adding their own colors and designs.
               </p>
               <p className="text-lg text-gray-700">
-                Small group sizes mean every child gets individual attention from our instructors. No screens, no sitting around. Just hands in clay, creativity flowing, and skills that stick.
+                Small group sizes mean every camper gets individual attention from our instructors. No screens, no sitting around. Just hands in clay, creativity flowing, and skills that stick.
               </p>
             </div>
             <div className="relative w-full aspect-[3/2]">
@@ -316,7 +321,7 @@ export default function PotterySummerCampIrvine() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
           <h2 className="leander text-3xl sm:text-4xl font-bold text-gray-900">
-            What Your Child Will Learn
+            What Campers Will Learn
           </h2>
           <p className="mt-3 text-lg text-gray-700 max-w-3xl">
             Each day builds on the last. Campers start the week on the pottery wheel, move into hand-building mid-week, and finish by adding color and personal details on Friday.
@@ -501,7 +506,7 @@ export default function PotterySummerCampIrvine() {
             Give Them a Summer They&apos;ll Remember
           </h2>
           <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-            Spots fill up fast. Reserve your child&apos;s week and let them spend this summer making something real with their own hands.
+            Spots fill up fast. Reserve your camper&apos;s week and let them spend this summer making something real with their own hands.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
             <a
