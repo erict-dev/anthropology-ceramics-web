@@ -123,17 +123,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Kids & Teens Pottery Summer Camp */}
+      {/* Kids Pottery Summer Camp */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Kids &amp; Teens Pottery Summer Camp</h2>
-          <p className="mt-2 text-gray-600">A week-long half-day camp where kids and teens learn hand-building, wheel throwing, and surface decoration.</p>
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Kids Pottery Summer Camp</h2>
+          <p className="mt-2 text-gray-600">A week-long half-day camp where kids learn hand-building, wheel throwing, and surface decoration.</p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-1">
               <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
                 <Image
-                  alt="Kids and teens working with clay at the pottery table during summer camp at Olomana Studios in Irvine"
+                  alt="Kids working with clay at the pottery table during summer camp at Olomana Studios in Irvine"
                   src="/summer-camp/pottery-summer-camp-2.jpg"
                   fill
                   className="object-cover"
@@ -150,9 +150,9 @@ export default function Home() {
               </div>
             </div>
             <div className="md:col-span-2">
-              <p className="text-sm uppercase tracking-wide text-gray-500 font-medium">Summer 2026 &middot; Ages 6&ndash;12 kids sessions &middot; 13&ndash;16 teens session</p>
+              <p className="text-sm uppercase tracking-wide text-gray-500 font-medium">Summer 2026 &middot; Ages 6&ndash;12</p>
               <p className="mt-2 text-gray-700">
-                Let your young artist unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn wheel throwing, hand-building, and surface decoration. Most sessions are for ages 6 to 12, with a dedicated teens session for ages 13 to 16 on July 13&ndash;17 from 9am to 12pm.
+                Let your young artist unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn wheel throwing, hand-building, and surface decoration. Camp is for kids ages 6 to 12.
               </p>
               <ul className="mt-3 space-y-1 text-base text-gray-700">
                 <li className="flex gap-2">
@@ -162,7 +162,7 @@ export default function Home() {
                   <span className="font-semibold text-gray-900">Sessions:</span> 9am&ndash;12pm or 1pm&ndash;4pm
                 </li>
                 <li className="flex gap-2">
-                  <span className="font-semibold text-gray-900">Ages:</span> 6&ndash;12 years old (kids sessions), 13&ndash;16 years old (teens session)
+                  <span className="font-semibold text-gray-900">Ages:</span> 6&ndash;12 years old
                 </li>
                 <li className="flex gap-2">
                   <span className="font-semibold text-gray-900">Price:</span> $348/week, all materials included
