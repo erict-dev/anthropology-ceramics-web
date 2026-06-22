@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import ClassCard from '@/components/ClassCard'
 import Link from 'next/link';
+import { IKEBANA_BOOKING_URL } from '@/lib/migration';
 
 export default function Classes() {
   return (
@@ -96,7 +97,7 @@ export default function Classes() {
               title="Ikebana Flower Arrangement Workshop"
               imgSrc="/workshops/ike-4.jpeg"
               meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/82663099/calendar/12365772"
+              href={IKEBANA_BOOKING_URL}
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
             />
             <ClassCard
