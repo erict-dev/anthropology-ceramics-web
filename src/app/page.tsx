@@ -157,7 +157,7 @@ export default function Home() {
               </p>
               <ul className="mt-3 space-y-1 text-base text-gray-700">
                 <li className="flex gap-2">
-                  <span className="font-semibold text-gray-900">Dates:</span> July 6 &ndash; July 24
+                  <span className="font-semibold text-gray-900">Dates:</span> July 6 &ndash; July 31
                 </li>
                 <li className="flex gap-2">
                   <span className="font-semibold text-gray-900">Sessions:</span> 9am&ndash;12pm or 1pm&ndash;4pm
