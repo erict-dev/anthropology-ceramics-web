@@ -175,7 +175,10 @@ export async function fetchKanoaClassEvents(opts?: {
         for (const row of rows) byId.set(row.id, row);
       }
       return Array.from(byId.values()).map((c) =>
-        kanoaClassToEvent(c, type.title),
+        // Prefer Kanoa's live class name so renames in the dashboard flow
+        // through without a code change; fall back to the configured title
+        // only if Kanoa returns a blank name.
+        kanoaClassToEvent(c, c.classTypeName?.trim() || type.title),
       );
     }),
   );

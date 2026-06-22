@@ -22,7 +22,7 @@ export type MigratedType = {
   acuityAppointmentTypeID: number;
   /** Kanoa class type id (org-scoped UUID). */
   kanoaClassTypeId: string;
-  /** Short label used for calendar event titles. */
+  /** Fallback calendar event title, used only if Kanoa returns a blank class name. */
   title: string;
 };
 
@@ -30,7 +30,7 @@ export const MIGRATED_TYPES: MigratedType[] = [
   {
     acuityAppointmentTypeID: 86745632,
     kanoaClassTypeId: "5c57875d-ca6f-4750-8409-16364b794cd1",
-    title: "Ikebana Workshop",
+    title: "Ikebana Flower Arrangement Workshop",
   },
 ];
 
