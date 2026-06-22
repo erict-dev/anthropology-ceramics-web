@@ -104,8 +104,13 @@ async function fetchKanoaClassesForType(
 
   const res = await fetch(url, {
     headers: { Accept: "application/json" },
-    // The calendar page is force-dynamic; never serve a stale schedule.
-    cache: "no-store",
+    // The calendar page is force-dynamic, so Next already treats this fetch as
+    // uncached — express that via the framework's `next` option rather than the
+    // standard `cache: "no-store"`. Cloudflare's workerd runtime (production)
+    // throws "The cache field on RequestInitializerDict is not implemented"
+    // unless the Pages project's compatibility date is >= 2024-11-11, which
+    // would silently drop every Kanoa session from the calendar.
+    next: { revalidate: 0 },
   });
   if (!res.ok) {
     throw new Error(`Kanoa classes error ${res.status}: ${await res.text()}`);
