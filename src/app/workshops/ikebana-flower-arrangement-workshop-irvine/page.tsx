@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { IKEBANA_BOOKING_URL } from '@/lib/migration';
 
 export default function IkebanaWorkshop() {
   return (
@@ -14,7 +15,7 @@ export default function IkebanaWorkshop() {
             </p>
           <div className="mt-6 mb-6 text-center">
             <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/86745632/calendar/12365772"
+              href={IKEBANA_BOOKING_URL}
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Online
@@ -92,7 +93,7 @@ export default function IkebanaWorkshop() {
           </ul>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/86745632/calendar/12365772"
+              href={IKEBANA_BOOKING_URL}
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Online

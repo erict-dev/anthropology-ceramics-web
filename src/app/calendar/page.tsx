@@ -3,13 +3,33 @@ export const runtime = 'edge';
 export const dynamic = "force-dynamic";
 
 import { fetchAvailableClassEventsRolling } from "@/lib/acuity";
+import { fetchKanoaClassEvents } from "@/lib/kanoa";
+import { MIGRATED_ACUITY_TYPE_IDS } from "@/lib/migration";
 import StudioCalendar from "./StudioCalendar";
 import BusinessHours from "@/components/BusinessHours";
 
 export default async function CalendarPage() {
-  const events = await fetchAvailableClassEventsRolling({
-    monthsAhead: 2,
+  // Dual-source the calendar: types that have migrated to Kanoa come from
+  // Kanoa; everything else still comes from Acuity. Both feeds are fetched
+  // concurrently and merged into one CalendarEvent[].
+  const [acuityEvents, kanoaEvents] = await Promise.all([
+    fetchAvailableClassEventsRolling({ monthsAhead: 2 }),
+    // A Kanoa outage must not take down the (mostly-Acuity) calendar — degrade
+    // by dropping the migrated types rather than erroring the whole page.
+    fetchKanoaClassEvents({ monthsAhead: 2 }).catch((err) => {
+      console.error("[calendar] Kanoa events fetch failed:", err);
+      return [];
+    }),
+  ]);
+
+  // Drop any Acuity events for already-migrated types so a session never shows
+  // up twice (or links back to Acuity). Kanoa is the source of truth for these.
+  const acuityOnly = acuityEvents.filter((e) => {
+    const acuityTypeId = e.details?.appointmentTypeDetails?.id;
+    return acuityTypeId == null || !MIGRATED_ACUITY_TYPE_IDS.has(acuityTypeId);
   });
+
+  const events = [...acuityOnly, ...kanoaEvents];
 
   return (
     <>
