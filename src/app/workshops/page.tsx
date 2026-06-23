@@ -88,7 +88,7 @@ export default function Workshops() {
           <div className="h-[320px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden">
               <Image
-                src={`/library/ikebana/ikebana-main.jpg`}
+                src={`/ikebana/ikebana-class-irvine-3.jpg`}
                 alt={`A minimalist Ikebana arrangement`}
                 width={400}
                 height={600}
@@ -106,7 +106,7 @@ export default function Workshops() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src={`/library/ikebana/ikebana-vase.JPG`}
+                src={`/ikebana/ikebana-class-irvine-2.jpg`}
                 alt={`Circular ikebana vase`}
                 width={400}
                 height={600}

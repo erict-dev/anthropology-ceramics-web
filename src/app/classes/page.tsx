@@ -95,7 +95,7 @@ export default function Classes() {
             />
             <ClassCard
               title="Ikebana Flower Arrangement Workshop"
-              imgSrc="/workshops/ike-4.jpeg"
+              imgSrc="/ikebana/ikebana-class-irvine-2.jpg"
               meta="1.5 hrs"
               href={IKEBANA_BOOKING_URL}
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
