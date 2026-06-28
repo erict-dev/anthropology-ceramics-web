@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import ClassCard from '@/components/ClassCard'
 import Link from 'next/link';
-import { IKEBANA_BOOKING_URL } from '@/lib/migration';
+import { IKEBANA_BOOKING_URL, MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
 
 export default function Classes() {
   return (
@@ -90,7 +90,7 @@ export default function Classes() {
               title="Traditional Matcha Bowl Workshop"
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
               meta="2.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
+              href={MATCHA_BOWL_BOOKING_URL}
               description="Carve a traditional chawan (matcha bowl) inspired by Japanese forms and wabi-sabi aesthetics. Includes 2.5 lbs of clay and materials for 1 piece."
             />
             <ClassCard
