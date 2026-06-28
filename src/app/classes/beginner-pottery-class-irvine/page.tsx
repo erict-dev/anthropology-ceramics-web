@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
 
 export default function BeginnerPotteryClasses() {
   return (
@@ -81,7 +82,7 @@ export default function BeginnerPotteryClasses() {
                 This workshop covers foundational skills you can build on in future classes.
               </p>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/appointment/81608405/calendar/12365772"
+                href={MATCHA_BOWL_BOOKING_URL}
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Book Workshop

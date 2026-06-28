@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard';
 import JsonLd from '@/components/JsonLd';
+import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
 
 export const metadata: Metadata = {
   title: 'Date Night Ideas in Irvine | Pottery Classes for Couples | Olomana Studios',
@@ -244,7 +245,7 @@ export default function DateNightIrvine() {
               title="Traditional Matcha Bowl Workshop"
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
               meta="2.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
+              href={MATCHA_BOWL_BOOKING_URL}
               description="A longer, more focused session. Carve a traditional matcha bowl by hand using Japanese-inspired techniques. Great for couples who want to slow down and really get into it."
             />
           </div>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { KANOA_GIFT_CERTIFICATES_URL } from '@/lib/migration';
 
 export default function GiftCards() {
   return (
@@ -65,7 +66,7 @@ export default function GiftCards() {
                 This gift certificate is redeemable for our Traditional Matcha Bowl Workshop.
               </p>
               <a
-                href="https://olomanastudios.as.me/catalog/66629c2c?categories=Gift%20Certificates"
+                href={KANOA_GIFT_CERTIFICATES_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block w-full text-center rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700 mt-auto"

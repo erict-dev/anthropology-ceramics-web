@@ -32,6 +32,11 @@ export const MIGRATED_TYPES: MigratedType[] = [
     kanoaClassTypeId: "5c57875d-ca6f-4750-8409-16364b794cd1",
     title: "Ikebana Flower Arrangement Workshop",
   },
+  {
+    acuityAppointmentTypeID: 81608405,
+    kanoaClassTypeId: "1bdc109f-6365-4cd4-80b4-68a2bfb41e04",
+    title: "Traditional Matcha Bowl Pottery Workshop",
+  },
 ];
 
 /** Acuity appointment type ids that have moved to Kanoa (drop these from the Acuity feed). */
@@ -49,6 +54,15 @@ export function kanoaBookUrl(classId: string): string {
   return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/book/${classId}`;
 }
 
+/** Gift certificate purchase page for the Kanoa org. */
+export const KANOA_GIFT_CERTIFICATES_URL = `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/gift-certificates`;
+
 /** The Ikebana workshop (first migrated type) — convenience for its page CTAs. */
 export const IKEBANA = MIGRATED_TYPES[0];
 export const IKEBANA_BOOKING_URL = kanoaClassTypeUrl(IKEBANA.kanoaClassTypeId);
+
+/** The Matcha Bowl workshop (second migrated type) — convenience for its page CTAs. */
+export const MATCHA_BOWL = MIGRATED_TYPES[1];
+export const MATCHA_BOWL_BOOKING_URL = kanoaClassTypeUrl(
+  MATCHA_BOWL.kanoaClassTypeId,
+);

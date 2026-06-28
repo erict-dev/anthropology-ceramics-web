@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard';
 import JsonLd from '@/components/JsonLd';
+import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
 
 export const metadata: Metadata = {
   title: 'Pottery Classes in Orange County | Wheel Throwing & Handbuilding | Olomana Studios',
@@ -242,7 +243,7 @@ export default function PotteryClassesOrangeCounty() {
               title="Traditional Matcha Bowl Workshop"
               imgSrc="/irvine-matcha-bowl-class/matcha-bowl-3-resize.jpg"
               meta="2.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/81608405/calendar/12365772"
+              href={MATCHA_BOWL_BOOKING_URL}
               description="Hand-carve a chawan inspired by Japanese pottery traditions and wabi-sabi aesthetics."
             />
           </div>
