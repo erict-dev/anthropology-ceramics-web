@@ -74,27 +74,27 @@ const campWeeks = [
 const curriculum = [
   {
     day: 'Monday',
-    title: 'The Pottery Wheel',
-    img: '/summer-camp/kids-pottery-1.jpg',
-    items: ['Introduction to wheel throwing', 'Learn to center clay on the wheel', 'Throw basic shapes: cups and bowls'],
-  },
-  {
-    day: 'Tuesday',
-    title: 'Wheel Throwing Deep Dive',
-    img: '/summer-camp/kids-pottery-2.jpg',
-    items: ['Build on wheel throwing skills', 'Shape a small vase', 'Throw a mug on the wheel'],
-  },
-  {
-    day: 'Wednesday',
     title: 'Hand-Building Basics',
     img: '/summer-camp/kids-pottery-3.jpg',
     items: ['Learn hand-building foundations', 'Sculpt pinch pot animals', 'Shape a handmade mug', 'Create a planter'],
   },
   {
-    day: 'Thursday',
+    day: 'Tuesday',
     title: 'Hand-Building & Design',
     img: '/summer-camp/kids-pottery-4.jpg',
     items: ['Continue hand-building projects', 'Carve designs into mugs and planters', 'Explore decorating techniques'],
+  },
+  {
+    day: 'Wednesday',
+    title: 'The Pottery Wheel',
+    img: '/summer-camp/kids-pottery-1.jpg',
+    items: ['Introduction to wheel throwing', 'Learn to center clay on the wheel', 'Throw basic shapes: cups and bowls'],
+  },
+  {
+    day: 'Thursday',
+    title: 'Wheel Throwing Deep Dive',
+    img: '/summer-camp/kids-pottery-2.jpg',
+    items: ['Build on wheel throwing skills', 'Shape a small vase', 'Throw a mug on the wheel'],
   },
   {
     day: 'Friday',
@@ -256,10 +256,6 @@ export default function PotterySummerCampIrvine() {
                     6&ndash;12 years old
                   </li>
                   <li className="flex gap-3 text-gray-700">
-                    <span className="shrink-0 font-semibold text-gray-900">Group size:</span>
-                    Limited to 8 campers per session
-                  </li>
-                  <li className="flex gap-3 text-gray-700">
                     <span className="shrink-0 font-semibold text-gray-900">Location:</span>
                     14988 Sand Canyon Ave Studio 6, Irvine CA
                   </li>
@@ -294,7 +290,7 @@ export default function PotterySummerCampIrvine() {
                 Most summer camps keep kids busy. This one gives them something real to show for it. By Friday, your camper will have a collection of handmade pottery: mugs, bowls, a vase, a planter, and clay sculptures they shaped with their own hands.
               </p>
               <p className="text-lg text-gray-700">
-                Our camp is designed so young artists build on what they learn each day. They start on the pottery wheel, learning to center clay and throw cups, bowls, and vases. Mid-week they move into hand-building, sculpting animals, mugs, and planters. By Friday, they are adding their own colors and designs.
+                Our camp is designed so young artists build on what they learn each day. They start with hand-building, sculpting animals, mugs, and planters. Mid-week they move onto the pottery wheel, learning to center clay and throw cups, bowls, and vases. By Friday, they are adding their own colors and designs.
               </p>
               <p className="text-lg text-gray-700">
                 Small group sizes mean every camper gets individual attention from our instructors. No screens, no sitting around. Just hands in clay, creativity flowing, and skills that stick.
@@ -320,7 +316,7 @@ export default function PotterySummerCampIrvine() {
             What Campers Will Learn
           </h2>
           <p className="mt-3 text-lg text-gray-700 max-w-3xl">
-            Each day builds on the last. Campers start the week on the pottery wheel, move into hand-building mid-week, and finish by adding color and personal details on Friday.
+            Each day builds on the last. Campers start the week with hand-building, move onto the pottery wheel mid-week, and finish by adding color and personal details on Friday.
           </p>
 
           <div className="mt-8 space-y-4">
@@ -395,7 +391,7 @@ export default function PotterySummerCampIrvine() {
               <ul className="mt-6 space-y-3">
                 {[
                   'All clay, tools, and materials',
-                  'Max 8 campers per session with dedicated instructors',
+                  'Small groups with dedicated instructors',
                   'Both hand-building and pottery wheel time',
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3 text-lg text-gray-700">
