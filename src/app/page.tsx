@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard'
-import { IKEBANA_BOOKING_URL, MATCHA_BOWL_BOOKING_URL } from '@/lib/migration'
+import { IKEBANA_BOOKING_URL, MATCHA_BOWL_BOOKING_URL, BARRO_ROJO_BOOKING_URL } from '@/lib/migration'
 
 export default function Home() {
   return (
@@ -49,7 +49,7 @@ export default function Home() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">4-Week Pottery Course</h2>
-          <p className="mt-2 text-gray-600">Build skills week by week with guided instruction and focused wheel-throwing projects.</p>
+          <p className="mt-2 text-gray-600">Build skills week by week with guided instruction and focused, hands-on projects.</p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
@@ -66,17 +66,20 @@ export default function Home() {
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
             />
-            <div className="md:col-span-2 md:flex md:justify-center">
-              <div className="w-full md:w-[calc(50%-0.75rem)]">
-                <ClassCard
-                  title="5-Week Teapot Making Course"
-                  imgSrc="/workshops/teapot-workshop/teapot-finished.jpeg"
-                  meta="5 sessions, once a week"
-                  href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/92337408/calendar/12365772"
-                  description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
-                />
-              </div>
-            </div>
+            <ClassCard
+              title="Oaxacan Barro Rojo Handbuilding"
+              imgSrc="/handbuilding-pottery-course-irvine.jpg"
+              meta="4 sessions"
+              href={BARRO_ROJO_BOOKING_URL}
+              description="Inspired by the red clay (barro rojo) traditions of Oaxaca, Mexico. Learn traditional coil-building and sculpting techniques to create your own expressive face planter and a set of miniature face cups, then finish them with hand-burnishing for a natural, stone-smooth sheen. Beginner friendly, no experience needed. All clay, firings, and weekly open studio included."
+            />
+            <ClassCard
+              title="5-Week Teapot Making Course"
+              imgSrc="/workshops/teapot-workshop/teapot-finished.jpeg"
+              meta="5 sessions, once a week"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/92337408/calendar/12365772"
+              description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
+            />
           </div>
 
           {/* Divider */}

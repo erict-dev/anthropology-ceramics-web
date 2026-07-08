@@ -58,6 +58,13 @@ export function kanoaBookUrl(classId: string): string {
 export const KANOA_GIFT_CERTIFICATES_URL = `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/gift-certificates`;
 
 /**
+ * TEMPORARY placeholder booking link for the new 4-Week Oaxacan Barro Rojo
+ * Handbuilding Course. Replace "#" with the real signup URL once available;
+ * every card (home, classes, course page) reads from this single constant.
+ */
+export const BARRO_ROJO_BOOKING_URL = "#";
+
+/**
  * Look up a migrated type by its Kanoa class type id. Keyed by id (not array
  * position) so a rollback or reorder of MIGRATED_TYPES can't silently rebind
  * the per-type convenience exports below to the wrong workshop.

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import ClassCard from '@/components/ClassCard'
 import Link from 'next/link';
-import { IKEBANA_BOOKING_URL, MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
+import { IKEBANA_BOOKING_URL, MATCHA_BOWL_BOOKING_URL, BARRO_ROJO_BOOKING_URL } from '@/lib/migration';
 
 export default function Classes() {
   return (
@@ -42,12 +42,12 @@ export default function Classes() {
         className="mt-8 mb-8 w-full h-1.5"
       />
 
-      {/* New 4-Week Wheel Throwing Course Section */}
+      {/* 4-Week Pottery Courses Section */}
       <section className="pb-12 bg-gray-100">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Wheel Throwing Course</h2>
+          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Pottery Courses</h2>
           <p className="mt-4 text-gray-600 text-lg">
-            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes two hours of guided instruction, helping you develop your skills and create functional ceramics over four weekly classes.
+            Go deeper with our 4-week pottery courses. Each course meets weekly for four weeks with two hours of guided, instructor-led instruction, giving you the time to develop real skills and finish a collection of pieces to take home.
           </p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -65,6 +65,17 @@ export default function Classes() {
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
             />
+            <div className="md:col-span-2 md:flex md:justify-center">
+              <div className="w-full md:w-[calc(50%-0.75rem)]">
+                <ClassCard
+                  title="Oaxacan Barro Rojo Handbuilding"
+                  imgSrc="/handbuilding-pottery-course-irvine.jpg"
+                  meta="4 sessions"
+                  href={BARRO_ROJO_BOOKING_URL}
+                  description="Inspired by the red clay (barro rojo) traditions of Oaxaca, Mexico. Learn traditional coil-building and sculpting techniques to create your own expressive face planter and a set of miniature face cups, then finish them with hand-burnishing for a natural, stone-smooth sheen. Beginner friendly, no experience needed. All clay, firings, and weekly open studio included."
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

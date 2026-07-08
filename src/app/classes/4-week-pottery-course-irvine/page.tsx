@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ClassCard from '@/components/ClassCard'
+import { BARRO_ROJO_BOOKING_URL } from '@/lib/migration'
 
 export default function PotteryCourse() {
   return (
@@ -11,7 +12,7 @@ export default function PotteryCourse() {
             4-Week Pottery Course in Irvine
           </h1>
           <p className="mt-4 text-gray-700 text-center text-lg">
-            {"Unlock the art of pottery wheel throwing in this immersive 4-week pottery course in Irvine. Whether you're a complete beginner or a returning student looking to refine your skills, our 101 and 201 courses offer structured, instructor-led lessons each week."}
+            {"Immerse yourself in a hands-on 4-week pottery course in Irvine. Whether you're a complete beginner or a returning student looking to refine your skills, our courses offer structured, instructor-led lessons each week to help you build real, lasting skills."}
           </p>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
@@ -28,6 +29,17 @@ export default function PotteryCourse() {
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
             />
+            <div className="md:col-span-2 md:flex md:justify-center">
+              <div className="w-full md:w-[calc(50%-0.75rem)]">
+                <ClassCard
+                  title="Oaxacan Barro Rojo Handbuilding"
+                  imgSrc="/handbuilding-pottery-course-irvine.jpg"
+                  meta="4 sessions"
+                  href={BARRO_ROJO_BOOKING_URL}
+                  description="Inspired by the red clay (barro rojo) traditions of Oaxaca, Mexico. Learn traditional coil-building and sculpting techniques to create your own expressive face planter and a set of miniature face cups, then finish them with hand-burnishing for a natural, stone-smooth sheen. Beginner friendly, no experience needed. All clay, firings, and weekly open studio included."
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -50,7 +62,7 @@ export default function PotteryCourse() {
               This course is perfect for those who want to learn pottery without the commitment of a year-long program. We bridge the gap between a casual one-time class and a formal pottery education, providing structured, instructor-led lessons each week.
             </p>
             <p className="mt-4 text-gray-700 text-lg">
-              Students will develop a strong foundation in wheel throwing, refining their skills in centering clay, pulling walls, shaping forms, and creating functional pieces. Techniques will include trimming, adding handles, surface decoration, and experimenting with various shapes and forms. The course also covers finishing techniques. Through demonstrations, hands-on exercises, and instructor feedback, students will gain confidence, consistency, and a deeper understanding of the ceramic arts.
+              Students will develop a strong foundation in wheel throwing and handbuilding, refining their skills in centering clay, pulling walls, coil-building, sculpting, and shaping both functional and decorative pieces. Techniques will include trimming, adding handles, surface decoration, and experimenting with various shapes and forms. The course also covers finishing techniques. Through demonstrations, hands-on exercises, and instructor feedback, students will gain confidence, consistency, and a deeper understanding of the ceramic arts.
             </p>
             <p className="mt-4 text-lg text-gray-700">{"With small class sizes and expert guidance, you'll refine your skills, gain confidence on the wheel, and build a collection of handmade pottery to take home. Whether you're frustrated by one-off classes that don't offer enough time to develop your technique or looking for a creative progressive class, this course is designed to give you the in-depth learning experience you need."}</p>
           </div>
