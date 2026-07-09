@@ -130,13 +130,13 @@ export default function CharmWorkshopContent() {
               </div>
 
               <div className="anim-fade-up-d4 mt-8">
-                <a
-                  href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
-                  className="charm-cta inline-block rounded-full px-10 py-3.5 text-lg font-semibold transition-all duration-300"
-                  style={{ background: '#3d1c12', color: '#f5ddd0' }}
+                <span
+                  aria-disabled="true"
+                  className="inline-block rounded-full px-10 py-3.5 text-lg font-semibold cursor-not-allowed"
+                  style={{ background: '#3d1c12', color: '#f5ddd0', opacity: 0.55 }}
                 >
-                  Book Your Spot
-                </a>
+                  Coming Soon
+                </span>
               </div>
             </div>
           </div>
@@ -339,13 +339,13 @@ export default function CharmWorkshopContent() {
             <li><strong style={{ color: '#f5ddd0' }}>Skill Level:</strong> No experience needed. This charm making class is completely beginner-friendly.</li>
           </ul>
           <div className="mt-10 text-center">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/89051684/calendar/12365772"
-              className="charm-cta inline-block rounded-full px-10 py-4 text-lg font-semibold transition-all duration-300"
-              style={{ background: '#e8c4b0', color: '#3d1c12' }}
+            <span
+              aria-disabled="true"
+              className="inline-block rounded-full px-10 py-4 text-lg font-semibold cursor-not-allowed"
+              style={{ background: '#e8c4b0', color: '#3d1c12', opacity: 0.55 }}
             >
-              Book Your Workshop
-            </a>
+              Coming Soon
+            </span>
             <p className="mt-4 text-base" style={{ color: '#a88070' }}>
               Our Irvine charm making workshop is perfect for a creative day out with friends, a unique date, or some solo me-time.
             </p>

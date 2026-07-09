@@ -13,12 +13,12 @@ export default function TeapotWheelThrowingCourse() {
               Participants will learn how to throw and assemble the different parts of a teapot, refine spouts and lids, and create accompanying yunomi (Japanese tea cups). Teapots are one of the most rewarding forms in pottery, and this course will guide students step-by-step through the process. <strong>This is not a beginner pottery course. Students must be able to center and throw basic pottery shapes using 1-2 lbs of clay.</strong>
             </p>
           <div className="mt-6 mb-6 text-center">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/92337408/calendar/12365772"
-              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+            <span
+              aria-disabled="true"
+              className="inline-block rounded-lg bg-gray-400 px-8 py-3 text-white text-lg font-medium cursor-not-allowed"
             >
-              Register Now
-            </a>
+              Coming Soon
+            </span>
           </div>
           </header>
 
@@ -100,12 +100,12 @@ export default function TeapotWheelThrowingCourse() {
           </ul>
 
           <div className="mt-6 text-center">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/92337408/calendar/12365772"
-              className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
+            <span
+              aria-disabled="true"
+              className="mt-6 inline-block rounded-lg bg-gray-400 px-8 py-3 text-white font-medium cursor-not-allowed"
             >
-              Register Now
-            </a>
+              Coming Soon
+            </span>
           </div>
         </div>
       </section>
