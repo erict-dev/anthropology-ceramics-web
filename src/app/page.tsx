@@ -66,17 +66,6 @@ export default function Home() {
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
             />
-            <div className="md:col-span-2 md:flex md:justify-center">
-              <div className="w-full md:w-[calc(50%-0.75rem)]">
-                <ClassCard
-                  title="5-Week Teapot Making Course"
-                  imgSrc="/workshops/teapot-workshop/teapot-finished.jpeg"
-                  meta="5 sessions, once a week"
-                  href="https://olomanastudios.as.me/schedule/66629c2c/category/Special%2520Workshops/appointment/92337408/calendar/12365772"
-                  description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
-                />
-              </div>
-            </div>
           </div>
 
           {/* Divider */}

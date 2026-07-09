@@ -100,21 +100,6 @@ export default function Classes() {
               href={IKEBANA_BOOKING_URL}
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
             />
-            <ClassCard
-              title="Ceramic Charms Workshop"
-              imgSrc="/workshops/charms-workshop.jpg"
-              meta="1 hr"
-              href="/workshops/ceramic-charm-workshop-irvine"
-              description="Design and paint 3 custom ceramic charms, from cute figures to pendants. All materials included. Pick up your finished charms in 4 weeks!"
-            />
-            <ClassCard
-              title="5-Week Teapot Making Course"
-              imgSrc="/workshops/teapot-workshop/teapot-workshop-4b.jpeg"
-              imgPosition="center 60%"
-              meta="5 sessions, once a week"
-              href="https://olomanastudios.as.me/schedule/66629c2c/?appointmentTypeIds[]=92337408"
-              description="Throw and assemble a complete teapot (body, lid, spout, and handle) plus yunomi tea cups. Not a beginner course: students must be able to center and throw basic shapes using 1-2 lbs of clay."
-            />
           </div>
         </div>
       </section>
