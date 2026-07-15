@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function IntermediatePotteryClasses() {
   return (
@@ -135,12 +136,12 @@ export default function IntermediatePotteryClasses() {
             <p className="text-gray-700 max-w-2xl mx-auto">
               We’d love to welcome you into our little community of makers. Join us for a class or a workshop. Wherever you are in your journey, we can’t wait to see what you’ll create, and to create alongside you.
             </p>
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c"
+            <Link
+              href="/classes"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium hover:bg-gray-700"
             >
               View All Classes
-            </a>
+            </Link>
           </div>
         </div>
       </section>

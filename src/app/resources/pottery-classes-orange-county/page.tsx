@@ -87,12 +87,12 @@ export default function PotteryClassesOrangeCounty() {
               <p className="mt-4 text-lg text-gray-700">
                 <span className="leander">Olomana Studios</span> is a pottery and art studio in Irvine with classes for every skill level. If you&apos;ve never touched clay, our beginner classes walk you through everything. If you&apos;re looking to keep developing your skills, our multi-week courses offer structured instruction over multiple sessions. Small classes, real instruction, and a cozy space in the heart of Orange County.
               </p>
-              <a
-                href="https://olomanastudios.as.me/schedule/66629c2c"
+              <Link
+                href="/classes"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
               >
                 View All Classes →
-              </a>
+              </Link>
             </div>
             <div className="relative w-full aspect-[4/3]">
               <Image
@@ -285,12 +285,12 @@ export default function PotteryClassesOrangeCounty() {
             Book a class and see why people keep coming back.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c"
+            <Link
+              href="/classes"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Now
-            </a>
+            </Link>
             <Link
               href="/calendar"
               className="inline-block rounded-lg border border-gray-900 px-8 py-3 text-gray-900 text-lg font-medium transition duration-300 hover:bg-gray-100"

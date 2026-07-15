@@ -87,12 +87,12 @@ export default function BeginnerPotteryGuide() {
               <p className="mt-4 text-lg text-gray-700">
                 Thinking about trying pottery but not sure what to expect? This guide covers everything you need to know before your first class, from what to wear to what you&apos;ll actually make. It&apos;s easier, messier, and more fun than you think.
               </p>
-              <a
-                href="https://olomanastudios.as.me/schedule/66629c2c"
+              <Link
+                href="/classes"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
               >
                 Book Your First Class →
-              </a>
+              </Link>
             </div>
             <div className="relative w-full aspect-[4/3]">
               <Image
@@ -322,12 +322,12 @@ export default function BeginnerPotteryGuide() {
             Your first class is waiting. No experience needed, just curiosity and a pair of hands you don&apos;t mind getting messy.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c"
+            <Link
+              href="/classes"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Your First Class
-            </a>
+            </Link>
             <Link
               href="/calendar"
               className="inline-block rounded-lg border border-gray-900 px-8 py-3 text-gray-900 text-lg font-medium transition duration-300 hover:bg-gray-100"

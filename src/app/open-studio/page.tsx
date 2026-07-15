@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 
 export default function OpenStudioMembership() {
   notFound();
@@ -90,12 +91,12 @@ export default function OpenStudioMembership() {
             <a className="underline" href="mailto:contact@olomanastudios.com">contact@olomanastudios.com</a>.
           </p>
           <div className="mt-8">
-            <a
-              href="https://olomanastudios.as.me"
+            <Link
+              href="/classes"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               View Classes
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -7,6 +7,7 @@ import { fetchKanoaClassEvents } from "@/lib/kanoa";
 import { MIGRATED_ACUITY_TYPE_IDS } from "@/lib/migration";
 import StudioCalendar from "./StudioCalendar";
 import BusinessHours from "@/components/BusinessHours";
+import Link from "next/link";
 
 export default async function CalendarPage() {
   // Dual-source the calendar: types that have migrated to Kanoa come from
@@ -69,10 +70,8 @@ export default async function CalendarPage() {
 
           {/* Booking CTA */}
           <div className="mt-3 flex justify-center text-center sm:mt-6">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/classes"
               className="
                 inline-block
                 rounded-full
@@ -90,7 +89,7 @@ export default async function CalendarPage() {
               "
             >
               Browse & book all classes and workshops
-            </a>
+            </Link>
           </div>
         </div>
       </section>
