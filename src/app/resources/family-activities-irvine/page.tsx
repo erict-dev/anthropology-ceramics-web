@@ -86,12 +86,12 @@ export default function FamilyActivitiesIrvine() {
               <p className="mt-4 text-lg text-gray-700">
                 Looking for something the whole family can do together that doesn&apos;t involve a screen? At <span className="leander">Olomana Studios</span>, kids and parents work side by side shaping clay, getting creative, and making pottery they&apos;ll actually keep. Our classes are instructor-guided and designed so everyone has fun, no experience needed.
               </p>
-              <a
-                href="https://olomanastudios.as.me/schedule/66629c2c"
+              <Link
+                href="/classes"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
               >
                 Browse Family Classes →
-              </a>
+              </Link>
             </div>
             <div className="relative w-full aspect-[4/3]">
               <Image
@@ -285,12 +285,12 @@ export default function FamilyActivitiesIrvine() {
             Book a pottery class and give your family something to create (and keep) together.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c"
+            <Link
+              href="/classes"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Now
-            </a>
+            </Link>
             <Link
               href="/calendar"
               className="inline-block rounded-lg border border-gray-900 px-8 py-3 text-gray-900 text-lg font-medium transition duration-300 hover:bg-gray-100"

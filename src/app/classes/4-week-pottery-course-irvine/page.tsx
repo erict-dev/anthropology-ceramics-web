@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ClassCard from '@/components/ClassCard'
+import Link from 'next/link';
 
 export default function PotteryCourse() {
   return (
@@ -77,12 +78,12 @@ export default function PotteryCourse() {
             We release signups for the next 4-week cycle a few weeks beforehand.
           </p>
           <div className="mt-6 text-center">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c"
+            <Link
+              href="/classes"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Browse our schedule and enroll online
-            </a>
+            </Link>
           </div>
         </div>
       </section>

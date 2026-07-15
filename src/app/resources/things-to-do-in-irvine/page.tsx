@@ -87,12 +87,12 @@ export default function ThingsToDoIrvine() {
               <p className="mt-4 text-lg text-gray-700">
                 Irvine has great parks and plenty of restaurants, but when you want to actually make something with your hands, learn a new skill, and walk away with a real keepsake, a pottery class at <span className="leander">Olomana Studios</span> is hard to beat. Our classes are beginner-friendly and run in small groups, so you get real instruction and leave with pieces you&apos;re proud of.
               </p>
-              <a
-                href="https://olomanastudios.as.me/schedule/66629c2c"
+              <Link
+                href="/classes"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
               >
                 Browse Classes →
-              </a>
+              </Link>
             </div>
             <div className="relative w-full aspect-[4/3]">
               <Image
@@ -282,12 +282,12 @@ export default function ThingsToDoIrvine() {
             Book a class and make something you&apos;ll keep.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c"
+            <Link
+              href="/classes"
               className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Now
-            </a>
+            </Link>
             <Link
               href="/calendar"
               className="inline-block rounded-lg border border-gray-900 px-8 py-3 text-gray-900 text-lg font-medium transition duration-300 hover:bg-gray-100"

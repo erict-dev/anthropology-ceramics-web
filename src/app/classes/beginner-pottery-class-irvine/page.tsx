@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
+import Link from 'next/link';
 
 export default function BeginnerPotteryClasses() {
   return (
@@ -171,12 +172,12 @@ export default function BeginnerPotteryClasses() {
             <p className="text-gray-700 max-w-2xl mx-auto">
               If you’ve been curious about pottery, there’s no better time to start. Join us for a beginner class or workshop in Irvine, and see how a lump of clay can become something beautiful in your hands. We can’t wait to welcome you into our studio and show you just how fun and rewarding pottery can be.
             </p>
-            <a
-              href="https://olomanastudios.as.me/schedule/66629c2c"
+            <Link
+              href="/classes"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium hover:bg-gray-700"
             >
               View All Classes
-            </a>
+            </Link>
           </div>
         </div>
       </section>

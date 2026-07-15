@@ -141,7 +141,7 @@ export default function StudioCalendar({ events }: Props) {
     if (url) {
       window.location.href = url;
     } else {
-      window.location.href = "https://olomanastudios.as.me";
+      window.location.href = "/classes";
     }
   }
 
