@@ -83,7 +83,7 @@ export default function Classes() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Special Art & Pottery Workshops</h2>
           <p className="mt-4 text-gray-600 text-lg w-full">
-            Explore our <strong>Special Art Workshops</strong> in Irvine, CA where we teach you the techniques behind specific pottery pieces like <em>matcha bowls</em>, <em>ceramic jewlery</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery or pottery related art.
+            Explore our <strong>Special Art Workshops</strong> in Irvine, CA where we teach you the techniques behind specific pottery pieces like <em>matcha bowls</em>, <em>Oaxacan barro rojo</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery or pottery related art.
           </p>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
