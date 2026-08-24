@@ -1,7 +1,12 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import JsonLd from '@/components/JsonLd';
+
+// Summer camp is over for 2026. The page 404s but the code is kept so it can
+// be brought back next year: delete the notFound() call below and restore the
+// links to this page (homepage section, Navbar, Footer) to relaunch.
 
 export const metadata: Metadata = {
   title: 'Kids Pottery Summer Camp in Irvine | Ages 6-12 | Olomana Studios',
@@ -105,6 +110,8 @@ const curriculum = [
 ];
 
 export default function PotterySummerCampIrvine() {
+  notFound();
+
   return (
     <>
       <JsonLd
