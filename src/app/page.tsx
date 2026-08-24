@@ -100,6 +100,14 @@ export default function Home() {
               href={IKEBANA_BOOKING_URL}
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
             />
+            <ClassCard
+              title="4-Week Oaxacan Barro Rojo Handbuilding Workshop"
+              imgSrc="/workshops/oaxacan-barro-rojo-handbuilding-course-irvine.jpg"
+              imgPosition="center bottom"
+              meta="4 sessions"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/4-Week%2520Pottery%2520Handbuilding%2520Course%2520Level%25201/appointment/97464596/calendar/12365772"
+              description="Discover the rich tradition of Oaxacan Barro Rojo through handbuilding and sculpting. In this four-week course you will learn traditional pinch-pot, coil-building and sculptural techniques to create expressive face vessels, planters, and ceremonial-inspired forms. Suitable for beginners and experienced hobbyists."
+            />
           </div>
 
           {/* Divider */}
