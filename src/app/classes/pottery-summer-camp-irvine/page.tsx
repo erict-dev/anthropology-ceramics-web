@@ -1,14 +1,12 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import JsonLd from '@/components/JsonLd';
+import { SHOW_SUMMER_CAMP } from '@/config/features';
 
-// Summer camp enrollment is closed for 2026. The page stays live (it keeps its
-// search ranking) with a banner and disabled booking CTAs. To relaunch next
-// year: flip ENROLLMENT_OPEN to true, update the dates, prices, and Acuity
-// links below, and restore the links to this page (homepage section, Navbar,
-// Footer; the homepage section was removed in commit 963977b).
-const ENROLLMENT_OPEN = false;
+// While SHOW_SUMMER_CAMP is false this page 404s. See src/config/features.ts
+// for the relaunch checklist.
 
 export const metadata: Metadata = {
   title: 'Kids Pottery Summer Camp in Irvine | Ages 6-12 | Olomana Studios',
@@ -112,6 +110,10 @@ const curriculum = [
 ];
 
 export default function PotterySummerCampIrvine() {
+  if (!SHOW_SUMMER_CAMP) {
+    notFound();
+  }
+
   return (
     <>
       <JsonLd
@@ -146,9 +148,7 @@ export default function PotterySummerCampIrvine() {
               '@type': 'Offer',
               price: '348',
               priceCurrency: 'USD',
-              availability: ENROLLMENT_OPEN
-                ? 'https://schema.org/InStock'
-                : 'https://schema.org/SoldOut',
+              availability: 'https://schema.org/InStock',
               url: 'https://olomanastudios.com/classes/pottery-summer-camp-irvine',
             },
             image: 'https://olomanastudios.com/summer-camp/pottery-summer-camp-1.jpg',
@@ -166,19 +166,6 @@ export default function PotterySummerCampIrvine() {
         ]}
       />
 
-      {/* Enrollment closed banner */}
-      {!ENROLLMENT_OPEN && (
-        <div className="bg-amber-50 border-y border-amber-200">
-          <div className="mx-auto max-w-screen-xl px-4 py-3 sm:px-6 lg:px-8 text-center">
-            <p className="text-amber-900 font-medium">
-              Enrollment for Summer 2026 has closed. Camp will be back next summer! Email{' '}
-              <a href="mailto:contact@olomanastudios.com" className="underline hover:text-amber-700">contact@olomanastudios.com</a>
-              {' '}to hear when enrollment opens.
-            </p>
-          </div>
-        </div>
-      )}
-
       {/* Hero */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
@@ -195,21 +182,12 @@ export default function PotterySummerCampIrvine() {
                 Let your young artist unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn hand-building, pottery wheel throwing, and surface decoration while making real pottery they get to keep. Camp is for kids ages 6 to 12.
               </p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                {ENROLLMENT_OPEN ? (
-                  <a
-                    href="https://olomanastudios.as.me/schedule/66629c2c/category/Kids%2520Pottery%2520Summer%2520Camp"
-                    className="inline-block rounded-lg bg-black px-6 py-3 text-white font-medium text-center transition duration-300 hover:bg-gray-700"
-                  >
-                    Reserve a Spot
-                  </a>
-                ) : (
-                  <a
-                    href="mailto:contact@olomanastudios.com?subject=Pottery%20Summer%20Camp"
-                    className="inline-block rounded-lg bg-black px-6 py-3 text-white font-medium text-center transition duration-300 hover:bg-gray-700"
-                  >
-                    Get Notified About Next Summer
-                  </a>
-                )}
+                <a
+                  href="https://olomanastudios.as.me/schedule/66629c2c/category/Kids%2520Pottery%2520Summer%2520Camp"
+                  className="inline-block rounded-lg bg-black px-6 py-3 text-white font-medium text-center transition duration-300 hover:bg-gray-700"
+                >
+                  Reserve a Spot
+                </a>
               </div>
             </div>
             <div className="relative w-full aspect-[3/2]">
@@ -245,31 +223,18 @@ export default function PotterySummerCampIrvine() {
                       <div className="flex items-center justify-between gap-4">
                         <p className="text-gray-900 font-semibold">{week.dates}</p>
                         <div className="flex gap-2">
-                          {ENROLLMENT_OPEN ? (
-                            <>
-                              <a
-                                href={week.morning}
-                                className="rounded-lg border border-gray-900 px-3 py-1.5 text-sm text-gray-900 font-medium transition hover:bg-gray-100"
-                              >
-                                9am&ndash;12pm
-                              </a>
-                              <a
-                                href={week.afternoon}
-                                className="rounded-lg border border-gray-900 px-3 py-1.5 text-sm text-gray-900 font-medium transition hover:bg-gray-100"
-                              >
-                                1pm&ndash;4pm
-                              </a>
-                            </>
-                          ) : (
-                            <>
-                              <span className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm text-gray-400 font-medium">
-                                9am&ndash;12pm
-                              </span>
-                              <span className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm text-gray-400 font-medium">
-                                1pm&ndash;4pm
-                              </span>
-                            </>
-                          )}
+                          <a
+                            href={week.morning}
+                            className="rounded-lg border border-gray-900 px-3 py-1.5 text-sm text-gray-900 font-medium transition hover:bg-gray-100"
+                          >
+                            9am&ndash;12pm
+                          </a>
+                          <a
+                            href={week.afternoon}
+                            className="rounded-lg border border-gray-900 px-3 py-1.5 text-sm text-gray-900 font-medium transition hover:bg-gray-100"
+                          >
+                            1pm&ndash;4pm
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -396,16 +361,14 @@ export default function PotterySummerCampIrvine() {
             ))}
           </div>
 
-          {ENROLLMENT_OPEN && (
-            <div className="mt-8 text-center">
-              <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/category/Kids%2520Pottery%2520Summer%2520Camp"
-                className="inline-block rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
-              >
-                View Schedule and Book
-              </a>
-            </div>
-          )}
+          <div className="mt-8 text-center">
+            <a
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Kids%2520Pottery%2520Summer%2520Camp"
+              className="inline-block rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
+            >
+              View Schedule and Book
+            </a>
+          </div>
 
           <Image
             alt=""
@@ -543,35 +506,17 @@ export default function PotterySummerCampIrvine() {
           <h2 className="leander text-3xl sm:text-4xl font-bold text-gray-900">
             Give Them a Summer They&apos;ll Remember
           </h2>
-          {ENROLLMENT_OPEN ? (
-            <>
-              <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-                Spots fill up fast. Reserve your camper&apos;s week and let them spend this summer making something real with their own hands.
-              </p>
-              <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="https://olomanastudios.as.me/schedule/66629c2c/category/Kids%2520Pottery%2520Summer%2520Camp"
-                  className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
-                >
-                  View Schedule and Book
-                </a>
-              </div>
-            </>
-          ) : (
-            <>
-              <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-                Enrollment for this summer has closed, but camp will be back next year. Email us and we will let you know when enrollment opens.
-              </p>
-              <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="mailto:contact@olomanastudios.com?subject=Pottery%20Summer%20Camp"
-                  className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
-                >
-                  Get Notified About Next Summer
-                </a>
-              </div>
-            </>
-          )}
+          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+            Spots fill up fast. Reserve your camper&apos;s week and let them spend this summer making something real with their own hands.
+          </p>
+          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/Kids%2520Pottery%2520Summer%2520Camp"
+              className="inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
+            >
+              View Schedule and Book
+            </a>
+          </div>
           <p className="mt-6 text-gray-500">
             Questions? Email us at{' '}
             <a href="mailto:contact@olomanastudios.com" className="underline hover:text-gray-700">contact@olomanastudios.com</a>
