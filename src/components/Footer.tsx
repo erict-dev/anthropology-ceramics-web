@@ -17,7 +17,6 @@ export default function Footer() {
               <li><Link href="/classes/kids-and-family-pottery-irvine" className="hover:text-white">Kids & Family Pottery</Link></li>
               <li><Link href="/classes/beginner-pottery-class-irvine" className="hover:text-white">Beginner Pottery Classes</Link></li>
               <li><Link href="/classes/intermediate-pottery-class-irvine" className="hover:text-white">Intermediate Pottery Classes</Link></li>
-              <li><Link href="/classes/pottery-summer-camp-irvine" className="hover:text-white">Summer Camp</Link></li>
               <li><Link href="/classes/private-pottery-event-irvine" className="hover:text-white">Private Pottery Events</Link></li>
             </ul>
           </div>
@@ -30,7 +29,6 @@ export default function Footer() {
               <li><Link href="/workshops/matcha-bowl-pottery-workshop-irvine" className="hover:text-white">Matcha Bowl Workshop</Link></li>
               <li><Link href="/workshops/teapot-pottery-workshop-irvine" className="hover:text-white">Teapot Workshop</Link></li>
               <li><Link href="/workshops/ikebana-flower-arrangement-workshop-irvine" className="hover:text-white">Ikebana Flower Arrangement</Link></li>
-              <li><Link href="/workshops/ceramic-charm-workshop-irvine" className="hover:text-white">Ceramic Charm Workshop</Link></li>
             </ul>
           </div>
           

@@ -1,7 +1,12 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import JsonLd from '@/components/JsonLd';
+import { SHOW_SUMMER_CAMP } from '@/config/features';
+
+// While SHOW_SUMMER_CAMP is false this page 404s. See src/config/features.ts
+// for the relaunch checklist.
 
 export const metadata: Metadata = {
   title: 'Kids Pottery Summer Camp in Irvine | Ages 6-12 | Olomana Studios',
@@ -105,6 +110,10 @@ const curriculum = [
 ];
 
 export default function PotterySummerCampIrvine() {
+  if (!SHOW_SUMMER_CAMP) {
+    notFound();
+  }
+
   return (
     <>
       <JsonLd

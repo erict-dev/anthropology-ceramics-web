@@ -18,6 +18,11 @@ const nextConfig = {
         destination: '/classes/4-week-pottery-course-irvine',
         permanent: true, // use false if you want a temporary redirect
       },
+      {
+        source: '/workshops/ceramic-charm-workshop-irvine',
+        destination: '/workshops',
+        permanent: true,
+      },
     ];
   },
 };

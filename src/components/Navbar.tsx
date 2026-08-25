@@ -109,15 +109,6 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap"
-                      href={'/classes/pottery-summer-camp-irvine'}
-                      onClick={handleNavItemClick}
-                    >
-                      summer camp<span className="text-red-500 text-[10px] font-semibold align-super ml-0.5" style={{ fontFamily: 'system-ui, sans-serif' }}>2026</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       href={'/classes/private-pottery-event-irvine'}
                       onClick={handleNavItemClick}
@@ -158,15 +149,6 @@ export default function Navbar() {
                       onClick={handleNavItemClick}
                     >
                       teapot
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href={'/workshops/ceramic-charm-workshop-irvine'}
-                      onClick={handleNavItemClick}
-                    >
-                      jewelry charms
                     </Link>
                   </li>
                 </ul>

@@ -100,65 +100,14 @@ export default function Home() {
               href={IKEBANA_BOOKING_URL}
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
             />
-          </div>
-
-          {/* Divider */}
-          <Image
-            alt="Decorative line"
-            src="/handdrawn-line.png"
-            width={1920}
-            height={6}
-            className="mt-8 mb-8 w-full h-1.5"
-          />
-        </div>
-      </section>
-
-      {/* Kids Pottery Summer Camp */}
-      <section>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Kids Pottery Summer Camp</h2>
-          <p className="mt-2 text-gray-600">A week-long half-day camp where kids learn hand-building, wheel throwing, and surface decoration.</p>
-
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="md:col-span-1">
-              <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
-                <Image
-                  alt="Kids working with clay at the pottery table during summer camp at Olomana Studios in Irvine"
-                  src="/summer-camp/pottery-summer-camp-2.jpg"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-              <div className="mt-4">
-                <Link
-                  href="/classes/pottery-summer-camp-irvine"
-                  className="block w-full text-center rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
-            <div className="md:col-span-2">
-              <p className="text-sm uppercase tracking-wide text-gray-500 font-medium">Summer 2026 &middot; Ages 6&ndash;12</p>
-              <p className="mt-2 text-gray-700">
-                Let your young artist unplug, get messy, and discover the joy of creating with clay. Over five days, campers learn wheel throwing, hand-building, and surface decoration. Camp is for kids ages 6 to 12.
-              </p>
-              <ul className="mt-3 space-y-1 text-base text-gray-700">
-                <li className="flex gap-2">
-                  <span className="font-semibold text-gray-900">Dates:</span> July 6 &ndash; July 31
-                </li>
-                <li className="flex gap-2">
-                  <span className="font-semibold text-gray-900">Sessions:</span> 9am&ndash;12pm or 1pm&ndash;4pm
-                </li>
-                <li className="flex gap-2">
-                  <span className="font-semibold text-gray-900">Ages:</span> 6&ndash;12 years old
-                </li>
-                <li className="flex gap-2">
-                  <span className="font-semibold text-gray-900">Price:</span> $348/week, all materials included
-                </li>
-              </ul>
-            </div>
+            <ClassCard
+              title="4-Week Oaxacan Barro Rojo Handbuilding Workshop"
+              imgSrc="/workshops/oaxacan-barro-rojo-handbuilding-course-irvine.jpg"
+              imgPosition="center bottom"
+              meta="4 sessions"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/4-Week%2520Pottery%2520Handbuilding%2520Course%2520Level%25201/appointment/97464596/calendar/12365772"
+              description="Discover the rich tradition of Oaxacan Barro Rojo through handbuilding and sculpting. In this four-week course you will learn traditional pinch-pot, coil-building and sculptural techniques to create expressive face vessels, planters, and ceremonial-inspired forms. Suitable for beginners and experienced hobbyists."
+            />
           </div>
 
           {/* Divider */}
