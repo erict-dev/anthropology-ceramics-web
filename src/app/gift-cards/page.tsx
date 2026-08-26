@@ -18,7 +18,7 @@ export default function GiftCards() {
           </div>
 
           {/* Gift Card Options Grid */}
-          <div className="mt-8 mb-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-8 mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Pottery Class Gift Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow flex flex-col">
               <div className="relative w-full aspect-[4/3]">
@@ -64,6 +64,34 @@ export default function GiftCards() {
                 </h3>
               <p className="text-gray-600 mb-4 flex-1">
                 This gift certificate is redeemable for our Traditional Matcha Bowl Workshop.
+              </p>
+              <a
+                href={KANOA_GIFT_CERTIFICATES_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block w-full text-center rounded-lg bg-black px-6 py-3 text-white font-medium transition duration-300 hover:bg-gray-700 mt-auto"
+              >
+                Purchase →
+              </a>
+              </div>
+            </div>
+            {/* Ikebana Gift Card */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow flex flex-col">
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  alt="Ikebana flower arrangement workshop"
+                  src="/workshops/ike-4.jpeg"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 33vw, 400px"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="leander text-xl font-bold text-gray-900 mb-3">
+                  Ikebana Workshop Gift Certificate
+                </h3>
+              <p className="text-gray-600 mb-4 flex-1">
+                This gift certificate is redeemable for our Ikebana Flower Arrangement Workshop.
               </p>
               <a
                 href={KANOA_GIFT_CERTIFICATES_URL}
