@@ -45,9 +45,9 @@ export default function Classes() {
       {/* New 4-Week Wheel Throwing Course Section */}
       <section className="pb-12 bg-gray-100">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Wheel Throwing Course</h2>
+          <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Pottery Courses</h2>
           <p className="mt-4 text-gray-600 text-lg">
-            Join our 4-week wheel throwing course and immerse yourself in the art of pottery! Each session includes two hours of guided instruction, helping you develop your skills and create functional ceramics over four weekly classes.
+            Join one of our 4-week pottery courses and immerse yourself in the art of pottery! Each session includes two hours of guided instruction, helping you develop your skills on the wheel or by hand over four weekly classes.
           </p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -64,6 +64,14 @@ export default function Classes() {
               meta="4 sessions"
               href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
+            />
+            <ClassCard
+              title="4-Week Oaxacan Barro Rojo Handbuilding Workshop"
+              imgSrc="/workshops/oaxacan-barro-rojo-handbuilding-course-irvine.jpg"
+              imgPosition="center bottom"
+              meta="4 sessions"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/4-Week%2520Pottery%2520Handbuilding%2520Course%2520Level%25201/appointment/97464596/calendar/12365772"
+              description="Discover the rich tradition of Oaxacan Barro Rojo through handbuilding and sculpting. In this four-week course you will learn traditional pinch-pot, coil-building and sculptural techniques to create expressive face vessels, planters, and ceremonial-inspired forms. Suitable for beginners and experienced hobbyists."
             />
           </div>
         </div>
@@ -83,7 +91,7 @@ export default function Classes() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Special Art & Pottery Workshops</h2>
           <p className="mt-4 text-gray-600 text-lg w-full">
-            Explore our <strong>Special Art Workshops</strong> in Irvine, CA where we teach you the techniques behind specific pottery pieces like <em>matcha bowls</em>, <em>Oaxacan barro rojo</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery or pottery related art.
+            Explore our <strong>Special Art Workshops</strong> in Irvine, CA where we teach you the techniques behind specific pieces like <em>matcha bowls</em>, <em>ikebana arrangements</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery or pottery related art.
           </p>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
@@ -99,14 +107,6 @@ export default function Classes() {
               meta="1.5 hrs"
               href={IKEBANA_BOOKING_URL}
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
-            />
-            <ClassCard
-              title="4-Week Oaxacan Barro Rojo Handbuilding Workshop"
-              imgSrc="/workshops/oaxacan-barro-rojo-handbuilding-course-irvine.jpg"
-              imgPosition="center bottom"
-              meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/4-Week%2520Pottery%2520Handbuilding%2520Course%2520Level%25201/appointment/97464596/calendar/12365772"
-              description="Discover the rich tradition of Oaxacan Barro Rojo through handbuilding and sculpting. In this four-week course you will learn traditional pinch-pot, coil-building and sculptural techniques to create expressive face vessels, planters, and ceremonial-inspired forms. Suitable for beginners and experienced hobbyists."
             />
           </div>
         </div>
