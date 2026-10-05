@@ -196,7 +196,8 @@ function kanoaClassToEvent(
  * Fetch upcoming Kanoa sessions for the migrated workshops and the calendar
  * categories (4-week courses), mapped to the same CalendarEvent shape the
  * Acuity client produces so the two feeds merge transparently.
- *   - Workshops deep-link to Kanoa's per-session checkout.
+ *   - Workshops deep-link to Kanoa's per-session checkout, unless flagged
+ *     calendarLinksToClassType (then they link to the class type page).
  *   - Course sessions link to the course's class type page, which lists all
  *     of its weekly dates (a course is booked as a whole, not per session).
  *
@@ -233,7 +234,10 @@ export async function fetchKanoaClassEvents(opts?: {
     const liveName = c.classTypeName?.trim();
     const migrated = migratedById.get(c.classTypeId);
     if (migrated) {
-      return [kanoaClassToEvent(c, liveName || migrated.title, kanoaBookUrl(c.id))];
+      const bookingUrl = migrated.calendarLinksToClassType
+        ? kanoaClassTypeUrl(c.classTypeId)
+        : kanoaBookUrl(c.id);
+      return [kanoaClassToEvent(c, liveName || migrated.title, bookingUrl)];
     }
     if (courseTypeIds.has(c.classTypeId) && liveName) {
       return [kanoaClassToEvent(c, liveName, kanoaClassTypeUrl(c.classTypeId))];

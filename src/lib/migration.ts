@@ -24,6 +24,11 @@ export type MigratedType = {
   kanoaClassTypeId: string;
   /** Fallback calendar event title, used only if Kanoa returns a blank class name. */
   title: string;
+  /**
+   * Calendar events link to the class type's main booking page instead of the
+   * individual session's checkout.
+   */
+  calendarLinksToClassType?: boolean;
 };
 
 export const MIGRATED_TYPES: MigratedType[] = [
@@ -31,11 +36,13 @@ export const MIGRATED_TYPES: MigratedType[] = [
     acuityAppointmentTypeID: 86745632,
     kanoaClassTypeId: "5c57875d-ca6f-4750-8409-16364b794cd1",
     title: "Ikebana Flower Arrangement Workshop",
+    calendarLinksToClassType: true,
   },
   {
     acuityAppointmentTypeID: 81608405,
     kanoaClassTypeId: "1bdc109f-6365-4cd4-80b4-68a2bfb41e04",
     title: "Traditional Matcha Bowl Pottery Workshop",
+    calendarLinksToClassType: true,
   },
 ];
 
