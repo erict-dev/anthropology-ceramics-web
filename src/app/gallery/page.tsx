@@ -37,7 +37,7 @@ export default function Gallery() {
 
           <ul className="mt-8 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/winter-2024/1.jpg"
                   alt="Hakeme Vase 1"
@@ -45,10 +45,10 @@ export default function Gallery() {
                   height={500}
                   className="transition duration-500 group-hover:scale-105"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/winter-2024/3.jpg"
                   alt="Hakeme Vase 2"
@@ -56,10 +56,10 @@ export default function Gallery() {
                   height={500}
                   className="transition duration-500 group-hover:scale-105"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/winter-2024/2.jpg"
                   alt="Hakeme Vase 3"
@@ -67,7 +67,7 @@ export default function Gallery() {
                   height={500}
                   className="transition duration-500 group-hover:scale-105"
                 />
-              </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -82,7 +82,7 @@ export default function Gallery() {
 
           <ul className="mt-8 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/hakeme-1.jpg"
                   alt="Earthen Vase 1"
@@ -90,10 +90,10 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/wabi-2.jpg"
                   alt="Earthen Vase 2"
@@ -101,10 +101,10 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/hakeme-3.jpg"
                   alt="Earthen Vase 3"
@@ -112,10 +112,10 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/celadon-1.jpg"
                   alt="Celadon Vase 1"
@@ -123,10 +123,10 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/celadon-2.jpg"
                   alt="Celadon Vase 2"
@@ -134,10 +134,10 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/celadon-3.jpg"
                   alt="Celadon Vase 3"
@@ -145,10 +145,10 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/kiriniku-1.jpeg"
                   alt="Kiriniku Vase 1"
@@ -156,10 +156,10 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/kiriniku-2.jpeg"
                   alt="Kiriniku Vase 2"
@@ -167,10 +167,10 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" className="rounded-lg group block overflow-hidden">
+              <div className="rounded-lg group block overflow-hidden">
                 <Image
                   src="/gallery/summer-2024/kiriniku-3.jpeg"
                   alt="Kiriniku Vase 3"
@@ -178,7 +178,7 @@ export default function Gallery() {
                   height={260}
                   className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
                 />
-              </a>
+              </div>
             </li>
           </ul>
         </div>

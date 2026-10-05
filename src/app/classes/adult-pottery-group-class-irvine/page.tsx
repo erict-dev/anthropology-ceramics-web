@@ -13,7 +13,7 @@ export default function AdultPotteryClass() {
             Discover the joy of pottery in a relaxed and creative setting. Learn hand-building and wheel-throwing techniques in our Irvine studio.
           </p>
           <a
-            href="https://olomanastudios.as.me/schedule/66629c2c/appointment/80268514/calendar/12365772"
+            href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
             className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
           >
             Book a Class
@@ -114,7 +114,7 @@ export default function AdultPotteryClass() {
           </ul>
           <div className="mt-6 text-center">
             <a
-              href="https://olomanastudios.as.me/schedule/66629c2c/appointment/80268514/calendar/12365772"
+              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
               className="mt-6 inline-block rounded-lg bg-black px-8 py-3 text-white text-lg font-medium transition duration-300 hover:bg-gray-700"
             >
               Book Your Class Now

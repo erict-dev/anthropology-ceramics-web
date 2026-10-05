@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
+import { MATCHA_BOWL_BOOKING_URL, WHEEL_101_BOOKING_URL } from '@/lib/migration';
 import Link from 'next/link';
 
 export default function BeginnerPotteryClasses() {
@@ -54,7 +54,7 @@ export default function BeginnerPotteryClasses() {
                 surface decoration, and more. By the end, you’ll be able to comfortably make cups, bowls, small vases, and planters.
               </p>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
+                href={WHEEL_101_BOOKING_URL}
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Upcoming Courses
@@ -112,7 +112,7 @@ export default function BeginnerPotteryClasses() {
                 looking for a taste of pottery before committing to a full course.
               </p>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/appointment/80268514/calendar/12365772"
+                href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 View Classes
