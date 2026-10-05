@@ -13,31 +13,31 @@ export default function Celadon() {
 
         <ul className="mt-8 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/celadon/celadon-1.jpg"
                 alt="Classic Celadon vase"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/celadon/celadon-2.jpg"
                 alt="Celadon tea set"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/celadon/celadon-3.jpg"
                 alt="Modern Celadon artwork"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
         </ul>
         <p className="mt-4 text-black">

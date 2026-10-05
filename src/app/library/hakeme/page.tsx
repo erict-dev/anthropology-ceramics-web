@@ -15,31 +15,31 @@ export default function Hakeme() {
 
         <ul className="mt-8 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/hakeme/hakeme-pottery-1.jpg"
                 alt="Example of Hakeme technique on a bowl"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/hakeme/hakeme-pottery-0.jpg"
                 alt="Wabi-sabi style pottery with Hakeme brush strokes"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/hakeme/hakeme-pottery-2.jpg"
                 alt="Modern Hakeme vase"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
         </ul>
         <p className="mt-8 text-black">
@@ -50,31 +50,31 @@ export default function Hakeme() {
 
         <ul className="mt-8 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/hakeme/hakeme-pottery-3.jpg"
                 alt="Detailed close-up of Hakeme decoration"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/hakeme/hakeme-pottery-4.jpg"
                 alt="Display of various Hakeme pottery pieces"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <img
                 src="/library/hakeme/hakeme-pottery-5.jpg"
                 alt="Contemporary Hakeme pottery workshop"
                 className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[260px]"
               />
-            </a>
+            </div>
           </li>
         </ul>
         <p className="mt-8 text-black">

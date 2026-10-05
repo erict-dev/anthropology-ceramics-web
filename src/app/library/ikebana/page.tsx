@@ -49,7 +49,7 @@ export default function Ikebana() {
 
          <ul className="mt-8 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <Image
                 alt="Ikebana seasonal arrangement"
                 src="/library/hakeme/hakeme-pottery-1.jpg"
@@ -57,10 +57,10 @@ export default function Ikebana() {
                 height={1080}
                 className="transition duration-500 group-hover:scale-105"
               />
-            </a>
+            </div>
           </li>
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <Image
                 alt="Ikebana minimalist arrangement"
                 src="/library/hakeme/hakeme-pottery-1.jpg"
@@ -68,10 +68,10 @@ export default function Ikebana() {
                 height={1080}
                 className="transition duration-500 group-hover:scale-105"
               />
-            </a>
+            </div>
           </li>
           <li>
-            <a href="#" className="rounded-lg group block overflow-hidden">
+            <div className="rounded-lg group block overflow-hidden">
               <Image
                 alt="Ikebana formal arrangement"
                 src="/library/hakeme/hakeme-pottery-1.jpg"
@@ -79,7 +79,7 @@ export default function Ikebana() {
                 height={1080}
                 className="transition duration-500 group-hover:scale-105"
               />
-            </a>
+            </div>
           </li>
         </ul>
 
