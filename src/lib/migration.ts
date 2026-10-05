@@ -89,10 +89,10 @@ export function kanoaCategoryScheduleUrl(categorySlug: string): string {
 
 /** 4-Week Course: Intro to Wheel Throwing - 101 — convenience for its CTAs. */
 export const WHEEL_101_BOOKING_URL = kanoaCategoryScheduleUrl(
-  "pottery-4-week-courses-101-intro-to-wheel",
+  "4-week-pottery-course-101-intro-to-wheel",
 );
 
 /** 4-Week Course: Continuing Wheel Throwing - 201 — convenience for its CTAs. */
 export const WHEEL_201_BOOKING_URL = kanoaCategoryScheduleUrl(
-  "pottery-4-week-courses-201-continuing-wheel-throwing",
+  "4-week-pottery-course-201-continuing-wheel-throwing",
 );
