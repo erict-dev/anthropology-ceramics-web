@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard';
 import JsonLd from '@/components/JsonLd';
-import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
+import { MATCHA_BOWL_BOOKING_URL, WHEEL_101_BOOKING_URL } from '@/lib/migration';
 
 export const metadata: Metadata = {
   title: 'Beginner Pottery Guide | What to Expect at Your First Class | Olomana Studios',
@@ -288,7 +288,7 @@ export default function BeginnerPotteryGuide() {
               title="4-Week Pottery Course (Level 1)"
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
+              href={WHEEL_101_BOOKING_URL}
               description="Learn pottery fundamentals over 4 guided sessions. Perfect if you want to build real skills week by week."
             />
           </div>

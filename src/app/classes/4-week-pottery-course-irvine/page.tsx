@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import ClassCard from '@/components/ClassCard'
 import Link from 'next/link';
+import { WHEEL_101_BOOKING_URL, WHEEL_201_BOOKING_URL } from '@/lib/migration';
 
 export default function PotteryCourse() {
   return (
@@ -19,14 +20,14 @@ export default function PotteryCourse() {
               title="Intro to Wheel Throwing - 101"
               imgSrc="/pottery-course-irvine-olomana-studios.jpeg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520101%2520Intro%2520to%2520Wheel"
+              href={WHEEL_101_BOOKING_URL}
               description="Perfect for beginners and first timers. Learn the foundations of wheel throwing from scratch. You'll practice centering clay, pulling walls, and shaping your own cups, bowls, and vases. No experience needed. All materials included."
             />
             <ClassCard
               title="Continuing Wheel Throwing - 201"
               imgSrc="/intermediate-pottery-class/4-week-pottery-lvl2-olomana-irivne.jpg"
               meta="4 sessions"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
+              href={WHEEL_201_BOOKING_URL}
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
             />
           </div>

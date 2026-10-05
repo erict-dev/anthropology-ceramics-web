@@ -81,3 +81,18 @@ export const MATCHA_BOWL = migratedType("1bdc109f-6365-4cd4-80b4-68a2bfb41e04");
 export const MATCHA_BOWL_BOOKING_URL = kanoaClassTypeUrl(
   MATCHA_BOWL.kanoaClassTypeId,
 );
+
+/** Schedule page filtered to a Kanoa category (lists every session in it). */
+export function kanoaCategoryScheduleUrl(categorySlug: string): string {
+  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/schedule?category=${categorySlug}`;
+}
+
+/** 4-Week Course: Intro to Wheel Throwing - 101 — convenience for its CTAs. */
+export const WHEEL_101_BOOKING_URL = kanoaCategoryScheduleUrl(
+  "pottery-4-week-courses-101-intro-to-wheel",
+);
+
+/** 4-Week Course: Continuing Wheel Throwing - 201 — convenience for its CTAs. */
+export const WHEEL_201_BOOKING_URL = kanoaCategoryScheduleUrl(
+  "pottery-4-week-courses-201-continuing-wheel-throwing",
+);

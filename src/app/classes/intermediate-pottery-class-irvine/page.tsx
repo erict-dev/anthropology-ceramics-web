@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
+import { WHEEL_201_BOOKING_URL } from '@/lib/migration';
 
 export default function IntermediatePotteryClasses() {
   return (
@@ -50,7 +51,7 @@ export default function IntermediatePotteryClasses() {
                 Designed for returning students, this course focuses on refining technique and building confidence. Practice centering with more clay, refining trimming foot rings, shaping more intentional forms, such as matcha bowls and lidded jars, discovering new surface decoration techniques, and improving consistency through repetition and guidance.
               </p>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/category/Pottery%25204-Week%2520Courses%2520-%2520201%2520Continuing%2520Wheel-Throwing"
+                href={WHEEL_201_BOOKING_URL}
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 Upcoming Courses
