@@ -109,6 +109,9 @@ function buildDateChunks(
 
 // The public classes API clamps `limit` to 100; page through with `offset`.
 const PAGE_SIZE = 100;
+// Hard stop for the paging loop (10k sessions per chunk, far above real
+// volume) so a misbehaving API can't spin until Cloudflare kills the request.
+const MAX_PAGES = 100;
 
 async function fetchKanoaJson<T>(path: string): Promise<T> {
   const res = await fetch(`${KANOA_BASE_URL}/api/public/${KANOA_ORG_SLUG}${path}`, {
@@ -141,14 +144,17 @@ async function fetchAllKanoaClasses(
   const byId = new Map<string, KanoaPublicClass>();
   for (const [startDate, endDate] of chunks) {
     let offset = 0;
-    for (;;) {
+    for (let page = 0; page < MAX_PAGES; page++) {
       const body = await fetchKanoaJson<KanoaClassesResponse>(
         `/classes?startDate=${startDate}&endDate=${endDate}` +
           `&limit=${PAGE_SIZE}&offset=${offset}`,
       );
       const rows = body.data ?? [];
+      const sizeBefore = byId.size;
       for (const row of rows) byId.set(row.id, row);
-      if (!body.hasMore || rows.length === 0) break;
+      // Also stop if a page added nothing new (e.g. the API ignored `offset`
+      // and returned the same rows again).
+      if (!body.hasMore || byId.size === sizeBefore) break;
       offset += rows.length;
     }
   }
