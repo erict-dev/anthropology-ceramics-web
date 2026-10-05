@@ -30,6 +30,7 @@ export default function BusinessHours() {
           <Link
             href="https://share.google/80U7yzMdXeW0ck1kb"
             target="_blank"
+            rel="noopener noreferrer"
             className="underline underline-offset-2 hover:text-gray-700"
           >
             Google Maps listing

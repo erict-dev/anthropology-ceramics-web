@@ -112,7 +112,7 @@ export default function BeginnerPotteryClasses() {
                 looking for a taste of pottery before committing to a full course.
               </p>
               <a
-                href="https://olomanastudios.as.me/schedule/66629c2c/appointment/80268514/calendar/12365772"
+                href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
                 className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
                 View Classes

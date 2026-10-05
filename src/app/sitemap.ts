@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/gallery`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/calendar`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/gift-cards`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/events`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     // Class detail pages
     { url: `${base}/classes/beginner-pottery-class-irvine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/classes/intermediate-pottery-class-irvine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
