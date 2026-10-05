@@ -4,9 +4,11 @@ import "server-only";
 import type { CalendarEvent } from "./acuity";
 import {
   KANOA_BASE_URL,
+  KANOA_CALENDAR_CATEGORY_IDS,
   KANOA_ORG_SLUG,
   MIGRATED_TYPES,
   kanoaBookUrl,
+  kanoaClassTypeUrl,
 } from "./migration";
 
 /**
@@ -31,6 +33,19 @@ type KanoaClassesResponse = {
   offset: number;
   limit: number;
   hasMore: boolean;
+};
+
+/**
+ * Shape of Kanoa's public class type catalog:
+ *   GET /api/public/{slug}/class-types
+ * Only the fields needed to map categories -> class type ids are typed.
+ */
+type KanoaClassTypesResponse = {
+  categories: Array<{
+    id: string;
+    name: string;
+    classTypes: Array<{ id: string }>;
+  }>;
 };
 
 const DEFAULT_COLOR = "#64748b";
@@ -92,17 +107,11 @@ function buildDateChunks(
   return chunks;
 }
 
-async function fetchKanoaClassesForType(
-  classTypeId: string,
-  startDate: string,
-  endDate: string,
-): Promise<KanoaPublicClass[]> {
-  const url =
-    `${KANOA_BASE_URL}/api/public/${KANOA_ORG_SLUG}/classes` +
-    `?startDate=${startDate}&endDate=${endDate}` +
-    `&classTypeId=${classTypeId}&limit=100`;
+// The public classes API clamps `limit` to 100; page through with `offset`.
+const PAGE_SIZE = 100;
 
-  const res = await fetch(url, {
+async function fetchKanoaJson<T>(path: string): Promise<T> {
+  const res = await fetch(`${KANOA_BASE_URL}/api/public/${KANOA_ORG_SLUG}${path}`, {
     headers: { Accept: "application/json" },
     // The calendar page is force-dynamic, so Next already treats this fetch as
     // uncached — express that via the framework's `next` option rather than the
@@ -113,13 +122,56 @@ async function fetchKanoaClassesForType(
     next: { revalidate: 0 },
   });
   if (!res.ok) {
-    throw new Error(`Kanoa classes error ${res.status}: ${await res.text()}`);
+    throw new Error(`Kanoa ${path} error ${res.status}: ${await res.text()}`);
   }
-  const body = (await res.json()) as KanoaClassesResponse;
-  return body.data ?? [];
+  return (await res.json()) as T;
 }
 
-function kanoaClassToEvent(c: KanoaPublicClass, title: string): CalendarEvent {
+/**
+ * Every Kanoa session in the org across the given date chunks. Fetched
+ * org-wide (no classTypeId) rather than per type: the 4-week courses add ~8
+ * class types a month, and per-type fetches would quickly blow through
+ * Cloudflare's per-request subrequest cap.
+ */
+async function fetchAllKanoaClasses(
+  chunks: Array<[string, string]>,
+): Promise<KanoaPublicClass[]> {
+  // Dedupe by class id — adjacent chunks share a boundary date, so a session
+  // on that date can come back in both.
+  const byId = new Map<string, KanoaPublicClass>();
+  for (const [startDate, endDate] of chunks) {
+    let offset = 0;
+    for (;;) {
+      const body = await fetchKanoaJson<KanoaClassesResponse>(
+        `/classes?startDate=${startDate}&endDate=${endDate}` +
+          `&limit=${PAGE_SIZE}&offset=${offset}`,
+      );
+      const rows = body.data ?? [];
+      for (const row of rows) byId.set(row.id, row);
+      if (!body.hasMore || rows.length === 0) break;
+      offset += rows.length;
+    }
+  }
+  return Array.from(byId.values());
+}
+
+/** Class type ids in the calendar categories (currently the 4-week courses). */
+async function fetchCalendarCategoryClassTypeIds(): Promise<Set<string>> {
+  const wanted = new Set(KANOA_CALENDAR_CATEGORY_IDS);
+  const body = await fetchKanoaJson<KanoaClassTypesResponse>("/class-types");
+  const ids = new Set<string>();
+  for (const category of body.categories ?? []) {
+    if (!wanted.has(category.id)) continue;
+    for (const type of category.classTypes) ids.add(type.id);
+  }
+  return ids;
+}
+
+function kanoaClassToEvent(
+  c: KanoaPublicClass,
+  title: string,
+  bookingUrl: string,
+): CalendarEvent {
   const startDate = new Date(c.startTime);
   const endDate = new Date(c.endTime);
 
@@ -133,7 +185,7 @@ function kanoaClassToEvent(c: KanoaPublicClass, title: string): CalendarEvent {
     end: toPacificYYYYMMDDTHHMM(endDate),
     color: validHex ? (c.classTypeColor as string) : DEFAULT_COLOR,
     details: {
-      bookingUrl: kanoaBookUrl(c.id),
+      bookingUrl,
       availabilityLabel: isSoldOut ? "Sold out" : "Spots available",
       isSoldOut,
     },
@@ -141,17 +193,19 @@ function kanoaClassToEvent(c: KanoaPublicClass, title: string): CalendarEvent {
 }
 
 /**
- * Fetch every migrated class type's upcoming sessions from Kanoa and map them
- * to the same CalendarEvent shape the Acuity client produces, so the two feeds
- * merge transparently. Events deep-link to Kanoa's per-session checkout.
+ * Fetch upcoming Kanoa sessions for the migrated workshops and the calendar
+ * categories (4-week courses), mapped to the same CalendarEvent shape the
+ * Acuity client produces so the two feeds merge transparently.
+ *   - Workshops deep-link to Kanoa's per-session checkout.
+ *   - Course sessions link to the course's class type page, which lists all
+ *     of its weekly dates (a course is booked as a whole, not per session).
  *
- * Throws on a network/HTTP error — the caller decides how to degrade.
+ * Throws if the sessions fetch fails — the caller decides how to degrade. A
+ * failed category lookup only drops the courses, not the workshops.
  */
 export async function fetchKanoaClassEvents(opts?: {
   monthsAhead?: number;
 }): Promise<CalendarEvent[]> {
-  if (MIGRATED_TYPES.length === 0) return [];
-
   const monthsAhead = opts?.monthsAhead ?? 2;
   const now = new Date();
   // Current month start through the first of the month after the rolling window
@@ -161,27 +215,29 @@ export async function fetchKanoaClassEvents(opts?: {
   const windowEnd = addMonths(now, monthsAhead + 1);
   const chunks = buildDateChunks(windowStart, windowEnd, MAX_RANGE_DAYS);
 
-  const perType = await Promise.all(
-    MIGRATED_TYPES.map(async (type) => {
-      // Dedupe by class id — adjacent chunks share a boundary date, so a
-      // session on that date can come back in both.
-      const byId = new Map<string, KanoaPublicClass>();
-      for (const [startDate, endDate] of chunks) {
-        const rows = await fetchKanoaClassesForType(
-          type.kanoaClassTypeId,
-          startDate,
-          endDate,
-        );
-        for (const row of rows) byId.set(row.id, row);
-      }
-      return Array.from(byId.values()).map((c) =>
-        // Prefer Kanoa's live class name so renames in the dashboard flow
-        // through without a code change; fall back to the configured title
-        // only if Kanoa returns a blank name.
-        kanoaClassToEvent(c, c.classTypeName?.trim() || type.title),
-      );
+  const [classes, courseTypeIds] = await Promise.all([
+    fetchAllKanoaClasses(chunks),
+    fetchCalendarCategoryClassTypeIds().catch((err) => {
+      console.error("[kanoa] class type catalog fetch failed:", err);
+      return new Set<string>();
     }),
+  ]);
+
+  const migratedById = new Map(
+    MIGRATED_TYPES.map((t) => [t.kanoaClassTypeId, t]),
   );
 
-  return perType.flat();
+  return classes.flatMap((c) => {
+    // Prefer Kanoa's live class name so renames in the dashboard flow through
+    // without a code change.
+    const liveName = c.classTypeName?.trim();
+    const migrated = migratedById.get(c.classTypeId);
+    if (migrated) {
+      return [kanoaClassToEvent(c, liveName || migrated.title, kanoaBookUrl(c.id))];
+    }
+    if (courseTypeIds.has(c.classTypeId) && liveName) {
+      return [kanoaClassToEvent(c, liveName, kanoaClassTypeUrl(c.classTypeId))];
+    }
+    return [];
+  });
 }

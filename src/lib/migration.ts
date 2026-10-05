@@ -96,3 +96,19 @@ export const WHEEL_101_BOOKING_URL = kanoaCategoryScheduleUrl(
 export const WHEEL_201_BOOKING_URL = kanoaCategoryScheduleUrl(
   "4-week-pottery-course-201-continuing-wheel-throwing",
 );
+
+/**
+ * Kanoa categories whose class types all show on the calendar. Unlike
+ * MIGRATED_TYPES, the 4-week courses get a new class type per course run
+ * (~8 a month), so the calendar discovers them from these categories at
+ * request time instead of listing ids by hand. Keyed by category id (not
+ * name or slug) so renaming a category in Kanoa doesn't drop it.
+ *
+ * No Acuity filtering is needed: courses through October stay on Acuity and
+ * everything after is Kanoa-only, so the two feeds never overlap.
+ */
+export const KANOA_CALENDAR_CATEGORY_IDS: string[] = [
+  "ce162d32-6d84-4c77-8782-e5a51bb3e532", // 4-Week Pottery Course - 101 Intro to Wheel
+  "4af2e122-9293-4069-9732-29f21400a59a", // 4-Week Pottery Course - 201 Continuing Wheel Throwing
+  "5fb60996-3955-48e3-88c9-14fb156c01e4", // 4-Week Pottery Course - Hand-building
+];
