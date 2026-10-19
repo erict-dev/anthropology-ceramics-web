@@ -44,6 +44,18 @@ export const MIGRATED_TYPES: MigratedType[] = [
     title: "Traditional Matcha Bowl Pottery Workshop",
     calendarLinksToClassType: true,
   },
+  {
+    acuityAppointmentTypeID: 84238610,
+    kanoaClassTypeId: "62fa3ae9-50a3-49a3-bd0c-c49bd9976e7c",
+    title: "One-Time Pottery Group Class (Adults)",
+    calendarLinksToClassType: true,
+  },
+  {
+    acuityAppointmentTypeID: 81628903,
+    kanoaClassTypeId: "07edfc2c-3cc1-454d-892c-954f6b2ae806",
+    title: "One-Time Pottery Group Class (Kids, Teens and Family)",
+    calendarLinksToClassType: true,
+  },
 ];
 
 /** Acuity appointment type ids that have moved to Kanoa (drop these from the Acuity feed). */
@@ -53,12 +65,12 @@ export const MIGRATED_ACUITY_TYPE_IDS = new Set(
 
 /** Browse-all-sessions page for a Kanoa class type (matches Acuity's appointment-level CTA). */
 export function kanoaClassTypeUrl(classTypeId: string): string {
-  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/class-types/${classTypeId}`;
+  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/class-types/${encodeURIComponent(classTypeId)}`;
 }
 
 /** Checkout page for a specific Kanoa class session. */
 export function kanoaBookUrl(classId: string): string {
-  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/book/${classId}`;
+  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/book/${encodeURIComponent(classId)}`;
 }
 
 /** Gift certificate purchase page for the Kanoa org. */
@@ -87,6 +99,18 @@ export const IKEBANA_BOOKING_URL = kanoaClassTypeUrl(IKEBANA.kanoaClassTypeId);
 export const MATCHA_BOWL = migratedType("1bdc109f-6365-4cd4-80b4-68a2bfb41e04");
 export const MATCHA_BOWL_BOOKING_URL = kanoaClassTypeUrl(
   MATCHA_BOWL.kanoaClassTypeId,
+);
+
+/** One-Time Pottery Group Class (Adults) — convenience for its CTAs. */
+export const ONE_TIME_ADULTS = migratedType("62fa3ae9-50a3-49a3-bd0c-c49bd9976e7c");
+export const ONE_TIME_ADULTS_BOOKING_URL = kanoaClassTypeUrl(
+  ONE_TIME_ADULTS.kanoaClassTypeId,
+);
+
+/** One-Time Pottery Group Class (Kids, Teens and Family) — convenience for its CTAs. */
+export const ONE_TIME_KIDS = migratedType("07edfc2c-3cc1-454d-892c-954f6b2ae806");
+export const ONE_TIME_KIDS_BOOKING_URL = kanoaClassTypeUrl(
+  ONE_TIME_KIDS.kanoaClassTypeId,
 );
 
 /** Schedule page filtered to a Kanoa category (lists every session in it). */

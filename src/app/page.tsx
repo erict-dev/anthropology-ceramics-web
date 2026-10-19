@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard'
-import { IKEBANA_BOOKING_URL, MATCHA_BOWL_BOOKING_URL, WHEEL_101_BOOKING_URL, WHEEL_201_BOOKING_URL } from '@/lib/migration'
+import { IKEBANA_BOOKING_URL, MATCHA_BOWL_BOOKING_URL, WHEEL_101_BOOKING_URL, WHEEL_201_BOOKING_URL, ONE_TIME_ADULTS_BOOKING_URL, ONE_TIME_KIDS_BOOKING_URL } from '@/lib/migration'
 
 export default function Home() {
   return (
@@ -22,14 +22,14 @@ export default function Home() {
               title="One-Time Pottery Group Class (Adults)"
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
+              href={ONE_TIME_ADULTS_BOOKING_URL}
               description="In this class you will learn how to make 2 unique pieces of pottery, no experience necessary! We will guide you through each step and teach you the basics of both pottery wheel throwing and hand-building. All materials included."
             />
             <ClassCard
               title="Kids Pottery Classes"
               imgSrc="/kids-pottery-class.jpg"
               meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/81628903/calendar/12365772"
+              href={ONE_TIME_KIDS_BOOKING_URL}
               description="In our kids pottery classes students will learn pottery basics and make their own pottery through fun instructor guided projects. This class is a great way for kids to exercise their creativity, focus and patience. We have both one-time classes and a 4-week series."
             />
           </div>

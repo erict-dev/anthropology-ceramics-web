@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard';
 import JsonLd from '@/components/JsonLd';
-import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
+import { MATCHA_BOWL_BOOKING_URL, ONE_TIME_ADULTS_BOOKING_URL } from '@/lib/migration';
 
 export const metadata: Metadata = {
   title: 'Pottery Classes in Orange County | Wheel Throwing & Handbuilding | Olomana Studios',
@@ -229,7 +229,7 @@ export default function PotteryClassesOrangeCounty() {
               title="One-Time Pottery Group Class"
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
+              href={ONE_TIME_ADULTS_BOOKING_URL}
               description="Wheel throwing and hand-building for beginners. Make 2 pieces. All materials included."
             />
             <ClassCard

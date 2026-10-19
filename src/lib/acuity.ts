@@ -343,14 +343,22 @@ export async function fetchAvailableClassEventsRolling(opts?: {
   monthsAhead?: number;
   appointmentTypeID?: number | string;
   calendarID?: number | string;
+  /** Acuity appointment type ids to leave out (e.g. types migrated to Kanoa). */
+  excludeAppointmentTypeIDs?: ReadonlySet<number>;
   typeStyles?: Record<number, { title: string; color: string }>;
   defaultColor?: string;
 }) {
-  const classes = await fetchAvailableClassesRolling({
+  const allClasses = await fetchAvailableClassesRolling({
     monthsAhead: opts?.monthsAhead,
     appointmentTypeID: opts?.appointmentTypeID,
     calendarID: opts?.calendarID,
   });
+  // Filter on the session's own appointmentTypeID, which Acuity always sends,
+  // rather than the separately fetched (and cached) appointment type details.
+  const exclude = opts?.excludeAppointmentTypeIDs;
+  const classes = exclude
+    ? allClasses.filter((c) => !exclude.has(c.appointmentTypeID))
+    : allClasses;
 
   return toCalendarEvents(classes, {
     typeStyles: opts?.typeStyles,

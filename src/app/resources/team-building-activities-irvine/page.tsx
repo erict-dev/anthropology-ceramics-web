@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard';
 import JsonLd from '@/components/JsonLd';
+import { ONE_TIME_ADULTS_BOOKING_URL } from '@/lib/migration';
 
 export const metadata: Metadata = {
   title: 'Team Building Activities in Irvine | Corporate Pottery Events | Olomana Studios',
@@ -255,7 +256,7 @@ export default function TeamBuildingIrvine() {
               title="One-Time Pottery Group Class"
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
+              href={ONE_TIME_ADULTS_BOOKING_URL}
               description="Book individual spots in our regular group class. Learn wheel throwing and hand-building in a relaxed, social setting."
             />
           </div>

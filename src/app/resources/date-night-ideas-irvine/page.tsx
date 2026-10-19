@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard';
 import JsonLd from '@/components/JsonLd';
-import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
+import { MATCHA_BOWL_BOOKING_URL, ONE_TIME_ADULTS_BOOKING_URL } from '@/lib/migration';
 
 export const metadata: Metadata = {
   title: 'Date Night Ideas in Irvine | Pottery Classes for Couples | Olomana Studios',
@@ -238,7 +238,7 @@ export default function DateNightIrvine() {
               title="One-Time Pottery Group Class"
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
+              href={ONE_TIME_ADULTS_BOOKING_URL}
               description="Learn wheel throwing and hand-building in a small group. No experience needed. Make 2 pieces each with all materials included."
             />
             <ClassCard
