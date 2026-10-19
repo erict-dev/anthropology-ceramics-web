@@ -21,7 +21,7 @@ export default function GiftCards() {
           <div className="mx-auto mt-8 mb-12 grid max-w-[52rem] grid-cols-1 md:grid-cols-2 gap-6">
             {/* Pottery Class Gift Card */}
             <a
-              href="https://olomanastudios.as.me/catalog/66629c2c?categories=Gift%20Certificates"
+              href={KANOA_GIFT_CERTIFICATES_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow flex flex-col"
@@ -220,7 +220,7 @@ export default function GiftCards() {
       <section className="py-12">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 text-center">
           <a
-            href="https://olomanastudios.as.me/catalog/66629c2c?categories=Gift%20Certificates"
+            href={KANOA_GIFT_CERTIFICATES_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-lg bg-black px-8 py-4 text-white text-lg font-medium transition duration-300 hover:bg-gray-700 shadow-lg hover:shadow-xl"
