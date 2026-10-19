@@ -2,9 +2,15 @@
 //
 // Single source of truth for the Acuity -> Kanoa migration. As each Olomana
 // class type is flipped over to Kanoa (kanoascheduling.com), add it to
-// MIGRATED_TYPES. Everything downstream keys off this list:
-//   - the calendar page sources migrated types from Kanoa (not Acuity)
+// MIGRATED_TYPES. Downstream:
+//   - the calendar drops its sessions from the Acuity feed (Kanoa is the
+//     source of truth for them)
 //   - per-type booking CTAs deep-link into Kanoa
+// The calendar shows every public Kanoa class type on its own, migrated or
+// not, so a new Kanoa-only type needs no entry here. Don't make a type public
+// in Kanoa while it's still bookable in Acuity: its sessions would show up
+// twice. Make it public at cutover, when it's added to MIGRATED_TYPES (adding
+// it earlier would hide its Acuity sessions, which hold the real bookings).
 //
 // This file is intentionally framework-agnostic (no "server-only") so it can be
 // imported from both server components (calendar fetch) and the static page
@@ -24,11 +30,6 @@ export type MigratedType = {
   kanoaClassTypeId: string;
   /** Fallback calendar event title, used only if Kanoa returns a blank class name. */
   title: string;
-  /**
-   * Calendar events link to the class type's main booking page instead of the
-   * individual session's checkout.
-   */
-  calendarLinksToClassType?: boolean;
 };
 
 export const MIGRATED_TYPES: MigratedType[] = [
@@ -36,25 +37,21 @@ export const MIGRATED_TYPES: MigratedType[] = [
     acuityAppointmentTypeID: 86745632,
     kanoaClassTypeId: "5c57875d-ca6f-4750-8409-16364b794cd1",
     title: "Ikebana Flower Arrangement Workshop",
-    calendarLinksToClassType: true,
   },
   {
     acuityAppointmentTypeID: 81608405,
     kanoaClassTypeId: "1bdc109f-6365-4cd4-80b4-68a2bfb41e04",
     title: "Traditional Matcha Bowl Pottery Workshop",
-    calendarLinksToClassType: true,
   },
   {
     acuityAppointmentTypeID: 84238610,
     kanoaClassTypeId: "62fa3ae9-50a3-49a3-bd0c-c49bd9976e7c",
     title: "One-Time Pottery Group Class (Adults)",
-    calendarLinksToClassType: true,
   },
   {
     acuityAppointmentTypeID: 81628903,
     kanoaClassTypeId: "07edfc2c-3cc1-454d-892c-954f6b2ae806",
     title: "One-Time Pottery Group Class (Kids, Teens and Family)",
-    calendarLinksToClassType: true,
   },
 ];
 
@@ -66,11 +63,6 @@ export const MIGRATED_ACUITY_TYPE_IDS = new Set(
 /** Browse-all-sessions page for a Kanoa class type (matches Acuity's appointment-level CTA). */
 export function kanoaClassTypeUrl(classTypeId: string): string {
   return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/class-types/${encodeURIComponent(classTypeId)}`;
-}
-
-/** Checkout page for a specific Kanoa class session. */
-export function kanoaBookUrl(classId: string): string {
-  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/book/${encodeURIComponent(classId)}`;
 }
 
 /** Gift certificate purchase page for the Kanoa org. */
@@ -127,19 +119,3 @@ export const WHEEL_101_BOOKING_URL = kanoaCategoryScheduleUrl(
 export const WHEEL_201_BOOKING_URL = kanoaCategoryScheduleUrl(
   "4-week-pottery-course-201-continuing-wheel-throwing",
 );
-
-/**
- * Kanoa categories whose class types all show on the calendar. Unlike
- * MIGRATED_TYPES, the 4-week courses get a new class type per course run
- * (~8 a month), so the calendar discovers them from these categories at
- * request time instead of listing ids by hand. Keyed by category id (not
- * name or slug) so renaming a category in Kanoa doesn't drop it.
- *
- * No Acuity filtering is needed: courses through October stay on Acuity and
- * everything after is Kanoa-only, so the two feeds never overlap.
- */
-export const KANOA_CALENDAR_CATEGORY_IDS: string[] = [
-  "ce162d32-6d84-4c77-8782-e5a51bb3e532", // 4-Week Pottery Course - 101 Intro to Wheel
-  "4af2e122-9293-4069-9732-29f21400a59a", // 4-Week Pottery Course - 201 Continuing Wheel Throwing
-  "5fb60996-3955-48e3-88c9-14fb156c01e4", // 4-Week Pottery Course - Hand-building
-];

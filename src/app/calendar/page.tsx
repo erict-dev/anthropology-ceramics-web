@@ -10,18 +10,21 @@ import BusinessHours from "@/components/BusinessHours";
 import Link from "next/link";
 
 export default async function CalendarPage() {
-  // Dual-source the calendar: types that have migrated to Kanoa come from
-  // Kanoa; everything else still comes from Acuity. Both feeds are fetched
-  // concurrently and merged into one CalendarEvent[]. Migrated types are left
-  // out of the Acuity feed entirely, so a session never shows up twice (or
-  // links back to Acuity). Kanoa is the source of truth for these.
+  // Dual-source the calendar: every public Kanoa class type comes from Kanoa,
+  // and everything still on Acuity comes from Acuity. Both feeds are fetched
+  // concurrently and merged into one CalendarEvent[]. Types migrated to Kanoa
+  // are left out of the Acuity feed entirely, so a session never shows up
+  // twice (or links back to Acuity). Kanoa is the source of truth for these.
   const [acuityEvents, kanoaEvents] = await Promise.all([
     fetchAvailableClassEventsRolling({
       monthsAhead: 2,
       excludeAppointmentTypeIDs: MIGRATED_ACUITY_TYPE_IDS,
     }),
-    // A Kanoa outage must not take down the rest of the calendar — degrade
-    // by dropping the migrated types rather than erroring the whole page.
+    // A Kanoa outage must not take down the rest of the calendar. Failed date
+    // chunks are already skipped inside fetchKanoaClassEvents; this only
+    // fires when every chunk fails, and degrades by dropping every Kanoa
+    // session (migrated and Kanoa-only types alike) rather than erroring the
+    // whole page.
     fetchKanoaClassEvents({ monthsAhead: 2 }).catch((err) => {
       console.error("[calendar] Kanoa events fetch failed:", err);
       return [];
