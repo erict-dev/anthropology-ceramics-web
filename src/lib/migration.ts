@@ -48,13 +48,11 @@ export const MIGRATED_TYPES: MigratedType[] = [
     acuityAppointmentTypeID: 84238610,
     kanoaClassTypeId: "62fa3ae9-50a3-49a3-bd0c-c49bd9976e7c",
     title: "One-Time Pottery Group Class (Adults)",
-    calendarLinksToClassType: true,
   },
   {
     acuityAppointmentTypeID: 81628903,
     kanoaClassTypeId: "07edfc2c-3cc1-454d-892c-954f6b2ae806",
     title: "One-Time Pottery Group Class (Kids, Teens and Family)",
-    calendarLinksToClassType: true,
   },
 ];
 
