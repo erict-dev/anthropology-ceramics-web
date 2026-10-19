@@ -10,11 +10,11 @@ import BusinessHours from "@/components/BusinessHours";
 import Link from "next/link";
 
 export default async function CalendarPage() {
-  // Dual-source the calendar: types that have migrated to Kanoa come from
-  // Kanoa; everything else still comes from Acuity. Both feeds are fetched
-  // concurrently and merged into one CalendarEvent[]. Migrated types are left
-  // out of the Acuity feed entirely, so a session never shows up twice (or
-  // links back to Acuity). Kanoa is the source of truth for these.
+  // Dual-source the calendar: every public Kanoa class type comes from Kanoa,
+  // and everything still on Acuity comes from Acuity. Both feeds are fetched
+  // concurrently and merged into one CalendarEvent[]. Types migrated to Kanoa
+  // are left out of the Acuity feed entirely, so a session never shows up
+  // twice (or links back to Acuity). Kanoa is the source of truth for these.
   const [acuityEvents, kanoaEvents] = await Promise.all([
     fetchAvailableClassEventsRolling({
       monthsAhead: 2,

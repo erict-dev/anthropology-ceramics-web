@@ -4,17 +4,17 @@ import "server-only";
 import type { CalendarEvent } from "./acuity";
 import {
   KANOA_BASE_URL,
-  KANOA_CALENDAR_CATEGORY_IDS,
   KANOA_ORG_SLUG,
   MIGRATED_TYPES,
-  kanoaBookUrl,
   kanoaClassTypeUrl,
 } from "./migration";
 
 /**
  * Shape of one row from Kanoa's public classes endpoint:
  *   GET /api/public/{slug}/classes?startDate&endDate&classTypeId
- * (unauthenticated, slug-scoped). Only the fields the calendar needs are typed.
+ * (unauthenticated, slug-scoped). It only returns sessions of public class
+ * types, so private ones (e.g. private group classes) never reach the
+ * calendar. Only the fields the calendar needs are typed.
  */
 type KanoaPublicClass = {
   id: string;
@@ -33,19 +33,6 @@ type KanoaClassesResponse = {
   offset: number;
   limit: number;
   hasMore: boolean;
-};
-
-/**
- * Shape of Kanoa's public class type catalog:
- *   GET /api/public/{slug}/class-types
- * Only the fields needed to map categories -> class type ids are typed.
- */
-type KanoaClassTypesResponse = {
-  categories: Array<{
-    id: string;
-    name: string;
-    classTypes: Array<{ id: string }>;
-  }>;
 };
 
 const DEFAULT_COLOR = "#64748b";
@@ -161,18 +148,6 @@ async function fetchAllKanoaClasses(
   return Array.from(byId.values());
 }
 
-/** Class type ids in the calendar categories (currently the 4-week courses). */
-async function fetchCalendarCategoryClassTypeIds(): Promise<Set<string>> {
-  const wanted = new Set(KANOA_CALENDAR_CATEGORY_IDS);
-  const body = await fetchKanoaJson<KanoaClassTypesResponse>("/class-types");
-  const ids = new Set<string>();
-  for (const category of body.categories ?? []) {
-    if (!wanted.has(category.id)) continue;
-    for (const type of category.classTypes) ids.add(type.id);
-  }
-  return ids;
-}
-
 function kanoaClassToEvent(
   c: KanoaPublicClass,
   title: string,
@@ -199,16 +174,14 @@ function kanoaClassToEvent(
 }
 
 /**
- * Fetch upcoming Kanoa sessions for the migrated workshops and the calendar
- * categories (4-week courses), mapped to the same CalendarEvent shape the
- * Acuity client produces so the two feeds merge transparently.
- *   - Workshops deep-link to Kanoa's per-session checkout, unless flagged
- *     calendarLinksToClassType (then they link to the class type page).
- *   - Course sessions link to the course's class type page, which lists all
- *     of its weekly dates (a course is booked as a whole, not per session).
+ * Fetch upcoming sessions of every public Kanoa class type, mapped to the same
+ * CalendarEvent shape the Acuity client produces so the two feeds merge
+ * transparently. Like the Acuity feed, a new public class type shows up with
+ * no code change; making a type private in Kanoa hides it. Every session links
+ * to its class type's page, which lists all of its dates (and, for a course,
+ * is where the course is booked as a whole).
  *
- * Throws if the sessions fetch fails — the caller decides how to degrade. A
- * failed category lookup only drops the courses, not the workshops.
+ * Throws if the sessions fetch fails — the caller decides how to degrade.
  */
 export async function fetchKanoaClassEvents(opts?: {
   monthsAhead?: number;
@@ -222,32 +195,18 @@ export async function fetchKanoaClassEvents(opts?: {
   const windowEnd = addMonths(now, monthsAhead + 1);
   const chunks = buildDateChunks(windowStart, windowEnd, MAX_RANGE_DAYS);
 
-  const [classes, courseTypeIds] = await Promise.all([
-    fetchAllKanoaClasses(chunks),
-    fetchCalendarCategoryClassTypeIds().catch((err) => {
-      console.error("[kanoa] class type catalog fetch failed:", err);
-      return new Set<string>();
-    }),
-  ]);
+  const classes = await fetchAllKanoaClasses(chunks);
 
-  const migratedById = new Map(
-    MIGRATED_TYPES.map((t) => [t.kanoaClassTypeId, t]),
+  const fallbackTitleById = new Map(
+    MIGRATED_TYPES.map((t) => [t.kanoaClassTypeId, t.title]),
   );
 
   return classes.flatMap((c) => {
     // Prefer Kanoa's live class name so renames in the dashboard flow through
     // without a code change.
-    const liveName = c.classTypeName?.trim();
-    const migrated = migratedById.get(c.classTypeId);
-    if (migrated) {
-      const bookingUrl = migrated.calendarLinksToClassType
-        ? kanoaClassTypeUrl(c.classTypeId)
-        : kanoaBookUrl(c.id);
-      return [kanoaClassToEvent(c, liveName || migrated.title, bookingUrl)];
-    }
-    if (courseTypeIds.has(c.classTypeId) && liveName) {
-      return [kanoaClassToEvent(c, liveName, kanoaClassTypeUrl(c.classTypeId))];
-    }
-    return [];
+    const title =
+      c.classTypeName?.trim() || fallbackTitleById.get(c.classTypeId);
+    if (!title) return [];
+    return [kanoaClassToEvent(c, title, kanoaClassTypeUrl(c.classTypeId))];
   });
 }
