@@ -12,9 +12,11 @@ import {
 /**
  * Shape of one row from Kanoa's public classes endpoint:
  *   GET /api/public/{slug}/classes?startDate&endDate&classTypeId
- * (unauthenticated, slug-scoped). It only returns sessions of public class
- * types, so private ones (e.g. private group classes) never reach the
- * calendar. Only the fields the calendar needs are typed.
+ * (unauthenticated, slug-scoped). Queried WITHOUT classTypeId (as
+ * fetchAllKanoaClasses does), it only returns sessions of public class types,
+ * so private ones (e.g. private group classes) never reach the calendar. With
+ * a classTypeId it also returns private (unlisted) types, so never pass one
+ * here. Only the fields the calendar needs are typed.
  */
 type KanoaPublicClass = {
   id: string;

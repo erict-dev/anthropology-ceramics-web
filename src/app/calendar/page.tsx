@@ -21,7 +21,8 @@ export default async function CalendarPage() {
       excludeAppointmentTypeIDs: MIGRATED_ACUITY_TYPE_IDS,
     }),
     // A Kanoa outage must not take down the rest of the calendar — degrade
-    // by dropping the migrated types rather than erroring the whole page.
+    // by dropping every Kanoa session (migrated and Kanoa-only types alike)
+    // rather than erroring the whole page.
     fetchKanoaClassEvents({ monthsAhead: 2 }).catch((err) => {
       console.error("[calendar] Kanoa events fetch failed:", err);
       return [];

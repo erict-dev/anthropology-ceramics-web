@@ -7,9 +7,10 @@
 //     source of truth for them)
 //   - per-type booking CTAs deep-link into Kanoa
 // The calendar shows every public Kanoa class type on its own, migrated or
-// not, so a new Kanoa-only type needs no entry here. A type that's public in
-// Kanoa while still bookable in Acuity must be listed, or its sessions show
-// up twice.
+// not, so a new Kanoa-only type needs no entry here. Don't make a type public
+// in Kanoa while it's still bookable in Acuity: its sessions would show up
+// twice. Make it public at cutover, when it's added to MIGRATED_TYPES (adding
+// it earlier would hide its Acuity sessions, which hold the real bookings).
 //
 // This file is intentionally framework-agnostic (no "server-only") so it can be
 // imported from both server components (calendar fetch) and the static page
