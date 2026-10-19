@@ -39,6 +39,11 @@ type KanoaClassesResponse = {
 
 const DEFAULT_COLOR = "#64748b";
 
+// Titles for migrated types, used when Kanoa returns a blank classTypeName.
+const fallbackTitleById = new Map(
+  MIGRATED_TYPES.map((t) => [t.kanoaClassTypeId, t.title]),
+);
+
 /**
  * "YYYY-MM-DDTHH:mm" wall-clock in America/Los_Angeles (no offset). This matches
  * the naive local-time strings the Acuity client emits — FullCalendar is
@@ -102,7 +107,40 @@ const PAGE_SIZE = 100;
 // volume) so a misbehaving API can't spin until Cloudflare kills the request.
 const MAX_PAGES = 100;
 
+// One retry for transient failures (network errors, 429, 5xx). Kept small:
+// every attempt counts against Cloudflare's per-request subrequest cap.
+const MAX_ATTEMPTS = 2;
+const RETRY_DELAY_MS = 300;
+
+class KanoaHttpError extends Error {
+  constructor(
+    message: string,
+    readonly status: number,
+  ) {
+    super(message);
+  }
+}
+
+function isRetryable(err: unknown): boolean {
+  if (err instanceof KanoaHttpError) {
+    return err.status === 429 || err.status >= 500;
+  }
+  // Anything else thrown by fetch() is a network-level failure.
+  return true;
+}
+
 async function fetchKanoaJson<T>(path: string): Promise<T> {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await fetchKanoaJsonOnce<T>(path);
+    } catch (err) {
+      if (attempt >= MAX_ATTEMPTS || !isRetryable(err)) throw err;
+      await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_MS));
+    }
+  }
+}
+
+async function fetchKanoaJsonOnce<T>(path: string): Promise<T> {
   const res = await fetch(`${KANOA_BASE_URL}/api/public/${KANOA_ORG_SLUG}${path}`, {
     headers: { Accept: "application/json" },
     // The calendar page is force-dynamic, so Next already treats this fetch as
@@ -114,7 +152,10 @@ async function fetchKanoaJson<T>(path: string): Promise<T> {
     next: { revalidate: 0 },
   });
   if (!res.ok) {
-    throw new Error(`Kanoa ${path} error ${res.status}: ${await res.text()}`);
+    throw new KanoaHttpError(
+      `Kanoa ${path} error ${res.status}: ${await res.text()}`,
+      res.status,
+    );
   }
   return (await res.json()) as T;
 }
@@ -124,28 +165,44 @@ async function fetchKanoaJson<T>(path: string): Promise<T> {
  * org-wide (no classTypeId) rather than per type: the 4-week courses add ~8
  * class types a month, and per-type fetches would quickly blow through
  * Cloudflare's per-request subrequest cap.
+ *
+ * A chunk that still fails after retrying is logged and skipped, keeping every
+ * row already loaded, so one bad request only drops that chunk's sessions.
+ * Throws only if every chunk fails.
  */
 async function fetchAllKanoaClasses(
   chunks: Array<[string, string]>,
 ): Promise<KanoaPublicClass[]> {
-  // Dedupe by class id — adjacent chunks share a boundary date, so a session
+  // Dedupe by class id: adjacent chunks share a boundary date, so a session
   // on that date can come back in both.
   const byId = new Map<string, KanoaPublicClass>();
+  const errors: unknown[] = [];
   for (const [startDate, endDate] of chunks) {
-    let offset = 0;
-    for (let page = 0; page < MAX_PAGES; page++) {
-      const body = await fetchKanoaJson<KanoaClassesResponse>(
-        `/classes?startDate=${startDate}&endDate=${endDate}` +
-          `&limit=${PAGE_SIZE}&offset=${offset}`,
+    try {
+      let offset = 0;
+      for (let page = 0; page < MAX_PAGES; page++) {
+        const body = await fetchKanoaJson<KanoaClassesResponse>(
+          `/classes?startDate=${startDate}&endDate=${endDate}` +
+            `&limit=${PAGE_SIZE}&offset=${offset}`,
+        );
+        const rows = body.data ?? [];
+        const sizeBefore = byId.size;
+        for (const row of rows) byId.set(row.id, row);
+        // Also stop if a page added nothing new (e.g. the API ignored `offset`
+        // and returned the same rows again).
+        if (!body.hasMore || byId.size === sizeBefore) break;
+        offset += rows.length;
+      }
+    } catch (err) {
+      console.error(
+        `[kanoa] classes chunk ${startDate}..${endDate} failed, skipping:`,
+        err,
       );
-      const rows = body.data ?? [];
-      const sizeBefore = byId.size;
-      for (const row of rows) byId.set(row.id, row);
-      // Also stop if a page added nothing new (e.g. the API ignored `offset`
-      // and returned the same rows again).
-      if (!body.hasMore || byId.size === sizeBefore) break;
-      offset += rows.length;
+      errors.push(err);
     }
+  }
+  if (chunks.length > 0 && errors.length === chunks.length) {
+    throw new AggregateError(errors, "Every Kanoa classes chunk failed");
   }
   return Array.from(byId.values());
 }
@@ -183,7 +240,8 @@ function kanoaClassToEvent(
  * to its class type's page, which lists all of its dates (and, for a course,
  * is where the course is booked as a whole).
  *
- * Throws if the sessions fetch fails — the caller decides how to degrade.
+ * A date chunk that fails is skipped (see fetchAllKanoaClasses). Throws only if
+ * every chunk fails; the caller decides how to degrade.
  */
 export async function fetchKanoaClassEvents(opts?: {
   monthsAhead?: number;
@@ -198,10 +256,6 @@ export async function fetchKanoaClassEvents(opts?: {
   const chunks = buildDateChunks(windowStart, windowEnd, MAX_RANGE_DAYS);
 
   const classes = await fetchAllKanoaClasses(chunks);
-
-  const fallbackTitleById = new Map(
-    MIGRATED_TYPES.map((t) => [t.kanoaClassTypeId, t.title]),
-  );
 
   return classes.flatMap((c) => {
     // Prefer Kanoa's live class name so renames in the dashboard flow through

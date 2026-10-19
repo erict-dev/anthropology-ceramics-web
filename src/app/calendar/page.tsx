@@ -20,9 +20,11 @@ export default async function CalendarPage() {
       monthsAhead: 2,
       excludeAppointmentTypeIDs: MIGRATED_ACUITY_TYPE_IDS,
     }),
-    // A Kanoa outage must not take down the rest of the calendar — degrade
-    // by dropping every Kanoa session (migrated and Kanoa-only types alike)
-    // rather than erroring the whole page.
+    // A Kanoa outage must not take down the rest of the calendar. Failed date
+    // chunks are already skipped inside fetchKanoaClassEvents; this only
+    // fires when every chunk fails, and degrades by dropping every Kanoa
+    // session (migrated and Kanoa-only types alike) rather than erroring the
+    // whole page.
     fetchKanoaClassEvents({ monthsAhead: 2 }).catch((err) => {
       console.error("[calendar] Kanoa events fetch failed:", err);
       return [];
