@@ -65,12 +65,12 @@ export const MIGRATED_ACUITY_TYPE_IDS = new Set(
 
 /** Browse-all-sessions page for a Kanoa class type (matches Acuity's appointment-level CTA). */
 export function kanoaClassTypeUrl(classTypeId: string): string {
-  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/class-types/${classTypeId}`;
+  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/class-types/${encodeURIComponent(classTypeId)}`;
 }
 
 /** Checkout page for a specific Kanoa class session. */
 export function kanoaBookUrl(classId: string): string {
-  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/book/${classId}`;
+  return `${KANOA_BASE_URL}/s/${KANOA_ORG_SLUG}/book/${encodeURIComponent(classId)}`;
 }
 
 /** Gift certificate purchase page for the Kanoa org. */
