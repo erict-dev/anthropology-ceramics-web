@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ClassCard from '@/components/ClassCard';
 import JsonLd from '@/components/JsonLd';
+import { ONE_TIME_ADULTS_BOOKING_URL, ONE_TIME_KIDS_BOOKING_URL } from '@/lib/migration';
 
 export const metadata: Metadata = {
   title: 'Family Activities in Irvine | Kids & Family Pottery Classes | Olomana Studios',
@@ -236,14 +237,14 @@ export default function FamilyActivitiesIrvine() {
               title="Kids Pottery Classes"
               imgSrc="/kids-pottery-class.jpg"
               meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Youths)/appointment/81628903/calendar/12365772"
+              href={ONE_TIME_KIDS_BOOKING_URL}
               description="Instructor-guided projects for kids ages 6+. Students learn pottery basics through fun, creative projects. All materials included."
             />
             <ClassCard
               title="One-Time Pottery Group Class (Adults)"
               imgSrc="/one-time-pottery-class-irvine.jpg"
               meta="1.5 hrs"
-              href="https://olomanastudios.as.me/schedule/66629c2c/category/One-Time%2520Pottery%2520Group%2520Classes%2520(Adults)/appointment/84238610/calendar/12365772"
+              href={ONE_TIME_ADULTS_BOOKING_URL}
               description="Parents and older kids can join our adult group class to try wheel throwing and hand-building together. No experience needed, make 2 pieces each."
             />
           </div>
