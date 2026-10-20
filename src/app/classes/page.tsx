@@ -66,12 +66,12 @@ export default function Classes() {
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
             />
             <ClassCard
-              title="4-Week Oaxacan Barro Rojo Handbuilding Workshop"
+              title="4-Week Pottery Handbuilding Course"
               imgSrc="/workshops/barro-rojo-pottery-handbuilding-class-irvine.jpg"
               imgPosition="center 40%"
               meta="4 sessions"
               href="https://kanoascheduling.com/s/olomana-studios/class-types/c31c1012-79e8-4414-b34f-574e187fff05"
-              description="Discover the rich tradition of Oaxacan Barro Rojo through handbuilding and sculpting. In this four-week course you will learn traditional pinch-pot, coil-building and sculptural techniques to create expressive face vessels, planters, and ceremonial-inspired forms. Suitable for beginners and experienced hobbyists."
+              description="Suitable for beginners and experienced hobbyists. Learn traditional pinch-pot, coil-building, slab and sculptural techniques to create planters, vases, cups, bowls and other vessel forms. Each week includes 2 hours of instruction plus an open studio practice session."
             />
           </div>
         </div>
