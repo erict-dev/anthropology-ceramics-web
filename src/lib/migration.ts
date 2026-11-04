@@ -119,3 +119,8 @@ export const WHEEL_101_BOOKING_URL = kanoaCategoryScheduleUrl(
 export const WHEEL_201_BOOKING_URL = kanoaCategoryScheduleUrl(
   "4-week-pottery-course-201-continuing-wheel-throwing",
 );
+
+/** Teapot Bootcamp (3-day weekend intensive): Kanoa-only, never on Acuity. */
+export const TEAPOT_BOOTCAMP_BOOKING_URL = kanoaClassTypeUrl(
+  "74981584-4a34-4953-a43e-639215599380",
+);

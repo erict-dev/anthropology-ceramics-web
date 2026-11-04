@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Special Workshops,2 cards, stretch to 2 cols at md */}
+      {/* Special Workshops, 2 cols at md */}
       <section>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900">Special Workshops</h2>
@@ -107,6 +107,13 @@ export default function Home() {
               meta="1.5 hrs"
               href={IKEBANA_BOOKING_URL}
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
+            />
+            <ClassCard
+              title="Teapot Bootcamp"
+              imgSrc="/workshops/teapot-workshop/teapot-finished.jpeg"
+              meta="3-day weekend"
+              href="/workshops/teapot-pottery-workshop-irvine"
+              description="A 3-day weekend intensive where you throw a teapot from start to finish on the wheel: body, matching lid, spout and handle. Includes three open studio practice sessions. Not a beginner class: best for students comfortable centering 2 lbs of clay who have trimming skills."
             />
           </div>
 

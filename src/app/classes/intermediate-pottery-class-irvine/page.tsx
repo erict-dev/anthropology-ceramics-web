@@ -11,7 +11,7 @@ export default function IntermediatePotteryClasses() {
         <title>Intermediate Pottery Class in Irvine | Olomana Studios</title>
         <meta
           name="description"
-          content="Join our intermediate pottery classes in Irvine! Advance your wheel throwing and handbuilding techniques in 4-week courses and teapot workshops. Located in Orange County."
+          content="Join our intermediate pottery classes in Irvine! Advance your wheel throwing and handbuilding techniques in 4-week courses and our teapot bootcamp. Located in Orange County."
         />
       </Head>
 
@@ -59,12 +59,12 @@ export default function IntermediatePotteryClasses() {
             </div>
           </div>
 
-          {/* Teapot Making Workshop */}
+          {/* Teapot Bootcamp */}
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 w-full">
               <Image
                 src="/intermediate-pottery-class/teapot-1.jpeg"
-                alt="Intermediate pottery teapot workshop in Irvine"
+                alt="Teapot bootcamp for intermediate potters in Irvine"
                 layout="fill"
                 objectFit="cover"
                 className="hover:scale-105 transition-transform"
@@ -72,16 +72,17 @@ export default function IntermediatePotteryClasses() {
             </div>
             <div className="p-6 flex flex-col flex-1">
               <h2 className="text-2xl font-bold text-gray-900">
-                Teapot Making Workshop
+                Teapot Bootcamp
               </h2>
               <p className="mt-4 text-gray-700 flex-1">
-                This advanced workshop focuses on creating functional teapots, covering spout design, lid fit, handle construction, and body proportion. Ideal for intermediate potters ready to tackle one of ceramics’ most rewarding challenges.
+                A 3-day weekend intensive where you throw a teapot from start to finish on the wheel, covering body proportion, lid fit, spout design and handle construction. Includes three open studio practice sessions. Best for potters comfortable centering 2 lbs of clay who have trimming skills.
               </p>
-              <div
-                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium bg-gray-500"
+              <Link
+                href="/workshops/teapot-pottery-workshop-irvine"
+                className="mt-6 inline-block rounded-lg bg-black px-6 py-3 text-white text-center font-medium hover:bg-gray-700"
               >
-                Coming Soon
-              </div>
+                Learn More
+              </Link>
             </div>
           </div>
 
