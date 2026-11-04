@@ -1,5 +1,10 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { ONE_TIME_KIDS_BOOKING_URL } from '@/lib/migration';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/classes/kids-and-family-pottery-irvine' },
+};
 
 export default function KidsFamilyPotteryClass() {
   return (

@@ -1,21 +1,21 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import Image from 'next/image';
-import Head from 'next/head';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Pottery Open Studio in Irvine | Olomana Studios',
+  description:
+    "Olomana Studios open studio membership spots are limited due to our small studio space and focus on a quality experience. If you're interested, email contact@olomanastudios.com.",
+  alternates: { canonical: '/open-studio' },
+};
 
 export default function OpenStudioMembership() {
   notFound();
 
   return (
     <div>
-      <Head>
-        <title>Pottery Open Studio in Irvine | Olomana Studios</title>
-        <meta
-          name="description"
-          content="Olomana Studios open studio membership spots are limited due to our small studio space and focus on a quality experience. If you're interested, email contact@olomanastudios.com."
-        />
-      </Head>
 
       {/* Hero Section */}
       <section>

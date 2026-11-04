@@ -1,5 +1,10 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { ONE_TIME_ADULTS_BOOKING_URL } from '@/lib/migration';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/classes/adult-pottery-group-class-irvine' },
+};
 
 export default function AdultPotteryClass() {
   return (

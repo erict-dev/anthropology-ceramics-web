@@ -1,6 +1,11 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import Image from 'next/image';
 import { IKEBANA_BOOKING_URL } from '@/lib/migration';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/workshops/ikebana-flower-arrangement-workshop-irvine' },
+};
 
 export default function IkebanaWorkshop() {
   return (

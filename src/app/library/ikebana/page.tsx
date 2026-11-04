@@ -1,5 +1,10 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/library/ikebana' },
+};
 
 export default function Ikebana() {
   return (

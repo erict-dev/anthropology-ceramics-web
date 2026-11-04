@@ -1,4 +1,9 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/classes/private-pottery-event-irvine' },
+};
 
 export default function Events() {
   return (

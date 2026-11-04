@@ -1,19 +1,19 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import Image from 'next/image';
-import Head from 'next/head';
 import { MATCHA_BOWL_BOOKING_URL, WHEEL_101_BOOKING_URL, ONE_TIME_ADULTS_BOOKING_URL } from '@/lib/migration';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Beginner Pottery Class in Irvine | Olomana Studios',
+  description:
+    'Join our beginner pottery classes in Irvine! Learn wheel throwing and handbuilding techniques in our 4-week courses and workshops for beginners. Located in Orange County.',
+  alternates: { canonical: '/classes/beginner-pottery-class-irvine' },
+};
 
 export default function BeginnerPotteryClasses() {
   return (
     <div>
-      <Head>
-        <title>Beginner Pottery Class in Irvine | Olomana Studios</title>
-        <meta
-          name="description"
-          content="Join our beginner pottery classes in Irvine! Learn wheel throwing and handbuilding techniques in our 4-week courses and workshops for beginners. Located in Orange County."
-        />
-      </Head>
 
       {/* Hero Section */}
       <section>
