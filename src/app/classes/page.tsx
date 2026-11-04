@@ -52,7 +52,7 @@ export default function Classes() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">4-Week Pottery Courses</h2>
           <p className="mt-4 text-gray-600 text-lg">
-            Join one of our 4-week pottery courses and immerse yourself in the art of pottery! Each session includes two hours of guided instruction, helping you develop your skills on the wheel or by hand over four weekly classes.
+            Join one of our 4-week pottery courses and immerse yourself in the art of pottery! Each session includes two hours of guided instruction, helping you develop your skills on the wheel over four weekly classes.
           </p>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -69,14 +69,6 @@ export default function Classes() {
               meta="4 sessions"
               href={WHEEL_201_BOOKING_URL}
               description="For returning students ready to go further. Center with more clay, refine your trimming, and shape more intentional forms like matcha bowls, gooseneck vases, and lidded jars. Explore new surface decoration techniques and build consistency with guided practice. Materials included."
-            />
-            <ClassCard
-              title="4-Week Pottery Handbuilding Course"
-              imgSrc="/workshops/barro-rojo-pottery-handbuilding-class-irvine.jpg"
-              imgPosition="center 40%"
-              meta="4 sessions"
-              href="https://kanoascheduling.com/s/olomana-studios/class-types/c31c1012-79e8-4414-b34f-574e187fff05"
-              description="Suitable for beginners and experienced hobbyists. Learn traditional pinch-pot, coil-building, slab and sculptural techniques to create planters, vases, cups, bowls and other vessel forms. Each week includes 2 hours of instruction plus an open studio practice session."
             />
           </div>
         </div>
