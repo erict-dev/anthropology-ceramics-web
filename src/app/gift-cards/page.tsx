@@ -1,6 +1,11 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { KANOA_GIFT_CERTIFICATES_URL } from '@/lib/migration';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/gift-cards' },
+};
 
 export default function GiftCards() {
   return (

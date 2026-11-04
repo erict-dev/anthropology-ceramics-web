@@ -1,7 +1,12 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import ClassCard from '@/components/ClassCard'
 import Link from 'next/link';
 import { WHEEL_101_BOOKING_URL, WHEEL_201_BOOKING_URL } from '@/lib/migration';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/classes/4-week-pottery-course-irvine' },
+};
 
 export default function PotteryCourse() {
   return (

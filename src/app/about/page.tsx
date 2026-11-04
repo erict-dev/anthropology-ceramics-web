@@ -1,6 +1,11 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import BusinessHours from '@/components/BusinessHours';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/about' },
+};
 
 export default function About() {
   return (

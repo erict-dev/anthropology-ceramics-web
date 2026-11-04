@@ -2,12 +2,17 @@
 export const runtime = 'edge';
 export const dynamic = "force-dynamic";
 
+import type { Metadata } from 'next';
 import { fetchAvailableClassEventsRolling } from "@/lib/acuity";
 import { fetchKanoaClassEvents } from "@/lib/kanoa";
 import { MIGRATED_ACUITY_TYPE_IDS } from "@/lib/migration";
 import StudioCalendar from "./StudioCalendar";
 import BusinessHours from "@/components/BusinessHours";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/calendar' },
+};
 
 export default async function CalendarPage() {
   // Dual-source the calendar: every public Kanoa class type comes from Kanoa,

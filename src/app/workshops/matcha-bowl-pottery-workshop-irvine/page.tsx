@@ -1,6 +1,11 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import Image from 'next/image';
 import { MATCHA_BOWL_BOOKING_URL } from '@/lib/migration';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/workshops/matcha-bowl-pottery-workshop-irvine' },
+};
 
 export default function MatchaBowlWorkshop() {
   return (

@@ -1,7 +1,12 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import ClassCard from '@/components/ClassCard'
 import Link from 'next/link';
 import { IKEBANA_BOOKING_URL, MATCHA_BOWL_BOOKING_URL, WHEEL_101_BOOKING_URL, WHEEL_201_BOOKING_URL, ONE_TIME_ADULTS_BOOKING_URL, ONE_TIME_KIDS_BOOKING_URL } from '@/lib/migration';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/classes' },
+};
 
 export default function Classes() {
   return (

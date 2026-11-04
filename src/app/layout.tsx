@@ -13,12 +13,8 @@ export const metadata: Metadata = {
   title: "Olomana Studios",
   description:
     "We are a community focused pottery and art studio with workshops, classes and exhibition located in Irvine CA.",
-  alternates: {
-    canonical: "https://olomanastudios.com",
-  },
   openGraph: {
     type: "website",
-    url: "https://olomanastudios.com",
     siteName: "Olomana Studios",
     title: "Olomana Studios",
     description:
