@@ -91,7 +91,7 @@ export default function Classes() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <h2 className="leander text-black text-3xl font-bold sm:text-5xl">Special Art & Pottery Workshops</h2>
           <p className="mt-4 text-gray-600 text-lg w-full">
-            Explore our <strong>Special Art Workshops</strong> in Irvine, CA where we teach you the techniques behind specific pieces like <em>matcha bowls</em>, <em>ikebana arrangements</em>, and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery or pottery related art.
+            Explore our <strong>Special Art Workshops</strong> in Irvine, CA where we teach you the techniques behind specific pieces like <em>matcha bowls</em>, <em>ikebana arrangements</em>, <em>teapots</em> and more. These longer, immersive workshops are perfect for those who want to dive deeper into one particular style of pottery or pottery related art.
           </p>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <ClassCard
@@ -107,6 +107,13 @@ export default function Classes() {
               meta="1.5 hrs"
               href={IKEBANA_BOOKING_URL}
               description="Learn the principles behind ikebana and compose multiple flower arrangements using a kenzan, shears, and different types of ikebana vases in this hands-on workshop."
+            />
+            <ClassCard
+              title="Teapot Bootcamp"
+              imgSrc="/workshops/teapot-workshop/teapot-finished.jpeg"
+              meta="3-day weekend"
+              href="/workshops/teapot-pottery-workshop-irvine"
+              description="A 3-day weekend intensive where you throw a teapot from start to finish on the wheel: body, matching lid, spout and handle. Includes three open studio practice sessions. Not a beginner class: best for students comfortable centering 2 lbs of clay who have trimming skills."
             />
           </div>
         </div>

@@ -148,7 +148,7 @@ export default function Navbar() {
                       href={'/workshops/teapot-pottery-workshop-irvine'}
                       onClick={handleNavItemClick}
                     >
-                      teapot
+                      teapot bootcamp
                     </Link>
                   </li>
                 </ul>

@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="mt-2 space-y-2 text-gray-300">
               <li><Link href="/workshops" className="hover:text-white">All Workshops</Link></li>
               <li><Link href="/workshops/matcha-bowl-pottery-workshop-irvine" className="hover:text-white">Matcha Bowl Workshop</Link></li>
-              <li><Link href="/workshops/teapot-pottery-workshop-irvine" className="hover:text-white">Teapot Workshop</Link></li>
+              <li><Link href="/workshops/teapot-pottery-workshop-irvine" className="hover:text-white">Teapot Bootcamp</Link></li>
               <li><Link href="/workshops/ikebana-flower-arrangement-workshop-irvine" className="hover:text-white">Ikebana Flower Arrangement</Link></li>
             </ul>
           </div>
