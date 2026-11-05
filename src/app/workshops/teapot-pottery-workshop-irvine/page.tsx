@@ -7,7 +7,6 @@ import { TEAPOT_BOOTCAMP_BOOKING_URL } from '@/lib/migration';
 
 const PAGE_URL = 'https://olomanastudios.com/workshops/teapot-pottery-workshop-irvine';
 const OG_IMAGE = '/workshops/teapot-workshop/teapot-finished.jpeg';
-const PRICE = '289';
 
 const TITLE = 'Teapot Bootcamp in Irvine | Weekend Wheel-Throwing Intensive | Olomana Studios';
 const DESCRIPTION =
@@ -75,8 +74,9 @@ const faqs = [
       'You will make a complete wheel-thrown teapot: a thrown teapot body with a matching lid, spout and handle, assembled into one functional piece.',
   },
   {
-    question: 'What is included in the price?',
-    answer: `The bootcamp is $${PRICE} and includes all clay, tools and materials, plus firing and glazing of your teapot and three open studio practice sessions.`,
+    question: 'What is included?',
+    answer:
+      'The bootcamp includes all clay, tools and materials, plus firing and glazing of your teapot and three open studio practice sessions.',
   },
   {
     question: 'When can I pick up my finished teapot?',
@@ -128,8 +128,6 @@ export default function TeapotBootcamp() {
             offers: {
               '@type': 'Offer',
               category: 'Paid',
-              price: PRICE,
-              priceCurrency: 'USD',
               url: TEAPOT_BOOTCAMP_BOOKING_URL,
             },
             hasCourseInstance: {
@@ -171,7 +169,7 @@ export default function TeapotBootcamp() {
               >
                 Book Online
               </a>
-              <p className="mt-3 text-sm text-gray-600">${PRICE} · Small class size · See upcoming dates when you book</p>
+              <p className="mt-3 text-sm text-gray-600">Small class size · See upcoming dates when you book</p>
             </div>
           </header>
 
@@ -239,7 +237,6 @@ export default function TeapotBootcamp() {
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>Location:</strong> Olomana Studios, 14988 Sand Canyon Ave Studio 6, Irvine CA 92618 (Orange County)</li>
             <li><strong>Format:</strong> 3-day weekend intensive (Friday evening, Saturday and Sunday afternoons), about 11 hours of instruction</li>
-            <li><strong>Price:</strong> ${PRICE} for the full bootcamp</li>
             <li><strong>What&apos;s Included:</strong> All clay, tools and materials, plus firing and glazing of your teapot.</li>
             <li><strong>Class Size:</strong> Small class size, so everyone gets hands-on guidance at the wheel.</li>
             <li><strong>Prerequisites:</strong> Comfortable centering 2 lbs of clay and trimming. This is not a beginner class.</li>
